@@ -55,8 +55,8 @@
 
     [{* article main info block *}]
     <div class="information">
-
-        [{ assign var="oManufacturer" value=$oView->getManufacturer()}]
+[{*????*}]
+        [{* assign var="oManufacturer" value=$oView->getManufacturer()*}]
         <div class="productMainInfo[{if $oManufacturer->oxmanufacturers__oxicon->value}] hasBrand[{/if}]">
 
             [{oxscript include="js/widgets/oxarticleactionlinksselect.js" priority=10 }]
@@ -211,11 +211,13 @@
             [{/if}]
             [{* pers params *}]
             [{block name="details_productmain_persparams"}]
-                [{if $oView->isPersParam()}]
+[{*???*}]                
+                [{*if $oView->isPersParam()}]
                     <div class="persparamBox clear">
                         <label for="persistentParam">[{ oxmultilang ident="PAGE_DETAILS_PERSPARAM_LABEL" }]</label><input type="text" id="persistentParam" name="persparam[details]" value="[{ $oDetailsProduct->aPersistParam.text }]" size="35">
                     </div>
-                [{/if}]
+                [{/if*}]
+[{*???*}]                
             [{/block}]
 
             [{block name="details_productmain_tprice"}]
@@ -248,7 +250,7 @@
                                     [{/if}]
                                 [{/if}]
 
-                                [{if $oDetailsProduct->oxarticles__troshowprice == '1'}]
+                                [{if $oDetailsProduct->oxarticles__bodyshowprice == '1'}]
                                     <strong><span itemprop="price">[{$fPrice}]</span> [{ $currency->sign}] <meta itemprop="priceCurrency" content="[{ $currency->name}]"> *</strong>  
                                 [{/if}]
                             </label>

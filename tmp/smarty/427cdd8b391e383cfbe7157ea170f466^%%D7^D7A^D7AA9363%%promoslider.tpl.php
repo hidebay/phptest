@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.26, created on 2014-03-18 13:46:46
+<?php /* Smarty version 2.6.26, created on 2014-03-18 15:51:20
          compiled from widget/promoslider.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
 smarty_core_load_plugins(array('plugins' => array(array('modifier', 'count', 'widget/promoslider.tpl', 3, false),array('modifier', 'oxmultilangassign', 'widget/promoslider.tpl', 24, false),array('function', 'oxstyle', 'widget/promoslider.tpl', 4, false),array('function', 'oxscript', 'widget/promoslider.tpl', 5, false),array('function', 'oxprice', 'widget/promoslider.tpl', 28, false),)), $this); ?>

@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.26, created on 2014-03-18 13:46:46
+<?php /* Smarty version 2.6.26, created on 2014-03-18 15:51:20
          compiled from widget/minibasket/minibasket.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
 smarty_core_load_plugins(array('plugins' => array(array('function', 'oxscript', 'widget/minibasket/minibasket.tpl', 1, false),array('function', 'oxstyle', 'widget/minibasket/minibasket.tpl', 10, false),array('function', 'oxmultilang', 'widget/minibasket/minibasket.tpl', 47, false),array('function', 'oxgetseourl', 'widget/minibasket/minibasket.tpl', 111, false),array('insert', 'oxid_newbasketitem', 'widget/minibasket/minibasket.tpl', 28, false),array('block', 'oxhasrights', 'widget/minibasket/minibasket.tpl', 39, false),array('modifier', 'strip_tags', 'widget/minibasket/minibasket.tpl', 75, false),array('modifier', 'unescape', 'widget/minibasket/minibasket.tpl', 75, false),array('modifier', 'substr', 'widget/minibasket/minibasket.tpl', 84, false),array('modifier', 'cat', 'widget/minibasket/minibasket.tpl', 111, false),)), $this); ?>

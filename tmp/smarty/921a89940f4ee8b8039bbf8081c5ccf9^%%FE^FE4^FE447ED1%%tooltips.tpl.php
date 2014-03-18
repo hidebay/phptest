@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.26, created on 2014-03-18 13:52:19
+<?php /* Smarty version 2.6.26, created on 2014-03-18 15:56:38
          compiled from tooltips.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
 smarty_core_load_plugins(array('plugins' => array(array('function', 'oxmultilang', 'tooltips.tpl', 43, false),array('modifier', 'date_format', 'tooltips.tpl', 64, false),array('modifier', 'oxformdate', 'tooltips.tpl', 64, false),)), $this); ?>

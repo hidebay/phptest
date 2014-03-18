@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.26, created on 2014-03-18 13:46:46
+<?php /* Smarty version 2.6.26, created on 2014-03-18 15:51:20
          compiled from layout/sidebar.tpl */ ?>
 <div id="sidebar_content">
 <?php $_from = $this->_tpl_vars['oxidBlock_sidebar']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }if (count($_from)):

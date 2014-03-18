@@ -40,7 +40,7 @@ ini_set("display_errors", "on");
         $this->sCompileDir = '/var/www/phptest/tmp';
 
     // UTF-8 mode in shop 0 - off, 1 - on
-    $this->iUtfMode  = 0;
+    $this->iUtfMode  = 1;
 
     // File type whitelist for file upload
     $this->aAllowedUploadTypes = array('jpg', 'gif', 'png', 'pdf', 'mp3', 'avi', 'mpg', 'mpeg', 'doc', 'xls', 'ppt');
@@ -63,7 +63,7 @@ ini_set("display_errors", "on");
     //  5 = Delivery Cost calculation info
     //  6 = SMTP Debug Messages
     //  7 = oxDbDebug SQL parser
-    $this->iDebug = 1;
+    $this->iDebug = 8;
 
     // Log all modifications performed in Admin
     $this->blLogChangesInAdmin = false;

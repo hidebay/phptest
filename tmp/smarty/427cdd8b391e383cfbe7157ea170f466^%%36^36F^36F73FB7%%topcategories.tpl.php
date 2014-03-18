@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.26, created on 2014-03-18 13:46:46
+<?php /* Smarty version 2.6.26, created on 2014-03-18 15:51:20
          compiled from widget/header/topcategories.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
 smarty_core_load_plugins(array('plugins' => array(array('function', 'oxscript', 'widget/header/topcategories.tpl', 1, false),array('function', 'oxstyle', 'widget/header/topcategories.tpl', 3, false),array('function', 'counter', 'widget/header/topcategories.tpl', 55, false),array('function', 'oxgetseourl', 'widget/header/topcategories.tpl', 165, false),array('modifier', 'count', 'widget/header/topcategories.tpl', 19, false),array('modifier', 'ceil', 'widget/header/topcategories.tpl', 75, false),array('modifier', 'cat', 'widget/header/topcategories.tpl', 158, false),array('modifier', 'explode', 'widget/header/topcategories.tpl', 160, false),array('modifier', 'replace', 'widget/header/topcategories.tpl', 163, false),)), $this); ?>

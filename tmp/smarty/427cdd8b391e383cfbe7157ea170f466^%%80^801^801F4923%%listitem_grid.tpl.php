@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.26, created on 2014-03-18 13:51:36
+<?php /* Smarty version 2.6.26, created on 2014-03-18 15:51:19
          compiled from widget/product/listitem_grid.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
 smarty_core_load_plugins(array('plugins' => array(array('block', 'oxhasrights', 'widget/product/listitem_grid.tpl', 14, false),array('modifier', 'default', 'widget/product/listitem_grid.tpl', 33, false),array('modifier', 'oxaddparams', 'widget/product/listitem_grid.tpl', 184, false),array('function', 'oxmultilang', 'widget/product/listitem_grid.tpl', 103, false),)), $this); ?>
@@ -112,7 +112,9 @@ strich.png" alt="<?php echo $this->_tpl_vars['product']->oxarticles__oxtitle->va
 ">
         </div>
         <span itemprop="name">
-                  </span> 
+          <?php echo $this->_tpl_vars['product']->oxarticles__oxtitle->value; ?>
+
+        </span> 
         <span class="shortdesc">
           <?php echo $this->_tpl_vars['product']->oxarticles__oxshortdesc->value; ?>
 
@@ -149,11 +151,21 @@ strich.png" alt="<?php echo $this->_tpl_vars['product']->oxarticles__oxtitle->va
                     <?php $this->assign('tprice', $this->_tpl_vars['product']->getTPrice()); ?>
                     <?php $this->assign('price', $this->_tpl_vars['product']->getPrice()); ?>
                     <?php if ($this->_tpl_vars['tprice'] && $this->_tpl_vars['tprice']->getBruttoPrice() > $this->_tpl_vars['price']->getBruttoPrice()): ?>
-                                        <p class="priceOld">
+                    <span class="priceOld">
+                        <?php echo smarty_function_oxmultilang(array('ident' => 'WIDGET_PRODUCT_PRODUCT_REDUCEDFROM'), $this);?>
+ <del><?php echo $this->_tpl_vars['product']->getFTPrice(); ?>
+ <?php echo $this->_tpl_vars['currency']->sign; ?>
+</del>
+                    </span>
+                    <p class="priceOld">
                         <img src="<?php echo $this->_tpl_vars['oViewConf']->getImageUrl(); ?>
 strich.png" alt="<?php echo $this->_tpl_vars['product']->oxarticles__oxtitle->value; ?>
 ">
-                                                <?php echo $this->_tpl_vars['product']->getFTPrice(); ?>
+                        <?php echo smarty_function_oxmultilang(array('ident' => 'WIDGET_PRODUCT_PRODUCT_REDUCEDFROM'), $this);?>
+ <del><?php echo $this->_tpl_vars['product']->getFTPrice(); ?>
+ <?php echo $this->_tpl_vars['currency']->sign; ?>
+</del>
+                        <?php echo $this->_tpl_vars['product']->getFTPrice(); ?>
  <?php echo $this->_tpl_vars['currency']->sign; ?>
 
                     </p>
@@ -193,7 +205,9 @@ strich.png" alt="<?php echo $this->_tpl_vars['product']->oxarticles__oxtitle->va
 ">
         </div>
         <span itemprop="name">
-                    </span> 
+            <?php echo $this->_tpl_vars['product']->oxarticles__oxtitle->value; ?>
+
+        </span> 
         <span class="shortdesc">
           <?php echo $this->_tpl_vars['product']->oxarticles__oxshortdesc->value; ?>
 

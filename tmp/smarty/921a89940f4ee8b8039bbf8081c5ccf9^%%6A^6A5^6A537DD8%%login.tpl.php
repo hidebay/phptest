@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.26, created on 2014-03-18 12:02:43
+<?php /* Smarty version 2.6.26, created on 2014-03-18 15:56:25
          compiled from login.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
 smarty_core_load_plugins(array('plugins' => array(array('function', 'oxmultilang', 'login.tpl', 4, false),array('modifier', 'count', 'login.tpl', 39, false),)), $this); ?>

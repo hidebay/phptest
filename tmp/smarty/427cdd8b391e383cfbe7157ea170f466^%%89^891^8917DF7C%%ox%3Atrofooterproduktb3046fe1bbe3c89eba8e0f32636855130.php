@@ -1,8 +1,9 @@
-<?php /* Smarty version 2.6.26, created on 2014-03-18 13:54:50
+<?php /* Smarty version 2.6.26, created on 2014-03-18 16:06:20
          compiled from ox:trofooterproduktb3046fe1bbe3c89eba8e0f32636855130 */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
-smarty_core_load_plugins(array('plugins' => array(array('block', 'oxifcontent', 'ox:trofooterproduktb3046fe1bbe3c89eba8e0f32636855130', 6, false),array('function', 'oxgetseourl', 'ox:trofooterproduktb3046fe1bbe3c89eba8e0f32636855130', 16, false),)), $this); ?>
-          
+smarty_core_load_plugins(array('plugins' => array(array('block', 'oxifcontent', 'ox:trofooterproduktb3046fe1bbe3c89eba8e0f32636855130', 7, false),array('function', 'oxgetseourl', 'ox:trofooterproduktb3046fe1bbe3c89eba8e0f32636855130', 17, false),)), $this); ?>
+<div style='position: absolute; z-index:9999;color:white;background: #789;
+                 padding:0 15 0 15'>ox:trofooterproduktb3046fe1bbe3c89eba8e0f32636855130</div><!-- ox:trofooterproduktb3046fe1bbe3c89eba8e0f32636855130 template start -->          
                                         <dl id="mwst">
                         <dt id="footerrechtsueb"><!--<dt>--><strong>PRODUKT INFO</strong><!--</dt>--></dt>
                         <dd id="footerrechts"><!--<dd>-->
@@ -42,4 +43,4 @@ smarty_core_load_plugins(array('plugins' => array(array('block', 'oxifcontent', 
 <?php $_block_content = ob_get_contents(); ob_end_clean(); $_block_repeat=false;echo smarty_block_oxifcontent($this->_tag_stack[count($this->_tag_stack)-1][1], $_block_content, $this, $_block_repeat); }  array_pop($this->_tag_stack); ?></ul>
                                                 <!--</dd>--></dd>
                     </dl>
-                
+                <!-- ox:trofooterproduktb3046fe1bbe3c89eba8e0f32636855130 template end -->

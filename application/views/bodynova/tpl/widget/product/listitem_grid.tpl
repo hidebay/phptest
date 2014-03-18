@@ -82,7 +82,7 @@
             <img itemprop="image" src="[{$product->getThumbnailUrl()}]" alt="[{ $product->oxarticles__oxtitle->value }]">
         </div>
         <span itemprop="name">
-          [{*$product->oxarticles__oxtitle->value*}]
+          [{$product->oxarticles__oxtitle->value}]
 [{* D3 Modul "extSearch" CHANGE START}]
             [{ d3_extsearch_highlight text=$product->oxarticles__oxtitle->value }] [{ d3_extsearch_highlight text=$product->oxarticles__oxvarselect->value}]
             [{d3modcfgcheck modid="d3_extsearch"}]
@@ -124,12 +124,12 @@
                     [{assign var=tprice value=$product->getTPrice()}]
                     [{assign var=price  value=$product->getPrice()}]
                     [{if $tprice && $tprice->getBruttoPrice() > $price->getBruttoPrice()}]
-                    [{*<span class="priceOld">
+                    <span class="priceOld">
                         [{ oxmultilang ident="WIDGET_PRODUCT_PRODUCT_REDUCEDFROM" }] <del>[{ $product->getFTPrice()}] [{ $currency->sign}]</del>
-                    </span>*}]
+                    </span>
                     <p class="priceOld">
                         <img src="[{$oViewConf->getImageUrl()}]strich.png" alt="[{ $product->oxarticles__oxtitle->value }]">
-                        [{*[{oxmultilang ident="WIDGET_PRODUCT_PRODUCT_REDUCEDFROM" }] <del>[{ $product->getFTPrice()}] [{ $currency->sign}]</del>*}]
+                        [{oxmultilang ident="WIDGET_PRODUCT_PRODUCT_REDUCEDFROM" }] <del>[{ $product->getFTPrice()}] [{ $currency->sign}]</del>
                         [{ $product->getFTPrice()}] [{ $currency->sign}]
                     </p>
                     [{/if}]
@@ -160,7 +160,7 @@
             <img itemprop="image" src="[{$product->getThumbnailUrl()}]" alt="[{ $product->oxarticles__oxtitle->value }]">
         </div>
         <span itemprop="name">
-            [{*$product->oxarticles__oxtitle->value*}]
+            [{$product->oxarticles__oxtitle->value}]
 [{*D3 Modul "extSearch" CHANGE START}]
             [{ d3_extsearch_highlight text=$product->oxarticles__oxtitle->value }] [{ d3_extsearch_highlight text=$product->oxarticles__oxvarselect->value}]
             [{d3modcfgcheck modid="d3_extsearch"}]
