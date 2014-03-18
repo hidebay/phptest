@@ -1,0 +1,265 @@
+@charset "UTF-8";
+/* CSS Document */
+.ymr1{
+	width:745px;
+	height:140px;
+	overflow:hidden;
+	margin:1px;
+	margin-top:20px;
+}
+.ymr2{
+	width:745px;
+	height:184px;
+	overflow:hidden;
+	margin:1px;
+	margin-top:5px;
+}
+.bild{
+	float:left;
+	width:100px;
+	height:140px;
+	padding:3px;
+	font-size:0.8em;
+	text-align:center;
+	line-height:1;
+}
+.zweispaltig{
+	width:740px;
+	overflow:hidden;
+	margin:1px;
+	
+}
+.bildbox{
+	float:left;
+	width:260px;
+	text-align:left;
+	font-size:0.8em;
+	padding:3px;
+	height:200px;
+	margin-left:50px;
+	margin-top:15px;
+	padding:3px;
+
+}
+.oak{
+	float:left;
+	width:100px;
+	height:50px;
+	padding:3px;
+	font-size:0.8em;
+	text-align:center;
+	margin-left:5px;
+	
+}
+.oakr1{
+	width:745px;
+	height:70px;
+	overflow:hidden;
+	margin:1px;
+	margin-top:10px;
+}
+.oakr2{
+	width:745px;
+	height:100px;
+	overflow:hidden;
+	margin:1px;
+	margin-top:10px;
+}
+.zweispaltig{
+	width:740px;
+	height:700px;
+	overflow:hidden;
+	margin:1px;
+	margin-top:20px;
+}
+.erstespalte{
+	width:210px;
+	float:left;
+	height:700px;
+}
+.zweitespalte{
+	width:500px;
+	float:left;
+	height:700px;
+	margin-left:10px;
+}
+.oakzweispaltig{
+	width:740px;
+	height:1100px;
+	overflow:hidden;
+	margin:1px;
+	margin-top:20px;
+}
+.oakerstespalte{
+	width:210px;
+	float:left;
+	height:1100px;
+}
+.oakzweitespalte{
+	width:500px;
+	float:left;
+	height:1100px;
+	margin-left:10px;
+}
+.link a{
+	text-decoration:underline;
+	color:#0000FF;
+}
+.logos{
+	float:right;
+}
+.cmsh1{
+	font-size:18px;
+	font-weight:bold;
+	text-align:center;
+}
+.cmsh2{
+	text-align:center;
+	font-size:14px;
+	text-align:center;
+	}
+.tao{
+	width:740px;
+	height:280px;
+	overflow:hidden;
+	margin:1px;
+	margin-top:20px;
+}
+.tao1{
+	float:left;
+	width:100px;
+	height:280px;
+	padding:3px;
+	font-size:0.9em;
+	text-align:left;
+	line-height:1;
+	margin-left:45px;
+}
+.yostudios{
+	width:740px;
+	height:500px;
+	overflow:hidden;
+	margin:1px;
+	margin-top:20px;
+}
+.ersteyost{
+	width:210px;
+	float:left;
+	height:500px;
+}
+.zweiteyost{
+	width:500px;
+	float:left;
+	height:500px;
+	margin-left:10px;
+}
+.heilbildmitte{
+	text-align:center;
+	align:center;
+}
+.heilreihe{
+	width:740px;
+	height:250px;
+	overflow:hidden;
+	margin:1px;
+	margin-top:20px;
+}
+.heilbox{
+	float:left;
+	width:200px;
+	height:230px;
+	padding:3px;
+	font-size:0.8em;
+	text-align:center;
+	line-height:1;
+	border:solid 1px;
+	margin-left:5px;
+}
+.heilpic{
+	width:200px;
+	height:100px;
+	align:middle;
+}
+.bildmitte{
+	text-align:center;
+	align:center;
+}
+.stuhlbox{
+	width:740px;
+	height:250px;
+	overflow:hidden;
+	margin:1px;
+	margin-top:20px;
+}
+.stbox{
+	float:left;
+	width:200px;
+	height:230px;
+	padding:3px;
+	font-size:0.8em;
+	text-align:center;
+	line-height:1;
+	border:solid 1px;
+	margin-left:5px;
+}
+.stpic{
+	width:200px;
+	height:100px;
+	align:middle;
+}
+.beautybildmitte{
+	text-align:center;
+	align:center;
+}
+.beautyreihe{
+	width:740px;
+	height:250px;
+	overflow:hidden;
+	margin:1px;
+	margin-top:20px;
+}
+.beautybox{
+	float:left;
+	width:200px;
+	height:230px;
+	padding:3px;
+	font-size:0.8em;
+	text-align:center;
+	line-height:1;
+	border:solid 1px;
+	margin-left:5px;
+}
+.beautypic{
+	width:200px;
+	height:100px;
+	align:middle;
+}
+.kontakt{
+height:158px;
+width:740px;
+overflow:hidden;
+}
+.kontaktlinks{
+height:136px;
+width:180px;
+float:left;
+text-align:center;
+border:solid 1px;
+margin-left:0px;
+border:solid 1px;
+padding-top:20px;
+}
+.kontaktlinks ul li{
+	list-style:none;
+}
+.kontaktlinks ul {
+	margin:0px;
+}
+
+.kontaktrechts{
+height:156px;
+width:510px;
+float:left;
+margin-left:5px;
+border:solid 1px;
+}

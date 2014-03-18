@@ -1,0 +1,37 @@
+<?php
+/**
+ */
+
+/**
+ * Metadata version
+ */
+$sMetadataVersion = '0.1';
+
+/**
+ * Module information
+ */
+$aModule = array(
+    'id'           => 'bodynova',
+    'title'        => 'Bodynova Modul',
+    'description'  => array(
+        'de' => 'Bodynovas eigenes Modul zur erweiterung der verschiedenen Klassen die im Design Bodynova verwendet werden.',
+        'en' => 'Bodynovas own modul for extending used classes in the theme bodynova.',
+    ),
+    'thumbnail'    => 'picture.png',
+    'version'      => '0.0.1',
+    'author'       => 'André Bender',
+    'url'          => 'www.bodynova.de',
+    'email'        => 'a.bender@bodynova.de',
+    'extend'       => array(
+	'oxorder'		=>	'tronet/core/trooxorder',
+	'oxarticle'		=>	'tronet/core/trooxarticle',
+	'actions_main'		=>	'tronet/admin/troactions_main',
+	'alist'			=>	'tronet/views/troalist',
+	'oxactionlist'		=>	'tronet/core/trooxactionlist',
+	'oxactions'		=>	'tronet/core/trooxactions',
+	'oxcmp_shop'		=>	'tronet/views/trooxcmp_shop',
+	'oxbasket'		=>	'tronet/core/trooxbasket',
+	'content'		=>	'tronet/views/trocontent'
+    ),
+    
+);

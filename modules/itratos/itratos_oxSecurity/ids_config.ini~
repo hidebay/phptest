@@ -1,0 +1,28 @@
+; ###
+;/**
+;* "itratos_oxSecurity" - phpIDS for oxid ce/pe Shop;  *
+;*
+;* @copyright       Copyright, itratos (www.itratos.de) / Rene Ettling
+;* @license         itratos - Commercial Software Lizenz
+;*
+;*				   Agentur itratos Ltd & Co. KG - Autoren Herr Dr.-Ing. Mario Heiderich, Herr Christian Matthies, Herr Lars H. Strojny, Herr Rene Ettling
+;*				   Coburger Strasse 43
+;*				   D-96052 Bamberg
+;*
+;*                  ITRATOS-C;  
+;* @link            http://www.itratos.de
+;* @package         oxid
+;* @version         1.0.0;  
+;* @revision        $Revision: 748 $
+;* @lastmodified    $Date: rene 06/02/2013 $
+;**/
+; Start ids_config.ini file here
+debug = "false"; Debuginformationen anzeigen
+log_file = "true";	Intrusions in File loggen
+log_db = "true"; Intrusions in Datenbank Loggen
+send_email = "true"; Intrusion Email senden
+email = "shop.security@itratos.org"; Emailadresse für Alerts
+level_1 = "3"; ab wann soll geloggt werden
+level_2 = "40"; ab wann sollen Emails gesendet werden
+level_block = "55"; ab wann soll der User geblockt werden
+; end

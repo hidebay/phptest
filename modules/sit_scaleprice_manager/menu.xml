@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OX>
+	<OXMENU id="SIT_MENU">
+		<MAINMENU id="SIT_SCALEPRICE">
+			<SUBMENU id="SIT_SCALEPRICE_SETTINGS" cl="sit_config_scaleprice_manager_settings" config="modules/sit_scaleprice_manager/sit_config_scaleprice_manager_settings.xml" />
+		</MAINMENU>
+	</OXMENU>
+</OX>

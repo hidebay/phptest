@@ -1,0 +1,30 @@
+<?php
+/**
+ * This Software is the property of OXID eSales and is protected
+ * by copyright law - it is NOT Freeware.
+ *
+ * Any unauthorized use of this software without a valid license key
+ * is a violation of the license agreement and will be prosecuted by
+ * civil and criminal law.
+ *
+ * @link      http://www.oxid-esales.com
+ * @package   main
+ * @copyright (C) OXID eSales AG 2003-2011
+ * @version OXID eShop PE
+ * @version   SVN: $Id: theme.php 25466 2010-02-01 14:12:07Z alfonsas $
+ */
+
+/**
+ * Theme Information
+ */
+$aTheme = array(
+    'id'           => 'tronet',
+    'title'        => 'Tronet',
+    'description'  => 'Tronet Theme by efruits nur bedingt lauffähige Version mit der Shopverion ab 4.8',
+    'thumbnail'    => 'theme.jpg',
+    'version'      => '1.0',
+    'author'       => 'Bodynova',
+    'parentTheme'  => 'azure',
+   'parentVersions' => array('0.5','0.6','1.2','1.3'),
+
+);

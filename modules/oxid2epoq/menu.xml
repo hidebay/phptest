@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OX>
+    <OXMENU id="NAVIGATION_ESHOPADMIN">
+        <MAINMENU id="AZ_EPOQ_MAINMENU">
+            <SUBMENU id="AZ_EPOQ_SUBMENU" cl="az_epoq_nav" list="az_epoq_list">
+            	<TAB id="AZ_EPOQ_TAB_MAIN" cl="az_epoq_main" />
+            	<TAB id="AZ_EPOQ_TAB_CONFIG" cl="az_epoq_config" />
+            	<TAB id="AZ_EPOQ_TAB_ISSUES" cl="az_epoq_issues" />
+            </SUBMENU>
+        </MAINMENU>
+    </OXMENU>
+</OX>

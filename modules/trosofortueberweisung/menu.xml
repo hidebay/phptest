@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<OX>
+   <OXMENU id="NAVIGATION_ESHOPADMIN">
+        <MAINMENU id="mxtronet">
+           <SUBMENU id="mxtrosofortueberweisung" cl="trosofortueberweisung" list="trosofortueberweisung_list">
+              <TAB id="tbcltrosofortueberweisung_main" cl="trosofortueberweisung_main" />
+              <TAB id="tbcltrosofortueberweisung_log" cl="trosofortueberweisung_log" />
+              <TAB id="tbcltrosofortueberweisung_export" cl="trosofortueberweisung_export" />
+              <TAB id="tbcltrosofortueberweisung_calls" cl="trosofortueberweisung_calls" />
+              <TAB id="tbcltrosofortueberweisung_help" cl="trosofortueberweisung_help" />
+           </SUBMENU>
+        </MAINMENU>
+    </OXMENU>
+</OX>

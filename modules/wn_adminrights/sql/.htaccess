@@ -1,0 +1,9 @@
+# disabling file access
+<FilesMatch .*>
+# for Apache 2.4.x:
+# require all denied
+order allow,deny
+deny from all
+</FilesMatch>
+
+Options -Indexes

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OX>
+    <OXMENU id="NAVIGATION_ESHOPADMIN">
+        <MAINMENU id="AZ_EPOQ_MAINMENU">
+            <SUBMENU id="AZ_EPOQ_SUBMENU">
+            	<TAB id="AZ_EPOQ_RS_TAB_CONFIG" cl="az_epoq_rs_config" />
+            </SUBMENU>
+        </MAINMENU>
+        <MAINMENU id="mxmanageprod">
+            <SUBMENU id="mxarticles">
+                <TAB id="AZ_EPOQ_RS_TAB_ARTICLE" cl="az_epoq_rs_article" />
+            </SUBMENU>
+        </MAINMENU>
+    </OXMENU>
+</OX>

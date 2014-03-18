@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ROOT>
+	<CONFIG name="sit_scaleprice_manager">
+	
+		<TITLE>SIT-Staffelpreis Manager Einstellungen</TITLE>
+		<DESCRIPTION>Übersicht Ihrer Staffelpreis Konfiguration</DESCRIPTION>
+		<HELP></HELP>
+		
+		<CONFIGITEM type="boolean" 	name="sitScalepriceWithVariants" default="0">
+			<TITLE>Varianten-Übergreifender Staffelpreis</TITLE>
+			<DESCRIPTION>Ist diese Option gesetzt werden die Mengen aller Varianten (mit gleichem Eltern-Artikel) für die Staffelpreis-Berechnung zusammengefasst.</DESCRIPTION>
+			<HELP></HELP>
+		</CONFIGITEM>
+
+
+		<TAB title="Benutzergruppen" name="_sit_scaleprice_manager_selection">
+			
+			<TITLE>Benutzergruppen</TITLE>
+			<DESCRIPTION>Hier können Sie die Staffelpreise auf Kundengruppen einschränken.</DESCRIPTION>
+			<HELP></HELP>
+		
+			<CONFIGITEM type="list" name="groupSelection" selection="getGroupSelection" option="getGroupOption" target="saveGroupList">
+				<TITLE>Staffelpreis-Blacklist</TITLE>
+				<DESCRIPTION>Sobald sich ein Benutzer in EINER der gewählten Benutzergruppen befindet, ist für Diesen die Staffelpreis-Funktion deaktiviert.</DESCRIPTION>
+				<HELP></HELP>
+			</CONFIGITEM>	
+			
+		</TAB> 
+
+	</CONFIG>
+	
+	<CONFIG name="sit_scaleprice_manager__oxgroups" type="table">	
+		<CONFIGITEM type="varchar" name="sit_scaleprice_manager" default=""/>
+		<CONFIGITEM type="varchar" name="oxgroups" default=""/>
+	</CONFIG>
+		
+</ROOT>

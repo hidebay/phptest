@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<OX>
+    <OXMENU id="NAVIGATION_ESHOPADMIN">
+<!-- %%PRO_ONLY_BEGIN%% -->
+        <MAINMENU id="mxorders">
+            <SUBMENU id="mxdisplayorders">
+                <TAB id="AZ_IPAYMENT_TAB_ORDER" cl="az_ipayment_admin_order" />
+            </SUBMENU>
+        </MAINMENU>
+<!-- %%PRO_ONLY_END%% -->
+        <MAINMENU id="AZ_IPAYMENT_MAINMENU">
+            <SUBMENU id="AZ_IPAYMENT_SUBMENU" cl="az_ipayment_dyn" list="az_ipayment_dyn_list">
+            	<TAB id="AZ_IPAYMENT_TAB_MAIN" cl="az_ipayment_dyn_main" />
+            	<TAB id="AZ_IPAYMENT_TAB_CONFIG" cl="az_ipayment_dyn_config" />
+ <!-- %%PRO_ONLY_BEGIN%% -->
+            	<TAB id="AZ_IPAYMENT_TAB_LOG" cl="az_ipayment_dyn_log" />
+ <!-- %%PRO_ONLY_END%% -->
+            </SUBMENU>
+        </MAINMENU>
+    </OXMENU>
+</OX>

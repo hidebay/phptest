@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OX>
+	<OXMENU id="ITRATOSMODULES">
+		<MAINMENU id="ITRATOS_OXSECURITY">
+            <SUBMENU id="Report" cl="shopids_reports" rights="malladmin" />
+		</MAINMENU>
+	</OXMENU>
+</OX>
