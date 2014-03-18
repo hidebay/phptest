@@ -1,9 +1,8 @@
-<?php /* Smarty version 2.6.26, created on 2014-03-18 12:03:09
+<?php /* Smarty version 2.6.26, created on 2014-03-18 13:46:46
          compiled from widget/header/languages.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
-smarty_core_load_plugins(array('plugins' => array(array('function', 'oxscript', 'widget/header/languages.tpl', 2, false),array('modifier', 'cat', 'widget/header/languages.tpl', 8, false),array('modifier', 'oxaddparams', 'widget/header/languages.tpl', 11, false),)), $this); ?>
-<div style='position: absolute; z-index:9999;color:white;background: #789;
-                 padding:0 15 0 15'>widget/header/languages.tpl</div><!-- widget/header/languages.tpl template start --><?php echo smarty_function_oxscript(array('include' => "js/widgets/oxflyoutbox.js",'priority' => 10), $this);?>
+smarty_core_load_plugins(array('plugins' => array(array('function', 'oxscript', 'widget/header/languages.tpl', 1, false),array('modifier', 'cat', 'widget/header/languages.tpl', 7, false),array('modifier', 'oxaddparams', 'widget/header/languages.tpl', 10, false),)), $this); ?>
+<?php echo smarty_function_oxscript(array('include' => "js/widgets/oxflyoutbox.js",'priority' => 10), $this);?>
 
 <?php echo smarty_function_oxscript(array('add' => "$( '#languageTrigger' ).oxFlyOutBox();"), $this);?>
 
@@ -50,4 +49,4 @@ smarty_core_load_plugins(array('plugins' => array(array('function', 'oxscript', 
     </ul>
     </div>
 </div>
-<?php endif; ?><!-- widget/header/languages.tpl template end -->
+<?php endif; ?>

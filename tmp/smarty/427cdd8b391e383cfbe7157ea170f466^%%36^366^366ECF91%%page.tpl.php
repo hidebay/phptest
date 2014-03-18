@@ -1,9 +1,8 @@
-<?php /* Smarty version 2.6.26, created on 2014-03-18 12:03:09
+<?php /* Smarty version 2.6.26, created on 2014-03-18 13:46:46
          compiled from layout/page.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
-smarty_core_load_plugins(array('plugins' => array(array('block', 'oxifcontent', 'layout/page.tpl', 41, false),array('function', 'oxmultilang', 'layout/page.tpl', 49, false),)), $this); ?>
-<div style='position: absolute; z-index:9999;color:white;background: #789;
-                 padding:0 15 0 15'>layout/page.tpl</div><!-- layout/page.tpl template start --><?php ob_start(); ?>
+smarty_core_load_plugins(array('plugins' => array(array('block', 'oxifcontent', 'layout/page.tpl', 40, false),array('function', 'oxmultilang', 'layout/page.tpl', 48, false),)), $this); ?>
+<?php ob_start(); ?>
         <div id="welle1"></div>
     <div id="welle2"></div>
     <div id="welle3"></div>
@@ -89,4 +88,3 @@ $this->_smarty_include(array('smarty_include_tpl_file' => "layout/base.tpl", 'sm
 $this->_tpl_vars = $_smarty_tpl_vars;
 unset($_smarty_tpl_vars);
  ?>
-<!-- layout/page.tpl template end -->

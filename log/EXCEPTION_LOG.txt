@@ -10767,3 +10767,61 @@ oxSystemComponentException-oxException (time: 2014-03-17 14:47:13): [0]: Functio
 
  Faulty component --> 
 ---------------------------------------------
+2014-03-18 12:29:13exception 'ADODB_Exception' with message 'mysql error: [1115: Unknown character set: 'UTF-8'] in EXECUTE("SET NAMES "UTF-8"")
+' in /var/www/phptest/core/adodblite/adodb-exceptions.inc.php:84
+Stack trace:
+#0 /var/www/phptest/core/adodblite/adodbSQL_drivers/mysql/mysql_driver.inc(369): adodb_throw('mysql', 'EXECUTE', 1115, 'Unknown charact...', 'SET NAMES "UTF-...', false, Object(object_ADOConnection))
+#1 /var/www/phptest/core/adodblite/adodb.inc.php(316): mysql_driver_ADOConnection->do_query('SET NAMES "UTF-...', -1, -1, false)
+#2 /var/www/phptest/core/oxdb.php(280): ADOConnection->Execute('SET NAMES "UTF-...')
+#3 /var/www/phptest/core/oxdb.php(402): oxDb->_setUp(Object(object_ADOConnection))
+#4 /var/www/phptest/core/oxdb.php(456): oxDb->_getDbInstance()
+#5 /var/www/phptest/core/oxconfig.php(572): oxDb::getDb()
+#6 /var/www/phptest/core/oxconfig.php(399): oxConfig->_loadVarsFromDb('oxbaseshop')
+#7 /var/www/phptest/core/oxconfig.php(329): oxConfig->init()
+#8 /var/www/phptest/modules/oe/oethemeswitcher/core/oethemeswitcherconfig.php(44): oxConfig->getConfigParam('blProductive')
+#9 /var/www/phptest/core/oxconfig.php(2030): oeThemeSwitcherConfig->getConfigParam('blProductive')
+#10 /var/www/phptest/core/oxshopcontrol.php(595): oxConfig->isProductiveMode()
+#11 /var/www/phptest/core/oxshopcontrol.php(115): oxShopControl->_runOnce()
+#12 /var/www/phptest/core/oxid.php(32): oxShopControl->start()
+#13 /var/www/phptest/index.php(19): Oxid::run()
+#14 /var/www/phptest/oxseo.php(37): require('/var/www/phptes...')
+#15 {main}
+---------------------------------------------
+oxSystemComponentException-oxException (time: 2014-03-18 12:58:57): [0]: Function 'getManufacturer' does not exist or is not accessible! (oeThemeSwitcherDetails)
+ 
+ Stack Trace: #0 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%5E^5E9^5E9B9D5B%%productmain.tpl.php(87): oxSuperCfg->__call('getManufacturer', Array)
+#1 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%5E^5E9^5E9B9D5B%%productmain.tpl.php(87): oeThemeSwitcherDetails->getManufacturer()
+#2 /var/www/phptest/core/smarty/Smarty.class.php(1869): include('/var/www/phptes...')
+#3 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%A5^A59^A595DDB8%%fullproductinfo.tpl.php(8): Smarty->_smarty_include(Array)
+#4 /var/www/phptest/core/smarty/Smarty.class.php(1869): include('/var/www/phptes...')
+#5 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%08^08A^08ABD53A%%details.tpl.php(82): Smarty->_smarty_include(Array)
+#6 /var/www/phptest/core/smarty/Smarty.class.php(1263): include('/var/www/phptes...')
+#7 /var/www/phptest/core/oxshopcontrol.php(521): Smarty->fetch('page/details/de...', 'ox|0|0|0|0|3981...')
+#8 /var/www/phptest/core/oxshopcontrol.php(388): oxShopControl->_render(Object(oeThemeSwitcherDetails))
+#9 /var/www/phptest/core/oxshopcontrol.php(148): oxShopControl->_process('details', NULL, NULL, NULL)
+#10 /var/www/phptest/core/oxid.php(32): oxShopControl->start()
+#11 /var/www/phptest/index.php(19): Oxid::run()
+#12 /var/www/phptest/oxseo.php(37): require('/var/www/phptes...')
+#13 {main}
+
+ Faulty component --> 
+---------------------------------------------
+oxSystemComponentException-oxException (time: 2014-03-18 12:59:21): [0]: Function 'getManufacturer' does not exist or is not accessible! (oeThemeSwitcherDetails)
+ 
+ Stack Trace: #0 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%5E^5E9^5E9B9D5B%%productmain.tpl.php(87): oxSuperCfg->__call('getManufacturer', Array)
+#1 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%5E^5E9^5E9B9D5B%%productmain.tpl.php(87): oeThemeSwitcherDetails->getManufacturer()
+#2 /var/www/phptest/core/smarty/Smarty.class.php(1869): include('/var/www/phptes...')
+#3 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%A5^A59^A595DDB8%%fullproductinfo.tpl.php(8): Smarty->_smarty_include(Array)
+#4 /var/www/phptest/core/smarty/Smarty.class.php(1869): include('/var/www/phptes...')
+#5 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%08^08A^08ABD53A%%details.tpl.php(82): Smarty->_smarty_include(Array)
+#6 /var/www/phptest/core/smarty/Smarty.class.php(1263): include('/var/www/phptes...')
+#7 /var/www/phptest/core/oxshopcontrol.php(521): Smarty->fetch('page/details/de...', 'ox|0|0|0|0|3981...')
+#8 /var/www/phptest/core/oxshopcontrol.php(388): oxShopControl->_render(Object(oeThemeSwitcherDetails))
+#9 /var/www/phptest/core/oxshopcontrol.php(148): oxShopControl->_process('details', NULL, NULL, NULL)
+#10 /var/www/phptest/core/oxid.php(32): oxShopControl->start()
+#11 /var/www/phptest/index.php(19): Oxid::run()
+#12 /var/www/phptest/oxseo.php(37): require('/var/www/phptes...')
+#13 {main}
+
+ Faulty component --> 
+---------------------------------------------

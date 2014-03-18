@@ -1,7 +1,6 @@
-<?php /* Smarty version 2.6.26, created on 2014-03-18 12:03:09
+<?php /* Smarty version 2.6.26, created on 2014-03-18 13:46:46
          compiled from layout/sidebar.tpl */ ?>
-<div style='position: absolute; z-index:9999;color:white;background: #789;
-                 padding:0 15 0 15'>layout/sidebar.tpl</div><!-- layout/sidebar.tpl template start --><div id="sidebar_content">
+<div id="sidebar_content">
 <?php $_from = $this->_tpl_vars['oxidBlock_sidebar']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }if (count($_from)):
     foreach ($_from as $this->_tpl_vars['_block']):
 ?>
@@ -55,4 +54,4 @@ unset($_smarty_tpl_vars);
       
         
 
-</div><!-- layout/sidebar.tpl template end -->
+</div>

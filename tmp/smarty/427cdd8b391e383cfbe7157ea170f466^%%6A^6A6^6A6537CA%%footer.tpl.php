@@ -1,9 +1,8 @@
-<?php /* Smarty version 2.6.26, created on 2014-03-18 12:03:09
+<?php /* Smarty version 2.6.26, created on 2014-03-18 13:46:46
          compiled from layout/footer.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
-smarty_core_load_plugins(array('plugins' => array(array('function', 'oxscript', 'layout/footer.tpl', 3, false),array('function', 'oxmultilang', 'layout/footer.tpl', 28, false),array('block', 'oxifcontent', 'layout/footer.tpl', 30, false),)), $this); ?>
-<div style='position: absolute; z-index:9999;color:white;background: #789;
-                 padding:0 15 0 15'>layout/footer.tpl</div><!-- layout/footer.tpl template start -->
+smarty_core_load_plugins(array('plugins' => array(array('function', 'oxscript', 'layout/footer.tpl', 2, false),array('function', 'oxmultilang', 'layout/footer.tpl', 27, false),array('block', 'oxifcontent', 'layout/footer.tpl', 29, false),)), $this); ?>
+
     <?php echo smarty_function_oxscript(array('include' => "js/widgets/oxequalizer.js",'priority' => 10), $this);?>
 
     <?php echo smarty_function_oxscript(array('add' => "$(function(){oxEqualizer.equalHeight($( '#panel dl' ));});"), $this);?>
@@ -104,5 +103,3 @@ fwrite($datei, $counterstand);
 fclose($datei);
  ?>
 <p>&copy; 1998-<?php  echo date("Y");  ?> All rights reserved</p>
-
-<!-- layout/footer.tpl template end -->

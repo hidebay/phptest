@@ -1,9 +1,8 @@
-<?php /* Smarty version 2.6.26, created on 2014-03-18 12:03:09
+<?php /* Smarty version 2.6.26, created on 2014-03-18 13:46:45
          compiled from widget/product/listselectbox.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
-smarty_core_load_plugins(array('plugins' => array(array('function', 'oxscript', 'widget/product/listselectbox.tpl', 2, false),array('function', 'oxmultilang', 'widget/product/listselectbox.tpl', 18, false),array('modifier', 'default', 'widget/product/listselectbox.tpl', 16, false),)), $this); ?>
-<div style='position: absolute; z-index:9999;color:white;background: #789;
-                 padding:0 15 0 15'>widget/product/listselectbox.tpl</div><!-- widget/product/listselectbox.tpl template start --><?php echo smarty_function_oxscript(array('include' => "js/widgets/oxdropdown.js",'priority' => 10), $this);?>
+smarty_core_load_plugins(array('plugins' => array(array('function', 'oxscript', 'widget/product/listselectbox.tpl', 1, false),array('function', 'oxmultilang', 'widget/product/listselectbox.tpl', 17, false),array('modifier', 'default', 'widget/product/listselectbox.tpl', 15, false),)), $this); ?>
+<?php echo smarty_function_oxscript(array('include' => "js/widgets/oxdropdown.js",'priority' => 10), $this);?>
 
 <?php echo smarty_function_oxscript(array('add' => "$('div.dropDown p').oxDropDown();"), $this);?>
 
@@ -35,4 +34,4 @@ smarty_core_load_plugins(array('plugins' => array(array('function', 'oxscript', 
             <?php endforeach; endif; unset($_from); ?>
         </ul>
     <?php endif; ?>
-</div><!-- widget/product/listselectbox.tpl template end -->
+</div>

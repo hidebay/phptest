@@ -1,9 +1,8 @@
-<?php /* Smarty version 2.6.26, created on 2014-03-18 12:03:09
+<?php /* Smarty version 2.6.26, created on 2014-03-18 13:46:45
          compiled from page/shop/start.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
-smarty_core_load_plugins(array('plugins' => array(array('function', 'oxscript', 'page/shop/start.tpl', 2, false),array('modifier', 'count', 'page/shop/start.tpl', 6, false),array('modifier', 'oxmultilangassign', 'page/shop/start.tpl', 53, false),array('insert', 'oxid_tracker', 'page/shop/start.tpl', 66, false),)), $this); ?>
-<div style='position: absolute; z-index:9999;color:white;background: #789;
-                 padding:0 15 0 15'>page/shop/start.tpl</div><!-- page/shop/start.tpl template start --><?php echo smarty_function_oxscript(array('include' => "js/widgets/oxcenterelementonhover.js",'priority' => 10), $this);?>
+smarty_core_load_plugins(array('plugins' => array(array('function', 'oxscript', 'page/shop/start.tpl', 1, false),array('modifier', 'count', 'page/shop/start.tpl', 5, false),array('modifier', 'oxmultilangassign', 'page/shop/start.tpl', 52, false),array('insert', 'oxid_tracker', 'page/shop/start.tpl', 65, false),)), $this); ?>
+<?php echo smarty_function_oxscript(array('include' => "js/widgets/oxcenterelementonhover.js",'priority' => 10), $this);?>
 
 <?php echo smarty_function_oxscript(array('add' => "$( '#specCatBox' ).oxCenterElementOnHover();"), $this);?>
 
@@ -103,4 +102,4 @@ echo smarty_core_run_insert_handler(array('args' => array('name' => 'oxid_tracke
 $this->_smarty_include(array('smarty_include_tpl_file' => "layout/page.tpl", 'smarty_include_vars' => array('sidebar' => 'Left')));
 $this->_tpl_vars = $_smarty_tpl_vars;
 unset($_smarty_tpl_vars);
- ?><!-- page/shop/start.tpl template end -->
+ ?>

@@ -1,9 +1,8 @@
-<?php /* Smarty version 2.6.26, created on 2014-03-18 12:03:09
+<?php /* Smarty version 2.6.26, created on 2014-03-18 13:46:46
          compiled from widget/minibasket/minibasket.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
-smarty_core_load_plugins(array('plugins' => array(array('function', 'oxscript', 'widget/minibasket/minibasket.tpl', 2, false),array('function', 'oxstyle', 'widget/minibasket/minibasket.tpl', 11, false),array('function', 'oxmultilang', 'widget/minibasket/minibasket.tpl', 48, false),array('function', 'oxgetseourl', 'widget/minibasket/minibasket.tpl', 112, false),array('insert', 'oxid_newbasketitem', 'widget/minibasket/minibasket.tpl', 29, false),array('block', 'oxhasrights', 'widget/minibasket/minibasket.tpl', 40, false),array('modifier', 'strip_tags', 'widget/minibasket/minibasket.tpl', 76, false),array('modifier', 'unescape', 'widget/minibasket/minibasket.tpl', 76, false),array('modifier', 'substr', 'widget/minibasket/minibasket.tpl', 85, false),array('modifier', 'cat', 'widget/minibasket/minibasket.tpl', 112, false),)), $this); ?>
-<div style='position: absolute; z-index:9999;color:white;background: #789;
-                 padding:0 15 0 15'>widget/minibasket/minibasket.tpl</div><!-- widget/minibasket/minibasket.tpl template start --><?php echo smarty_function_oxscript(array('include' => "js/widgets/oxajax.js",'priority' => 10), $this);?>
+smarty_core_load_plugins(array('plugins' => array(array('function', 'oxscript', 'widget/minibasket/minibasket.tpl', 1, false),array('function', 'oxstyle', 'widget/minibasket/minibasket.tpl', 10, false),array('function', 'oxmultilang', 'widget/minibasket/minibasket.tpl', 47, false),array('function', 'oxgetseourl', 'widget/minibasket/minibasket.tpl', 111, false),array('insert', 'oxid_newbasketitem', 'widget/minibasket/minibasket.tpl', 28, false),array('block', 'oxhasrights', 'widget/minibasket/minibasket.tpl', 39, false),array('modifier', 'strip_tags', 'widget/minibasket/minibasket.tpl', 75, false),array('modifier', 'unescape', 'widget/minibasket/minibasket.tpl', 75, false),array('modifier', 'substr', 'widget/minibasket/minibasket.tpl', 84, false),array('modifier', 'cat', 'widget/minibasket/minibasket.tpl', 111, false),)), $this); ?>
+<?php echo smarty_function_oxscript(array('include' => "js/widgets/oxajax.js",'priority' => 10), $this);?>
 
 <?php echo smarty_function_oxscript(array('include' => "js/widgets/oxcountdown.js",'priority' => 10), $this);?>
 
@@ -154,4 +153,3 @@ unset($_smarty_tpl_vars);
                 </div>
             <?php $_block_content = ob_get_contents(); ob_end_clean(); $_block_repeat=false;echo smarty_block_oxhasrights($this->_tag_stack[count($this->_tag_stack)-1][1], $_block_content, $this, $_block_repeat); }  array_pop($this->_tag_stack); ?>
         <?php endif; ?>
-<!-- widget/minibasket/minibasket.tpl template end -->

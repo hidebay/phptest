@@ -19,8 +19,8 @@
  */
 $aTheme = array(
     'id'           => 'tronet',
-    'title'        => 'Bodynova Theme',
-    'description'  => 'Bodynova Theme by Bodynova',
+    'title'        => 'Tronet Theme',
+    'description'  => 'Tronet Theme',
     'thumbnail'    => 'theme.jpg',
     'version'      => '1.0',
     'author'       => 'Bodynova',

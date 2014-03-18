@@ -1,9 +1,8 @@
-<?php /* Smarty version 2.6.26, created on 2014-03-18 12:03:09
+<?php /* Smarty version 2.6.26, created on 2014-03-18 13:46:46
          compiled from widget/header/topcategories.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
-smarty_core_load_plugins(array('plugins' => array(array('function', 'oxscript', 'widget/header/topcategories.tpl', 2, false),array('function', 'oxstyle', 'widget/header/topcategories.tpl', 4, false),array('function', 'counter', 'widget/header/topcategories.tpl', 56, false),array('function', 'oxgetseourl', 'widget/header/topcategories.tpl', 166, false),array('modifier', 'count', 'widget/header/topcategories.tpl', 20, false),array('modifier', 'ceil', 'widget/header/topcategories.tpl', 76, false),array('modifier', 'cat', 'widget/header/topcategories.tpl', 159, false),array('modifier', 'explode', 'widget/header/topcategories.tpl', 161, false),array('modifier', 'replace', 'widget/header/topcategories.tpl', 164, false),)), $this); ?>
-<div style='position: absolute; z-index:9999;color:white;background: #789;
-                 padding:0 15 0 15'>widget/header/topcategories.tpl</div><!-- widget/header/topcategories.tpl template start --><?php echo smarty_function_oxscript(array('include' => "js/widgets/oxtopmenu.js",'priority' => 10), $this);?>
+smarty_core_load_plugins(array('plugins' => array(array('function', 'oxscript', 'widget/header/topcategories.tpl', 1, false),array('function', 'oxstyle', 'widget/header/topcategories.tpl', 3, false),array('function', 'counter', 'widget/header/topcategories.tpl', 55, false),array('function', 'oxgetseourl', 'widget/header/topcategories.tpl', 165, false),array('modifier', 'count', 'widget/header/topcategories.tpl', 19, false),array('modifier', 'ceil', 'widget/header/topcategories.tpl', 75, false),array('modifier', 'cat', 'widget/header/topcategories.tpl', 158, false),array('modifier', 'explode', 'widget/header/topcategories.tpl', 160, false),array('modifier', 'replace', 'widget/header/topcategories.tpl', 163, false),)), $this); ?>
+<?php echo smarty_function_oxscript(array('include' => "js/widgets/oxtopmenu.js",'priority' => 10), $this);?>
 
 <?php echo smarty_function_oxscript(array('add' => "$('#navigation').oxTopMenu();"), $this);?>
 
@@ -233,4 +232,3 @@ if ($this->_foreach['SubSubCat']['total'] > 0):
     </li>
     
     </ul>
-<!-- widget/header/topcategories.tpl template end -->

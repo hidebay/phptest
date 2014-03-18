@@ -49,14 +49,14 @@
     [{capture name=product_price}]
         [{block name="widget_product_listitem_grid_price"}]
             [{oxhasrights ident="SHOWARTICLEPRICE"}]
-                [{if $product->oxarticles__troshowprice == '1'}]
+                [{if $product->oxarticles__bodyshowprice == '1'}]
                     [{assign var=tprice value=$product->getTPrice()}]
                     [{assign var=price  value=$product->getPrice()}]
                     [{if $tprice && $tprice->getBruttoPrice() > $price->getBruttoPrice()}]
                     [{assign var="strich" value="strich.png"}]                    
                     <p class="priceOld">
                         <img src="[{$oViewConf->getImageUrl()}]strich.png">
-                        [{*[{oxmultilang ident="WIDGET_PRODUCT_PRODUCT_REDUCEDFROM" }] <del>[{ $product->getFTPrice()}] [{ $currency->sign}]</del>*}]
+                        [{*}][{oxmultilang ident="WIDGET_PRODUCT_PRODUCT_REDUCEDFROM" }] <del>[{ $product->getFTPrice()}] [{ $currency->sign}]</del>[{*}]
                         [{ $product->getFTPrice()}] [{ $currency->sign}]
                     </p>
                     [{/if}]
@@ -86,8 +86,8 @@
     <meta itemprop='productID' content='sku:[{ $product->oxarticles__oxartnum->value }]'>
     
         <span itemprop="name">
-          [{*$product->oxarticles__oxtitle->value*}]
-[{*** D3 Modul "extSearch" CHANGE START}]
+          [{$product->oxarticles__oxtitle->value}]
+[{ D3 Modul "extSearch" CHANGE START}]
                 <a id="[{$testid}]" href="[{$_productLink}]" class="title" title="[{ $product->oxarticles__oxtitle->value}] [{$product->oxarticles__oxvarselect->value}]">
                     <span>[{ d3_extsearch_highlight text=$product->oxarticles__oxtitle->value }] [{ d3_extsearch_highlight text=$product->oxarticles__oxvarselect->value}]</span>
                 </a>
@@ -95,7 +95,7 @@
             [{if $product->blIsSimilar}]<span id='similar'>[{oxmultilang ident="D3_EXTSEARCH_EXT_SIMILAR"}]</span>[{/if}]
             [{if $product->isD3CatHit}]<span id='similar'>[{oxmultilang ident="D3_EXTSEARCH_EXT_CATHIT"}]</span>[{/if}]
                 [{/d3modcfgcheck}]
-[{D3 Modul "extSearch" CHANGE END*}]
+[{D3 Modul "extSearch" CHANGE END}]
         </span> 
         <span class="shortdesc">
           [{$product->oxarticles__oxshortdesc->value }]
@@ -105,7 +105,7 @@
         <div class="priceBlocktop" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
             [{oxhasrights ident="TOBASKET"}]
                 [{$smarty.capture.product_price}]
-                <span class="mwst">[{*oxmultilang ident="TRO_INKL_MST"*}]</span>
+                <span class="mwst">[{oxmultilang ident="TRO_INKL_MST"}]</span>
                 <span class="artno">[{oxmultilang ident="TRO_ARTNO"}]: [{ $product->oxarticles__oxartnum->value }]</span>
             [{/oxhasrights}]
         </div>
@@ -171,7 +171,7 @@
     <meta itemprop='productID' content='sku:[{ $product->oxarticles__oxartnum->value }]'>
     
         <span itemprop="name">
-          [{*$product->oxarticles__oxtitle->value*}]
+          [{$product->oxarticles__oxtitle->value}]
 [{*D3 Modul "extSearch" CHANGE START}]
                 <a id="[{$testid}]" href="[{$_productLink}]" class="title" title="[{ $product->oxarticles__oxtitle->value}] [{$product->oxarticles__oxvarselect->value}]">
                     <span>[{ d3_extsearch_highlight text=$product->oxarticles__oxtitle->value }] [{ d3_extsearch_highlight text=$product->oxarticles__oxvarselect->value}]</span>

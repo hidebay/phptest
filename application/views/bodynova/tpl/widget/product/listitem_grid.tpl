@@ -41,7 +41,7 @@
     [{capture name=product_price}]
         [{block name="widget_product_listitem_grid_price"}]
             [{oxhasrights ident="SHOWARTICLEPRICE"}]
-                [{if $product->oxarticles__troshowprice == '1'}]
+                [{if $product->oxarticles__bodyshowprice == '1'}]
                     [{assign var=tprice value=$product->getTPrice()}]
                     [{assign var=price  value=$product->getPrice()}]
                     [{if $tprice && $tprice->getBruttoPrice() > $price->getBruttoPrice()}]

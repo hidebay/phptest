@@ -63,7 +63,7 @@ ini_set("display_errors", "on");
     //  5 = Delivery Cost calculation info
     //  6 = SMTP Debug Messages
     //  7 = oxDbDebug SQL parser
-    $this->iDebug = 8;
+    $this->iDebug = 1;
 
     // Log all modifications performed in Admin
     $this->blLogChangesInAdmin = false;
@@ -88,7 +88,7 @@ ini_set("display_errors", "on");
 
     // uncomment the following line if you want to leave euro sign unchanged in output
     // by default is set to convert euro sign symbol to html entity
-    // $this->blSkipEuroReplace = true;
+     $this->blSkipEuroReplace = false;
 
 
     // List of all Search-Engine Robots
@@ -184,7 +184,7 @@ ini_set("display_errors", "on");
     /**
      * Default database conection character set
      */
-    $this->sDefaultDatabaseConnection = '';
+    $this->sDefaultDatabaseConnection = 'latin1';
 
     /**
      * Additional multi language tables

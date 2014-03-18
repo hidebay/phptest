@@ -23,7 +23,7 @@ $aTheme = array(
     'description'  => 'Bodynova Theme by Bodynova',
     'thumbnail'    => 'theme.jpg',
     'version'      => '0.1',
-    'author'       => 'A. Bender',
+    'author'       => 'Andre Bender',
     'parentTheme'  => 'azure',
    'parentVersions' => array('1.3'),
 );

@@ -1,9 +1,8 @@
-<?php /* Smarty version 2.6.26, created on 2014-03-18 12:03:09
+<?php /* Smarty version 2.6.26, created on 2014-03-18 13:46:46
          compiled from widget/header/loginbox.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
-smarty_core_load_plugins(array('plugins' => array(array('function', 'oxscript', 'widget/header/loginbox.tpl', 2, false),array('function', 'oxmultilang', 'widget/header/loginbox.tpl', 18, false),)), $this); ?>
-<div style='position: absolute; z-index:9999;color:white;background: #789;
-                 padding:0 15 0 15'>widget/header/loginbox.tpl</div><!-- widget/header/loginbox.tpl template start --><?php echo smarty_function_oxscript(array('include' => "js/widgets/oxloginbox.js",'priority' => 10), $this);?>
+smarty_core_load_plugins(array('plugins' => array(array('function', 'oxscript', 'widget/header/loginbox.tpl', 1, false),array('function', 'oxmultilang', 'widget/header/loginbox.tpl', 17, false),)), $this); ?>
+<?php echo smarty_function_oxscript(array('include' => "js/widgets/oxloginbox.js",'priority' => 10), $this);?>
 
 <?php echo smarty_function_oxscript(array('add' => "$( '#loginBoxOpener' ).oxLoginBox();"), $this);?>
 
@@ -104,4 +103,3 @@ unset($_smarty_tpl_vars);
 "><?php echo smarty_function_oxmultilang(array('ident' => 'LOGOUT'), $this);?>
 </a>
 <?php endif; ?>
-<!-- widget/header/loginbox.tpl template end -->
