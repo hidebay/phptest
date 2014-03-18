@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.26, created on 2014-03-17 14:40:48
+<?php /* Smarty version 2.6.26, created on 2014-03-18 12:02:34
          compiled from message/errors.tpl */ ?>
 <div style='position: absolute; z-index:9999;color:white;background: #789;
                  padding:0 15 0 15'>message/errors.tpl</div><!-- message/errors.tpl template start --><?php if (count ( $this->_tpl_vars['Errors'] ) > 0 && count ( $this->_tpl_vars['Errors']['default'] ) > 0): ?>

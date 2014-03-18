@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.26, created on 2014-03-17 14:46:24
+<?php /* Smarty version 2.6.26, created on 2014-03-18 12:02:33
          compiled from widget/header/servicebox.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
 smarty_core_load_plugins(array('plugins' => array(array('function', 'oxgetseourl', 'widget/header/servicebox.tpl', 15, false),array('function', 'oxmultilang', 'widget/header/servicebox.tpl', 15, false),array('modifier', 'cat', 'widget/header/servicebox.tpl', 15, false),)), $this); ?>

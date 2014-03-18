@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.26, created on 2014-03-17 14:40:48
+<?php /* Smarty version 2.6.26, created on 2014-03-18 12:02:33
          compiled from widget/sidebar/manufacturerssliderall.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
 smarty_core_load_plugins(array('plugins' => array(array('function', 'oxmultilang', 'widget/sidebar/manufacturerssliderall.tpl', 3, false),array('function', 'counter', 'widget/sidebar/manufacturerssliderall.tpl', 7, false),)), $this); ?>

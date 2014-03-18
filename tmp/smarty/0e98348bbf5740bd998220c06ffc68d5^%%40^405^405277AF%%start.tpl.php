@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.26, created on 2014-03-17 14:40:47
+<?php /* Smarty version 2.6.26, created on 2014-03-18 12:02:33
          compiled from page/shop/start.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
 smarty_core_load_plugins(array('plugins' => array(array('function', 'oxscript', 'page/shop/start.tpl', 2, false),array('modifier', 'count', 'page/shop/start.tpl', 6, false),array('modifier', 'oxmultilangassign', 'page/shop/start.tpl', 53, false),array('insert', 'oxid_tracker', 'page/shop/start.tpl', 66, false),)), $this); ?>

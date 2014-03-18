@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.26, created on 2014-03-18 09:39:41
+<?php /* Smarty version 2.6.26, created on 2014-03-18 12:02:34
          compiled from ox:trofooterinfoc2feceb5f6afaf6154bb27c7d12a3c570 */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
 smarty_core_load_plugins(array('plugins' => array(array('block', 'oxifcontent', 'ox:trofooterinfoc2feceb5f6afaf6154bb27c7d12a3c570', 3, false),array('function', 'oxgetseourl', 'ox:trofooterinfoc2feceb5f6afaf6154bb27c7d12a3c570', 24, false),array('function', 'oxmultilang', 'ox:trofooterinfoc2feceb5f6afaf6154bb27c7d12a3c570', 24, false),array('modifier', 'cat', 'ox:trofooterinfoc2feceb5f6afaf6154bb27c7d12a3c570', 24, false),)), $this); ?>

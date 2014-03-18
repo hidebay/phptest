@@ -1,0 +1,54 @@
+<?php /* Smarty version 2.6.26, created on 2014-03-18 12:03:09
+         compiled from form/forgotpwd_email.tpl */ ?>
+<?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
+smarty_core_load_plugins(array('plugins' => array(array('function', 'oxmultilang', 'form/forgotpwd_email.tpl', 2, false),array('function', 'oxscript', 'form/forgotpwd_email.tpl', 4, false),array('block', 'oxifcontent', 'form/forgotpwd_email.tpl', 28, false),)), $this); ?>
+<div style='position: absolute; z-index:9999;color:white;background: #789;
+                 padding:0 15 0 15'>form/forgotpwd_email.tpl</div><!-- form/forgotpwd_email.tpl template start --><?php echo smarty_function_oxmultilang(array('ident' => 'HAVE_YOU_FORGOTTEN_PASSWORD'), $this);?>
+<br>
+<?php echo smarty_function_oxmultilang(array('ident' => 'HERE_YOU_SET_UP_NEW_PASSWORD'), $this);?>
+<br><br>
+<?php echo smarty_function_oxscript(array('include' => "js/widgets/oxinputvalidator.js",'priority' => 10), $this);?>
+
+<?php echo smarty_function_oxscript(array('add' => "$('form.js-oxValidate').oxInputValidator();"), $this);?>
+
+<form class="js-oxValidate" action="<?php echo $this->_tpl_vars['oViewConf']->getSelfActionLink(); ?>
+" name="forgotpwd" method="post">
+  <?php echo $this->_tpl_vars['oViewConf']->getHiddenSid(); ?>
+
+  <?php echo $this->_tpl_vars['oViewConf']->getNavFormParams(); ?>
+
+  <input type="hidden" name="fnc" value="forgotpassword">
+  <input type="hidden" name="cl" value="forgotpwd">
+  <input type="hidden" name="actcontrol" value="forgotpwd">
+  <ul class="form clear">
+    <li>
+        <label><?php echo smarty_function_oxmultilang(array('ident' => 'YOUR_EMAIL_ADDRESS','suffix' => 'COLON'), $this);?>
+</label>
+        <input id="forgotPasswordUserLoginName<?php echo $this->_tpl_vars['idPrefix']; ?>
+" type="text" name="lgn_usr" value="<?php echo $this->_tpl_vars['oView']->getActiveUsername(); ?>
+" class="js-oxValidate js-oxValidate_notEmpty js-oxValidate_email">
+        <p class="oxValidateError">
+            <span class="js-oxError_notEmpty"><?php echo smarty_function_oxmultilang(array('ident' => 'ERROR_MESSAGE_INPUT_NOTALLFIELDS'), $this);?>
+</span>
+            <span class="js-oxError_email"><?php echo smarty_function_oxmultilang(array('ident' => 'ERROR_MESSAGE_INPUT_NOVALIDEMAIL'), $this);?>
+</span>
+            <?php $_smarty_tpl_vars = $this->_tpl_vars;
+$this->_smarty_include(array('smarty_include_tpl_file' => "message/inputvalidation.tpl", 'smarty_include_vars' => array('aErrors' => $this->_tpl_vars['aErrors']['oxuser__oxusername'])));
+$this->_tpl_vars = $_smarty_tpl_vars;
+unset($_smarty_tpl_vars);
+ ?>
+        </p>
+    </li>
+    <li class="formSubmit">
+        <button class="submitButton" type="submit"><?php echo smarty_function_oxmultilang(array('ident' => 'REQUEST_PASSWORD'), $this);?>
+</button>
+    </li>
+  </ul>
+</form>
+<?php echo smarty_function_oxmultilang(array('ident' => 'REQUEST_PASSWORD_AFTERCLICK'), $this);?>
+<br><br>
+<?php $this->_tag_stack[] = array('oxifcontent', array('ident' => 'oxforgotpwd','object' => 'oCont')); $_block_repeat=true;smarty_block_oxifcontent($this->_tag_stack[count($this->_tag_stack)-1][1], null, $this, $_block_repeat);while ($_block_repeat) { ob_start(); ?>
+    <?php echo $this->_tpl_vars['oCont']->oxcontents__oxcontent->value; ?>
+
+<?php $_block_content = ob_get_contents(); ob_end_clean(); $_block_repeat=false;echo smarty_block_oxifcontent($this->_tag_stack[count($this->_tag_stack)-1][1], $_block_content, $this, $_block_repeat); }  array_pop($this->_tag_stack); ?>
+<!-- form/forgotpwd_email.tpl template end -->

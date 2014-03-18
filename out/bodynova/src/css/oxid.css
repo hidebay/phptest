@@ -6214,8 +6214,7 @@ div.anythingSlider .arrow {
   display: block;
   width: 48px !important;
   height: 40px !important;
-  /*border-radius: none !important;*/
-  border-radius: 0px !important;
+  border-radius: 0 !important;
   box-shadow: none;
   opacity: 1;
 }

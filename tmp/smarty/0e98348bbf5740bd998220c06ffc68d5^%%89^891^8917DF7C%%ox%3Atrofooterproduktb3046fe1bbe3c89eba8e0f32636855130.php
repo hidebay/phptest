@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.26, created on 2014-03-18 09:39:41
+<?php /* Smarty version 2.6.26, created on 2014-03-18 12:02:34
          compiled from ox:trofooterproduktb3046fe1bbe3c89eba8e0f32636855130 */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
 smarty_core_load_plugins(array('plugins' => array(array('block', 'oxifcontent', 'ox:trofooterproduktb3046fe1bbe3c89eba8e0f32636855130', 7, false),array('function', 'oxgetseourl', 'ox:trofooterproduktb3046fe1bbe3c89eba8e0f32636855130', 17, false),)), $this); ?>

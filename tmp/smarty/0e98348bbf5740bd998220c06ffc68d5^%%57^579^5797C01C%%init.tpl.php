@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.26, created on 2014-03-17 14:40:48
+<?php /* Smarty version 2.6.26, created on 2014-03-18 12:02:34
          compiled from widget/facebook/init.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
 smarty_core_load_plugins(array('plugins' => array(array('function', 'oxscript', 'widget/facebook/init.tpl', 4, false),array('function', 'oxmultilang', 'widget/facebook/init.tpl', 10, false),array('block', 'oxifcontent', 'widget/facebook/init.tpl', 11, false),array('modifier', 'oxmultilangassign', 'widget/facebook/init.tpl', 19, false),array('modifier', 'oxaddparams', 'widget/facebook/init.tpl', 20, false),)), $this); ?>

@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.26, created on 2014-03-17 14:40:48
+<?php /* Smarty version 2.6.26, created on 2014-03-18 12:02:33
          compiled from widget/toparticlesslider.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
 smarty_core_load_plugins(array('plugins' => array(array('modifier', 'count', 'widget/toparticlesslider.tpl', 5, false),array('function', 'counter', 'widget/toparticlesslider.tpl', 8, false),array('function', 'oxmultilang', 'widget/toparticlesslider.tpl', 24, false),array('function', 'oxscript', 'widget/toparticlesslider.tpl', 71, false),array('block', 'oxhasrights', 'widget/toparticlesslider.tpl', 32, false),)), $this); ?>

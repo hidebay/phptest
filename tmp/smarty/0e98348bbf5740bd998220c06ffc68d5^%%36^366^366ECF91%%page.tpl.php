@@ -1,7 +1,7 @@
-<?php /* Smarty version 2.6.26, created on 2014-03-17 14:40:48
+<?php /* Smarty version 2.6.26, created on 2014-03-18 12:02:33
          compiled from layout/page.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
-smarty_core_load_plugins(array('plugins' => array(array('function', 'debug', 'layout/page.tpl', 12, false),array('function', 'oxmultilang', 'layout/page.tpl', 51, false),array('block', 'oxifcontent', 'layout/page.tpl', 43, false),)), $this); ?>
+smarty_core_load_plugins(array('plugins' => array(array('block', 'oxifcontent', 'layout/page.tpl', 41, false),array('function', 'oxmultilang', 'layout/page.tpl', 49, false),)), $this); ?>
 <div style='position: absolute; z-index:9999;color:white;background: #789;
                  padding:0 15 0 15'>layout/page.tpl</div><!-- layout/page.tpl template start --><?php ob_start(); ?>
         <div id="welle1"></div>
@@ -16,10 +16,7 @@ $this->_smarty_include(array('smarty_include_tpl_file' => "layout/header.tpl", '
 $this->_tpl_vars = $_smarty_tpl_vars;
 unset($_smarty_tpl_vars);
  ?>
-        <div id="contentWrapper">
-<?php echo smarty_function_debug(array(), $this);?>
-            
-
+        <div id="contentWrapper">            
                         <?php if ($this->_tpl_vars['sidebar']): ?>
                 <div id="sidebar">
                     <?php $_smarty_tpl_vars = $this->_tpl_vars;

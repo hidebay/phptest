@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.26, created on 2014-03-18 09:39:40
+<?php /* Smarty version 2.6.26, created on 2014-03-18 12:02:33
          compiled from ox:troheadercenter4b2881fa2b0eb08a2dec42d97c7ef60e0 */ ?>
 <div style='position: absolute; z-index:9999;color:white;background: #789;
                  padding:0 15 0 15'>ox:troheadercenter4b2881fa2b0eb08a2dec42d97c7ef60e0</div><!-- ox:troheadercenter4b2881fa2b0eb08a2dec42d97c7ef60e0 template start -->          <div id="headercenter">

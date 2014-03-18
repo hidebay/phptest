@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.26, created on 2014-03-18 09:39:40
+<?php /* Smarty version 2.6.26, created on 2014-03-18 12:02:33
          compiled from ox:oxforgotpwdc513746e2b5c1f6c1ccba79dde36184e0 */ ?>
 <div style='position: absolute; z-index:9999;color:white;background: #789;
                  padding:0 15 0 15'>ox:oxforgotpwdc513746e2b5c1f6c1ccba79dde36184e0</div><!-- ox:oxforgotpwdc513746e2b5c1f6c1ccba79dde36184e0 template start -->    Sollten Sie innerhalb der nächsten Minuten KEINE E-Mail mit Ihren Zugangsdaten erhalten, so überprüfen Sie bitte: Haben Sie sich in unserem Shop bereits registriert? Wenn nicht, so tun Sie dies bitte einmalig im Rahmen des Bestellprozesses. Sie können dann selbst ein Passwort festlegen. Sobald Sie registriert sind, können Sie sich in Zukunft mit Ihrer E-Mail-Adresse und Ihrem Passwort einloggen.
