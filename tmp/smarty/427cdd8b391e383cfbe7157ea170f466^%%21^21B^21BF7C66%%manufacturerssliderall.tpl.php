@@ -1,8 +1,9 @@
-<?php /* Smarty version 2.6.26, created on 2014-03-18 15:51:20
+<?php /* Smarty version 2.6.26, created on 2014-03-31 21:05:32
          compiled from widget/sidebar/manufacturerssliderall.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
-smarty_core_load_plugins(array('plugins' => array(array('function', 'oxmultilang', 'widget/sidebar/manufacturerssliderall.tpl', 2, false),array('function', 'counter', 'widget/sidebar/manufacturerssliderall.tpl', 6, false),)), $this); ?>
-<div class="manuslider">
+smarty_core_load_plugins(array('plugins' => array(array('function', 'oxmultilang', 'widget/sidebar/manufacturerssliderall.tpl', 3, false),array('function', 'counter', 'widget/sidebar/manufacturerssliderall.tpl', 7, false),)), $this); ?>
+<div style='position: absolute; z-index:9999;color:white;background: #789;
+                 padding:0 15 0 15'>widget/sidebar/manufacturerssliderall.tpl</div><!-- widget/sidebar/manufacturerssliderall.tpl template start --><div class="manuslider">
   <h3 class="sectionHead"><?php echo smarty_function_oxmultilang(array('ident' => 'TRO_MANUFACTURERS'), $this);?>
 </h3>
   <?php ob_start(); ?>
@@ -38,4 +39,4 @@ smarty_core_load_plugins(array('plugins' => array(array('function', 'oxmultilang
             </ul>
         </div>
     </div>  
-</div>
+</div><!-- widget/sidebar/manufacturerssliderall.tpl template end -->

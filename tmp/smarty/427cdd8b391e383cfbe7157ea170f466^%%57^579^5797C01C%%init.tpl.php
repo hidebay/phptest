@@ -1,8 +1,9 @@
-<?php /* Smarty version 2.6.26, created on 2014-03-18 15:51:20
+<?php /* Smarty version 2.6.26, created on 2014-03-31 21:05:32
          compiled from widget/facebook/init.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
-smarty_core_load_plugins(array('plugins' => array(array('function', 'oxscript', 'widget/facebook/init.tpl', 3, false),array('function', 'oxmultilang', 'widget/facebook/init.tpl', 9, false),array('block', 'oxifcontent', 'widget/facebook/init.tpl', 10, false),array('modifier', 'oxmultilangassign', 'widget/facebook/init.tpl', 18, false),array('modifier', 'oxaddparams', 'widget/facebook/init.tpl', 19, false),)), $this); ?>
-<?php if ($this->_tpl_vars['oViewConf']->getFbAppId()): ?>
+smarty_core_load_plugins(array('plugins' => array(array('function', 'oxscript', 'widget/facebook/init.tpl', 4, false),array('function', 'oxmultilang', 'widget/facebook/init.tpl', 10, false),array('block', 'oxifcontent', 'widget/facebook/init.tpl', 11, false),array('modifier', 'oxmultilangassign', 'widget/facebook/init.tpl', 19, false),array('modifier', 'oxaddparams', 'widget/facebook/init.tpl', 20, false),)), $this); ?>
+<div style='position: absolute; z-index:9999;color:white;background: #789;
+                 padding:0 15 0 15'>widget/facebook/init.tpl</div><!-- widget/facebook/init.tpl template start --><?php if ($this->_tpl_vars['oViewConf']->getFbAppId()): ?>
     <div id="fb-root"></div>
     <?php echo smarty_function_oxscript(array('include' => "js/widgets/oxmodalpopup.js"), $this);?>
 
@@ -44,4 +45,4 @@ smarty_core_load_plugins(array('plugins' => array(array('function', 'oxscript', 
     <?php endif; ?>
     <?php echo smarty_function_oxscript(array('add' => ($this->_smarty_vars['capture']['facebookInit'])), $this);?>
 
-<?php endif; ?>
+<?php endif; ?><!-- widget/facebook/init.tpl template end -->

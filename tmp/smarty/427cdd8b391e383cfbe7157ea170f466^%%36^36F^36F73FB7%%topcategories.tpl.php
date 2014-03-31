@@ -1,8 +1,9 @@
-<?php /* Smarty version 2.6.26, created on 2014-03-18 15:51:20
+<?php /* Smarty version 2.6.26, created on 2014-03-31 21:05:32
          compiled from widget/header/topcategories.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
-smarty_core_load_plugins(array('plugins' => array(array('function', 'oxscript', 'widget/header/topcategories.tpl', 1, false),array('function', 'oxstyle', 'widget/header/topcategories.tpl', 3, false),array('function', 'counter', 'widget/header/topcategories.tpl', 55, false),array('function', 'oxgetseourl', 'widget/header/topcategories.tpl', 165, false),array('modifier', 'count', 'widget/header/topcategories.tpl', 19, false),array('modifier', 'ceil', 'widget/header/topcategories.tpl', 75, false),array('modifier', 'cat', 'widget/header/topcategories.tpl', 158, false),array('modifier', 'explode', 'widget/header/topcategories.tpl', 160, false),array('modifier', 'replace', 'widget/header/topcategories.tpl', 163, false),)), $this); ?>
-<?php echo smarty_function_oxscript(array('include' => "js/widgets/oxtopmenu.js",'priority' => 10), $this);?>
+smarty_core_load_plugins(array('plugins' => array(array('function', 'oxscript', 'widget/header/topcategories.tpl', 2, false),array('function', 'oxstyle', 'widget/header/topcategories.tpl', 4, false),array('function', 'counter', 'widget/header/topcategories.tpl', 56, false),array('modifier', 'count', 'widget/header/topcategories.tpl', 20, false),array('modifier', 'ceil', 'widget/header/topcategories.tpl', 76, false),)), $this); ?>
+<div style='position: absolute; z-index:9999;color:white;background: #789;
+                 padding:0 15 0 15'>widget/header/topcategories.tpl</div><!-- widget/header/topcategories.tpl template start --><?php echo smarty_function_oxscript(array('include' => "js/widgets/oxtopmenu.js",'priority' => 10), $this);?>
 
 <?php echo smarty_function_oxscript(array('add' => "$('#navigation').oxTopMenu();"), $this);?>
 
@@ -215,20 +216,6 @@ if ($this->_foreach['SubSubCat']['total'] > 0):
     <?php endforeach; endif; unset($_from); ?>
     <?php $this->assign('actCatregory', $this->_tpl_vars['oView']->getActiveCategory()); ?>
     
-    <li class="last<?php if ($this->_tpl_vars['actCategory']->oxcategories__oxtitle->value == 'ANGEBOTE'): ?>current<?php endif; ?>">
-      <?php $this->assign('offerlink', ((is_array($_tmp=$this->_tpl_vars['oViewConf']->getSelfLink())) ? $this->_run_mod_handler('cat', true, $_tmp, "/Angebote") : smarty_modifier_cat($_tmp, "/Angebote"))); ?>
-      <?php $this->assign('tmplink', $this->_tpl_vars['oViewConf']->getSelfLink()); ?>
-      <?php $this->assign('splitti', ((is_array($_tmp="?")) ? $this->_run_mod_handler('explode', true, $_tmp, $this->_tpl_vars['tmplink']) : explode($_tmp, $this->_tpl_vars['tmplink']))); ?>
-      <?php $this->assign('link', $this->_tpl_vars['splitti'][0]); ?>
-      <?php $this->assign('param', $this->_tpl_vars['splitti'][1]); ?>
-      <!--<a href="<?php echo ((is_array($_tmp=$this->_tpl_vars['offerlink'])) ? $this->_run_mod_handler('replace', true, $_tmp, '/index.php?', '') : smarty_modifier_replace($_tmp, '/index.php?', '')); ?>
-"><?php echo $this->_tpl_vars['oViewConf']->getSelfLink(); ?>
-</a>-->
-      <!--<a href="<?php echo ((is_array($_tmp=$this->_tpl_vars['link'])) ? $this->_run_mod_handler('replace', true, $_tmp, '/index.php', '') : smarty_modifier_replace($_tmp, '/index.php', '')); ?>
-/ANGEBOTE?<?php echo $this->_tpl_vars['param']; ?>
-">&nbsp;</a>-->
-      <a href="<?php echo smarty_function_oxgetseourl(array('ident' => ((is_array($_tmp=((is_array($_tmp=$this->_tpl_vars['oViewConf']->getSelfLink())) ? $this->_run_mod_handler('cat', true, $_tmp, 'cl=alist') : smarty_modifier_cat($_tmp, 'cl=alist')))) ? $this->_run_mod_handler('cat', true, $_tmp, '&amp;cnid=fc70cac08dba4163848d70cbab85d2dc') : smarty_modifier_cat($_tmp, '&amp;cnid=fc70cac08dba4163848d70cbab85d2dc'))), $this);?>
-"></a>
-    </li>
-    
+        
     </ul>
+<!-- widget/header/topcategories.tpl template end -->

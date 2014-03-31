@@ -1,8 +1,9 @@
-<?php /* Smarty version 2.6.26, created on 2014-03-18 15:51:20
+<?php /* Smarty version 2.6.26, created on 2014-03-31 21:05:32
          compiled from layout/footer.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
-smarty_core_load_plugins(array('plugins' => array(array('function', 'oxscript', 'layout/footer.tpl', 2, false),array('function', 'oxmultilang', 'layout/footer.tpl', 27, false),array('block', 'oxifcontent', 'layout/footer.tpl', 29, false),)), $this); ?>
-
+smarty_core_load_plugins(array('plugins' => array(array('function', 'oxscript', 'layout/footer.tpl', 3, false),array('function', 'oxmultilang', 'layout/footer.tpl', 28, false),array('block', 'oxifcontent', 'layout/footer.tpl', 30, false),)), $this); ?>
+<div style='position: absolute; z-index:9999;color:white;background: #789;
+                 padding:0 15 0 15'>layout/footer.tpl</div><!-- layout/footer.tpl template start -->
     <?php echo smarty_function_oxscript(array('include' => "js/widgets/oxequalizer.js",'priority' => 10), $this);?>
 
     <?php echo smarty_function_oxscript(array('add' => "$(function(){oxEqualizer.equalHeight($( '#panel dl' ));});"), $this);?>
@@ -12,7 +13,7 @@ smarty_core_load_plugins(array('plugins' => array(array('function', 'oxscript', 
                 
                 
                     <dl id="footerInformation">
-                        <dt><?php echo smarty_function_oxmultilang(array('ident' => 'FOOTER_INFORMATION'), $this);?>
+                        <dt><?php echo smarty_function_oxmultilang(array('ident' => 'INFORMATION'), $this);?>
 </dt>
                         <dd>
                         <?php $this->_tag_stack[] = array('oxifcontent', array('ident' => 'trofooterinfo','object' => 'oContent')); $_block_repeat=true;smarty_block_oxifcontent($this->_tag_stack[count($this->_tag_stack)-1][1], null, $this, $_block_repeat);while ($_block_repeat) { ob_start(); ?>
@@ -25,7 +26,7 @@ smarty_core_load_plugins(array('plugins' => array(array('function', 'oxscript', 
 
                 
                     <dl class="services" id="footerServices">
-                  <!--<div--><dt id="service1"><!--<dt>--><strong><?php echo smarty_function_oxmultilang(array('ident' => 'FOOTER_SERVICES'), $this);?>
+                  <!--<div--><dt id="service1"><!--<dt>--><strong><?php echo smarty_function_oxmultilang(array('ident' => 'SERVICES'), $this);?>
 </strong>
                         </dt><!--</div>-->
                         <dd id="service2"><!--<dd>-->
@@ -47,7 +48,8 @@ smarty_core_load_plugins(array('plugins' => array(array('function', 'oxscript', 
 
                                                 <!--</dd>--></dd>
                     </dl>
-                <?php $_block_content = ob_get_contents(); ob_end_clean(); $_block_repeat=false;echo smarty_block_oxifcontent($this->_tag_stack[count($this->_tag_stack)-1][1], $_block_content, $this, $_block_repeat); }  array_pop($this->_tag_stack); ?>                    
+                <?php $_block_content = ob_get_contents(); ob_end_clean(); $_block_repeat=false;echo smarty_block_oxifcontent($this->_tag_stack[count($this->_tag_stack)-1][1], $_block_content, $this, $_block_repeat); }  array_pop($this->_tag_stack); ?>
+                    
                 
 				
             
@@ -91,7 +93,7 @@ if($date["seconds"] > 29){
 }	
 echo " aktualisiert. ";
 $datei = fopen("counter.txt","r+");
-$counterstand = fgets($datei, 10);
+$counterstand = fgets($datei, 6);
 if($counterstand == "")
 {
   $counterstand = 0;
@@ -103,3 +105,5 @@ fwrite($datei, $counterstand);
 fclose($datei);
  ?>
 <p>&copy; 1998-<?php  echo date("Y");  ?> All rights reserved</p>
+
+<!-- layout/footer.tpl template end -->

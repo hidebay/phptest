@@ -1,8 +1,9 @@
-<?php /* Smarty version 2.6.26, created on 2014-03-18 15:51:20
+<?php /* Smarty version 2.6.26, created on 2014-03-31 21:05:31
          compiled from widget/header/loginbox.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
-smarty_core_load_plugins(array('plugins' => array(array('function', 'oxscript', 'widget/header/loginbox.tpl', 1, false),array('function', 'oxmultilang', 'widget/header/loginbox.tpl', 17, false),)), $this); ?>
-<?php echo smarty_function_oxscript(array('include' => "js/widgets/oxloginbox.js",'priority' => 10), $this);?>
+smarty_core_load_plugins(array('plugins' => array(array('function', 'oxscript', 'widget/header/loginbox.tpl', 2, false),array('function', 'oxmultilang', 'widget/header/loginbox.tpl', 18, false),)), $this); ?>
+<div style='position: absolute; z-index:9999;color:white;background: #789;
+                 padding:0 15 0 15'>widget/header/loginbox.tpl</div><!-- widget/header/loginbox.tpl template start --><?php echo smarty_function_oxscript(array('include' => "js/widgets/oxloginbox.js",'priority' => 10), $this);?>
 
 <?php echo smarty_function_oxscript(array('add' => "$( '#loginBoxOpener' ).oxLoginBox();"), $this);?>
 
@@ -80,7 +81,7 @@ unset($_smarty_tpl_vars);
                 <p class="checkFields clear">
                   <input type="hidden" name="blnewssubscribed" value="0">
                   <input id="subscribeNewsletter" class="checkbox" type="checkbox" name="blnewssubscribed" value="1">                  
-                  <label for="subscribeNewsletter"><?php echo smarty_function_oxmultilang(array('ident' => 'FORM_FIELDSET_USER_SUBSCRIBENEWSLETTER'), $this);?>
+                  <label for="subscribeNewsletter"><?php echo smarty_function_oxmultilang(array('ident' => 'NEWSLETTER_SUBSCRIPTION'), $this);?>
 </label>
                 </p>
                 <button type="submit" class="submitButton loginButton"><?php echo smarty_function_oxmultilang(array('ident' => 'TRO_OK'), $this);?>
@@ -103,3 +104,4 @@ unset($_smarty_tpl_vars);
 "><?php echo smarty_function_oxmultilang(array('ident' => 'LOGOUT'), $this);?>
 </a>
 <?php endif; ?>
+<!-- widget/header/loginbox.tpl template end -->

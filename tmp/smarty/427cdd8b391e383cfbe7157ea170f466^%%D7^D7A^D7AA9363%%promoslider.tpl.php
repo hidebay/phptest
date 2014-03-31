@@ -1,8 +1,9 @@
-<?php /* Smarty version 2.6.26, created on 2014-03-18 15:51:20
+<?php /* Smarty version 2.6.26, created on 2014-03-31 21:05:32
          compiled from widget/promoslider.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
-smarty_core_load_plugins(array('plugins' => array(array('modifier', 'count', 'widget/promoslider.tpl', 3, false),array('modifier', 'oxmultilangassign', 'widget/promoslider.tpl', 24, false),array('function', 'oxstyle', 'widget/promoslider.tpl', 4, false),array('function', 'oxscript', 'widget/promoslider.tpl', 5, false),array('function', 'oxprice', 'widget/promoslider.tpl', 28, false),)), $this); ?>
-<?php $this->assign('oBanners', $this->_tpl_vars['oView']->getBanners()); ?>
+smarty_core_load_plugins(array('plugins' => array(array('modifier', 'count', 'widget/promoslider.tpl', 4, false),array('modifier', 'oxmultilangassign', 'widget/promoslider.tpl', 25, false),array('function', 'oxstyle', 'widget/promoslider.tpl', 5, false),array('function', 'oxscript', 'widget/promoslider.tpl', 6, false),array('function', 'oxprice', 'widget/promoslider.tpl', 29, false),)), $this); ?>
+<div style='position: absolute; z-index:9999;color:white;background: #789;
+                 padding:0 15 0 15'>widget/promoslider.tpl</div><!-- widget/promoslider.tpl template start --><?php $this->assign('oBanners', $this->_tpl_vars['oView']->getBanners()); ?>
 <?php $this->assign('currency', $this->_tpl_vars['oView']->getActCurrency()); ?>
 <?php if (count($this->_tpl_vars['oBanners'])): ?>
     <?php echo smarty_function_oxstyle(array('include' => "css/libs/anythingslider.css"), $this);?>
@@ -58,3 +59,4 @@ smarty_core_load_plugins(array('plugins' => array(array('modifier', 'count', 'wi
         <?php endforeach; endif; unset($_from); ?>
     </ul>
 <?php endif; ?>
+<!-- widget/promoslider.tpl template end -->

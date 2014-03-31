@@ -1,8 +1,9 @@
-<?php /* Smarty version 2.6.26, created on 2014-03-18 15:51:20
+<?php /* Smarty version 2.6.26, created on 2014-03-31 21:05:31
          compiled from form/forgotpwd_email.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
-smarty_core_load_plugins(array('plugins' => array(array('function', 'oxmultilang', 'form/forgotpwd_email.tpl', 1, false),array('function', 'oxscript', 'form/forgotpwd_email.tpl', 3, false),array('block', 'oxifcontent', 'form/forgotpwd_email.tpl', 27, false),)), $this); ?>
-<?php echo smarty_function_oxmultilang(array('ident' => 'HAVE_YOU_FORGOTTEN_PASSWORD'), $this);?>
+smarty_core_load_plugins(array('plugins' => array(array('function', 'oxmultilang', 'form/forgotpwd_email.tpl', 2, false),array('function', 'oxscript', 'form/forgotpwd_email.tpl', 4, false),array('block', 'oxifcontent', 'form/forgotpwd_email.tpl', 28, false),)), $this); ?>
+<div style='position: absolute; z-index:9999;color:white;background: #789;
+                 padding:0 15 0 15'>form/forgotpwd_email.tpl</div><!-- form/forgotpwd_email.tpl template start --><?php echo smarty_function_oxmultilang(array('ident' => 'HAVE_YOU_FORGOTTEN_PASSWORD'), $this);?>
 <br>
 <?php echo smarty_function_oxmultilang(array('ident' => 'HERE_YOU_SET_UP_NEW_PASSWORD'), $this);?>
 <br><br>
@@ -50,3 +51,4 @@ unset($_smarty_tpl_vars);
     <?php echo $this->_tpl_vars['oCont']->oxcontents__oxcontent->value; ?>
 
 <?php $_block_content = ob_get_contents(); ob_end_clean(); $_block_repeat=false;echo smarty_block_oxifcontent($this->_tag_stack[count($this->_tag_stack)-1][1], $_block_content, $this, $_block_repeat); }  array_pop($this->_tag_stack); ?>
+<!-- form/forgotpwd_email.tpl template end -->

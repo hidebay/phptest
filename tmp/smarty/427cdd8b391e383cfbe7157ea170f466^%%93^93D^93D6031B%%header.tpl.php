@@ -1,8 +1,9 @@
-<?php /* Smarty version 2.6.26, created on 2014-03-18 15:51:20
+<?php /* Smarty version 2.6.26, created on 2014-03-31 21:05:31
          compiled from layout/header.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
-smarty_core_load_plugins(array('plugins' => array(array('block', 'oxifcontent', 'layout/header.tpl', 7, false),array('function', 'oxmultilang', 'layout/header.tpl', 10, false),array('function', 'oxgetseourl', 'layout/header.tpl', 12, false),array('function', 'oxid_include_dynamic', 'layout/header.tpl', 30, false),array('modifier', 'cat', 'layout/header.tpl', 11, false),array('modifier', 'oxtruncate', 'layout/header.tpl', 16, false),)), $this); ?>
-<div id="header" class="clear">
+smarty_core_load_plugins(array('plugins' => array(array('block', 'oxifcontent', 'layout/header.tpl', 8, false),array('function', 'oxmultilang', 'layout/header.tpl', 11, false),array('function', 'oxgetseourl', 'layout/header.tpl', 13, false),array('function', 'oxid_include_dynamic', 'layout/header.tpl', 31, false),array('modifier', 'cat', 'layout/header.tpl', 12, false),array('modifier', 'oxtruncate', 'layout/header.tpl', 17, false),)), $this); ?>
+<div style='position: absolute; z-index:9999;color:white;background: #789;
+                 padding:0 15 0 15'>layout/header.tpl</div><!-- layout/header.tpl template start --><div id="header" class="clear">
       
       <?php $this->assign('slogoImg', "logo.png"); ?>
       <a id="logo" href="<?php echo $this->_tpl_vars['oViewConf']->getHomeLink(); ?>
@@ -99,3 +100,4 @@ unset($_smarty_tpl_vars);
     <?php endif; ?>
 
 </div>
+<!-- layout/header.tpl template end -->

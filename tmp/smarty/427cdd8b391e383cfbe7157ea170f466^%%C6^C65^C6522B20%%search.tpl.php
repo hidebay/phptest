@@ -1,8 +1,9 @@
-<?php /* Smarty version 2.6.26, created on 2014-03-18 15:51:20
+<?php /* Smarty version 2.6.26, created on 2014-03-31 21:05:32
          compiled from widget/header/search.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
-smarty_core_load_plugins(array('plugins' => array(array('function', 'oxscript', 'widget/header/search.tpl', 3, false),array('function', 'oxmultilang', 'widget/header/search.tpl', 9, false),)), $this); ?>
-
+smarty_core_load_plugins(array('plugins' => array(array('function', 'oxscript', 'widget/header/search.tpl', 4, false),array('function', 'oxmultilang', 'widget/header/search.tpl', 10, false),)), $this); ?>
+<div style='position: absolute; z-index:9999;color:white;background: #789;
+                 padding:0 15 0 15'>widget/header/search.tpl</div><!-- widget/header/search.tpl template start -->
 <?php if ($this->_tpl_vars['oView']->showSearch()): ?>
     <?php echo smarty_function_oxscript(array('include' => "js/widgets/oxinnerlabel.js",'priority' => 10), $this);?>
 
@@ -29,3 +30,4 @@ smarty_core_load_plugins(array('plugins' => array(array('function', 'oxscript', 
         </div>
     </form>
 <?php endif; ?>    
+<!-- widget/header/search.tpl template end -->

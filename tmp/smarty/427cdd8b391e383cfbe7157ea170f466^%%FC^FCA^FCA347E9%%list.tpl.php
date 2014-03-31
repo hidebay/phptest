@@ -1,8 +1,9 @@
-<?php /* Smarty version 2.6.26, created on 2014-03-18 15:51:19
+<?php /* Smarty version 2.6.26, created on 2014-03-31 21:05:31
          compiled from widget/product/list.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
-smarty_core_load_plugins(array('plugins' => array(array('function', 'oxscript', 'widget/product/list.tpl', 2, false),array('modifier', 'count', 'widget/product/list.tpl', 8, false),array('modifier', 'cat', 'widget/product/list.tpl', 11, false),)), $this); ?>
-<?php if ($this->_tpl_vars['type'] == 'line' || $this->_tpl_vars['type'] == 'infogrid'): ?>
+smarty_core_load_plugins(array('plugins' => array(array('function', 'oxscript', 'widget/product/list.tpl', 3, false),array('modifier', 'count', 'widget/product/list.tpl', 9, false),array('modifier', 'cat', 'widget/product/list.tpl', 12, false),)), $this); ?>
+<div style='position: absolute; z-index:9999;color:white;background: #789;
+                 padding:0 15 0 15'>widget/product/list.tpl</div><!-- widget/product/list.tpl template start --><?php if ($this->_tpl_vars['type'] == 'line' || $this->_tpl_vars['type'] == 'infogrid'): ?>
     <?php echo smarty_function_oxscript(array('include' => "js/widgets/oxcenterelementonhover.js",'priority' => 10), $this);?>
 
     <?php echo smarty_function_oxscript(array('add' => "$( '.pictureBox' ).oxCenterElementOnHover();"), $this);?>
@@ -29,4 +30,4 @@ unset($_smarty_tpl_vars);
  ?></li>
                     <?php endforeach; endif; unset($_from); ?>
     </ul>
-<?php endif; ?>
+<?php endif; ?><!-- widget/product/list.tpl template end -->

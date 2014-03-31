@@ -1,8 +1,9 @@
-<?php /* Smarty version 2.6.26, created on 2014-03-18 15:51:54
+<?php /* Smarty version 2.6.26, created on 2014-03-31 21:05:31
          compiled from page/list/list.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
-smarty_core_load_plugins(array('plugins' => array(array('function', 'oxscript', 'page/list/list.tpl', 1, false),array('function', 'oxeval', 'page/list/list.tpl', 16, false),array('function', 'oxmultilang', 'page/list/list.tpl', 101, false),array('modifier', 'count', 'page/list/list.tpl', 95, false),array('insert', 'oxid_tracker', 'page/list/list.tpl', 119, false),)), $this); ?>
-<?php echo smarty_function_oxscript(array('add' => "$('a.js-external').attr('target', '_blank');"), $this);?>
+smarty_core_load_plugins(array('plugins' => array(array('function', 'oxscript', 'page/list/list.tpl', 2, false),array('function', 'oxeval', 'page/list/list.tpl', 17, false),array('function', 'oxmultilang', 'page/list/list.tpl', 106, false),array('modifier', 'count', 'page/list/list.tpl', 96, false),array('modifier', 'escape', 'page/list/list.tpl', 111, false),array('insert', 'oxid_tracker', 'page/list/list.tpl', 133, false),)), $this); ?>
+<div style='position: absolute; z-index:9999;color:white;background: #789;
+                 padding:0 15 0 15'>page/list/list.tpl</div><!-- page/list/list.tpl template start --><?php echo smarty_function_oxscript(array('add' => "$('a.js-external').attr('target', '_blank');"), $this);?>
 
 <?php echo smarty_function_oxscript(array('include' => "js/widgets/oxarticlebox.js",'priority' => 10), $this);?>
 
@@ -139,21 +140,31 @@ if ($this->_foreach['MoreCms']['total'] > 0):
         <?php endif; ?>
 
     <?php if (count($this->_tpl_vars['oView']->getArticleList()) > 0): ?>
-        <h1 class="pageHead"><?php echo $this->_tpl_vars['oView']->getTitle(); ?>
-
-            <?php $this->assign('rsslinks', $this->_tpl_vars['oView']->getRssLinks()); ?>
-            <?php if ($this->_tpl_vars['rsslinks']['activeCategory']): ?>
-                <a class="rss js-external" id="rssActiveCategory" href="<?php echo $this->_tpl_vars['rsslinks']['activeCategory']['link']; ?>
-" title="<?php echo $this->_tpl_vars['rsslinks']['activeCategory']['title']; ?>
-"><img src="<?php echo $this->_tpl_vars['oViewConf']->getImageUrl('rss.png'); ?>
-" alt="<?php echo $this->_tpl_vars['rsslinks']['activeCategory']['title']; ?>
-"><span class="FXgradOrange corners glowShadow"><?php echo $this->_tpl_vars['rsslinks']['activeCategory']['title']; ?>
-</span></a>
-            <?php endif; ?>
-            <a href="<?php echo $this->_tpl_vars['actCategory']->toListLink; ?>
-" class="overviewLink">&gt; <?php echo smarty_function_oxmultilang(array('ident' => 'WIDGET_BREADCRUMB_OVERVIEW'), $this);?>
-</a>
-        </h1>
+        <h1 class="pageHead">             <?php $this->assign('rsslinks', $this->_tpl_vars['oView']->getRssLinks()); ?>
+                                  <a href="<?php echo $this->_tpl_vars['oViewConf']->getHomeLink(); ?>
+" title="<?php echo $this->_tpl_vars['oxcmp_shop']->oxshops__oxtitleprefix->value; ?>
+" class="overviewLinky"><img src="<?php echo $this->_tpl_vars['oViewConf']->getImageUrl(); ?>
+icon_breadcrumb_home.png" alt="<?php echo $this->_tpl_vars['oxcmp_shop']->oxshops__oxtitleprefix->value; ?>
+"></a>
+    <?php if ($this->_tpl_vars['oView']->getClassName() == 'start'): ?>
+        &nbsp;<?php echo smarty_function_oxmultilang(array('ident' => 'TRO_BREADCRUMB_HOMEPAGE'), $this);?>
+ &gt;
+    <?php else: ?>
+        <?php $_from = $this->_tpl_vars['oView']->getBreadCrumb(); if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }$this->_foreach['breadcrumb'] = array('total' => count($_from), 'iteration' => 0);
+if ($this->_foreach['breadcrumb']['total'] > 0):
+    foreach ($_from as $this->_tpl_vars['sCrum']):
+        $this->_foreach['breadcrumb']['iteration']++;
+?>
+            &nbsp;&gt;&nbsp;
+            <span  class="overviewLinky">
+              <?php if ($this->_tpl_vars['sCrum']['link']): ?><a href="<?php echo $this->_tpl_vars['sCrum']['link']; ?>
+" title="<?php echo ((is_array($_tmp=$this->_tpl_vars['sCrum']['title'])) ? $this->_run_mod_handler('escape', true, $_tmp, 'html') : smarty_modifier_escape($_tmp, 'html')); ?>
+"><?php endif; ?><?php echo $this->_tpl_vars['sCrum']['title']; ?>
+<?php if ($this->_tpl_vars['sCrum']['link']): ?></a><?php endif; ?>
+            </span>
+        <?php endforeach; endif; unset($_from); ?>
+    <?php endif; ?>
+         </h1>
         <div class="listRefine clear bottomRound">
                     <?php $_smarty_tpl_vars = $this->_tpl_vars;
 $this->_smarty_include(array('smarty_include_tpl_file' => "widget/locator/listlocator.tpl", 'smarty_include_vars' => array('locator' => $this->_tpl_vars['oView']->getPageNavigationLimitedTop(),'attributes' => $this->_tpl_vars['oView']->getAttributes(),'listDisplayType' => true,'itemsPerPage' => true,'sort' => true)));
@@ -180,4 +191,4 @@ echo smarty_core_run_insert_handler(array('args' => array('name' => 'oxid_tracke
 $this->_smarty_include(array('smarty_include_tpl_file' => "layout/page.tpl", 'smarty_include_vars' => array('sidebar' => 'Left','tree_path' => $this->_tpl_vars['oView']->getTreePath())));
 $this->_tpl_vars = $_smarty_tpl_vars;
 unset($_smarty_tpl_vars);
- ?>
+ ?><!-- page/list/list.tpl template end -->

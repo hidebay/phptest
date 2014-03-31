@@ -1,8 +1,9 @@
-<?php /* Smarty version 2.6.26, created on 2014-03-18 15:51:20
+<?php /* Smarty version 2.6.26, created on 2014-03-31 21:05:32
          compiled from layout/base.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
-smarty_core_load_plugins(array('plugins' => array(array('modifier', 'strip_tags', 'layout/base.tpl', 13, false),array('function', 'oxstyle', 'layout/base.tpl', 52, false),array('function', 'oxscript', 'layout/base.tpl', 91, false),array('function', 'oxid_include_dynamic', 'layout/base.tpl', 105, false),)), $this); ?>
-<?php ob_start(); ?>
+smarty_core_load_plugins(array('plugins' => array(array('modifier', 'strip_tags', 'layout/base.tpl', 14, false),array('function', 'oxstyle', 'layout/base.tpl', 53, false),array('function', 'oxscript', 'layout/base.tpl', 92, false),array('function', 'oxid_include_dynamic', 'layout/base.tpl', 106, false),)), $this); ?>
+<div style='position: absolute; z-index:9999;color:white;background: #789;
+                 padding:0 15 0 15'>layout/base.tpl</div><!-- layout/base.tpl template start --><?php ob_start(); ?>
     <meta http-equiv="Content-Type" content="text/html; charset=<?php echo $this->_tpl_vars['oView']->getCharSet(); ?>
 ">
 
@@ -173,4 +174,4 @@ smarty_core_load_plugins(array('plugins' => array(array('modifier', 'strip_tags'
 
 
 </body>
-</html>
+</html><!-- layout/base.tpl template end -->

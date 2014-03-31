@@ -1,8 +1,9 @@
-<?php /* Smarty version 2.6.26, created on 2014-03-18 15:51:54
+<?php /* Smarty version 2.6.26, created on 2014-03-31 21:05:31
          compiled from widget/locator/attributes.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
-smarty_core_load_plugins(array('plugins' => array(array('function', 'oxscript', 'widget/locator/attributes.tpl', 11, false),array('function', 'oxmultilang', 'widget/locator/attributes.tpl', 21, false),)), $this); ?>
-<?php if ($this->_tpl_vars['attributes']): ?>
+smarty_core_load_plugins(array('plugins' => array(array('function', 'oxscript', 'widget/locator/attributes.tpl', 12, false),array('function', 'oxmultilang', 'widget/locator/attributes.tpl', 22, false),)), $this); ?>
+<div style='position: absolute; z-index:9999;color:white;background: #789;
+                 padding:0 15 0 15'>widget/locator/attributes.tpl</div><!-- widget/locator/attributes.tpl template start --><?php if ($this->_tpl_vars['attributes']): ?>
     <form method="post" action="<?php echo $this->_tpl_vars['oViewConf']->getSelfActionLink(); ?>
 " name="_filterlist" id="filterList">
     <div class="listFilter js-fnSubmit clear">
@@ -62,4 +63,4 @@ if ($this->_foreach['attr']['total'] > 0):
         <?php endforeach; endif; unset($_from); ?>
     </div>
     </form>
-<?php endif; ?>
+<?php endif; ?><!-- widget/locator/attributes.tpl template end -->

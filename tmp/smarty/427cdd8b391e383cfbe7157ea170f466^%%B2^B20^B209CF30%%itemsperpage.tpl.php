@@ -1,22 +1,23 @@
-<?php /* Smarty version 2.6.26, created on 2014-03-18 15:51:54
+<?php /* Smarty version 2.6.26, created on 2014-03-31 21:05:31
          compiled from widget/locator/itemsperpage.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
-smarty_core_load_plugins(array('plugins' => array(array('function', 'oxscript', 'widget/locator/itemsperpage.tpl', 2, false),array('function', 'oxmultilang', 'widget/locator/itemsperpage.tpl', 6, false),array('modifier', 'oxaddparams', 'widget/locator/itemsperpage.tpl', 17, false),)), $this); ?>
-<?php $this->assign('_additionalParams', $this->_tpl_vars['oView']->getAdditionalParams()); ?>
+smarty_core_load_plugins(array('plugins' => array(array('function', 'oxscript', 'widget/locator/itemsperpage.tpl', 3, false),array('function', 'oxmultilang', 'widget/locator/itemsperpage.tpl', 7, false),array('modifier', 'oxaddparams', 'widget/locator/itemsperpage.tpl', 18, false),)), $this); ?>
+<div style='position: absolute; z-index:9999;color:white;background: #789;
+                 padding:0 15 0 15'>widget/locator/itemsperpage.tpl</div><!-- widget/locator/itemsperpage.tpl template start --><?php $this->assign('_additionalParams', $this->_tpl_vars['oView']->getAdditionalParams()); ?>
 <?php echo smarty_function_oxscript(array('include' => "js/widgets/oxdropdown.js",'priority' => 10), $this);?>
 
 <?php echo smarty_function_oxscript(array('add' => "$('div.dropDown p').oxDropDown();"), $this);?>
 
 <div class="dropDown js-fnLink" id="itemsPerPage">
     <p>
-        <label><?php echo smarty_function_oxmultilang(array('ident' => 'WIDGET_PRODUCT_LOCATOR_ARTICLE_PER_PAGE'), $this);?>
+        <label><?php echo smarty_function_oxmultilang(array('ident' => 'PRODUCTS_PER_PAGE','suffix' => 'COLON'), $this);?>
 </label>
         <span class="itemsarrow">
             <?php if ($this->_tpl_vars['oViewConf']->getArtPerPageCount()): ?>
                 <?php echo $this->_tpl_vars['oViewConf']->getArtPerPageCount(); ?>
 
             <?php else: ?>
-                <?php echo smarty_function_oxmultilang(array('ident' => 'WIDGET_LOCATOR_CHOOSE'), $this);?>
+                <?php echo smarty_function_oxmultilang(array('ident' => 'CHOOSE'), $this);?>
 
             <?php endif; ?>
         </span>
@@ -30,4 +31,4 @@ smarty_core_load_plugins(array('plugins' => array(array('function', 'oxscript', 
 </a></li>
         <?php endforeach; endif; unset($_from); ?>
     </ul>
-</div>
+</div><!-- widget/locator/itemsperpage.tpl template end -->

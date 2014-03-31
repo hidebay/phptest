@@ -11036,3 +11036,1142 @@ oxSystemComponentException-oxException (time: 2014-03-18 16:13:33): [0]: Functio
 
  Faulty component --> 
 ---------------------------------------------
+oxSystemComponentException-oxException (time: 2014-03-18 16:28:44): [0]: Function 'morePics' does not exist or is not accessible! (Details)
+ 
+ Stack Trace: #0 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%DA^DA8^DA80D1BB%%morepics.tpl.php(6): oxSuperCfg->__call('morePics', Array)
+#1 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%DA^DA8^DA80D1BB%%morepics.tpl.php(6): Details->morePics()
+#2 /var/www/phptest/core/smarty/Smarty.class.php(1869): include('/var/www/phptes...')
+#3 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%5E^5E9^5E9B9D5B%%productmain.tpl.php(368): Smarty->_smarty_include(Array)
+#4 /var/www/phptest/core/smarty/Smarty.class.php(1869): include('/var/www/phptes...')
+#5 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%A5^A59^A595DDB8%%fullproductinfo.tpl.php(8): Smarty->_smarty_include(Array)
+#6 /var/www/phptest/core/smarty/Smarty.class.php(1869): include('/var/www/phptes...')
+#7 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%08^08A^08ABD53A%%details.tpl.php(82): Smarty->_smarty_include(Array)
+#8 /var/www/phptest/core/smarty/Smarty.class.php(1263): include('/var/www/phptes...')
+#9 /var/www/phptest/core/oxshopcontrol.php(521): Smarty->fetch('page/details/de...', 'ox|0|0|0|0|7b60...')
+#10 /var/www/phptest/core/oxshopcontrol.php(388): oxShopControl->_render(Object(Details))
+#11 /var/www/phptest/core/oxshopcontrol.php(148): oxShopControl->_process('details', NULL, NULL, NULL)
+#12 /var/www/phptest/core/oxid.php(32): oxShopControl->start()
+#13 /var/www/phptest/index.php(19): Oxid::run()
+#14 /var/www/phptest/oxseo.php(37): require('/var/www/phptes...')
+#15 {main}
+
+ Faulty component --> 
+---------------------------------------------
+oxSystemComponentException-oxException (time: 2014-03-21 14:26:56): [0]: EXCEPTION_SYSTEMCOMPONENT_TEMPLATENOTFOUND 
+ Stack Trace: #0 /var/www/phptest/core/oxutilsobject.php(185): oxUtilsObject->_getObject('oxsystemcompone...', 0, Array)
+#1 [internal function]: oxUtilsObject->oxNew('oxSystemCompone...')
+#2 /var/www/phptest/core/oxfunctions.php(375): call_user_func_array(Array, Array)
+#3 /var/www/phptest/core/oxshopcontrol.php(490): oxNew('oxSystemCompone...')
+#4 /var/www/phptest/core/oxshopcontrol.php(388): oxShopControl->_render(Object(dre_cleartmp_navigation))
+#5 /var/www/phptest/core/oxshopcontrol.php(148): oxShopControl->_process('navigation', NULL, NULL, NULL)
+#6 /var/www/phptest/core/oxid.php(32): oxShopControl->start()
+#7 /var/www/phptest/index.php(19): Oxid::run()
+#8 /var/www/phptest/admin/index.php(20): require_once('/var/www/phptes...')
+#9 {main}
+
+ Faulty component --> dre_header.tpl
+---------------------------------------------
+oxSystemComponentException-oxException (time: 2014-03-21 14:30:33): [0]: EXCEPTION_SYSTEMCOMPONENT_TEMPLATENOTFOUND 
+ Stack Trace: #0 /var/www/phptest/core/oxutilsobject.php(185): oxUtilsObject->_getObject('oxsystemcompone...', 0, Array)
+#1 [internal function]: oxUtilsObject->oxNew('oxSystemCompone...')
+#2 /var/www/phptest/core/oxfunctions.php(375): call_user_func_array(Array, Array)
+#3 /var/www/phptest/core/oxshopcontrol.php(490): oxNew('oxSystemCompone...')
+#4 /var/www/phptest/core/oxshopcontrol.php(388): oxShopControl->_render(Object(dre_cleartmp_navigation))
+#5 /var/www/phptest/core/oxshopcontrol.php(148): oxShopControl->_process('navigation', NULL, NULL, NULL)
+#6 /var/www/phptest/core/oxid.php(32): oxShopControl->start()
+#7 /var/www/phptest/index.php(19): Oxid::run()
+#8 /var/www/phptest/admin/index.php(20): require_once('/var/www/phptes...')
+#9 {main}
+
+ Faulty component --> dre_header.tpl
+---------------------------------------------
+oxSystemComponentException-oxException (time: 2014-03-21 14:31:23): [0]: EXCEPTION_SYSTEMCOMPONENT_TEMPLATENOTFOUND 
+ Stack Trace: #0 /var/www/phptest/core/oxutilsobject.php(185): oxUtilsObject->_getObject('oxsystemcompone...', 0, Array)
+#1 [internal function]: oxUtilsObject->oxNew('oxSystemCompone...')
+#2 /var/www/phptest/core/oxfunctions.php(375): call_user_func_array(Array, Array)
+#3 /var/www/phptest/core/oxshopcontrol.php(490): oxNew('oxSystemCompone...')
+#4 /var/www/phptest/core/oxshopcontrol.php(388): oxShopControl->_render(Object(dre_cleartmp_navigation))
+#5 /var/www/phptest/core/oxshopcontrol.php(148): oxShopControl->_process('navigation', NULL, NULL, NULL)
+#6 /var/www/phptest/core/oxid.php(32): oxShopControl->start()
+#7 /var/www/phptest/index.php(19): Oxid::run()
+#8 /var/www/phptest/admin/index.php(20): require_once('/var/www/phptes...')
+#9 {main}
+
+ Faulty component --> dre_header.tpl
+---------------------------------------------
+oxSystemComponentException-oxException (time: 2014-03-21 14:32:26): [0]: EXCEPTION_SYSTEMCOMPONENT_TEMPLATENOTFOUND 
+ Stack Trace: #0 /var/www/phptest/core/oxutilsobject.php(185): oxUtilsObject->_getObject('oxsystemcompone...', 0, Array)
+#1 [internal function]: oxUtilsObject->oxNew('oxSystemCompone...')
+#2 /var/www/phptest/core/oxfunctions.php(375): call_user_func_array(Array, Array)
+#3 /var/www/phptest/core/oxshopcontrol.php(490): oxNew('oxSystemCompone...')
+#4 /var/www/phptest/core/oxshopcontrol.php(388): oxShopControl->_render(Object(dre_cleartmp_navigation))
+#5 /var/www/phptest/core/oxshopcontrol.php(148): oxShopControl->_process('navigation', NULL, NULL, NULL)
+#6 /var/www/phptest/core/oxid.php(32): oxShopControl->start()
+#7 /var/www/phptest/index.php(19): Oxid::run()
+#8 /var/www/phptest/admin/index.php(20): require_once('/var/www/phptes...')
+#9 {main}
+
+ Faulty component --> dre_header.tpl
+---------------------------------------------
+oxSystemComponentException-oxException (time: 2014-03-21 14:33:40): [0]: EXCEPTION_SYSTEMCOMPONENT_TEMPLATENOTFOUND 
+ Stack Trace: #0 /var/www/phptest/core/oxutilsobject.php(185): oxUtilsObject->_getObject('oxsystemcompone...', 0, Array)
+#1 [internal function]: oxUtilsObject->oxNew('oxSystemCompone...')
+#2 /var/www/phptest/core/oxfunctions.php(375): call_user_func_array(Array, Array)
+#3 /var/www/phptest/core/oxshopcontrol.php(490): oxNew('oxSystemCompone...')
+#4 /var/www/phptest/core/oxshopcontrol.php(388): oxShopControl->_render(Object(dre_cleartmp_navigation))
+#5 /var/www/phptest/core/oxshopcontrol.php(148): oxShopControl->_process('navigation', NULL, NULL, NULL)
+#6 /var/www/phptest/core/oxid.php(32): oxShopControl->start()
+#7 /var/www/phptest/index.php(19): Oxid::run()
+#8 /var/www/phptest/admin/index.php(20): require_once('/var/www/phptes...')
+#9 {main}
+
+ Faulty component --> dre_header.tpl
+---------------------------------------------
+oxFileException-oxException (time: 2014-03-21 14:52:44): [0]: Requested file not found for module dre_cleartmp (/var/www/phptest/modules/dre_cleartmp/out/admin/css/dre_cleartmp.css) 
+ Stack Trace: #0 /var/www/phptest/core/oxutilsobject.php(185): oxUtilsObject->_getObject('oxfileexception', 1, Array)
+#1 [internal function]: oxUtilsObject->oxNew('oxFileException', 'Requested file ...')
+#2 /var/www/phptest/core/oxfunctions.php(375): call_user_func_array(Array, Array)
+#3 /var/www/phptest/core/oxviewconfig.php(1351): oxNew('oxFileException', 'Requested file ...')
+#4 /var/www/phptest/core/oxviewconfig.php(1375): oxViewConfig->getModulePath('dre_cleartmp', 'out/admin/css/d...')
+#5 /var/www/phptest/tmp/smarty/921a89940f4ee8b8039bbf8081c5ccf9^%%D1^D1A^D1ACAB3E%%dre_header.tpl.php(14): oxViewConfig->getModuleUrl('dre_cleartmp', 'out/admin/css/d...')
+#6 /var/www/phptest/core/smarty/Smarty.class.php(1263): include('/var/www/phptes...')
+#7 /var/www/phptest/core/oxshopcontrol.php(521): Smarty->fetch('dre_header.tpl', NULL)
+#8 /var/www/phptest/core/oxshopcontrol.php(388): oxShopControl->_render(Object(dre_cleartmp_navigation))
+#9 /var/www/phptest/core/oxshopcontrol.php(148): oxShopControl->_process('navigation', NULL, NULL, NULL)
+#10 /var/www/phptest/core/oxid.php(32): oxShopControl->start()
+#11 /var/www/phptest/index.php(19): Oxid::run()
+#12 /var/www/phptest/admin/index.php(20): require_once('/var/www/phptes...')
+#13 {main}
+
+ Faulty File --> 
+Error Code --> 
+---------------------------------------------
+oxSystemComponentException---!--NOT CAUGHT--!--oxException (time: 2014-03-21 14:52:44): [0]: Function 'getIsOrderStep' does not exist or is not accessible! (dre_cleartmp_navigation)
+ 
+ Stack Trace: #0 /var/www/phptest/application/components/oxcmp_categories.php(62): oxSuperCfg->__call('getIsOrderStep', Array)
+#1 /var/www/phptest/application/components/oxcmp_categories.php(62): dre_cleartmp_navigation->getIsOrderStep()
+#2 /var/www/phptest/application/controllers/oxubase.php(599): oxcmp_categories->init()
+#3 /var/www/phptest/core/oxshopcontrol.php(443): oxUBase->init()
+#4 /var/www/phptest/core/oxshopcontrol.php(379): oxShopControl->_initializeViewObject('exceptionError', 'displayExceptio...', NULL, NULL)
+#5 /var/www/phptest/core/oxshopcontrol.php(172): oxShopControl->_process('exceptionError', 'displayExceptio...')
+#6 /var/www/phptest/core/oxid.php(32): oxShopControl->start()
+#7 /var/www/phptest/index.php(19): Oxid::run()
+#8 /var/www/phptest/admin/index.php(20): require_once('/var/www/phptes...')
+#9 {main}
+
+ Faulty component --> 
+---------------------------------------------
+oxFileException-oxException (time: 2014-03-21 14:53:06): [0]: Requested file not found for module dre_cleartmp (/var/www/phptest/modules/dre_cleartmp/out/admin/css/dre_cleartmp.css) 
+ Stack Trace: #0 /var/www/phptest/core/oxutilsobject.php(185): oxUtilsObject->_getObject('oxfileexception', 1, Array)
+#1 [internal function]: oxUtilsObject->oxNew('oxFileException', 'Requested file ...')
+#2 /var/www/phptest/core/oxfunctions.php(375): call_user_func_array(Array, Array)
+#3 /var/www/phptest/core/oxviewconfig.php(1351): oxNew('oxFileException', 'Requested file ...')
+#4 /var/www/phptest/core/oxviewconfig.php(1375): oxViewConfig->getModulePath('dre_cleartmp', 'out/admin/css/d...')
+#5 /var/www/phptest/tmp/smarty/921a89940f4ee8b8039bbf8081c5ccf9^%%D1^D1A^D1ACAB3E%%dre_header.tpl.php(14): oxViewConfig->getModuleUrl('dre_cleartmp', 'out/admin/css/d...')
+#6 /var/www/phptest/core/smarty/Smarty.class.php(1263): include('/var/www/phptes...')
+#7 /var/www/phptest/core/oxshopcontrol.php(521): Smarty->fetch('dre_header.tpl', NULL)
+#8 /var/www/phptest/core/oxshopcontrol.php(388): oxShopControl->_render(Object(dre_cleartmp_navigation))
+#9 /var/www/phptest/core/oxshopcontrol.php(148): oxShopControl->_process('navigation', NULL, NULL, NULL)
+#10 /var/www/phptest/core/oxid.php(32): oxShopControl->start()
+#11 /var/www/phptest/index.php(19): Oxid::run()
+#12 /var/www/phptest/admin/index.php(20): require_once('/var/www/phptes...')
+#13 {main}
+
+ Faulty File --> 
+Error Code --> 
+---------------------------------------------
+oxSystemComponentException---!--NOT CAUGHT--!--oxException (time: 2014-03-21 14:53:06): [0]: Function 'getIsOrderStep' does not exist or is not accessible! (dre_cleartmp_navigation)
+ 
+ Stack Trace: #0 /var/www/phptest/application/components/oxcmp_categories.php(62): oxSuperCfg->__call('getIsOrderStep', Array)
+#1 /var/www/phptest/application/components/oxcmp_categories.php(62): dre_cleartmp_navigation->getIsOrderStep()
+#2 /var/www/phptest/application/controllers/oxubase.php(599): oxcmp_categories->init()
+#3 /var/www/phptest/core/oxshopcontrol.php(443): oxUBase->init()
+#4 /var/www/phptest/core/oxshopcontrol.php(379): oxShopControl->_initializeViewObject('exceptionError', 'displayExceptio...', NULL, NULL)
+#5 /var/www/phptest/core/oxshopcontrol.php(172): oxShopControl->_process('exceptionError', 'displayExceptio...')
+#6 /var/www/phptest/core/oxid.php(32): oxShopControl->start()
+#7 /var/www/phptest/index.php(19): Oxid::run()
+#8 /var/www/phptest/admin/index.php(20): require_once('/var/www/phptes...')
+#9 {main}
+
+ Faulty component --> 
+---------------------------------------------
+oxFileException-oxException (time: 2014-03-21 15:06:39): [0]: Requested file not found for module dre_cleartmp (/var/www/phptest/modules/dre_cleartmp/out/admin/css/dre_cleartmp.css) 
+ Stack Trace: #0 /var/www/phptest/core/oxutilsobject.php(185): oxUtilsObject->_getObject('oxfileexception', 1, Array)
+#1 [internal function]: oxUtilsObject->oxNew('oxFileException', 'Requested file ...')
+#2 /var/www/phptest/core/oxfunctions.php(375): call_user_func_array(Array, Array)
+#3 /var/www/phptest/core/oxviewconfig.php(1351): oxNew('oxFileException', 'Requested file ...')
+#4 /var/www/phptest/core/oxviewconfig.php(1375): oxViewConfig->getModulePath('dre_cleartmp', 'out/admin/css/d...')
+#5 /var/www/phptest/tmp/smarty/921a89940f4ee8b8039bbf8081c5ccf9^%%D1^D1A^D1ACAB3E%%dre_header.tpl.php(14): oxViewConfig->getModuleUrl('dre_cleartmp', 'out/admin/css/d...')
+#6 /var/www/phptest/core/smarty/Smarty.class.php(1263): include('/var/www/phptes...')
+#7 /var/www/phptest/core/oxshopcontrol.php(521): Smarty->fetch('dre_header.tpl', NULL)
+#8 /var/www/phptest/core/oxshopcontrol.php(388): oxShopControl->_render(Object(dre_cleartmp_navigation))
+#9 /var/www/phptest/core/oxshopcontrol.php(148): oxShopControl->_process('navigation', NULL, NULL, NULL)
+#10 /var/www/phptest/core/oxid.php(32): oxShopControl->start()
+#11 /var/www/phptest/index.php(19): Oxid::run()
+#12 /var/www/phptest/admin/index.php(20): require_once('/var/www/phptes...')
+#13 {main}
+
+ Faulty File --> 
+Error Code --> 
+---------------------------------------------
+oxSystemComponentException---!--NOT CAUGHT--!--oxException (time: 2014-03-21 15:06:39): [0]: Function 'getIsOrderStep' does not exist or is not accessible! (dre_cleartmp_navigation)
+ 
+ Stack Trace: #0 /var/www/phptest/application/components/oxcmp_categories.php(62): oxSuperCfg->__call('getIsOrderStep', Array)
+#1 /var/www/phptest/application/components/oxcmp_categories.php(62): dre_cleartmp_navigation->getIsOrderStep()
+#2 /var/www/phptest/application/controllers/oxubase.php(599): oxcmp_categories->init()
+#3 /var/www/phptest/core/oxshopcontrol.php(443): oxUBase->init()
+#4 /var/www/phptest/core/oxshopcontrol.php(379): oxShopControl->_initializeViewObject('exceptionError', 'displayExceptio...', NULL, NULL)
+#5 /var/www/phptest/core/oxshopcontrol.php(172): oxShopControl->_process('exceptionError', 'displayExceptio...')
+#6 /var/www/phptest/core/oxid.php(32): oxShopControl->start()
+#7 /var/www/phptest/index.php(19): Oxid::run()
+#8 /var/www/phptest/admin/index.php(20): require_once('/var/www/phptes...')
+#9 {main}
+
+ Faulty component --> 
+---------------------------------------------
+oxFileException-oxException (time: 2014-03-21 15:07:02): [0]: Requested file not found for module dre_cleartmp (/var/www/phptest/modules/dre_cleartmp/out/admin/css/dre_cleartmp.css) 
+ Stack Trace: #0 /var/www/phptest/core/oxutilsobject.php(185): oxUtilsObject->_getObject('oxfileexception', 1, Array)
+#1 [internal function]: oxUtilsObject->oxNew('oxFileException', 'Requested file ...')
+#2 /var/www/phptest/core/oxfunctions.php(375): call_user_func_array(Array, Array)
+#3 /var/www/phptest/core/oxviewconfig.php(1351): oxNew('oxFileException', 'Requested file ...')
+#4 /var/www/phptest/core/oxviewconfig.php(1375): oxViewConfig->getModulePath('dre_cleartmp', 'out/admin/css/d...')
+#5 /var/www/phptest/tmp/smarty/921a89940f4ee8b8039bbf8081c5ccf9^%%D1^D1A^D1ACAB3E%%dre_header.tpl.php(14): oxViewConfig->getModuleUrl('dre_cleartmp', 'out/admin/css/d...')
+#6 /var/www/phptest/core/smarty/Smarty.class.php(1263): include('/var/www/phptes...')
+#7 /var/www/phptest/core/oxshopcontrol.php(521): Smarty->fetch('dre_header.tpl', NULL)
+#8 /var/www/phptest/core/oxshopcontrol.php(388): oxShopControl->_render(Object(dre_cleartmp_navigation))
+#9 /var/www/phptest/core/oxshopcontrol.php(148): oxShopControl->_process('navigation', NULL, NULL, NULL)
+#10 /var/www/phptest/core/oxid.php(32): oxShopControl->start()
+#11 /var/www/phptest/index.php(19): Oxid::run()
+#12 /var/www/phptest/admin/index.php(20): require_once('/var/www/phptes...')
+#13 {main}
+
+ Faulty File --> 
+Error Code --> 
+---------------------------------------------
+oxSystemComponentException---!--NOT CAUGHT--!--oxException (time: 2014-03-21 15:07:02): [0]: Function 'getIsOrderStep' does not exist or is not accessible! (dre_cleartmp_navigation)
+ 
+ Stack Trace: #0 /var/www/phptest/application/components/oxcmp_categories.php(62): oxSuperCfg->__call('getIsOrderStep', Array)
+#1 /var/www/phptest/application/components/oxcmp_categories.php(62): dre_cleartmp_navigation->getIsOrderStep()
+#2 /var/www/phptest/application/controllers/oxubase.php(599): oxcmp_categories->init()
+#3 /var/www/phptest/core/oxshopcontrol.php(443): oxUBase->init()
+#4 /var/www/phptest/core/oxshopcontrol.php(379): oxShopControl->_initializeViewObject('exceptionError', 'displayExceptio...', NULL, NULL)
+#5 /var/www/phptest/core/oxshopcontrol.php(172): oxShopControl->_process('exceptionError', 'displayExceptio...')
+#6 /var/www/phptest/core/oxid.php(32): oxShopControl->start()
+#7 /var/www/phptest/index.php(19): Oxid::run()
+#8 /var/www/phptest/admin/index.php(20): require_once('/var/www/phptes...')
+#9 {main}
+
+ Faulty component --> 
+---------------------------------------------
+oxFileException-oxException (time: 2014-03-21 15:08:12): [0]: Requested file not found for module dre_cleartmp (/var/www/phptest/modules/dre_cleartmp/out/admin/css/dre_cleartmp.css) 
+ Stack Trace: #0 /var/www/phptest/core/oxutilsobject.php(185): oxUtilsObject->_getObject('oxfileexception', 1, Array)
+#1 [internal function]: oxUtilsObject->oxNew('oxFileException', 'Requested file ...')
+#2 /var/www/phptest/core/oxfunctions.php(375): call_user_func_array(Array, Array)
+#3 /var/www/phptest/core/oxviewconfig.php(1351): oxNew('oxFileException', 'Requested file ...')
+#4 /var/www/phptest/core/oxviewconfig.php(1375): oxViewConfig->getModulePath('dre_cleartmp', 'out/admin/css/d...')
+#5 /var/www/phptest/tmp/smarty/921a89940f4ee8b8039bbf8081c5ccf9^%%D1^D1A^D1ACAB3E%%dre_header.tpl.php(14): oxViewConfig->getModuleUrl('dre_cleartmp', 'out/admin/css/d...')
+#6 /var/www/phptest/core/smarty/Smarty.class.php(1263): include('/var/www/phptes...')
+#7 /var/www/phptest/core/oxshopcontrol.php(521): Smarty->fetch('dre_header.tpl', NULL)
+#8 /var/www/phptest/core/oxshopcontrol.php(388): oxShopControl->_render(Object(dre_cleartmp_navigation))
+#9 /var/www/phptest/core/oxshopcontrol.php(148): oxShopControl->_process('navigation', NULL, NULL, NULL)
+#10 /var/www/phptest/core/oxid.php(32): oxShopControl->start()
+#11 /var/www/phptest/index.php(19): Oxid::run()
+#12 /var/www/phptest/admin/index.php(20): require_once('/var/www/phptes...')
+#13 {main}
+
+ Faulty File --> 
+Error Code --> 
+---------------------------------------------
+oxSystemComponentException---!--NOT CAUGHT--!--oxException (time: 2014-03-21 15:08:12): [0]: Function 'getIsOrderStep' does not exist or is not accessible! (dre_cleartmp_navigation)
+ 
+ Stack Trace: #0 /var/www/phptest/application/components/oxcmp_categories.php(62): oxSuperCfg->__call('getIsOrderStep', Array)
+#1 /var/www/phptest/application/components/oxcmp_categories.php(62): dre_cleartmp_navigation->getIsOrderStep()
+#2 /var/www/phptest/application/controllers/oxubase.php(599): oxcmp_categories->init()
+#3 /var/www/phptest/core/oxshopcontrol.php(443): oxUBase->init()
+#4 /var/www/phptest/core/oxshopcontrol.php(379): oxShopControl->_initializeViewObject('exceptionError', 'displayExceptio...', NULL, NULL)
+#5 /var/www/phptest/core/oxshopcontrol.php(172): oxShopControl->_process('exceptionError', 'displayExceptio...')
+#6 /var/www/phptest/core/oxid.php(32): oxShopControl->start()
+#7 /var/www/phptest/index.php(19): Oxid::run()
+#8 /var/www/phptest/admin/index.php(20): require_once('/var/www/phptes...')
+#9 {main}
+
+ Faulty component --> 
+---------------------------------------------
+oxFileException-oxException (time: 2014-03-21 16:27:41): [0]: Requested file not found for module dre_cleartmp (/var/www/phptest/modules/dre_cleartmp/out/admin/css/dre_cleartmp.css) 
+ Stack Trace: #0 /var/www/phptest/core/oxutilsobject.php(185): oxUtilsObject->_getObject('oxfileexception', 1, Array)
+#1 [internal function]: oxUtilsObject->oxNew('oxFileException', 'Requested file ...')
+#2 /var/www/phptest/core/oxfunctions.php(375): call_user_func_array(Array, Array)
+#3 /var/www/phptest/core/oxviewconfig.php(1351): oxNew('oxFileException', 'Requested file ...')
+#4 /var/www/phptest/core/oxviewconfig.php(1375): oxViewConfig->getModulePath('dre_cleartmp', 'out/admin/css/d...')
+#5 /var/www/phptest/tmp/smarty/921a89940f4ee8b8039bbf8081c5ccf9^%%D1^D1A^D1ACAB3E%%dre_header.tpl.php(14): oxViewConfig->getModuleUrl('dre_cleartmp', 'out/admin/css/d...')
+#6 /var/www/phptest/core/smarty/Smarty.class.php(1263): include('/var/www/phptes...')
+#7 /var/www/phptest/core/oxshopcontrol.php(521): Smarty->fetch('dre_header.tpl', NULL)
+#8 /var/www/phptest/core/oxshopcontrol.php(388): oxShopControl->_render(Object(dre_cleartmp_navigation))
+#9 /var/www/phptest/core/oxshopcontrol.php(148): oxShopControl->_process('navigation', NULL, NULL, NULL)
+#10 /var/www/phptest/core/oxid.php(32): oxShopControl->start()
+#11 /var/www/phptest/index.php(19): Oxid::run()
+#12 /var/www/phptest/admin/index.php(20): require_once('/var/www/phptes...')
+#13 {main}
+
+ Faulty File --> 
+Error Code --> 
+---------------------------------------------
+oxSystemComponentException---!--NOT CAUGHT--!--oxException (time: 2014-03-21 16:27:41): [0]: Function 'getIsOrderStep' does not exist or is not accessible! (dre_cleartmp_navigation)
+ 
+ Stack Trace: #0 /var/www/phptest/application/components/oxcmp_categories.php(62): oxSuperCfg->__call('getIsOrderStep', Array)
+#1 /var/www/phptest/application/components/oxcmp_categories.php(62): dre_cleartmp_navigation->getIsOrderStep()
+#2 /var/www/phptest/application/controllers/oxubase.php(599): oxcmp_categories->init()
+#3 /var/www/phptest/core/oxshopcontrol.php(443): oxUBase->init()
+#4 /var/www/phptest/core/oxshopcontrol.php(379): oxShopControl->_initializeViewObject('exceptionError', 'displayExceptio...', NULL, NULL)
+#5 /var/www/phptest/core/oxshopcontrol.php(172): oxShopControl->_process('exceptionError', 'displayExceptio...')
+#6 /var/www/phptest/core/oxid.php(32): oxShopControl->start()
+#7 /var/www/phptest/index.php(19): Oxid::run()
+#8 /var/www/phptest/admin/index.php(20): require_once('/var/www/phptes...')
+#9 {main}
+
+ Faulty component --> 
+---------------------------------------------
+oxFileException-oxException (time: 2014-03-21 16:43:35): [0]: Requested file not found for module dre_cleartmp (/var/www/phptest/modules/dre_cleartmp/out/admin/css/dre_cleartmp.css) 
+ Stack Trace: #0 /var/www/phptest/core/oxutilsobject.php(185): oxUtilsObject->_getObject('oxfileexception', 1, Array)
+#1 [internal function]: oxUtilsObject->oxNew('oxFileException', 'Requested file ...')
+#2 /var/www/phptest/core/oxfunctions.php(375): call_user_func_array(Array, Array)
+#3 /var/www/phptest/core/oxviewconfig.php(1351): oxNew('oxFileException', 'Requested file ...')
+#4 /var/www/phptest/core/oxviewconfig.php(1375): oxViewConfig->getModulePath('dre_cleartmp', 'out/admin/css/d...')
+#5 /var/www/phptest/tmp/smarty/921a89940f4ee8b8039bbf8081c5ccf9^%%D1^D1A^D1ACAB3E%%dre_header.tpl.php(14): oxViewConfig->getModuleUrl('dre_cleartmp', 'out/admin/css/d...')
+#6 /var/www/phptest/core/smarty/Smarty.class.php(1263): include('/var/www/phptes...')
+#7 /var/www/phptest/core/oxshopcontrol.php(521): Smarty->fetch('dre_header.tpl', NULL)
+#8 /var/www/phptest/core/oxshopcontrol.php(388): oxShopControl->_render(Object(dre_cleartmp_navigation))
+#9 /var/www/phptest/core/oxshopcontrol.php(148): oxShopControl->_process('navigation', NULL, NULL, NULL)
+#10 /var/www/phptest/core/oxid.php(32): oxShopControl->start()
+#11 /var/www/phptest/index.php(19): Oxid::run()
+#12 /var/www/phptest/admin/index.php(20): require_once('/var/www/phptes...')
+#13 {main}
+
+ Faulty File --> 
+Error Code --> 
+---------------------------------------------
+oxSystemComponentException---!--NOT CAUGHT--!--oxException (time: 2014-03-21 16:43:35): [0]: Function 'getIsOrderStep' does not exist or is not accessible! (dre_cleartmp_navigation)
+ 
+ Stack Trace: #0 /var/www/phptest/application/components/oxcmp_categories.php(62): oxSuperCfg->__call('getIsOrderStep', Array)
+#1 /var/www/phptest/application/components/oxcmp_categories.php(62): dre_cleartmp_navigation->getIsOrderStep()
+#2 /var/www/phptest/application/controllers/oxubase.php(599): oxcmp_categories->init()
+#3 /var/www/phptest/core/oxshopcontrol.php(443): oxUBase->init()
+#4 /var/www/phptest/core/oxshopcontrol.php(379): oxShopControl->_initializeViewObject('exceptionError', 'displayExceptio...', NULL, NULL)
+#5 /var/www/phptest/core/oxshopcontrol.php(172): oxShopControl->_process('exceptionError', 'displayExceptio...')
+#6 /var/www/phptest/core/oxid.php(32): oxShopControl->start()
+#7 /var/www/phptest/index.php(19): Oxid::run()
+#8 /var/www/phptest/admin/index.php(20): require_once('/var/www/phptes...')
+#9 {main}
+
+ Faulty component --> 
+---------------------------------------------
+oxFileException-oxException (time: 2014-03-21 16:46:42): [0]: Requested file not found for module dre_cleartmp (/var/www/phptest/modules/dre_cleartmp/out/admin/css/dre_cleartmp.css) 
+ Stack Trace: #0 /var/www/phptest/core/oxutilsobject.php(185): oxUtilsObject->_getObject('oxfileexception', 1, Array)
+#1 [internal function]: oxUtilsObject->oxNew('oxFileException', 'Requested file ...')
+#2 /var/www/phptest/core/oxfunctions.php(375): call_user_func_array(Array, Array)
+#3 /var/www/phptest/core/oxviewconfig.php(1351): oxNew('oxFileException', 'Requested file ...')
+#4 /var/www/phptest/core/oxviewconfig.php(1375): oxViewConfig->getModulePath('dre_cleartmp', 'out/admin/css/d...')
+#5 /var/www/phptest/tmp/smarty/921a89940f4ee8b8039bbf8081c5ccf9^%%D1^D1A^D1ACAB3E%%dre_header.tpl.php(14): oxViewConfig->getModuleUrl('dre_cleartmp', 'out/admin/css/d...')
+#6 /var/www/phptest/core/smarty/Smarty.class.php(1263): include('/var/www/phptes...')
+#7 /var/www/phptest/core/oxshopcontrol.php(521): Smarty->fetch('dre_header.tpl', NULL)
+#8 /var/www/phptest/core/oxshopcontrol.php(388): oxShopControl->_render(Object(dre_cleartmp_navigation))
+#9 /var/www/phptest/core/oxshopcontrol.php(148): oxShopControl->_process('navigation', NULL, NULL, NULL)
+#10 /var/www/phptest/core/oxid.php(32): oxShopControl->start()
+#11 /var/www/phptest/index.php(19): Oxid::run()
+#12 /var/www/phptest/admin/index.php(20): require_once('/var/www/phptes...')
+#13 {main}
+
+ Faulty File --> 
+Error Code --> 
+---------------------------------------------
+oxSystemComponentException---!--NOT CAUGHT--!--oxException (time: 2014-03-21 16:46:42): [0]: Function 'getIsOrderStep' does not exist or is not accessible! (dre_cleartmp_navigation)
+ 
+ Stack Trace: #0 /var/www/phptest/application/components/oxcmp_categories.php(62): oxSuperCfg->__call('getIsOrderStep', Array)
+#1 /var/www/phptest/application/components/oxcmp_categories.php(62): dre_cleartmp_navigation->getIsOrderStep()
+#2 /var/www/phptest/application/controllers/oxubase.php(599): oxcmp_categories->init()
+#3 /var/www/phptest/core/oxshopcontrol.php(443): oxUBase->init()
+#4 /var/www/phptest/core/oxshopcontrol.php(379): oxShopControl->_initializeViewObject('exceptionError', 'displayExceptio...', NULL, NULL)
+#5 /var/www/phptest/core/oxshopcontrol.php(172): oxShopControl->_process('exceptionError', 'displayExceptio...')
+#6 /var/www/phptest/core/oxid.php(32): oxShopControl->start()
+#7 /var/www/phptest/index.php(19): Oxid::run()
+#8 /var/www/phptest/admin/index.php(20): require_once('/var/www/phptes...')
+#9 {main}
+
+ Faulty component --> 
+---------------------------------------------
+oxFileException-oxException (time: 2014-03-21 16:58:28): [0]: Requested file not found for module dre_cleartmp (/var/www/phptest/modules/dre_cleartmp/out/admin/css/dre_cleartmp.css) 
+ Stack Trace: #0 /var/www/phptest/core/oxutilsobject.php(185): oxUtilsObject->_getObject('oxfileexception', 1, Array)
+#1 [internal function]: oxUtilsObject->oxNew('oxFileException', 'Requested file ...')
+#2 /var/www/phptest/core/oxfunctions.php(375): call_user_func_array(Array, Array)
+#3 /var/www/phptest/core/oxviewconfig.php(1351): oxNew('oxFileException', 'Requested file ...')
+#4 /var/www/phptest/core/oxviewconfig.php(1375): oxViewConfig->getModulePath('dre_cleartmp', 'out/admin/css/d...')
+#5 /var/www/phptest/tmp/smarty/921a89940f4ee8b8039bbf8081c5ccf9^%%D1^D1A^D1ACAB3E%%dre_header.tpl.php(14): oxViewConfig->getModuleUrl('dre_cleartmp', 'out/admin/css/d...')
+#6 /var/www/phptest/core/smarty/Smarty.class.php(1263): include('/var/www/phptes...')
+#7 /var/www/phptest/core/oxshopcontrol.php(521): Smarty->fetch('dre_header.tpl', NULL)
+#8 /var/www/phptest/core/oxshopcontrol.php(388): oxShopControl->_render(Object(dre_cleartmp_navigation))
+#9 /var/www/phptest/core/oxshopcontrol.php(148): oxShopControl->_process('navigation', NULL, NULL, NULL)
+#10 /var/www/phptest/core/oxid.php(32): oxShopControl->start()
+#11 /var/www/phptest/index.php(19): Oxid::run()
+#12 /var/www/phptest/admin/index.php(20): require_once('/var/www/phptes...')
+#13 {main}
+
+ Faulty File --> 
+Error Code --> 
+---------------------------------------------
+oxSystemComponentException---!--NOT CAUGHT--!--oxException (time: 2014-03-21 16:58:28): [0]: Function 'getIsOrderStep' does not exist or is not accessible! (dre_cleartmp_navigation)
+ 
+ Stack Trace: #0 /var/www/phptest/application/components/oxcmp_categories.php(62): oxSuperCfg->__call('getIsOrderStep', Array)
+#1 /var/www/phptest/application/components/oxcmp_categories.php(62): dre_cleartmp_navigation->getIsOrderStep()
+#2 /var/www/phptest/application/controllers/oxubase.php(599): oxcmp_categories->init()
+#3 /var/www/phptest/core/oxshopcontrol.php(443): oxUBase->init()
+#4 /var/www/phptest/core/oxshopcontrol.php(379): oxShopControl->_initializeViewObject('exceptionError', 'displayExceptio...', NULL, NULL)
+#5 /var/www/phptest/core/oxshopcontrol.php(172): oxShopControl->_process('exceptionError', 'displayExceptio...')
+#6 /var/www/phptest/core/oxid.php(32): oxShopControl->start()
+#7 /var/www/phptest/index.php(19): Oxid::run()
+#8 /var/www/phptest/admin/index.php(20): require_once('/var/www/phptes...')
+#9 {main}
+
+ Faulty component --> 
+---------------------------------------------
+oxFileException-oxException (time: 2014-03-21 17:07:28): [0]: Requested file not found for module dre_cleartmp (/var/www/phptest/modules/dre_cleartmp/out/admin/css/dre_cleartmp.css) 
+ Stack Trace: #0 /var/www/phptest/core/oxutilsobject.php(185): oxUtilsObject->_getObject('oxfileexception', 1, Array)
+#1 [internal function]: oxUtilsObject->oxNew('oxFileException', 'Requested file ...')
+#2 /var/www/phptest/core/oxfunctions.php(375): call_user_func_array(Array, Array)
+#3 /var/www/phptest/core/oxviewconfig.php(1351): oxNew('oxFileException', 'Requested file ...')
+#4 /var/www/phptest/core/oxviewconfig.php(1375): oxViewConfig->getModulePath('dre_cleartmp', 'out/admin/css/d...')
+#5 /var/www/phptest/tmp/smarty/921a89940f4ee8b8039bbf8081c5ccf9^%%D1^D1A^D1ACAB3E%%dre_header.tpl.php(14): oxViewConfig->getModuleUrl('dre_cleartmp', 'out/admin/css/d...')
+#6 /var/www/phptest/core/smarty/Smarty.class.php(1263): include('/var/www/phptes...')
+#7 /var/www/phptest/core/oxshopcontrol.php(521): Smarty->fetch('dre_header.tpl', NULL)
+#8 /var/www/phptest/core/oxshopcontrol.php(388): oxShopControl->_render(Object(dre_cleartmp_navigation))
+#9 /var/www/phptest/core/oxshopcontrol.php(148): oxShopControl->_process('navigation', NULL, NULL, NULL)
+#10 /var/www/phptest/core/oxid.php(32): oxShopControl->start()
+#11 /var/www/phptest/index.php(19): Oxid::run()
+#12 /var/www/phptest/admin/index.php(20): require_once('/var/www/phptes...')
+#13 {main}
+
+ Faulty File --> 
+Error Code --> 
+---------------------------------------------
+oxSystemComponentException---!--NOT CAUGHT--!--oxException (time: 2014-03-21 17:07:28): [0]: Function 'getIsOrderStep' does not exist or is not accessible! (dre_cleartmp_navigation)
+ 
+ Stack Trace: #0 /var/www/phptest/application/components/oxcmp_categories.php(62): oxSuperCfg->__call('getIsOrderStep', Array)
+#1 /var/www/phptest/application/components/oxcmp_categories.php(62): dre_cleartmp_navigation->getIsOrderStep()
+#2 /var/www/phptest/application/controllers/oxubase.php(599): oxcmp_categories->init()
+#3 /var/www/phptest/core/oxshopcontrol.php(443): oxUBase->init()
+#4 /var/www/phptest/core/oxshopcontrol.php(379): oxShopControl->_initializeViewObject('exceptionError', 'displayExceptio...', NULL, NULL)
+#5 /var/www/phptest/core/oxshopcontrol.php(172): oxShopControl->_process('exceptionError', 'displayExceptio...')
+#6 /var/www/phptest/core/oxid.php(32): oxShopControl->start()
+#7 /var/www/phptest/index.php(19): Oxid::run()
+#8 /var/www/phptest/admin/index.php(20): require_once('/var/www/phptes...')
+#9 {main}
+
+ Faulty component --> 
+---------------------------------------------
+oxFileException-oxException (time: 2014-03-21 17:08:08): [0]: Requested file not found for module dre_cleartmp (/var/www/phptest/modules/dre_cleartmp/out/admin/css/dre_cleartmp.css) 
+ Stack Trace: #0 /var/www/phptest/core/oxutilsobject.php(185): oxUtilsObject->_getObject('oxfileexception', 1, Array)
+#1 [internal function]: oxUtilsObject->oxNew('oxFileException', 'Requested file ...')
+#2 /var/www/phptest/core/oxfunctions.php(375): call_user_func_array(Array, Array)
+#3 /var/www/phptest/core/oxviewconfig.php(1351): oxNew('oxFileException', 'Requested file ...')
+#4 /var/www/phptest/core/oxviewconfig.php(1375): oxViewConfig->getModulePath('dre_cleartmp', 'out/admin/css/d...')
+#5 /var/www/phptest/tmp/smarty/921a89940f4ee8b8039bbf8081c5ccf9^%%D1^D1A^D1ACAB3E%%dre_header.tpl.php(14): oxViewConfig->getModuleUrl('dre_cleartmp', 'out/admin/css/d...')
+#6 /var/www/phptest/core/smarty/Smarty.class.php(1263): include('/var/www/phptes...')
+#7 /var/www/phptest/core/oxshopcontrol.php(521): Smarty->fetch('dre_header.tpl', NULL)
+#8 /var/www/phptest/core/oxshopcontrol.php(388): oxShopControl->_render(Object(dre_cleartmp_navigation))
+#9 /var/www/phptest/core/oxshopcontrol.php(148): oxShopControl->_process('navigation', NULL, NULL, NULL)
+#10 /var/www/phptest/core/oxid.php(32): oxShopControl->start()
+#11 /var/www/phptest/index.php(19): Oxid::run()
+#12 /var/www/phptest/admin/index.php(20): require_once('/var/www/phptes...')
+#13 {main}
+
+ Faulty File --> 
+Error Code --> 
+---------------------------------------------
+oxSystemComponentException---!--NOT CAUGHT--!--oxException (time: 2014-03-21 17:08:08): [0]: Function 'getIsOrderStep' does not exist or is not accessible! (dre_cleartmp_navigation)
+ 
+ Stack Trace: #0 /var/www/phptest/application/components/oxcmp_categories.php(62): oxSuperCfg->__call('getIsOrderStep', Array)
+#1 /var/www/phptest/application/components/oxcmp_categories.php(62): dre_cleartmp_navigation->getIsOrderStep()
+#2 /var/www/phptest/application/controllers/oxubase.php(599): oxcmp_categories->init()
+#3 /var/www/phptest/core/oxshopcontrol.php(443): oxUBase->init()
+#4 /var/www/phptest/core/oxshopcontrol.php(379): oxShopControl->_initializeViewObject('exceptionError', 'displayExceptio...', NULL, NULL)
+#5 /var/www/phptest/core/oxshopcontrol.php(172): oxShopControl->_process('exceptionError', 'displayExceptio...')
+#6 /var/www/phptest/core/oxid.php(32): oxShopControl->start()
+#7 /var/www/phptest/index.php(19): Oxid::run()
+#8 /var/www/phptest/admin/index.php(20): require_once('/var/www/phptes...')
+#9 {main}
+
+ Faulty component --> 
+---------------------------------------------
+oxSystemComponentException---!--NOT CAUGHT--!--oxException (time: 2014-03-21 17:10:16): [0]: Function 'getIsOrderStep' does not exist or is not accessible! (dre_cleartmp_navigation)
+ 
+ Stack Trace: #0 /var/www/phptest/application/components/oxcmp_categories.php(62): oxSuperCfg->__call('getIsOrderStep', Array)
+#1 /var/www/phptest/application/components/oxcmp_categories.php(62): dre_cleartmp_navigation->getIsOrderStep()
+#2 /var/www/phptest/application/controllers/oxubase.php(599): oxcmp_categories->init()
+#3 /var/www/phptest/core/oxshopcontrol.php(443): oxUBase->init()
+#4 /var/www/phptest/core/oxshopcontrol.php(379): oxShopControl->_initializeViewObject('exceptionError', 'displayExceptio...', NULL, NULL)
+#5 /var/www/phptest/core/oxshopcontrol.php(153): oxShopControl->_process('exceptionError', 'displayExceptio...')
+#6 /var/www/phptest/core/oxid.php(32): oxShopControl->start()
+#7 /var/www/phptest/index.php(19): Oxid::run()
+#8 /var/www/phptest/admin/index.php(20): require_once('/var/www/phptes...')
+#9 {main}
+
+ Faulty component --> 
+---------------------------------------------
+oxSystemComponentException-oxException (time: 2014-03-25 14:50:32): [0]: Function 'morePics' does not exist or is not accessible! (oeThemeSwitcherDetails)
+ 
+ Stack Trace: #0 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%DA^DA8^DA80D1BB%%morepics.tpl.php(5): oxSuperCfg->__call('morePics', Array)
+#1 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%DA^DA8^DA80D1BB%%morepics.tpl.php(5): oeThemeSwitcherDetails->morePics()
+#2 /var/www/phptest/core/smarty/Smarty.class.php(1869): include('/var/www/phptes...')
+#3 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%5E^5E9^5E9B9D5B%%productmain.tpl.php(367): Smarty->_smarty_include(Array)
+#4 /var/www/phptest/core/smarty/Smarty.class.php(1869): include('/var/www/phptes...')
+#5 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%A5^A59^A595DDB8%%fullproductinfo.tpl.php(8): Smarty->_smarty_include(Array)
+#6 /var/www/phptest/core/smarty/Smarty.class.php(1869): include('/var/www/phptes...')
+#7 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%08^08A^08ABD53A%%details.tpl.php(82): Smarty->_smarty_include(Array)
+#8 /var/www/phptest/core/smarty/Smarty.class.php(1263): include('/var/www/phptes...')
+#9 /var/www/phptest/core/oxshopcontrol.php(521): Smarty->fetch('page/details/de...', 'ox|0|0|0|0|7b60...')
+#10 /var/www/phptest/core/oxshopcontrol.php(388): oxShopControl->_render(Object(oeThemeSwitcherDetails))
+#11 /var/www/phptest/core/oxshopcontrol.php(148): oxShopControl->_process('details', NULL, NULL, NULL)
+#12 /var/www/phptest/core/oxid.php(32): oxShopControl->start()
+#13 /var/www/phptest/index.php(19): Oxid::run()
+#14 /var/www/phptest/oxseo.php(37): require('/var/www/phptes...')
+#15 {main}
+
+ Faulty component --> 
+---------------------------------------------
+oxSystemComponentException-oxException (time: 2014-03-25 15:00:39): [0]: Function 'morePics' does not exist or is not accessible! (oeThemeSwitcherDetails)
+ 
+ Stack Trace: #0 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%DA^DA8^DA80D1BB%%morepics.tpl.php(5): oxSuperCfg->__call('morePics', Array)
+#1 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%DA^DA8^DA80D1BB%%morepics.tpl.php(5): oeThemeSwitcherDetails->morePics()
+#2 /var/www/phptest/core/smarty/Smarty.class.php(1869): include('/var/www/phptes...')
+#3 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%5E^5E9^5E9B9D5B%%productmain.tpl.php(367): Smarty->_smarty_include(Array)
+#4 /var/www/phptest/core/smarty/Smarty.class.php(1869): include('/var/www/phptes...')
+#5 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%A5^A59^A595DDB8%%fullproductinfo.tpl.php(8): Smarty->_smarty_include(Array)
+#6 /var/www/phptest/core/smarty/Smarty.class.php(1869): include('/var/www/phptes...')
+#7 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%08^08A^08ABD53A%%details.tpl.php(82): Smarty->_smarty_include(Array)
+#8 /var/www/phptest/core/smarty/Smarty.class.php(1263): include('/var/www/phptes...')
+#9 /var/www/phptest/core/oxshopcontrol.php(521): Smarty->fetch('page/details/de...', 'ox|0|0|0|0|3981...')
+#10 /var/www/phptest/core/oxshopcontrol.php(388): oxShopControl->_render(Object(oeThemeSwitcherDetails))
+#11 /var/www/phptest/core/oxshopcontrol.php(148): oxShopControl->_process('details', NULL, NULL, NULL)
+#12 /var/www/phptest/core/oxid.php(32): oxShopControl->start()
+#13 /var/www/phptest/index.php(19): Oxid::run()
+#14 /var/www/phptest/oxseo.php(37): require('/var/www/phptes...')
+#15 {main}
+
+ Faulty component --> 
+---------------------------------------------
+oxSystemComponentException-oxException (time: 2014-03-25 15:18:32): [0]: Function 'getArticleLongDesc' does not exist or is not accessible! (bodyoxarticle)
+ 
+ Stack Trace: #0 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%F5^F50^F500F10E%%tabs.tpl.php(12): oxSuperCfg->__call('getArticleLongD...', Array)
+#1 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%F5^F50^F500F10E%%tabs.tpl.php(12): bodyoxarticle->getArticleLongDesc()
+#2 /var/www/phptest/core/smarty/Smarty.class.php(1869): include('/var/www/phptes...')
+#3 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%A5^A59^A595DDB8%%fullproductinfo.tpl.php(16): Smarty->_smarty_include(Array)
+#4 /var/www/phptest/core/smarty/Smarty.class.php(1869): include('/var/www/phptes...')
+#5 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%08^08A^08ABD53A%%details.tpl.php(82): Smarty->_smarty_include(Array)
+#6 /var/www/phptest/core/smarty/Smarty.class.php(1263): include('/var/www/phptes...')
+#7 /var/www/phptest/core/oxshopcontrol.php(521): Smarty->fetch('page/details/de...', 'ox|0|0|0|0|3981...')
+#8 /var/www/phptest/core/oxshopcontrol.php(388): oxShopControl->_render(Object(oeThemeSwitcherDetails))
+#9 /var/www/phptest/core/oxshopcontrol.php(148): oxShopControl->_process('details', NULL, NULL, NULL)
+#10 /var/www/phptest/core/oxid.php(32): oxShopControl->start()
+#11 /var/www/phptest/index.php(19): Oxid::run()
+#12 /var/www/phptest/oxseo.php(37): require('/var/www/phptes...')
+#13 {main}
+
+ Faulty component --> 
+---------------------------------------------
+oxSystemComponentException-oxException (time: 2014-03-25 15:21:03): [0]: Function 'morePics' does not exist or is not accessible! (oeThemeSwitcherDetails)
+ 
+ Stack Trace: #0 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%DA^DA8^DA80D1BB%%morepics.tpl.php(5): oxSuperCfg->__call('morePics', Array)
+#1 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%DA^DA8^DA80D1BB%%morepics.tpl.php(5): oeThemeSwitcherDetails->morePics()
+#2 /var/www/phptest/core/smarty/Smarty.class.php(1869): include('/var/www/phptes...')
+#3 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%5E^5E9^5E9B9D5B%%productmain.tpl.php(367): Smarty->_smarty_include(Array)
+#4 /var/www/phptest/core/smarty/Smarty.class.php(1869): include('/var/www/phptes...')
+#5 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%A5^A59^A595DDB8%%fullproductinfo.tpl.php(8): Smarty->_smarty_include(Array)
+#6 /var/www/phptest/core/smarty/Smarty.class.php(1869): include('/var/www/phptes...')
+#7 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%08^08A^08ABD53A%%details.tpl.php(83): Smarty->_smarty_include(Array)
+#8 /var/www/phptest/core/smarty/Smarty.class.php(1263): include('/var/www/phptes...')
+#9 /var/www/phptest/core/oxshopcontrol.php(521): Smarty->fetch('page/details/de...', 'ox|0|0|0|0|3981...')
+#10 /var/www/phptest/core/oxshopcontrol.php(388): oxShopControl->_render(Object(oeThemeSwitcherDetails))
+#11 /var/www/phptest/core/oxshopcontrol.php(148): oxShopControl->_process('details', NULL, NULL, NULL)
+#12 /var/www/phptest/core/oxid.php(32): oxShopControl->start()
+#13 /var/www/phptest/index.php(19): Oxid::run()
+#14 /var/www/phptest/oxseo.php(37): require('/var/www/phptes...')
+#15 {main}
+
+ Faulty component --> 
+---------------------------------------------
+oxSystemComponentException-oxException (time: 2014-03-25 15:24:51): [0]: Function 'morePics' does not exist or is not accessible! (oeThemeSwitcherDetails)
+ 
+ Stack Trace: #0 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%DA^DA8^DA80D1BB%%morepics.tpl.php(5): oxSuperCfg->__call('morePics', Array)
+#1 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%DA^DA8^DA80D1BB%%morepics.tpl.php(5): oeThemeSwitcherDetails->morePics()
+#2 /var/www/phptest/core/smarty/Smarty.class.php(1869): include('/var/www/phptes...')
+#3 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%5E^5E9^5E9B9D5B%%productmain.tpl.php(367): Smarty->_smarty_include(Array)
+#4 /var/www/phptest/core/smarty/Smarty.class.php(1869): include('/var/www/phptes...')
+#5 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%A5^A59^A595DDB8%%fullproductinfo.tpl.php(8): Smarty->_smarty_include(Array)
+#6 /var/www/phptest/core/smarty/Smarty.class.php(1869): include('/var/www/phptes...')
+#7 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%08^08A^08ABD53A%%details.tpl.php(84): Smarty->_smarty_include(Array)
+#8 /var/www/phptest/core/smarty/Smarty.class.php(1263): include('/var/www/phptes...')
+#9 /var/www/phptest/core/oxshopcontrol.php(521): Smarty->fetch('page/details/de...', 'ox|0|0|0|0|3981...')
+#10 /var/www/phptest/core/oxshopcontrol.php(388): oxShopControl->_render(Object(oeThemeSwitcherDetails))
+#11 /var/www/phptest/core/oxshopcontrol.php(148): oxShopControl->_process('details', NULL, NULL, NULL)
+#12 /var/www/phptest/core/oxid.php(32): oxShopControl->start()
+#13 /var/www/phptest/index.php(19): Oxid::run()
+#14 /var/www/phptest/oxseo.php(37): require('/var/www/phptes...')
+#15 {main}
+
+ Faulty component --> 
+---------------------------------------------
+oxSystemComponentException-oxException (time: 2014-03-25 15:25:52): [0]: Function 'morePics' does not exist or is not accessible! (oeThemeSwitcherDetails)
+ 
+ Stack Trace: #0 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%DA^DA8^DA80D1BB%%morepics.tpl.php(5): oxSuperCfg->__call('morePics', Array)
+#1 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%DA^DA8^DA80D1BB%%morepics.tpl.php(5): oeThemeSwitcherDetails->morePics()
+#2 /var/www/phptest/core/smarty/Smarty.class.php(1869): include('/var/www/phptes...')
+#3 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%5E^5E9^5E9B9D5B%%productmain.tpl.php(367): Smarty->_smarty_include(Array)
+#4 /var/www/phptest/core/smarty/Smarty.class.php(1869): include('/var/www/phptes...')
+#5 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%A5^A59^A595DDB8%%fullproductinfo.tpl.php(8): Smarty->_smarty_include(Array)
+#6 /var/www/phptest/core/smarty/Smarty.class.php(1869): include('/var/www/phptes...')
+#7 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%08^08A^08ABD53A%%details.tpl.php(84): Smarty->_smarty_include(Array)
+#8 /var/www/phptest/core/smarty/Smarty.class.php(1263): include('/var/www/phptes...')
+#9 /var/www/phptest/core/oxshopcontrol.php(521): Smarty->fetch('page/details/de...', 'ox|0|0|0|0|3981...')
+#10 /var/www/phptest/core/oxshopcontrol.php(388): oxShopControl->_render(Object(oeThemeSwitcherDetails))
+#11 /var/www/phptest/core/oxshopcontrol.php(148): oxShopControl->_process('details', NULL, NULL, NULL)
+#12 /var/www/phptest/core/oxid.php(32): oxShopControl->start()
+#13 /var/www/phptest/index.php(19): Oxid::run()
+#14 /var/www/phptest/oxseo.php(37): require('/var/www/phptes...')
+#15 {main}
+
+ Faulty component --> 
+---------------------------------------------
+oxSystemComponentException-oxException (time: 2014-03-25 15:29:24): [0]: Function 'morePics' does not exist or is not accessible! (oeThemeSwitcherDetails)
+ 
+ Stack Trace: #0 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%DA^DA8^DA80D1BB%%morepics.tpl.php(5): oxSuperCfg->__call('morePics', Array)
+#1 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%DA^DA8^DA80D1BB%%morepics.tpl.php(5): oeThemeSwitcherDetails->morePics()
+#2 /var/www/phptest/core/smarty/Smarty.class.php(1869): include('/var/www/phptes...')
+#3 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%5E^5E9^5E9B9D5B%%productmain.tpl.php(367): Smarty->_smarty_include(Array)
+#4 /var/www/phptest/core/smarty/Smarty.class.php(1869): include('/var/www/phptes...')
+#5 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%A5^A59^A595DDB8%%fullproductinfo.tpl.php(8): Smarty->_smarty_include(Array)
+#6 /var/www/phptest/core/smarty/Smarty.class.php(1869): include('/var/www/phptes...')
+#7 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%08^08A^08ABD53A%%details.tpl.php(87): Smarty->_smarty_include(Array)
+#8 /var/www/phptest/core/smarty/Smarty.class.php(1263): include('/var/www/phptes...')
+#9 /var/www/phptest/core/oxshopcontrol.php(521): Smarty->fetch('page/details/de...', 'ox|0|0|0|0|3981...')
+#10 /var/www/phptest/core/oxshopcontrol.php(388): oxShopControl->_render(Object(oeThemeSwitcherDetails))
+#11 /var/www/phptest/core/oxshopcontrol.php(148): oxShopControl->_process('details', NULL, NULL, NULL)
+#12 /var/www/phptest/core/oxid.php(32): oxShopControl->start()
+#13 /var/www/phptest/index.php(19): Oxid::run()
+#14 /var/www/phptest/oxseo.php(37): require('/var/www/phptes...')
+#15 {main}
+
+ Faulty component --> 
+---------------------------------------------
+oxSystemComponentException-oxException (time: 2014-03-25 16:08:47): [0]: Function 'morePics' does not exist or is not accessible! (oeThemeSwitcherDetails)
+ 
+ Stack Trace: #0 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%DA^DA8^DA80D1BB%%morepics.tpl.php(5): oxSuperCfg->__call('morePics', Array)
+#1 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%DA^DA8^DA80D1BB%%morepics.tpl.php(5): oeThemeSwitcherDetails->morePics()
+#2 /var/www/phptest/core/smarty/Smarty.class.php(1869): include('/var/www/phptes...')
+#3 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%5E^5E9^5E9B9D5B%%productmain.tpl.php(367): Smarty->_smarty_include(Array)
+#4 /var/www/phptest/core/smarty/Smarty.class.php(1869): include('/var/www/phptes...')
+#5 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%A5^A59^A595DDB8%%fullproductinfo.tpl.php(8): Smarty->_smarty_include(Array)
+#6 /var/www/phptest/core/smarty/Smarty.class.php(1869): include('/var/www/phptes...')
+#7 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%08^08A^08ABD53A%%details.tpl.php(87): Smarty->_smarty_include(Array)
+#8 /var/www/phptest/core/smarty/Smarty.class.php(1263): include('/var/www/phptes...')
+#9 /var/www/phptest/core/oxshopcontrol.php(521): Smarty->fetch('page/details/de...', 'ox|0|0|0|0|3981...')
+#10 /var/www/phptest/core/oxshopcontrol.php(388): oxShopControl->_render(Object(oeThemeSwitcherDetails))
+#11 /var/www/phptest/core/oxshopcontrol.php(148): oxShopControl->_process('details', NULL, NULL, NULL)
+#12 /var/www/phptest/core/oxid.php(32): oxShopControl->start()
+#13 /var/www/phptest/index.php(19): Oxid::run()
+#14 /var/www/phptest/oxseo.php(37): require('/var/www/phptes...')
+#15 {main}
+
+ Faulty component --> 
+---------------------------------------------
+oxSystemComponentException-oxException (time: 2014-03-25 16:15:24): [0]: Function 'morePics' does not exist or is not accessible! (oeThemeSwitcherDetails)
+ 
+ Stack Trace: #0 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%DA^DA8^DA80D1BB%%morepics.tpl.php(5): oxSuperCfg->__call('morePics', Array)
+#1 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%DA^DA8^DA80D1BB%%morepics.tpl.php(5): oeThemeSwitcherDetails->morePics()
+#2 /var/www/phptest/core/smarty/Smarty.class.php(1869): include('/var/www/phptes...')
+#3 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%5E^5E9^5E9B9D5B%%productmain.tpl.php(367): Smarty->_smarty_include(Array)
+#4 /var/www/phptest/core/smarty/Smarty.class.php(1869): include('/var/www/phptes...')
+#5 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%A5^A59^A595DDB8%%fullproductinfo.tpl.php(8): Smarty->_smarty_include(Array)
+#6 /var/www/phptest/core/smarty/Smarty.class.php(1869): include('/var/www/phptes...')
+#7 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%08^08A^08ABD53A%%details.tpl.php(87): Smarty->_smarty_include(Array)
+#8 /var/www/phptest/core/smarty/Smarty.class.php(1263): include('/var/www/phptes...')
+#9 /var/www/phptest/core/oxshopcontrol.php(521): Smarty->fetch('page/details/de...', 'ox|0|0|0|0|3981...')
+#10 /var/www/phptest/core/oxshopcontrol.php(388): oxShopControl->_render(Object(oeThemeSwitcherDetails))
+#11 /var/www/phptest/core/oxshopcontrol.php(148): oxShopControl->_process('details', NULL, NULL, NULL)
+#12 /var/www/phptest/core/oxid.php(32): oxShopControl->start()
+#13 /var/www/phptest/index.php(19): Oxid::run()
+#14 /var/www/phptest/oxseo.php(37): require('/var/www/phptes...')
+#15 {main}
+
+ Faulty component --> 
+---------------------------------------------
+oxSystemComponentException-oxException (time: 2014-03-25 16:15:40): [0]: Function 'morePics' does not exist or is not accessible! (oeThemeSwitcherDetails)
+ 
+ Stack Trace: #0 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%DA^DA8^DA80D1BB%%morepics.tpl.php(5): oxSuperCfg->__call('morePics', Array)
+#1 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%DA^DA8^DA80D1BB%%morepics.tpl.php(5): oeThemeSwitcherDetails->morePics()
+#2 /var/www/phptest/core/smarty/Smarty.class.php(1869): include('/var/www/phptes...')
+#3 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%5E^5E9^5E9B9D5B%%productmain.tpl.php(367): Smarty->_smarty_include(Array)
+#4 /var/www/phptest/core/smarty/Smarty.class.php(1869): include('/var/www/phptes...')
+#5 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%A5^A59^A595DDB8%%fullproductinfo.tpl.php(8): Smarty->_smarty_include(Array)
+#6 /var/www/phptest/core/smarty/Smarty.class.php(1869): include('/var/www/phptes...')
+#7 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%08^08A^08ABD53A%%details.tpl.php(87): Smarty->_smarty_include(Array)
+#8 /var/www/phptest/core/smarty/Smarty.class.php(1263): include('/var/www/phptes...')
+#9 /var/www/phptest/core/oxshopcontrol.php(521): Smarty->fetch('page/details/de...', 'ox|0|0|0|0|3981...')
+#10 /var/www/phptest/core/oxshopcontrol.php(388): oxShopControl->_render(Object(oeThemeSwitcherDetails))
+#11 /var/www/phptest/core/oxshopcontrol.php(148): oxShopControl->_process('details', NULL, NULL, NULL)
+#12 /var/www/phptest/core/oxid.php(32): oxShopControl->start()
+#13 /var/www/phptest/index.php(19): Oxid::run()
+#14 /var/www/phptest/oxseo.php(37): require('/var/www/phptes...')
+#15 {main}
+
+ Faulty component --> 
+---------------------------------------------
+oxSystemComponentException-oxException (time: 2014-03-25 16:33:40): [0]: Function 'morePics' does not exist or is not accessible! (oeThemeSwitcherDetails)
+ 
+ Stack Trace: #0 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%DA^DA8^DA80D1BB%%morepics.tpl.php(5): oxSuperCfg->__call('morePics', Array)
+#1 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%DA^DA8^DA80D1BB%%morepics.tpl.php(5): oeThemeSwitcherDetails->morePics()
+#2 /var/www/phptest/core/smarty/Smarty.class.php(1869): include('/var/www/phptes...')
+#3 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%5E^5E9^5E9B9D5B%%productmain.tpl.php(367): Smarty->_smarty_include(Array)
+#4 /var/www/phptest/core/smarty/Smarty.class.php(1869): include('/var/www/phptes...')
+#5 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%A5^A59^A595DDB8%%fullproductinfo.tpl.php(8): Smarty->_smarty_include(Array)
+#6 /var/www/phptest/core/smarty/Smarty.class.php(1869): include('/var/www/phptes...')
+#7 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%08^08A^08ABD53A%%details.tpl.php(85): Smarty->_smarty_include(Array)
+#8 /var/www/phptest/core/smarty/Smarty.class.php(1263): include('/var/www/phptes...')
+#9 /var/www/phptest/core/oxshopcontrol.php(521): Smarty->fetch('page/details/de...', 'ox|0|0|0|0|3981...')
+#10 /var/www/phptest/core/oxshopcontrol.php(388): oxShopControl->_render(Object(oeThemeSwitcherDetails))
+#11 /var/www/phptest/core/oxshopcontrol.php(148): oxShopControl->_process('details', NULL, NULL, NULL)
+#12 /var/www/phptest/core/oxid.php(32): oxShopControl->start()
+#13 /var/www/phptest/index.php(19): Oxid::run()
+#14 /var/www/phptest/oxseo.php(37): require('/var/www/phptes...')
+#15 {main}
+
+ Faulty component --> 
+---------------------------------------------
+oxSystemComponentException-oxException (time: 2014-03-27 13:59:35): [0]: Function 'morePics' does not exist or is not accessible! (oeThemeSwitcherDetails)
+ 
+ Stack Trace: #0 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%DA^DA8^DA80D1BB%%morepics.tpl.php(5): oxSuperCfg->__call('morePics', Array)
+#1 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%DA^DA8^DA80D1BB%%morepics.tpl.php(5): oeThemeSwitcherDetails->morePics()
+#2 /var/www/phptest/core/smarty/Smarty.class.php(1869): include('/var/www/phptes...')
+#3 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%5E^5E9^5E9B9D5B%%productmain.tpl.php(367): Smarty->_smarty_include(Array)
+#4 /var/www/phptest/core/smarty/Smarty.class.php(1869): include('/var/www/phptes...')
+#5 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%A5^A59^A595DDB8%%fullproductinfo.tpl.php(8): Smarty->_smarty_include(Array)
+#6 /var/www/phptest/core/smarty/Smarty.class.php(1869): include('/var/www/phptes...')
+#7 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%08^08A^08ABD53A%%details.tpl.php(85): Smarty->_smarty_include(Array)
+#8 /var/www/phptest/core/smarty/Smarty.class.php(1263): include('/var/www/phptes...')
+#9 /var/www/phptest/core/oxshopcontrol.php(521): Smarty->fetch('page/details/de...', 'ox|0|0|0|0|3981...')
+#10 /var/www/phptest/core/oxshopcontrol.php(388): oxShopControl->_render(Object(oeThemeSwitcherDetails))
+#11 /var/www/phptest/core/oxshopcontrol.php(148): oxShopControl->_process('details', NULL, NULL, NULL)
+#12 /var/www/phptest/core/oxid.php(32): oxShopControl->start()
+#13 /var/www/phptest/index.php(19): Oxid::run()
+#14 /var/www/phptest/oxseo.php(37): require('/var/www/phptes...')
+#15 {main}
+
+ Faulty component --> 
+---------------------------------------------
+oxSystemComponentException-oxException (time: 2014-03-27 14:07:33): [0]: Function 'getBanners' does not exist or is not accessible! (oeThemeSwitcherAList)
+ 
+ Stack Trace: #0 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%D7^D7A^D7AA9363%%promoslider.tpl.php(5): oxSuperCfg->__call('getBanners', Array)
+#1 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%D7^D7A^D7AA9363%%promoslider.tpl.php(5): oeThemeSwitcherAList->getBanners()
+#2 /var/www/phptest/core/smarty/Smarty.class.php(1869): include('/var/www/phptes...')
+#3 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%36^366^366ECF91%%page.tpl.php(32): Smarty->_smarty_include(Array)
+#4 /var/www/phptest/core/smarty/Smarty.class.php(1869): include('/var/www/phptes...')
+#5 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%F0^F0F^F0F92504%%list.tpl.php(180): Smarty->_smarty_include(Array)
+#6 /var/www/phptest/core/smarty/Smarty.class.php(1263): include('/var/www/phptes...')
+#7 /var/www/phptest/core/oxshopcontrol.php(521): Smarty->fetch('page/list/list....', '6eba63f019c85cc...')
+#8 /var/www/phptest/core/oxshopcontrol.php(388): oxShopControl->_render(Object(oeThemeSwitcherAList))
+#9 /var/www/phptest/core/oxshopcontrol.php(148): oxShopControl->_process('alist', NULL, NULL, NULL)
+#10 /var/www/phptest/core/oxid.php(32): oxShopControl->start()
+#11 /var/www/phptest/index.php(19): Oxid::run()
+#12 /var/www/phptest/oxseo.php(37): require('/var/www/phptes...')
+#13 {main}
+
+ Faulty component --> 
+---------------------------------------------
+oxSystemComponentException-oxException (time: 2014-03-27 14:08:50): [0]: Function 'getBanners' does not exist or is not accessible! (oeThemeSwitcherAList)
+ 
+ Stack Trace: #0 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%D7^D7A^D7AA9363%%promoslider.tpl.php(5): oxSuperCfg->__call('getBanners', Array)
+#1 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%D7^D7A^D7AA9363%%promoslider.tpl.php(5): oeThemeSwitcherAList->getBanners()
+#2 /var/www/phptest/core/smarty/Smarty.class.php(1869): include('/var/www/phptes...')
+#3 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%36^366^366ECF91%%page.tpl.php(32): Smarty->_smarty_include(Array)
+#4 /var/www/phptest/core/smarty/Smarty.class.php(1869): include('/var/www/phptes...')
+#5 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%F0^F0F^F0F92504%%list.tpl.php(180): Smarty->_smarty_include(Array)
+#6 /var/www/phptest/core/smarty/Smarty.class.php(1263): include('/var/www/phptes...')
+#7 /var/www/phptest/core/oxshopcontrol.php(521): Smarty->fetch('page/list/list....', '6eba63f019c85cc...')
+#8 /var/www/phptest/core/oxshopcontrol.php(388): oxShopControl->_render(Object(oeThemeSwitcherAList))
+#9 /var/www/phptest/core/oxshopcontrol.php(148): oxShopControl->_process('alist', NULL, NULL, NULL)
+#10 /var/www/phptest/core/oxid.php(32): oxShopControl->start()
+#11 /var/www/phptest/index.php(19): Oxid::run()
+#12 /var/www/phptest/oxseo.php(37): require('/var/www/phptes...')
+#13 {main}
+
+ Faulty component --> 
+---------------------------------------------
+oxSystemComponentException-oxException (time: 2014-03-27 14:09:09): [0]: Function 'getBanners' does not exist or is not accessible! (oeThemeSwitcherAList)
+ 
+ Stack Trace: #0 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%D7^D7A^D7AA9363%%promoslider.tpl.php(5): oxSuperCfg->__call('getBanners', Array)
+#1 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%D7^D7A^D7AA9363%%promoslider.tpl.php(5): oeThemeSwitcherAList->getBanners()
+#2 /var/www/phptest/core/smarty/Smarty.class.php(1869): include('/var/www/phptes...')
+#3 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%36^366^366ECF91%%page.tpl.php(32): Smarty->_smarty_include(Array)
+#4 /var/www/phptest/core/smarty/Smarty.class.php(1869): include('/var/www/phptes...')
+#5 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%F0^F0F^F0F92504%%list.tpl.php(180): Smarty->_smarty_include(Array)
+#6 /var/www/phptest/core/smarty/Smarty.class.php(1263): include('/var/www/phptes...')
+#7 /var/www/phptest/core/oxshopcontrol.php(521): Smarty->fetch('page/list/list....', '6eba63f019c85cc...')
+#8 /var/www/phptest/core/oxshopcontrol.php(388): oxShopControl->_render(Object(oeThemeSwitcherAList))
+#9 /var/www/phptest/core/oxshopcontrol.php(148): oxShopControl->_process('alist', NULL, NULL, NULL)
+#10 /var/www/phptest/core/oxid.php(32): oxShopControl->start()
+#11 /var/www/phptest/index.php(19): Oxid::run()
+#12 /var/www/phptest/oxseo.php(37): require('/var/www/phptes...')
+#13 {main}
+
+ Faulty component --> 
+---------------------------------------------
+oxSystemComponentException-oxException (time: 2014-03-27 14:09:35): [0]: Function 'getBanners' does not exist or is not accessible! (oeThemeSwitcherAList)
+ 
+ Stack Trace: #0 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%D7^D7A^D7AA9363%%promoslider.tpl.php(5): oxSuperCfg->__call('getBanners', Array)
+#1 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%D7^D7A^D7AA9363%%promoslider.tpl.php(5): oeThemeSwitcherAList->getBanners()
+#2 /var/www/phptest/core/smarty/Smarty.class.php(1869): include('/var/www/phptes...')
+#3 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%36^366^366ECF91%%page.tpl.php(32): Smarty->_smarty_include(Array)
+#4 /var/www/phptest/core/smarty/Smarty.class.php(1869): include('/var/www/phptes...')
+#5 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%F0^F0F^F0F92504%%list.tpl.php(180): Smarty->_smarty_include(Array)
+#6 /var/www/phptest/core/smarty/Smarty.class.php(1263): include('/var/www/phptes...')
+#7 /var/www/phptest/core/oxshopcontrol.php(521): Smarty->fetch('page/list/list....', '6eba63f019c85cc...')
+#8 /var/www/phptest/core/oxshopcontrol.php(388): oxShopControl->_render(Object(oeThemeSwitcherAList))
+#9 /var/www/phptest/core/oxshopcontrol.php(148): oxShopControl->_process('alist', NULL, NULL, NULL)
+#10 /var/www/phptest/core/oxid.php(32): oxShopControl->start()
+#11 /var/www/phptest/index.php(19): Oxid::run()
+#12 /var/www/phptest/oxseo.php(37): require('/var/www/phptes...')
+#13 {main}
+
+ Faulty component --> 
+---------------------------------------------
+oxSystemComponentException-oxException (time: 2014-03-27 14:10:12): [0]: Function 'getBanners' does not exist or is not accessible! (oeThemeSwitcherAList)
+ 
+ Stack Trace: #0 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%D7^D7A^D7AA9363%%promoslider.tpl.php(5): oxSuperCfg->__call('getBanners', Array)
+#1 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%D7^D7A^D7AA9363%%promoslider.tpl.php(5): oeThemeSwitcherAList->getBanners()
+#2 /var/www/phptest/core/smarty/Smarty.class.php(1869): include('/var/www/phptes...')
+#3 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%36^366^366ECF91%%page.tpl.php(32): Smarty->_smarty_include(Array)
+#4 /var/www/phptest/core/smarty/Smarty.class.php(1869): include('/var/www/phptes...')
+#5 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%F0^F0F^F0F92504%%list.tpl.php(180): Smarty->_smarty_include(Array)
+#6 /var/www/phptest/core/smarty/Smarty.class.php(1263): include('/var/www/phptes...')
+#7 /var/www/phptest/core/oxshopcontrol.php(521): Smarty->fetch('page/list/list....', '6eba63f019c85cc...')
+#8 /var/www/phptest/core/oxshopcontrol.php(388): oxShopControl->_render(Object(oeThemeSwitcherAList))
+#9 /var/www/phptest/core/oxshopcontrol.php(148): oxShopControl->_process('alist', NULL, NULL, NULL)
+#10 /var/www/phptest/core/oxid.php(32): oxShopControl->start()
+#11 /var/www/phptest/index.php(19): Oxid::run()
+#12 /var/www/phptest/oxseo.php(37): require('/var/www/phptes...')
+#13 {main}
+
+ Faulty component --> 
+---------------------------------------------
+oxSystemComponentException-oxException (time: 2014-03-27 14:10:37): [0]: Function 'getBanners' does not exist or is not accessible! (oeThemeSwitcherAList)
+ 
+ Stack Trace: #0 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%D7^D7A^D7AA9363%%promoslider.tpl.php(5): oxSuperCfg->__call('getBanners', Array)
+#1 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%D7^D7A^D7AA9363%%promoslider.tpl.php(5): oeThemeSwitcherAList->getBanners()
+#2 /var/www/phptest/core/smarty/Smarty.class.php(1869): include('/var/www/phptes...')
+#3 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%36^366^366ECF91%%page.tpl.php(32): Smarty->_smarty_include(Array)
+#4 /var/www/phptest/core/smarty/Smarty.class.php(1869): include('/var/www/phptes...')
+#5 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%F0^F0F^F0F92504%%list.tpl.php(180): Smarty->_smarty_include(Array)
+#6 /var/www/phptest/core/smarty/Smarty.class.php(1263): include('/var/www/phptes...')
+#7 /var/www/phptest/core/oxshopcontrol.php(521): Smarty->fetch('page/list/list....', '6eba63f019c85cc...')
+#8 /var/www/phptest/core/oxshopcontrol.php(388): oxShopControl->_render(Object(oeThemeSwitcherAList))
+#9 /var/www/phptest/core/oxshopcontrol.php(148): oxShopControl->_process('alist', NULL, NULL, NULL)
+#10 /var/www/phptest/core/oxid.php(32): oxShopControl->start()
+#11 /var/www/phptest/index.php(19): Oxid::run()
+#12 /var/www/phptest/oxseo.php(37): require('/var/www/phptes...')
+#13 {main}
+
+ Faulty component --> 
+---------------------------------------------
+oxSystemComponentException-oxException (time: 2014-03-27 14:12:18): [0]: Function 'getBanners' does not exist or is not accessible! (oeThemeSwitcherAList)
+ 
+ Stack Trace: #0 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%D7^D7A^D7AA9363%%promoslider.tpl.php(5): oxSuperCfg->__call('getBanners', Array)
+#1 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%D7^D7A^D7AA9363%%promoslider.tpl.php(5): oeThemeSwitcherAList->getBanners()
+#2 /var/www/phptest/core/smarty/Smarty.class.php(1869): include('/var/www/phptes...')
+#3 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%36^366^366ECF91%%page.tpl.php(32): Smarty->_smarty_include(Array)
+#4 /var/www/phptest/core/smarty/Smarty.class.php(1869): include('/var/www/phptes...')
+#5 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%F0^F0F^F0F92504%%list.tpl.php(180): Smarty->_smarty_include(Array)
+#6 /var/www/phptest/core/smarty/Smarty.class.php(1263): include('/var/www/phptes...')
+#7 /var/www/phptest/core/oxshopcontrol.php(521): Smarty->fetch('page/list/list....', '6eba63f019c85cc...')
+#8 /var/www/phptest/core/oxshopcontrol.php(388): oxShopControl->_render(Object(oeThemeSwitcherAList))
+#9 /var/www/phptest/core/oxshopcontrol.php(148): oxShopControl->_process('alist', NULL, NULL, NULL)
+#10 /var/www/phptest/core/oxid.php(32): oxShopControl->start()
+#11 /var/www/phptest/index.php(19): Oxid::run()
+#12 /var/www/phptest/oxseo.php(37): require('/var/www/phptes...')
+#13 {main}
+
+ Faulty component --> 
+---------------------------------------------
+oxSystemComponentException-oxException (time: 2014-03-27 15:14:01): [0]: Function 'morePics' does not exist or is not accessible! (oeThemeSwitcherDetails)
+ 
+ Stack Trace: #0 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%DA^DA8^DA80D1BB%%morepics.tpl.php(5): oxSuperCfg->__call('morePics', Array)
+#1 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%DA^DA8^DA80D1BB%%morepics.tpl.php(5): oeThemeSwitcherDetails->morePics()
+#2 /var/www/phptest/core/smarty/Smarty.class.php(1869): include('/var/www/phptes...')
+#3 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%5E^5E9^5E9B9D5B%%productmain.tpl.php(367): Smarty->_smarty_include(Array)
+#4 /var/www/phptest/core/smarty/Smarty.class.php(1869): include('/var/www/phptes...')
+#5 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%A5^A59^A595DDB8%%fullproductinfo.tpl.php(8): Smarty->_smarty_include(Array)
+#6 /var/www/phptest/core/smarty/Smarty.class.php(1869): include('/var/www/phptes...')
+#7 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%08^08A^08ABD53A%%details.tpl.php(85): Smarty->_smarty_include(Array)
+#8 /var/www/phptest/core/smarty/Smarty.class.php(1263): include('/var/www/phptes...')
+#9 /var/www/phptest/core/oxshopcontrol.php(521): Smarty->fetch('page/details/de...', 'ox|0|0|0|0|7d36...')
+#10 /var/www/phptest/core/oxshopcontrol.php(388): oxShopControl->_render(Object(oeThemeSwitcherDetails))
+#11 /var/www/phptest/core/oxshopcontrol.php(148): oxShopControl->_process('details', NULL, NULL, NULL)
+#12 /var/www/phptest/core/oxid.php(32): oxShopControl->start()
+#13 /var/www/phptest/index.php(19): Oxid::run()
+#14 /var/www/phptest/oxseo.php(37): require('/var/www/phptes...')
+#15 {main}
+
+ Faulty component --> 
+---------------------------------------------
+oxSystemComponentException-oxException (time: 2014-03-28 11:14:58): [0]: Function 'morePics' does not exist or is not accessible! (oeThemeSwitcherDetails)
+ 
+ Stack Trace: #0 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%DA^DA8^DA80D1BB%%morepics.tpl.php(5): oxSuperCfg->__call('morePics', Array)
+#1 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%DA^DA8^DA80D1BB%%morepics.tpl.php(5): oeThemeSwitcherDetails->morePics()
+#2 /var/www/phptest/core/smarty/Smarty.class.php(1869): include('/var/www/phptes...')
+#3 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%5E^5E9^5E9B9D5B%%productmain.tpl.php(367): Smarty->_smarty_include(Array)
+#4 /var/www/phptest/core/smarty/Smarty.class.php(1869): include('/var/www/phptes...')
+#5 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%A5^A59^A595DDB8%%fullproductinfo.tpl.php(8): Smarty->_smarty_include(Array)
+#6 /var/www/phptest/core/smarty/Smarty.class.php(1869): include('/var/www/phptes...')
+#7 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%08^08A^08ABD53A%%details.tpl.php(85): Smarty->_smarty_include(Array)
+#8 /var/www/phptest/core/smarty/Smarty.class.php(1263): include('/var/www/phptes...')
+#9 /var/www/phptest/core/oxshopcontrol.php(521): Smarty->fetch('page/details/de...', 'ox|0|0|0|0|3981...')
+#10 /var/www/phptest/core/oxshopcontrol.php(388): oxShopControl->_render(Object(oeThemeSwitcherDetails))
+#11 /var/www/phptest/core/oxshopcontrol.php(148): oxShopControl->_process('details', NULL, NULL, NULL)
+#12 /var/www/phptest/core/oxid.php(32): oxShopControl->start()
+#13 /var/www/phptest/index.php(19): Oxid::run()
+#14 /var/www/phptest/oxseo.php(37): require('/var/www/phptes...')
+#15 {main}
+
+ Faulty component --> 
+---------------------------------------------
+oxSystemComponentException-oxException (time: 2014-03-28 11:15:45): [0]: Function 'morePics' does not exist or is not accessible! (Details)
+ 
+ Stack Trace: #0 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%DA^DA8^DA80D1BB%%morepics.tpl.php(5): oxSuperCfg->__call('morePics', Array)
+#1 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%DA^DA8^DA80D1BB%%morepics.tpl.php(5): Details->morePics()
+#2 /var/www/phptest/core/smarty/Smarty.class.php(1869): include('/var/www/phptes...')
+#3 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%5E^5E9^5E9B9D5B%%productmain.tpl.php(367): Smarty->_smarty_include(Array)
+#4 /var/www/phptest/core/smarty/Smarty.class.php(1869): include('/var/www/phptes...')
+#5 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%A5^A59^A595DDB8%%fullproductinfo.tpl.php(8): Smarty->_smarty_include(Array)
+#6 /var/www/phptest/core/smarty/Smarty.class.php(1869): include('/var/www/phptes...')
+#7 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%08^08A^08ABD53A%%details.tpl.php(85): Smarty->_smarty_include(Array)
+#8 /var/www/phptest/core/smarty/Smarty.class.php(1263): include('/var/www/phptes...')
+#9 /var/www/phptest/core/oxshopcontrol.php(521): Smarty->fetch('page/details/de...', 'ox|0|0|0|0|3981...')
+#10 /var/www/phptest/core/oxshopcontrol.php(388): oxShopControl->_render(Object(Details))
+#11 /var/www/phptest/core/oxshopcontrol.php(148): oxShopControl->_process('details', NULL, NULL, NULL)
+#12 /var/www/phptest/core/oxid.php(32): oxShopControl->start()
+#13 /var/www/phptest/index.php(19): Oxid::run()
+#14 /var/www/phptest/oxseo.php(37): require('/var/www/phptes...')
+#15 {main}
+
+ Faulty component --> 
+---------------------------------------------
+oxSystemComponentException-oxException (time: 2014-03-28 11:44:04): [0]: Function 'morePics' does not exist or is not accessible! (Details)
+ 
+ Stack Trace: #0 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%DA^DA8^DA80D1BB%%morepics.tpl.php(5): oxSuperCfg->__call('morePics', Array)
+#1 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%DA^DA8^DA80D1BB%%morepics.tpl.php(5): Details->morePics()
+#2 /var/www/phptest/core/smarty/Smarty.class.php(1869): include('/var/www/phptes...')
+#3 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%5E^5E9^5E9B9D5B%%productmain.tpl.php(367): Smarty->_smarty_include(Array)
+#4 /var/www/phptest/core/smarty/Smarty.class.php(1869): include('/var/www/phptes...')
+#5 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%A5^A59^A595DDB8%%fullproductinfo.tpl.php(8): Smarty->_smarty_include(Array)
+#6 /var/www/phptest/core/smarty/Smarty.class.php(1869): include('/var/www/phptes...')
+#7 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%08^08A^08ABD53A%%details.tpl.php(85): Smarty->_smarty_include(Array)
+#8 /var/www/phptest/core/smarty/Smarty.class.php(1263): include('/var/www/phptes...')
+#9 /var/www/phptest/core/oxshopcontrol.php(521): Smarty->fetch('page/details/de...', 'ox|0|0|0|0|3981...')
+#10 /var/www/phptest/core/oxshopcontrol.php(388): oxShopControl->_render(Object(Details))
+#11 /var/www/phptest/core/oxshopcontrol.php(148): oxShopControl->_process('details', NULL, NULL, NULL)
+#12 /var/www/phptest/core/oxid.php(32): oxShopControl->start()
+#13 /var/www/phptest/index.php(19): Oxid::run()
+#14 /var/www/phptest/oxseo.php(37): require('/var/www/phptes...')
+#15 {main}
+
+ Faulty component --> 
+---------------------------------------------
+oxSystemComponentException-oxException (time: 2014-03-28 11:53:38): [0]: Function 'getArticleLongDesc' does not exist or is not accessible! (bodyoxarticle)
+ 
+ Stack Trace: #0 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%F5^F50^F500F10E%%tabs.tpl.php(13): oxSuperCfg->__call('getArticleLongD...', Array)
+#1 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%F5^F50^F500F10E%%tabs.tpl.php(13): bodyoxarticle->getArticleLongDesc()
+#2 /var/www/phptest/core/smarty/Smarty.class.php(1869): include('/var/www/phptes...')
+#3 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%A5^A59^A595DDB8%%fullproductinfo.tpl.php(17): Smarty->_smarty_include(Array)
+#4 /var/www/phptest/core/smarty/Smarty.class.php(1869): include('/var/www/phptes...')
+#5 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%79^790^7907FF72%%details.tpl.php(89): Smarty->_smarty_include(Array)
+#6 /var/www/phptest/core/smarty/Smarty.class.php(1263): include('/var/www/phptes...')
+#7 /var/www/phptest/core/oxshopcontrol.php(521): Smarty->fetch('widget/product/...', 'ox|0|0|0|0')
+#8 /var/www/phptest/core/oxshopcontrol.php(388): oxShopControl->_render(Object(oxwArticleDetails))
+#9 /var/www/phptest/core/oxshopcontrol.php(148): oxShopControl->_process('oxwarticledetai...', NULL, Array, Array)
+#10 /var/www/phptest/core/oxwidgetcontrol.php(68): oxShopControl->start('oxwarticledetai...', NULL, Array, Array)
+#11 /var/www/phptest/core/smarty/plugins/function.oxid_include_widget.php(48): oxWidgetControl->start('oxwarticledetai...', NULL, Array, Array)
+#12 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%08^08A^08ABD53A%%details.tpl.php(11): smarty_function_oxid_include_widget(Array, Object(Smarty))
+#13 /var/www/phptest/core/smarty/Smarty.class.php(1263): include('/var/www/phptes...')
+#14 /var/www/phptest/core/oxshopcontrol.php(521): Smarty->fetch('page/details/de...', 'ox|0|0|0|0|3981...')
+#15 /var/www/phptest/core/oxshopcontrol.php(388): oxShopControl->_render(Object(Details))
+#16 /var/www/phptest/core/oxshopcontrol.php(148): oxShopControl->_process('details', NULL, NULL, NULL)
+#17 /var/www/phptest/core/oxid.php(32): oxShopControl->start()
+#18 /var/www/phptest/index.php(19): Oxid::run()
+#19 /var/www/phptest/oxseo.php(37): require('/var/www/phptes...')
+#20 {main}
+
+ Faulty component --> 
+---------------------------------------------
+oxSystemComponentException-oxException (time: 2014-03-28 11:54:26): [0]: Function 'getArticleNId' does not exist or is not accessible! (oxwArticleDetails)
+ 
+ Stack Trace: #0 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%EE^EE7^EE7D7FF1%%reviews.tpl.php(99): oxSuperCfg->__call('getArticleNId', Array)
+#1 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%EE^EE7^EE7D7FF1%%reviews.tpl.php(99): oxwArticleDetails->getArticleNId()
+#2 /var/www/phptest/core/smarty/Smarty.class.php(1869): include('/var/www/phptes...')
+#3 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%A5^A59^A595DDB8%%fullproductinfo.tpl.php(54): Smarty->_smarty_include(Array)
+#4 /var/www/phptest/core/smarty/Smarty.class.php(1869): include('/var/www/phptes...')
+#5 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%79^790^7907FF72%%details.tpl.php(89): Smarty->_smarty_include(Array)
+#6 /var/www/phptest/core/smarty/Smarty.class.php(1263): include('/var/www/phptes...')
+#7 /var/www/phptest/core/oxshopcontrol.php(521): Smarty->fetch('widget/product/...', 'ox|0|0|0|0')
+#8 /var/www/phptest/core/oxshopcontrol.php(388): oxShopControl->_render(Object(oxwArticleDetails))
+#9 /var/www/phptest/core/oxshopcontrol.php(148): oxShopControl->_process('oxwarticledetai...', NULL, Array, Array)
+#10 /var/www/phptest/core/oxwidgetcontrol.php(68): oxShopControl->start('oxwarticledetai...', NULL, Array, Array)
+#11 /var/www/phptest/core/smarty/plugins/function.oxid_include_widget.php(48): oxWidgetControl->start('oxwarticledetai...', NULL, Array, Array)
+#12 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%08^08A^08ABD53A%%details.tpl.php(11): smarty_function_oxid_include_widget(Array, Object(Smarty))
+#13 /var/www/phptest/core/smarty/Smarty.class.php(1263): include('/var/www/phptes...')
+#14 /var/www/phptest/core/oxshopcontrol.php(521): Smarty->fetch('page/details/de...', 'ox|0|0|0|0|3981...')
+#15 /var/www/phptest/core/oxshopcontrol.php(388): oxShopControl->_render(Object(Details))
+#16 /var/www/phptest/core/oxshopcontrol.php(148): oxShopControl->_process('details', NULL, NULL, NULL)
+#17 /var/www/phptest/core/oxid.php(32): oxShopControl->start()
+#18 /var/www/phptest/index.php(19): Oxid::run()
+#19 /var/www/phptest/oxseo.php(37): require('/var/www/phptes...')
+#20 {main}
+
+ Faulty component --> 
+---------------------------------------------
+oxSystemComponentException-oxException (time: 2014-03-28 15:18:50): [0]: EXCEPTION_SYSTEMCOMPONENT_TEMPLATENOTFOUND 
+ Stack Trace: #0 /var/www/phptest/core/oxutilsobject.php(185): oxUtilsObject->_getObject('oxsystemcompone...', 0, Array)
+#1 [internal function]: oxUtilsObject->oxNew('oxSystemCompone...')
+#2 /var/www/phptest/core/oxfunctions.php(375): call_user_func_array(Array, Array)
+#3 /var/www/phptest/core/oxshopcontrol.php(490): oxNew('oxSystemCompone...')
+#4 /var/www/phptest/core/oxshopcontrol.php(388): oxShopControl->_render(Object(Details))
+#5 /var/www/phptest/core/oxshopcontrol.php(148): oxShopControl->_process('details', '', NULL, NULL)
+#6 /var/www/phptest/core/oxid.php(32): oxShopControl->start()
+#7 /var/www/phptest/index.php(19): Oxid::run()
+#8 {main}
+
+ Faulty component --> page/details/ajax/productmain.tpl
+---------------------------------------------
+oxSystemComponentException-oxException (time: 2014-03-28 15:22:26): [0]: EXCEPTION_SYSTEMCOMPONENT_TEMPLATENOTFOUND 
+ Stack Trace: #0 /var/www/phptest/core/oxutilsobject.php(185): oxUtilsObject->_getObject('oxsystemcompone...', 0, Array)
+#1 [internal function]: oxUtilsObject->oxNew('oxSystemCompone...')
+#2 /var/www/phptest/core/oxfunctions.php(375): call_user_func_array(Array, Array)
+#3 /var/www/phptest/core/oxshopcontrol.php(490): oxNew('oxSystemCompone...')
+#4 /var/www/phptest/core/oxshopcontrol.php(388): oxShopControl->_render(Object(Details))
+#5 /var/www/phptest/core/oxshopcontrol.php(148): oxShopControl->_process('details', '', NULL, NULL)
+#6 /var/www/phptest/core/oxid.php(32): oxShopControl->start()
+#7 /var/www/phptest/index.php(19): Oxid::run()
+#8 {main}
+
+ Faulty component --> page/details/ajax/fullproductinfo.tpl
+---------------------------------------------
+oxSystemComponentException-oxException (time: 2014-03-28 15:25:52): [0]: EXCEPTION_SYSTEMCOMPONENT_CLASSNOTFOUND 
+ Stack Trace: #0 /var/www/phptest/core/oxutilsobject.php(185): oxUtilsObject->_getObject('oxsystemcompone...', 0, Array)
+#1 [internal function]: oxUtilsObject->oxNew('oxSystemCompone...')
+#2 /var/www/phptest/core/oxfunctions.php(375): call_user_func_array(Array, Array)
+#3 /var/www/phptest/core/oxutilsobject.php(175): oxNew('oxSystemCompone...')
+#4 [internal function]: oxUtilsObject->oxNew('basket PAGE_CHE...')
+#5 /var/www/phptest/core/oxfunctions.php(375): call_user_func_array(Array, Array)
+#6 /var/www/phptest/core/oxshopcontrol.php(432): oxNew('basket PAGE_CHE...')
+#7 /var/www/phptest/core/oxshopcontrol.php(379): oxShopControl->_initializeViewObject('basket PAGE_CHE...', NULL, NULL, NULL)
+#8 /var/www/phptest/core/oxshopcontrol.php(148): oxShopControl->_process('basket PAGE_CHE...', NULL, NULL, NULL)
+#9 /var/www/phptest/core/oxid.php(32): oxShopControl->start()
+#10 /var/www/phptest/index.php(19): Oxid::run()
+#11 {main}
+
+ Faulty component --> basket page_checkout_basketcontents_product
+---------------------------------------------
+oxSystemComponentException-oxException (time: 2014-03-28 15:25:52): [0]: EXCEPTION_SYSTEMCOMPONENT_CLASSNOTFOUND 
+ Stack Trace: #0 /var/www/phptest/core/oxutilsobject.php(185): oxUtilsObject->_getObject('oxsystemcompone...', 0, Array)
+#1 [internal function]: oxUtilsObject->oxNew('oxSystemCompone...')
+#2 /var/www/phptest/core/oxfunctions.php(375): call_user_func_array(Array, Array)
+#3 /var/www/phptest/core/oxutilsobject.php(175): oxNew('oxSystemCompone...')
+#4 [internal function]: oxUtilsObject->oxNew('basket PAGE_CHE...')
+#5 /var/www/phptest/core/oxfunctions.php(375): call_user_func_array(Array, Array)
+#6 /var/www/phptest/core/oxshopcontrol.php(432): oxNew('basket PAGE_CHE...')
+#7 /var/www/phptest/core/oxshopcontrol.php(379): oxShopControl->_initializeViewObject('basket PAGE_CHE...', NULL, NULL, NULL)
+#8 /var/www/phptest/core/oxshopcontrol.php(148): oxShopControl->_process('basket PAGE_CHE...', NULL, NULL, NULL)
+#9 /var/www/phptest/core/oxid.php(32): oxShopControl->start()
+#10 /var/www/phptest/index.php(19): Oxid::run()
+#11 {main}
+
+ Faulty component --> basket page_checkout_basketcontents_product
+---------------------------------------------
+oxSystemComponentException-oxException (time: 2014-03-31 15:29:54): [0]: Function 'getManufacturer' does not exist or is not accessible! (Details)
+ 
+ Stack Trace: #0 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%5E^5E9^5E9B9D5B%%productmain.tpl.php(112): oxSuperCfg->__call('getManufacturer', Array)
+#1 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%5E^5E9^5E9B9D5B%%productmain.tpl.php(112): Details->getManufacturer()
+#2 /var/www/phptest/core/smarty/Smarty.class.php(1869): include('/var/www/phptes...')
+#3 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%A5^A59^A595DDB8%%fullproductinfo.tpl.php(9): Smarty->_smarty_include(Array)
+#4 /var/www/phptest/core/smarty/Smarty.class.php(1869): include('/var/www/phptes...')
+#5 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%08^08A^08ABD53A%%details.tpl.php(86): Smarty->_smarty_include(Array)
+#6 /var/www/phptest/core/smarty/Smarty.class.php(1263): include('/var/www/phptes...')
+#7 /var/www/phptest/core/oxshopcontrol.php(521): Smarty->fetch('page/details/de...', 'ox|0|0|0|0|9f7d...')
+#8 /var/www/phptest/core/oxshopcontrol.php(388): oxShopControl->_render(Object(Details))
+#9 /var/www/phptest/core/oxshopcontrol.php(148): oxShopControl->_process('details', NULL, NULL, NULL)
+#10 /var/www/phptest/core/oxid.php(32): oxShopControl->start()
+#11 /var/www/phptest/index.php(19): Oxid::run()
+#12 /var/www/phptest/oxseo.php(37): require('/var/www/phptes...')
+#13 {main}
+
+ Faulty component --> 
+---------------------------------------------
+oxSystemComponentException-oxException (time: 2014-03-31 16:10:28): [0]: Function 'getTagCloudManager' does not exist or is not accessible! (ManufacturerList)
+ 
+ Stack Trace: #0 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%F6^F61^F617D8F5%%categoriestree.tpl.php(47): oxSuperCfg->__call('getTagCloudMana...', Array)
+#1 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%F6^F61^F617D8F5%%categoriestree.tpl.php(47): ManufacturerList->getTagCloudManager()
+#2 /var/www/phptest/core/smarty/Smarty.class.php(1869): include('/var/www/phptes...')
+#3 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%F5^F5E^F5EE4DF7%%sidebar.tpl.php(24): Smarty->_smarty_include(Array)
+#4 /var/www/phptest/core/smarty/Smarty.class.php(1869): include('/var/www/phptes...')
+#5 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%36^366^366ECF91%%page.tpl.php(22): Smarty->_smarty_include(Array)
+#6 /var/www/phptest/core/smarty/Smarty.class.php(1869): include('/var/www/phptes...')
+#7 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%F0^F0F^F0F92504%%list.tpl.php(190): Smarty->_smarty_include(Array)
+#8 /var/www/phptest/core/smarty/Smarty.class.php(1263): include('/var/www/phptes...')
+#9 /var/www/phptest/core/oxshopcontrol.php(521): Smarty->fetch('page/list/list....', 'eed9a2b7d817b4e...')
+#10 /var/www/phptest/core/oxshopcontrol.php(388): oxShopControl->_render(Object(ManufacturerList))
+#11 /var/www/phptest/core/oxshopcontrol.php(148): oxShopControl->_process('manufacturerlis...', NULL, NULL, NULL)
+#12 /var/www/phptest/core/oxid.php(32): oxShopControl->start()
+#13 /var/www/phptest/index.php(19): Oxid::run()
+#14 /var/www/phptest/oxseo.php(37): require('/var/www/phptes...')
+#15 {main}
+
+ Faulty component --> 
+---------------------------------------------
+oxSystemComponentException-oxException (time: 2014-03-31 16:10:32): [0]: Function 'getTagCloudManager' does not exist or is not accessible! (bodyalist)
+ 
+ Stack Trace: #0 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%F6^F61^F617D8F5%%categoriestree.tpl.php(47): oxSuperCfg->__call('getTagCloudMana...', Array)
+#1 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%F6^F61^F617D8F5%%categoriestree.tpl.php(47): bodyalist->getTagCloudManager()
+#2 /var/www/phptest/core/smarty/Smarty.class.php(1869): include('/var/www/phptes...')
+#3 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%F5^F5E^F5EE4DF7%%sidebar.tpl.php(24): Smarty->_smarty_include(Array)
+#4 /var/www/phptest/core/smarty/Smarty.class.php(1869): include('/var/www/phptes...')
+#5 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%36^366^366ECF91%%page.tpl.php(22): Smarty->_smarty_include(Array)
+#6 /var/www/phptest/core/smarty/Smarty.class.php(1869): include('/var/www/phptes...')
+#7 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%F0^F0F^F0F92504%%list.tpl.php(190): Smarty->_smarty_include(Array)
+#8 /var/www/phptest/core/smarty/Smarty.class.php(1263): include('/var/www/phptes...')
+#9 /var/www/phptest/core/oxshopcontrol.php(521): Smarty->fetch('page/list/list....', '6eba63f019c85cc...')
+#10 /var/www/phptest/core/oxshopcontrol.php(388): oxShopControl->_render(Object(bodyalist))
+#11 /var/www/phptest/core/oxshopcontrol.php(148): oxShopControl->_process('alist', NULL, NULL, NULL)
+#12 /var/www/phptest/core/oxid.php(32): oxShopControl->start()
+#13 /var/www/phptest/index.php(19): Oxid::run()
+#14 /var/www/phptest/oxseo.php(37): require('/var/www/phptes...')
+#15 {main}
+
+ Faulty component --> 
+---------------------------------------------
+oxSystemComponentException-oxException (time: 2014-03-31 16:10:36): [0]: Function 'getTagCloudManager' does not exist or is not accessible! (bodyalist)
+ 
+ Stack Trace: #0 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%F6^F61^F617D8F5%%categoriestree.tpl.php(47): oxSuperCfg->__call('getTagCloudMana...', Array)
+#1 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%F6^F61^F617D8F5%%categoriestree.tpl.php(47): bodyalist->getTagCloudManager()
+#2 /var/www/phptest/core/smarty/Smarty.class.php(1869): include('/var/www/phptes...')
+#3 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%F5^F5E^F5EE4DF7%%sidebar.tpl.php(24): Smarty->_smarty_include(Array)
+#4 /var/www/phptest/core/smarty/Smarty.class.php(1869): include('/var/www/phptes...')
+#5 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%36^366^366ECF91%%page.tpl.php(22): Smarty->_smarty_include(Array)
+#6 /var/www/phptest/core/smarty/Smarty.class.php(1869): include('/var/www/phptes...')
+#7 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%F0^F0F^F0F92504%%list.tpl.php(190): Smarty->_smarty_include(Array)
+#8 /var/www/phptest/core/smarty/Smarty.class.php(1263): include('/var/www/phptes...')
+#9 /var/www/phptest/core/oxshopcontrol.php(521): Smarty->fetch('page/list/list....', '6eba63f019c85cc...')
+#10 /var/www/phptest/core/oxshopcontrol.php(388): oxShopControl->_render(Object(bodyalist))
+#11 /var/www/phptest/core/oxshopcontrol.php(148): oxShopControl->_process('alist', NULL, NULL, NULL)
+#12 /var/www/phptest/core/oxid.php(32): oxShopControl->start()
+#13 /var/www/phptest/index.php(19): Oxid::run()
+#14 /var/www/phptest/oxseo.php(37): require('/var/www/phptes...')
+#15 {main}
+
+ Faulty component --> 
+---------------------------------------------
