@@ -24,7 +24,7 @@
 
                 [{block name="footer_information"}]
                     <dl id="footerInformation">
-                        <dt>[{oxmultilang ident="FOOTER_INFORMATION" }]</dt>
+                        <dt>[{oxmultilang ident="INFORMATION" }]</dt>
                         <dd>
                         [{oxifcontent ident="trofooterinfo" object="oContent"}]
                           [{ $oContent->oxcontents__oxcontent->value }]
@@ -35,7 +35,7 @@
 
                 [{block name="footer_services"}]
                     <dl class="services" id="footerServices">
-                  <!--<div--><dt id="service1"><!--<dt>--><strong>[{oxmultilang ident="FOOTER_SERVICES" }]</strong>
+                  <!--<div--><dt id="service1"><!--<dt>--><strong>[{oxmultilang ident="SERVICES" }]</strong>
                         </dt><!--</div>-->
                         <dd id="service2"><!--<dd>-->
                         [{oxifcontent ident="trofooterservice" object="oContent"}]
@@ -58,7 +58,7 @@
                         [{*/oxifcontent*}]
                         <!--</dd>--></dd>
                     </dl>
-                [{/oxifcontent}][{*debug*}]
+                [{/oxifcontent}]
                     
                 [{/block}]
 				
@@ -129,7 +129,7 @@ if($date["seconds"] > 29){
 }	
 echo " aktualisiert. ";
 $datei = fopen("counter.txt","r+");
-$counterstand = fgets($datei, 10);
+$counterstand = fgets($datei, 6);
 if($counterstand == "")
 {
   $counterstand = 0;

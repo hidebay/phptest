@@ -3,14 +3,20 @@
 
 [{block name="details_tabs_longdescription"}]
     [{oxhasrights ident="SHOWLONGDESCRIPTION"}]
-        [{assign var="oLongdesc" value=$oDetailsProduct->getArticleLongDesc()}]
+        [{assign var="oLongdesc" value=$oDetailsProduct->getLongDescription()}]
         [{if $oLongdesc->value}]
-            [{capture append="tabs"}]<a href="#description">[{oxmultilang ident="PAGE_DETAILS_TABS_DESCRIPTION"}]</a>[{/capture}]
+            [{capture append="tabs"}]<a href="#description">[{oxmultilang ident="DESCRIPTION"}]</a>[{/capture}]
             [{capture append="tabsContent"}]
-            <div id="description">
+            <div id="description" class="cmsContent">
                 [{oxeval var=$oLongdesc}]
                 [{if $oDetailsProduct->oxarticles__oxexturl->value}]
-                    <a id="productExturl" class="js-external" href="[{$oDetailsProduct->oxarticles__oxexturl->value}]">[{$oDetailsProduct->oxarticles__oxurldesc->value}]</a>
+                    <a id="productExturl" class="js-external" href="http://[{$oDetailsProduct->oxarticles__oxexturl->value}]">
+                    [{if $oDetailsProduct->oxarticles__oxurldesc->value }]
+                        [{$oDetailsProduct->oxarticles__oxurldesc->value }]
+                    [{else}]
+                        [{$oDetailsProduct->oxarticles__oxexturl->value }]
+                    [{/if}]
+                    </a>
                 [{/if}]
             </div>
             [{/capture}]
@@ -20,28 +26,28 @@
 
 [{block name="details_tabs_attributes"}]
     [{if $oView->getAttributes()}]
-        [{capture append="tabs"}]<a href="#attributes">[{oxmultilang ident="DETAILS_SPECIFICATION"}]</a>[{/capture}]
+        [{capture append="tabs"}]<a href="#attributes">[{oxmultilang ident="SPECIFICATION"}]</a>[{/capture}]
         [{capture append="tabsContent"}]<div id="attributes">[{include file="page/details/inc/attributes.tpl"}]</div>[{/capture}]
     [{/if}]
 [{/block}]
 
-[{*block name="details_tabs_pricealarm"}]
+[{block name="details_tabs_pricealarm"}]
     [{if $oView->isPriceAlarm() && !$oDetailsProduct->isParentNotBuyable()}]
-        [{capture append="tabs"}]<a href="#pricealarm">[{oxmultilang ident="DETAILS_PRICEALARM"}]</a>[{/capture}]
+        [{capture append="tabs"}]<a href="#pricealarm">[{oxmultilang ident="PRICE_ALERT"}]</a>[{/capture}]
         [{capture append="tabsContent"}]<div id="pricealarm">[{include file="form/pricealarm.tpl"}]</div>[{/capture}]
     [{/if}]
-[{/block*}]
+[{/block}]
 
 [{block name="details_tabs_tags"}]
     [{if $oView->showTags() && ( $oView->getTagCloudManager() || ( ( $oView->getTagCloudManager() || $oxcmp_user) && $oDetailsProduct ) )}]
-        [{capture append="tabs"}]<a href="#tags">[{oxmultilang ident="PAGE_DETAILS_TABS_TAGS"}]</a>[{/capture}]
+        [{capture append="tabs"}]<a href="#tags">[{oxmultilang ident="TAGS"}]</a>[{/capture}]
         [{capture append="tabsContent"}]<div id="tags">[{oxid_include_dynamic file="page/details/inc/tags.tpl"}]</div>[{/capture}]
     [{/if}]
 [{/block}]
 
 [{block name="details_tabs_media"}]
     [{if $oView->getMediaFiles() || $oDetailsProduct->oxarticles__oxfile->value}]
-        [{capture append="tabs"}]<a href="#media">[{oxmultilang ident="PAGE_DETAILS_TABS_MEDIA"}]</a>[{/capture}]
+        [{capture append="tabs"}]<a href="#media">[{oxmultilang ident="MEDIA"}]</a>[{/capture}]
         [{capture append="tabsContent"}]<div id="media">[{include file="page/details/inc/media.tpl"}]</div>[{/capture}]
     [{/if}]
 [{/block}]
@@ -67,16 +73,9 @@
     [{/if}]
 [{/block}]
 
-[{block name="details_tabs_fblivestream"}]
-    [{if $oView->isActive('FbLiveStream') && $oViewConf->getFbAppId()}]
-        [{capture append="FBtabs"}]<a href="#productFbLiveStream">[{oxmultilang ident="FACEBOOK_CHAT"}]</a>[{/capture}]
-        [{capture append="FBtabsContent"}]<div id="productFbLiveStream">[{include file="widget/facebook/enable.tpl" source="widget/facebook/livestream.tpl" ident="#productFbLiveStream" type="text"}]</div>[{/capture}]
-    [{/if}]
-[{/block}]
-
 [{block name="details_tabs_main"}]
     [{if $tabs}]
-        <div class="tabbedWidgetBox clear" style="min-height:50px;">
+        <div class="tabbedWidgetBox clear">
             <ul id="itemTabs" class="tabs clear">
                 [{foreach from=$tabs item="tab"}]
                     <li>[{$tab}]</li>
@@ -93,7 +92,7 @@
 
 [{block name="details_tabs_facebook"}]
     [{if $FBtabs}]
-        <div class="tabbedWidgetBox clear" style="min-height:50px;">
+        <div class="tabbedWidgetBox clear">
             <ul id="itemFbTabs" class="tabs clear">
                 [{foreach from=$FBtabs item="FBtab"}]
                     <li class="fbTab">[{$FBtab}]</li>

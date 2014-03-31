@@ -6,8 +6,8 @@
     [{foreach from=$oView->getIcons() key=iPicNr item=oArtIcon name=sMorePics}]
         <li>
             <a id="morePics_[{$smarty.foreach.sMorePics.iteration}]" rel="useZoom: 'zoom1', smallImage: '[{$oPictureProduct->getPictureUrl($iPicNr)}]' " class="cloud-zoom-gallery" href="[{$oPictureProduct->getMasterZoomPictureUrl($iPicNr)}]">
-                <span class="marker"></span>
-                <span class="artIcon"><img src="[{$oPictureProduct->getIconUrl($iPicNr)}]" alt="[{$oPictureProduct->oxarticles__oxtitle->value|strip_tags}] [{$oPictureProduct->oxarticles__oxvarselect->value|strip_tags}]"></span>
+                <span class="marker"><img src="[{$oViewConf->getImageUrl('marker.png')}]" alt=""></span>
+                <span class="artIcon"><img src="[{$oPictureProduct->getIconUrl($iPicNr)}]" alt=""></span>
             </a>
         </li>
     [{/foreach}]

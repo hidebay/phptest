@@ -1,5 +1,5 @@
 [{capture append="oxidBlock_content"}]
-  [{assign var="oDetailsProduct" value=$oView->getProduct()}]
+[{assign var="oDetailsProduct" value=$oView->getProduct()}]
   [{assign var="oPictureProduct" value=$oView->getPicturesProduct()}]
   [{assign var="currency" value=$oView->getActCurrency()}]
   [{assign var="sPageHeadTitle" value=$oDetailsProduct->oxarticles__oxtitle->value|cat:' '|cat:$oDetailsProduct->oxarticles__oxvarselect->value}]
@@ -30,11 +30,13 @@
             [{/if}]
           [{/foreach}]
         [{/if }]
-
+        
+        [{debug}]<h2>[{$detailsLocation}]</h2>
+[{*assign var="meine" value=$alist->getViewId()*}]
+<h2> [{*$meine*}] </h2>
 
         [{* details locator  *}]
         [{assign var="actCategory" value=$oView->getActiveCategory()}]
-        
         [{*<h2 class="pageHead">[{$sPageHeadTitle|truncate:80}]</h2>*}]
         <div class="pageHead">
           <div class="pager refineParams clear" id="detailsItemsPager">
@@ -52,10 +54,17 @@
                     
         </div>*}]
 
-        <div id="productinfo" itemscope itemtype="http://schema.org/Product">
+    [{*}]<!--    <div id="productinfo" itemscope itemtype="http://schema.org/Product">
             [{include file="page/details/inc/fullproductinfo.tpl"}]
-        </div>        
+        </div>    -->[{*}]    
     </div>
-    [{ insert name="oxid_tracker" title="DETAILS_PRODUCTDETAILS"|oxmultilangassign product=$oDetailsProduct cpath=$oView->getCatTreePath() }]
+    [{ insert name="oxid_tracker" title="DETAILS_PRODUCTDETAILS"|oxmultilangassign product=$oDetailsProduct cpath=$oView->getCatTreePath() }]    
+[{*}]<!-- old -->[{*}]    
+    [{if $oxcmp_user}]
+        [{assign var="force_sid" value=$oView->getSidForWidget()}]
+    [{/if}]
+    <div id="details_container">
+        [{oxid_include_widget cl="oxwArticleDetails" _parent=$oView->getClassName() nocookie=1 force_sid=$force_sid _navurlparams=$oViewConf->getNavUrlParams() _object=$oView->getProduct() anid=$oViewConf->getActArticleId() iPriceAlarmStatus=$oView->getPriceAlarmStatus() sorting=$oView->getSortingParameters() skipESIforUser=1}]
+    </div>
 [{/capture}]
 [{include file="layout/page.tpl" sidebar="Left"}]

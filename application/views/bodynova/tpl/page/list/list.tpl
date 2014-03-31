@@ -93,12 +93,25 @@
         [{/if}]
 
     [{if $oView->getArticleList()|@count > 0}]
-        <h1 class="pageHead">[{$oView->getTitle()}]
+        <h1 class="pageHead"> [{*}]<!--[{$oView->getTitle()}]-->[{*}]
             [{assign var='rsslinks' value=$oView->getRssLinks() }]
-            [{ if $rsslinks.activeCategory}]
+            [{*}]<!--[{ if $rsslinks.activeCategory}]
                 <a class="rss js-external" id="rssActiveCategory" href="[{$rsslinks.activeCategory.link}]" title="[{$rsslinks.activeCategory.title}]"><img src="[{$oViewConf->getImageUrl('rss.png')}]" alt="[{$rsslinks.activeCategory.title}]"><span class="FXgradOrange corners glowShadow">[{$rsslinks.activeCategory.title}]</span></a>
-            [{/if }]
-            <a href="[{ $actCategory->toListLink }]" class="overviewLink">&gt; [{ oxmultilang ident="WIDGET_BREADCRUMB_OVERVIEW" }]</a>
+            [{/if }] -->[{*}]
+           [{*}]<!-- <a href="[{ $actCategory->toListLink }]" class="overviewLink">&gt; [{ oxmultilang ident="WIDGET_BREADCRUMB_OVERVIEW" }]</a> -->[{*}]
+[{*}]<!-- neue Breadcrumb -->[{*}]
+           <a href="[{$oViewConf->getHomeLink()}]" title="[{$oxcmp_shop->oxshops__oxtitleprefix->value}]" class="overviewLinky"><img src="[{$oViewConf->getImageUrl()}]icon_breadcrumb_home.png" alt="[{$oxcmp_shop->oxshops__oxtitleprefix->value}]"></a>
+    [{if $oView->getClassName() == "start"}]
+        &nbsp;[{ oxmultilang ident="TRO_BREADCRUMB_HOMEPAGE" }] &gt;
+    [{else}]
+        [{foreach from=$oView->getBreadCrumb() item=sCrum name="breadcrumb"}]
+            &nbsp;&gt;&nbsp;
+            <span [{*}]<!-- class="[{if $smarty.foreach.breadcrumb.last}]last[{/if}]"-->[{*}] class="overviewLinky">
+              [{if $sCrum.link }]<a href="[{ $sCrum.link }]" title="[{ $sCrum.title|escape:'html'}]">[{/if}][{$sCrum.title}][{if $sCrum.link }]</a>[{/if}]
+            </span>
+        [{/foreach}]
+    [{/if}]
+ [{*}]<!-- neue Breadcrumb end -->[{*}]
         </h1>
         <div class="listRefine clear bottomRound">
         [{* uncomment if want to use descriptions in locator

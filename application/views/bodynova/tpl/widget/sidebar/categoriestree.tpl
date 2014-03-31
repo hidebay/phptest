@@ -38,7 +38,8 @@
         [{/foreach}]
     [{/defun}]
     </ul>
-    [{*if $oView->showTags() && $oView->getTagCloudManager() }]
+[{*}]<!-- alte Tag Cloud    
+    [{if $oView->showTags() && $oView->getTagCloudManager() }]
         <div class="categoryTagsBox">
             [{assign var="oTagsManager" value=$oView->getTagCloudManager() }]
             <h3>[{ oxmultilang ident="WIDGET_TAGS_HEADER" }]</h3>
@@ -52,6 +53,13 @@
                 [{/if}]
             </div>
         </div>
-    [{/if*}]
+    [{/if}]
+ alte Tag Cloud end -->[{*}]
+ 
+[{*}]<!--neue Tag Cloud 
+    [{if $oView->showTags() }]
+         [{oxid_include_widget cl="oxwTagCloud" nocookie=1 noscript=1 }]
+    [{/if}]
+ neue Tag Cloud end -->[{*}]
 </div>
 [{/if}]

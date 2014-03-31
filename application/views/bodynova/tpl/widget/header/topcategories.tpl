@@ -154,7 +154,7 @@
     [{/foreach}]
     [{assign var="actCatregory" value=$oView->getActiveCategory()}]
     
-    <li class="last[{if $actCategory->oxcategories__oxtitle->value == 'ANGEBOTE'}]current[{/if}]">
+    [{*<li class="last[{if $actCategory->oxcategories__oxtitle->value == 'ANGEBOTE'}]current[{/if}]">
       [{assign var="offerlink" value=$oViewConf->getSelfLink()|cat:"/Angebote"}]
       [{assign var="tmplink" value=$oViewConf->getSelfLink()}]
       [{assign var="splitti" value="?"|explode:$tmplink}]
@@ -163,7 +163,7 @@
       <!--<a href="[{$offerlink|replace:'/index.php?':''}]">[{$oViewConf->getSelfLink()}]</a>-->
       <!--<a href="[{$link|replace:'/index.php':''}]/ANGEBOTE?[{$param}]">&nbsp;</a>-->
       <a href="[{oxgetseourl ident=$oViewConf->getSelfLink()|cat:'cl=alist'|cat:'&amp;cnid=fc70cac08dba4163848d70cbab85d2dc'}]"></a>
-    </li>
+    </li>*}]
     
     [{*if $iAllCatCount > $oView->getTopNavigationCatCnt()}]
         <li>

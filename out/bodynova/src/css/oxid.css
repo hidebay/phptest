@@ -1873,8 +1873,8 @@ div.loginForm h4 {
 
 /* --- main navigation meniu ------------------- */
 #navigation {
-    background: url('../../img/bg_top_navigation5.png') no-repeat 0 -3px #FFFFFF;
-    width:946px;
+    /*background: url('../../img/bg_top_navigation5.png') no-repeat 0 -3px #FFFFFF;*/
+    width:958px;
     height: 64px;
     margin: 0;
     padding: 0px 6px 0 0px;
@@ -1890,25 +1890,271 @@ div.loginForm h4 {
     list-style: none outside none;
 }
 
-#navigation > li {
+/*#navigation > li {
+    list-style: none outside none;
+    height: 58px;
+  //  padding: 16px 0 16px 0;
+    margin: 0;
+    float: left;
+    position: relative;
+    width: 98px;
+    padding: 0;
+}*/
+
+/* NAVIGATION*/
+
+#navigation > li.ebene1_1 {
+	background: url('../../img/nav_links.jpg') /*no-repeat 0 -3px*/ #FFFFFF;
     list-style: none outside none;
     height: 58px;
     /*padding: 16px 0 16px 0;*/
     margin: 0;
     float: left;
     position: relative;
-    width: 98px;
+    width: 114px;
     padding: 0;
 }
+
+#navigation > li.ebene1_1:hover {
+	background: url('../../img/nav_hoover_links.jpg') /*no-repeat 0 -3px*/ #FFFFFF;
+    list-style: none outside none;
+    height: 58px;
+    /*padding: 16px 0 16px 0;*/
+    margin: 0;
+    float: left;
+    position: relative;
+    width: 114px;
+    padding: 0;
+}
+
+#navigation > li.ebene1_2 {
+	background: url('../../img/praxisbedarf.jpg') /*no-repeat 0 -3px*/ #FFFFFF;
+    list-style: none outside none;
+    height: 58px;
+    /*padding: 16px 0 16px 0;*/
+    margin: 0;
+    float: left;
+    position: relative;
+    width: 87px;
+    padding: 0;
+}
+
+#navigation > li.ebene1_2:hover {
+	background: url('../../img/praxisbedarf_hover.jpg') /*no-repeat 0 -3px*/ #FFFFFF;
+    list-style: none outside none;
+    height: 58px;
+    /*padding: 16px 0 16px 0;*/
+    margin: 0;
+    float: left;
+    position: relative;
+    width: 87px;
+    padding: 0;
+}
+
+#navigation > li.ebene1_3 {
+	background: url('../../img/spa_wellness.jpg') /*no-repeat 0 -3px*/ #FFFFFF;
+    list-style: none outside none;
+    height: 58px;
+    /*padding: 16px 0 16px 0;*/
+    margin: 0;
+    float: left;
+    position: relative;
+    width: 97px;
+    padding: 0;
+}
+
+#navigation > li.ebene1_3:hover {
+	background: url('../../img/spa_wellness_hover.jpg') /*no-repeat 0 -3px*/ #FFFFFF;
+    list-style: none outside none;
+    height: 58px;
+    /*padding: 16px 0 16px 0;*/
+    margin: 0;
+    float: left;
+    position: relative;
+    width: 97px;
+    padding: 0;
+}
+
+#navigation > li.ebene1_4 {
+	background: url('../../img/yoga.jpg') /*no-repeat 0 -3px*/ #FFFFFF;
+    list-style: none outside none;
+    height: 58px;
+    /*padding: 16px 0 16px 0;*/
+    margin: 0;
+    float: left;
+    position: relative;
+    width: 77px;
+    padding: 0;
+}
+
+#navigation > li.ebene1_4:hover {
+	background: url('../../img/yoga_hover.jpg') /*no-repeat 0 -3px*/ #FFFFFF;
+    list-style: none outside none;
+    height: 58px;
+    /*padding: 16px 0 16px 0;*/
+    margin: 0;
+    float: left;
+    position: relative;
+    width: 77px;
+    padding: 0;
+}
+
+#navigation > li.ebene1_5 {
+	background: url('../../img/pilates_fitness.jpg') /*no-repeat 0 -3px*/ #FFFFFF;
+    list-style: none outside none;
+    height: 58px;
+    /*padding: 16px 0 16px 0;*/
+    margin: 0;
+    float: left;
+    position: relative;
+    width: 97px;
+    padding: 0;
+}
+
+#navigation > li.ebene1_5:hover {
+	background: url('../../img/pilates_fitness_hover.jpg') /*no-repeat 0 -3px*/ #FFFFFF;
+    list-style: none outside none;
+    height: 58px;
+    /*padding: 16px 0 16px 0;*/
+    margin: 0;
+    float: left;
+    position: relative;
+    width: 97px;
+    padding: 0;
+}
+
+#navigation > li.ebene1_6 {
+	background: url('../../img/meditation.jpg') /*no-repeat 0 -3px*/ #FFFFFF;
+    list-style: none outside none;
+    height: 58px;
+    /*padding: 16px 0 16px 0;*/
+    margin: 0;
+    float: left;
+    position: relative;
+    width: 97px;
+    padding: 0;
+}
+
+#navigation > li.ebene1_6:hover {
+	background: url('../../img/meditation_hover.jpg') /*no-repeat 0 -3px*/ #FFFFFF;
+    list-style: none outside none;
+    height: 58px;
+    /*padding: 16px 0 16px 0;*/
+    margin: 0;
+    float: left;
+    position: relative;
+    width: 97px;
+    padding: 0;
+}
+
+#navigation > li.ebene1_7 {
+	background: url('../../img/shiatsu.jpg') /*no-repeat 0 -3px*/ #FFFFFF;
+    list-style: none outside none;
+    height: 58px;
+    /*padding: 16px 0 16px 0;*/
+    margin: 0;
+    float: left;
+    position: relative;
+    width: 96px;
+    padding: 0;
+}
+
+#navigation > li.ebene1_7:hover {
+	background: url('../../img/shiatsu_hover.jpg') /*no-repeat 0 -3px*/ #FFFFFF;
+    list-style: none outside none;
+    height: 58px;
+    /*padding: 16px 0 16px 0;*/
+    margin: 0;
+    float: left;
+    position: relative;
+    width: 96px;
+    padding: 0;
+}
+
+#navigation > li.ebene1_8 {
+	background: url('../../img/media.jpg') /*no-repeat 0 -3px*/ #FFFFFF;
+    list-style: none outside none;
+    height: 58px;
+    /*padding: 16px 0 16px 0;*/
+    margin: 0;
+    float: left;
+    position: relative;
+    width: 97px;
+    padding: 0;
+}
+
+#navigation > li.ebene1_8:hover {
+	background: url('../../img/media_hover.jpg') /*no-repeat 0 -3px*/ #FFFFFF;
+    list-style: none outside none;
+    height: 58px;
+    /*padding: 16px 0 16px 0;*/
+    margin: 0;
+    float: left;
+    position: relative;
+    width: 97px;
+    padding: 0;
+}
+
+
+#navigation > li.ebene1_9 {
+	background: url('../../img/geschenke.jpg') /*no-repeat 0 -3px*/ #FFFFFF;
+    list-style: none outside none;
+    height: 58px;
+    /*padding: 16px 0 16px 0;*/
+    margin: 0;
+    float: left;
+    position: relative;
+    width: 97px;
+    padding: 0;
+}
+
+#navigation > li.ebene1_9:hover {
+	background: url('../../img/geschenke_hover.jpg') /*no-repeat 0 -3px*/ #FFFFFF;
+    list-style: none outside none;
+    height: 58px;
+    /*padding: 16px 0 16px 0;*/
+    margin: 0;
+    float: left;
+    position: relative;
+    width: 97px;
+    padding: 0;
+}
+
+#navigation > li.ebene1_10 {
+	background: url('../../img/nav_rechts.jpg') /*no-repeat 0 -3px*/ #FFFFFF;
+    list-style: none outside none;
+    height: 58px;
+    /*padding: 16px 0 16px 0;*/
+    margin: 0;
+    float: left;
+    position: relative;
+    width: 94px;
+    padding: 0;
+}
+
+#navigation > li.ebene1_10:hover {
+	background: url('../../img/nav_rechts_hover.jpg') /*no-repeat 0 -3px*/ #FFFFFF;
+    list-style: none outside none;
+    height: 58px;
+    /*padding: 16px 0 16px 0;*/
+    margin: 0;
+    float: left;
+    position: relative;
+    width: 94px;
+    padding: 0;
+}
+
+/*
 #navigation > li.sfHover,
 #navigation > li:hover,
 #navigation > li.current{
-  background: url('../bg/buttons/topnavi_hover.png') no-repeat 0px 0;
-    /*background: none repeat scroll 0 0 #EDF5F8;
+  background: url('../bg/buttons/topnavi_hover.png') no-repeat 1px;
+    background: none repeat scroll 0 0 #EDF5F8;
     border: 1px solid #C5C9C8;
     width: 95px;
-    height: 26px;*/
+    height: 26px;
 }
+*/
 
 /*#navigation > li.ebene1_9 > a {
     border-right: none;
@@ -1948,7 +2194,7 @@ div.loginForm h4 {
     padding-bottom: 10px;
     box-shadow: 2px 2px 2px #888888;
 }
-
+/*
 #navigation  li.last, #navigation  li.lastcurrent {
   width: 71px;
 	display: block;
@@ -1965,7 +2211,7 @@ div.loginForm h4 {
   background: url('../bg/buttons/percent_hover2.png') no-repeat 1px 0;
   border: none;
 }
-
+*/
 #navigation .subCategories ul {
     float: left !important;
     margin: 0;
@@ -3425,7 +3671,8 @@ ul#sort {
 .dropDown p span.asc,
 .dropDown p span.desc {
     padding-right: 15px;
-    background: url(../../img/arrow-updown.png) no-repeat 100% 3px;
+   /* background: url('../img/arrow-updown.png') no-repeat 3px;*/
+    background: url('../../img/arrow-updown.png') no-repeat right 3px;
 }
 
 .dropDown li.desc span, .dropDown p span.desc {
@@ -3442,7 +3689,7 @@ ul#sort {
 }
 
 #itemsPager {
-  float: none;
+  float: left;
   /*margin: 0 150px 0 150px;*/
   text-align: center;
 }
@@ -4861,7 +5108,7 @@ label.innerLabel{
 }
 
 .shadowRight {
-    right: 10px;
+    right: 0px;
 }
 
 .oxSlider {
@@ -6213,7 +6460,7 @@ div.orderbuttons div.priceBlock {
 div.anythingSlider .arrow {
   display: block;
   width: 48px !important;
-  height: 40px !important;
+  height: 39px !important;
   border-radius: 0 !important;
   box-shadow: none;
   opacity: 1;

@@ -63,6 +63,7 @@ ini_set("display_errors", "on");
     //  5 = Delivery Cost calculation info
     //  6 = SMTP Debug Messages
     //  7 = oxDbDebug SQL parser
+    //  8 = OXID Templates
     $this->iDebug = 8;
 
     // Log all modifications performed in Admin

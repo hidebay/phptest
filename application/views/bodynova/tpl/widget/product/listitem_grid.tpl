@@ -10,7 +10,7 @@
     <input type="hidden" name="pgNr" value="[{ $oView->getActPage() }]">
     [{if $recommid}]
         <input type="hidden" name="recommid" value="[{ $recommid }]">
-    [{/if}]
+    [{/if}]    
     [{oxhasrights ident="TOBASKET"}]
         [{ if $blShowToBasket}]
             <input type="hidden" name="cl" value="[{ $oViewConf->getActiveClassName() }]">
@@ -31,7 +31,7 @@
             <input type="hidden" name="am" value="1">
         [{/if}]
       <input type="hidden" id="varse[{$testid}]" name="[{$sFieldName|default:"varselid"}][[{$iKey}]]" value="">
-    [{/oxhasrights}]
+    [{/oxhasrights}]    
   <div class="shortinfo">
     [{assign var="currency" value=$oView->getActCurrency()}]
     [{assign var="blShowToBasket" value=true}] [{* tobasket or more info ? *}]
@@ -44,52 +44,235 @@
                 [{if $product->oxarticles__bodyshowprice == '1'}]
                     [{assign var=tprice value=$product->getTPrice()}]
                     [{assign var=price  value=$product->getPrice()}]
+[{*<!-- Streichpreis -->*}]
+
                     [{if $tprice && $tprice->getBruttoPrice() > $price->getBruttoPrice()}]
                   
                     [{assign var="strich" value="strich.png"}]                    
                     <p class="priceOld">
+                    
+[{*}]<!-- Strich zum Preis durch streichen -->[{*}]                    
                         <img src="[{$oViewConf->getImageUrl()}]strich.png" alt="[{ $product->oxarticles__oxtitle->value }]">
-                        [{*[{oxmultilang ident="WIDGET_PRODUCT_PRODUCT_REDUCEDFROM" }] <del>[{ $product->getFTPrice()}] [{ $currency->sign}]</del>*}]
+                    
+[{*}]<!-- Ursprünglicher Streichpreis (Statt)
+                        
+                        [{oxmultilang ident="REDUCED_FROM" }]
+                         
+<!-- Produktpreis und Währungssymbol wagerecht durchgestrichen -->
+                        
+                        <del>[{ $product->getFTPrice()}] [{ $currency->sign}]</del>
+                        
+-->[{*}]
+
+[{*}]<!-- Wert -->[{*}]
+                 
+                        [{ $product->getFTPrice()}] 
+
+[{*}]<!-- Währungssymbol-->[{*}]                        
+
+                        [{ $currency->sign}]
+
+                    </p>
+                    [{/if}]
+                    
+[{*}]<!-- Verkaufspreis Preis Fett -->[{*}]
+                    [{block name="widget_product_listitem_grid_price_value"}]
+                        [{if $product->getFPrice()}]
+                            <strong>
+                            	<span itemprop="price">
+[{*}]<!-- Wert -->[{*}]
+                            		[{ $product->getFPrice() }]
+                            	</span>
+[{*}]<!-- Währungssymbol -->[{*}] 
+                            	[{ $currency->sign}] 
+                            	<meta itemprop="priceCurrency" content="[{ $currency->name}]">
+[{*}]<!--              
+								[{if !($product->hasMdVariants() || ($oViewConf->showSelectListsInList() && $product->getSelections(1)) || $product->getVariantList())}]
+-->[{*}]
+                            
+                             *
+[{*}]<!--     
+                             [{/if}]
+ -->[{*}]                            
+                             </strong>
+                        [{/if}]
+                    [{/block}]
+                    
+                    
+[{*}]<!-- Stückpreis wenn verfügbar ^-->[{*}]
+
+                    [{if $product->getPricePerUnit()}]
+                        <span id="productPricePerUnit_[{$testid}]" class="pricePerUnit">
+                            [{$product->oxarticles__oxunitquantity->value}][{$product->oxarticles__oxunitname->value}] | [{$product->getPricePerUnit()}][{ $currency->sign}]/[{$product->oxarticles__oxunitname->value}]
+                        </span>
+                        
+[{*}]<!-- Gewicht                        
+                    [{elseif $product->oxarticles__oxweight->value  }]
+                        <span id="productPricePerUnit_[{$testid}]" class="pricePerUnit">
+                            <span title="weight">[{ oxmultilang ident="OXWEIGHT" }]</span>
+                            <span class="value">[{ $product->oxarticles__oxweight->value }] [{ oxmultilang ident="WEIGHT" }]</span>
+                        </span>
+-->[{*}]                        
+
+                    [{/if }]
+                [{/if}]
+            [{/oxhasrights}]
+        [{/block}]
+    [{/capture}]
+    [{assign var="aVariantSelections" value=$product->getVariantSelections(null,null,1)}] 
+    <meta itemprop='productID' content='sku:[{ $product->oxarticles__oxartnum->value }]'>
+    	<a itemprop="url" href="[{$_productLink}]" class="titleBlock title fn" title="[{ $product->oxarticles__oxtitle->value}]">
+
+[{*}]<!--   
+		<a id="short[{$testid}]" itemprop="url" href="[{$_productLink}]" class="titleBlock title fn" title="[{ $product->oxarticles__oxtitle->value}]">
+-->[{*}]
+     
+[{*}]<!-- Produktbild -->[{*}]     
+        <div class="gridPicture">
+            <img itemprop="image" src="[{$product->getThumbnailUrl()}]" alt="[{ $product->oxarticles__oxtitle->value }]">
+        </div>
+        
+[{*}]<!-- Produkt titel -->[{*}]
+        <span itemprop="name">
+          [{$product->oxarticles__oxtitle->value}]
+          
+[{*}]<!-- D3 Modul "extSearch" CHANGE START
+            [{ d3_extsearch_highlight text=$product->oxarticles__oxtitle->value }] [{ d3_extsearch_highlight text=$product->oxarticles__oxvarselect->value}]
+            [{d3modcfgcheck modid="d3_extsearch"}]
+                [{if $product->blIsSimilar}]<span id='similar'>[{oxmultilang ident="D3_EXTSEARCH_EXT_SIMILAR"}]</span>[{/if}]
+                [{if $product->isD3CatHit}]<span id='similar'>[{oxmultilang ident="D3_EXTSEARCH_EXT_CATHIT"}]</span>[{/if}]
+            [{/d3modcfgcheck}]
+D3 Modul "extSearch" CHANGE END-->[{*}]
+        </span>
+         
+[{*}]<!--Kurzbeschreibung-->[{*}]         
+        <span class="shortdesc">
+          [{$product->oxarticles__oxshortdesc->value }]
+        </span>
+
+    </a>
+    [{block name="widget_product_listitem_grid_tobasket"}]
+        <div class="priceBlock" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+            [{oxhasrights ident="TOBASKET"}]
+                [{$smarty.capture.product_price}]
+                
+[{*}]<!--Mehrwertsteuer anzeigen -->[{*}]
+
+                <span class="mwst">[{*oxmultilang ident="TRO_INKL_MST"*}]</span>
+
+[{*}]<!-- Artnr: Artikelnummer -->[{*}]
+                <span class="artno">
+                	[{oxmultilang ident="TRO_ARTNO"}]: [{$product->oxarticles__oxartnum->value}]
+                </span>
+            [{/oxhasrights}]
+        </div>
+   [{/block}]
+  </div>
+  
+[{*}]<!--Mouse Over-->[{*}]
+
+  <div class="detailinfo">
+    [{assign var="currency" value=$oView->getActCurrency()}]
+    [{if $showMainLink}]
+        [{assign var='_productLink' value=$product->getMainLink()}]
+    [{else}]
+        [{assign var='_productLink' value=$product->getLink()}]
+    [{/if}]
+    [{assign var="blShowToBasket" value=true}] [{*}]<!-- tobasket or more info ? -->[{*}]
+    [{if $blDisableToCart || $product->isNotBuyable()||($aVariantSelections&&$aVariantSelections.selections)||$product->hasMdVariants()||($oViewConf->showSelectListsInList() && $product->getSelections(1))||$product->getVariants()}]
+        [{assign var="blShowToBasket" value=false}]
+    [{/if}]
+    [{capture name=product_price}]
+        [{block name="widget_product_listitem_grid_price"}]
+            [{oxhasrights ident="SHOWARTICLEPRICE"}]
+                [{if $product->oxarticles__bodyshowprice == '1'}]
+                    [{assign var=tprice value=$product->getTPrice()}]
+                    [{assign var=price  value=$product->getPrice()}]
+                    [{if $tprice && $tprice->getBruttoPrice() > $price->getBruttoPrice()}]
+                    
+[{*}]<!-- Preis (Statt und wagerecht durchgestrichen anzeigen                   
+                    <span class="priceOld">
+                        [{ oxmultilang ident="REDUCED_FROM" }] 
+                        <del>[{ $product->getFTPrice()}] [{ $currency->sign}]</del>
+                    </span>
+-->[{*}]                    
+
+[{*}]<!-- Strich -->[{*}]                    
+                    <p class="priceOld">
+                        <img src="[{$oViewConf->getImageUrl()}]strich.png" alt="[{ $product->oxarticles__oxtitle->value }]">
+[{*}]<!-- UVP                         
+                        [{oxmultilang ident="REDUCED_FROM_2" }]
+-->[{*}]                        
+                         
+[{*}]<!-- Wert & Währungssymbol durchgestrichen                        
+                        <del>[{ $product->getFTPrice()}] [{ $currency->sign}]</del>
+-->[{*}]                        
+
+[{*}]<!-- Wert & Währungssymbol -->[{*}]                                                
                         [{ $product->getFTPrice()}] [{ $currency->sign}]
+                        
                     </p>
                     [{/if}]
                     [{block name="widget_product_listitem_grid_price_value"}]
                         [{if $product->getFPrice()}]
-                            <strong><span itemprop="price">[{ $product->getFPrice() }]</span> [{ $currency->sign}] <meta itemprop="priceCurrency" content="[{ $currency->name}]">
-                            [{*if !($product->hasMdVariants() || ($oViewConf->showSelectListsInList() && $product->getSelections(1)) || $product->getVariantList())*}] *[{*/if*}]</strong>
+                        
+[{*}]<!-- Aktueller Preis Fett -->[{*}]                                                
+                            <strong>
+                            	<span itemprop="price">
+                            		[{ $product->getFPrice() }]
+                            	</span> [{ $currency->sign}] 
+                            	<meta itemprop="priceCurrency" content="[{ $currency->name}]">
+
+[{*}]<!--                            
+                            [{if !($product->hasMdVariants() || ($oViewConf->showSelectListsInList() && $product->getSelections(1)) || $product->getVariantList())}]
+-->[{*}]                            
+                            *
+[{*}]<!--                            
+                            [{/if}]
+-->[{*}]                            
+                            </strong>
+                        
                         [{/if}]
                     [{/block}]
                     [{if $product->getPricePerUnit()}]
                         <span id="productPricePerUnit_[{$testid}]" class="pricePerUnit">
                             [{$product->oxarticles__oxunitquantity->value}] [{$product->oxarticles__oxunitname->value}] | [{$product->getPricePerUnit()}] [{ $currency->sign}]/[{$product->oxarticles__oxunitname->value}]
                         </span>
-                    [{*elseif $product->oxarticles__oxweight->value  }]
+[{*}]<!--                        
+                    [{elseif $product->oxarticles__oxweight->value  }]
                         <span id="productPricePerUnit_[{$testid}]" class="pricePerUnit">
                             <span title="weight">[{ oxmultilang ident="WIDGET_PRODUCT_PRODUCT_ARTWEIGHT" }]</span>
                             <span class="value">[{ $product->oxarticles__oxweight->value }] [{ oxmultilang ident="WIDGET_PRODUCT_PRODUCT_ARTWEIGHT2" }]</span>
-                        </span>*}]
+                        </span>}]
+-->[{*}]                        
                     [{/if }]
                 [{/if}]
             [{/oxhasrights}]
         [{/block}]
     [{/capture}]
-   
-    [{assign var="aVariantSelections" value=$product->getVariantSelections(null,null,1)}] 
     <meta itemprop='productID' content='sku:[{ $product->oxarticles__oxartnum->value }]'>
     <a itemprop="url" href="[{$_productLink}]" class="titleBlock title fn" title="[{ $product->oxarticles__oxtitle->value}]">
-   [{*<a id="short[{$testid}]" itemprop="url" href="[{$_productLink}]" class="titleBlock title fn" title="[{ $product->oxarticles__oxtitle->value}]">*}]
+
+[{*}]<!--    
+    <a id="detail[{$testid}]" itemprop="url" href="[{$_productLink}]" class="titleBlock title fn" title="[{ $product->oxarticles__oxtitle->value}]">
+-->[{*}]
+
         <div class="gridPicture">
             <img itemprop="image" src="[{$product->getThumbnailUrl()}]" alt="[{ $product->oxarticles__oxtitle->value }]">
         </div>
         <span itemprop="name">
-          [{$product->oxarticles__oxtitle->value}]
-[{* D3 Modul "extSearch" CHANGE START}]
+            [{$product->oxarticles__oxtitle->value}]
+            
+[{*}]<!--[{D3 Modul "extSearch" CHANGE START}]
+
             [{ d3_extsearch_highlight text=$product->oxarticles__oxtitle->value }] [{ d3_extsearch_highlight text=$product->oxarticles__oxvarselect->value}]
             [{d3modcfgcheck modid="d3_extsearch"}]
                 [{if $product->blIsSimilar}]<span id='similar'>[{oxmultilang ident="D3_EXTSEARCH_EXT_SIMILAR"}]</span>[{/if}]
                 [{if $product->isD3CatHit}]<span id='similar'>[{oxmultilang ident="D3_EXTSEARCH_EXT_CATHIT"}]</span>[{/if}]
             [{/d3modcfgcheck}]
-[{D3 Modul "extSearch" CHANGE END*}]
+            
+[{D3 Modul "extSearch" CHANGE END}]-->[{*}]
+
         </span> 
         <span class="shortdesc">
           [{$product->oxarticles__oxshortdesc->value }]
@@ -99,85 +282,9 @@
         <div class="priceBlock" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
             [{oxhasrights ident="TOBASKET"}]
                 [{$smarty.capture.product_price}]
+[{*}]<!-- MwSt. -->[{*}]                           
                 <span class="mwst">[{*oxmultilang ident="TRO_INKL_MST"*}]</span>
-                <span class="artno">[{oxmultilang ident="TRO_ARTNO"}]: [{$product->oxarticles__oxartnum->value}]</span>
-            [{/oxhasrights}]
-        </div>
-   [{/block}]
-  </div>
-  
-  <div class="detailinfo">
-    [{assign var="currency" value=$oView->getActCurrency()}]
-    [{if $showMainLink}]
-        [{assign var='_productLink' value=$product->getMainLink()}]
-    [{else}]
-        [{assign var='_productLink' value=$product->getLink()}]
-    [{/if}]
-    [{assign var="blShowToBasket" value=true}] [{* tobasket or more info ? *}]
-    [{if $blDisableToCart || $product->isNotBuyable()||($aVariantSelections&&$aVariantSelections.selections)||$product->hasMdVariants()||($oViewConf->showSelectListsInList() && $product->getSelections(1))||$product->getVariants()}]
-        [{assign var="blShowToBasket" value=false}]
-    [{/if}]
-    [{capture name=product_price}]
-        [{block name="widget_product_listitem_grid_price"}]
-            [{oxhasrights ident="SHOWARTICLEPRICE"}]
-                [{if $product->oxarticles__troshowprice == '1'}]
-                    [{assign var=tprice value=$product->getTPrice()}]
-                    [{assign var=price  value=$product->getPrice()}]
-                    [{if $tprice && $tprice->getBruttoPrice() > $price->getBruttoPrice()}]
-                    <span class="priceOld">
-                        [{ oxmultilang ident="WIDGET_PRODUCT_PRODUCT_REDUCEDFROM" }] <del>[{ $product->getFTPrice()}] [{ $currency->sign}]</del>
-                    </span>
-                    <p class="priceOld">
-                        <img src="[{$oViewConf->getImageUrl()}]strich.png" alt="[{ $product->oxarticles__oxtitle->value }]">
-                        [{oxmultilang ident="WIDGET_PRODUCT_PRODUCT_REDUCEDFROM" }] <del>[{ $product->getFTPrice()}] [{ $currency->sign}]</del>
-                        [{ $product->getFTPrice()}] [{ $currency->sign}]
-                    </p>
-                    [{/if}]
-                    [{block name="widget_product_listitem_grid_price_value"}]
-                        [{if $product->getFPrice()}]
-                            <strong><span itemprop="price">[{ $product->getFPrice() }]</span> [{ $currency->sign}] <meta itemprop="priceCurrency" content="[{ $currency->name}]">
-                            [{*if !($product->hasMdVariants() || ($oViewConf->showSelectListsInList() && $product->getSelections(1)) || $product->getVariantList())*}]*[{*/if*}]</strong>
-                        [{/if}]
-                    [{/block}]
-                    [{if $product->getPricePerUnit()}]
-                        <span id="productPricePerUnit_[{$testid}]" class="pricePerUnit">
-                            [{$product->oxarticles__oxunitquantity->value}] [{$product->oxarticles__oxunitname->value}] | [{$product->getPricePerUnit()}] [{ $currency->sign}]/[{$product->oxarticles__oxunitname->value}]
-                        </span>
-                    [{*elseif $product->oxarticles__oxweight->value  }]
-                        <span id="productPricePerUnit_[{$testid}]" class="pricePerUnit">
-                            <span title="weight">[{ oxmultilang ident="WIDGET_PRODUCT_PRODUCT_ARTWEIGHT" }]</span>
-                            <span class="value">[{ $product->oxarticles__oxweight->value }] [{ oxmultilang ident="WIDGET_PRODUCT_PRODUCT_ARTWEIGHT2" }]</span>
-                        </span>*}]
-                    [{/if }]
-                [{/if}]
-            [{/oxhasrights}]
-        [{/block}]
-    [{/capture}]
-    <meta itemprop='productID' content='sku:[{ $product->oxarticles__oxartnum->value }]'>
-    <a itemprop="url" href="[{$_productLink}]" class="titleBlock title fn" title="[{ $product->oxarticles__oxtitle->value}]">
-    [{*<a id="detail[{$testid}]" itemprop="url" href="[{$_productLink}]" class="titleBlock title fn" title="[{ $product->oxarticles__oxtitle->value}]">*}]
-        <div class="gridPicture">
-            <img itemprop="image" src="[{$product->getThumbnailUrl()}]" alt="[{ $product->oxarticles__oxtitle->value }]">
-        </div>
-        <span itemprop="name">
-            [{$product->oxarticles__oxtitle->value}]
-[{*D3 Modul "extSearch" CHANGE START}]
-            [{ d3_extsearch_highlight text=$product->oxarticles__oxtitle->value }] [{ d3_extsearch_highlight text=$product->oxarticles__oxvarselect->value}]
-            [{d3modcfgcheck modid="d3_extsearch"}]
-                [{if $product->blIsSimilar}]<span id='similar'>[{oxmultilang ident="D3_EXTSEARCH_EXT_SIMILAR"}]</span>[{/if}]
-                [{if $product->isD3CatHit}]<span id='similar'>[{oxmultilang ident="D3_EXTSEARCH_EXT_CATHIT"}]</span>[{/if}]
-            [{/d3modcfgcheck}]
-[{D3 Modul "extSearch" CHANGE END*}]
-        </span> 
-        <span class="shortdesc">
-          [{$product->oxarticles__oxshortdesc->value }]
-        </span>
-    </a>
-    [{block name="widget_product_listitem_grid_tobasket"}]
-        <div class="priceBlock" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
-            [{oxhasrights ident="TOBASKET"}]
-                [{$smarty.capture.product_price}]            
-                <span class="mwst">[{*oxmultilang ident="TRO_INKL_MST"*}]</span>
+               
                 <span class="artno">[{oxmultilang ident="TRO_ARTNO"}]: [{ $product->oxarticles__oxartnum->value }]</span>
                 [{assign var="listType" value=$oView->getListType()}]
                 [{if !$product->isNotBuyable() && !$aVariantSelections.selections}]

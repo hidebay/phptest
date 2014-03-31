@@ -48,7 +48,7 @@
                 <p class="checkFields clear">
                   <input type="hidden" name="blnewssubscribed" value="0">
                   <input id="subscribeNewsletter" class="checkbox" type="checkbox" name="blnewssubscribed" value="1">                  
-                  <label for="subscribeNewsletter">[{ oxmultilang ident="FORM_FIELDSET_USER_SUBSCRIBENEWSLETTER" }]</label>
+                  <label for="subscribeNewsletter">[{ oxmultilang ident="NEWSLETTER_SUBSCRIPTION" }]</label>
                 </p>
                 <button type="submit" class="submitButton loginButton">[{ oxmultilang ident="TRO_OK" }]</button>                
             </div>

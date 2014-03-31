@@ -35,7 +35,7 @@
 
                 [{block name="footer_services"}]
                     <dl class="services" id="footerServices">
-                  <!--<div--><dt id="service1"><!--<dt>--><strong>[{oxmultilang ident="FOOTER_SERVICES" }]</strong>
+                  <!--<div--><dt id="service1"><!--<dt>--><strong>[{oxmultilang ident="SERVICES" }]</strong>
                         </dt><!--</div>-->
                         <dd id="service2"><!--<dd>-->
                         [{oxifcontent ident="trofooterservice" object="oContent"}]

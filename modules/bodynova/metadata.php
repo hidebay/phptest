@@ -23,15 +23,17 @@ $aModule = array(
     'url'          => 'www.bodynova.de',
     'email'        => 'a.bender@bodynova.de',
     'extend'       => array(
+    
 	'oxorder'		=>	'bodynova/core/bodyoxorder',
 	'oxarticle'		=>	'bodynova/core/bodyoxarticle',
-	'actions_main'		=>	'bodynova/admin/bodyactions_main',
+	//'actions_main'	=>	'bodynova/admin/bodyactions_main',
 	'alist'			=>	'bodynova/views/bodyalist',
-	'oxactionlist'		=>	'bodynova/core/bodyoxactionlist',
+	'oxactionlist'	=>	'bodynova/core/bodyoxactionlist',
 	'oxactions'		=>	'bodynova/core/bodyoxactions',
-	'oxcmp_shop'		=>	'bodynova/views/bodyoxcmp_shop',
+	'oxcmp_shop'	=>	'bodynova/views/bodyoxcmp_shop',
 	'oxbasket'		=>	'bodynova/core/bodyoxbasket',
 	'content'		=>	'bodynova/views/bodycontent'
+	
     ),
     
 );
