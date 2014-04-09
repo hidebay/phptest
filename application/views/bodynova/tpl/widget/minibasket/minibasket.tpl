@@ -48,18 +48,18 @@
                         [{else}]
                             <strong class="note">[{ oxmultilang ident="NEW_BASKET_ITEM_MSG" }]</strong>
                         [{/if}]
-                        <img src="[{$oViewConf->getImageUrl('x.png')}]" alt="" class="closePop">
+                        [{*}]<!--<img src="[{$oViewConf->getImageUrl('x.png')}]" alt="" class="closePop">-->[{*}]
                     </p>
                     [{if $_prefix != "modal"}]
                         [{if $oxcmp_basket->getItemsCount() > 0}]
                             <span class="counter FXgradOrange">
                                 [{insert name="oxid_newbasketitem" tpl="widget/minibasket/newbasketitemmsg.tpl" type="message"}]
-                                <span id="[{$_prefix}]countValue">
+                                [{*}]<!--<span id="[{$_prefix}]countValue">
                                     [{$oxcmp_basket->getItemsCount()}]
-                                </span>
+                                </span>-->[{*}]
                             </span>
                         [{/if}]
-                        <img src="[{$oViewConf->getImageUrl('basket.png')}]" id="[{$_prefix}]minibasketIcon" alt="Basket" class="basket">
+                        [{*}]<!--<img src="[{$oViewConf->getImageUrl('basket.png')}]" id="[{$_prefix}]minibasketIcon" alt="Basket" class="basket">-->[{*}]
                     [{/if}]
 
                     [{if $scrollableBasket}]

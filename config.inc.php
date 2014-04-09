@@ -30,6 +30,7 @@ ini_set("display_errors", "on");
     /** @name database information */
         $this->dbHost = 'localhost'; // database host name
         $this->dbName = 'phptest'; // database name
+//      $this->dbName = 'test_copy'; // database name        
         $this->dbUser = 'root'; // database user name
         $this->dbPwd = 'root'; // database user password
         $this->dbType = 'mysql';

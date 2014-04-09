@@ -87,7 +87,7 @@
     
         <span itemprop="name">
           [{$product->oxarticles__oxtitle->value}]
-[{ D3 Modul "extSearch" CHANGE START}]
+[{*}]<!--[{ D3 Modul "extSearch" CHANGE START}]
                 <a id="[{$testid}]" href="[{$_productLink}]" class="title" title="[{ $product->oxarticles__oxtitle->value}] [{$product->oxarticles__oxvarselect->value}]">
                     <span>[{ d3_extsearch_highlight text=$product->oxarticles__oxtitle->value }] [{ d3_extsearch_highlight text=$product->oxarticles__oxvarselect->value}]</span>
                 </a>
@@ -95,7 +95,7 @@
             [{if $product->blIsSimilar}]<span id='similar'>[{oxmultilang ident="D3_EXTSEARCH_EXT_SIMILAR"}]</span>[{/if}]
             [{if $product->isD3CatHit}]<span id='similar'>[{oxmultilang ident="D3_EXTSEARCH_EXT_CATHIT"}]</span>[{/if}]
                 [{/d3modcfgcheck}]
-[{D3 Modul "extSearch" CHANGE END}]
+[{D3 Modul "extSearch" CHANGE END}]-->[{*}]
         </span> 
         <span class="shortdesc">
           [{$product->oxarticles__oxshortdesc->value }]

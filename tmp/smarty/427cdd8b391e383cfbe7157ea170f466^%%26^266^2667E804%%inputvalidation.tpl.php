@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.26, created on 2014-03-31 21:05:31
+<?php /* Smarty version 2.6.26, created on 2014-04-09 09:13:53
          compiled from message/inputvalidation.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
 smarty_core_load_plugins(array('plugins' => array(array('function', 'oxmultilang', 'message/inputvalidation.tpl', 3, false),)), $this); ?>

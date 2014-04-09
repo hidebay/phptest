@@ -8,12 +8,13 @@
     [{oxscript add="$('div.dropDown p').oxDropDown();"}]
     <div class="dropDown js-fnLink" id="sortItems">
         <p> [{*if $oView->getListOrderBy()|upper}][{assign var="myone" value="$oView->getListOrderDirection()"}][{/if*}]
-            <label>[{ oxmultilang ident="SORT_BY" }][{$myone}]</label>
+            <label>[{ oxmultilang ident="SORT_BY" }]:[{$myone}]</label>
             <span class="itemsarrow">
                 [{if $oView->getListOrderBy() }]
-                    [{oxmultilang ident="WIDGET_LOCATOR_SORT_"|cat:$oView->getListOrderBy()|upper }]
-                [{else}]
-                    [{oxmultilang ident="WIDGET_LOCATOR_CHOOSE"}]
+                    [{*oxmultilang ident=""|cat:$oView->getListOrderBy()|upper *}]
+                    [{oxmultilang ident=$oView->getListOrderBy()|upper }]
+                [{*else}]
+                    [{oxmultilang ident="WIDGET_LOCATOR_CHOOSE"*}]
                 [{/if}]
             </span>
         </p>

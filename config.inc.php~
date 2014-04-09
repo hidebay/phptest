@@ -40,7 +40,7 @@ ini_set("display_errors", "on");
         $this->sCompileDir = '/var/www/phptest/tmp';
 
     // UTF-8 mode in shop 0 - off, 1 - on
-    $this->iUtfMode  = 0;
+    $this->iUtfMode  = 1;
 
     // File type whitelist for file upload
     $this->aAllowedUploadTypes = array('jpg', 'gif', 'png', 'pdf', 'mp3', 'avi', 'mpg', 'mpeg', 'doc', 'xls', 'ppt');
@@ -63,6 +63,7 @@ ini_set("display_errors", "on");
     //  5 = Delivery Cost calculation info
     //  6 = SMTP Debug Messages
     //  7 = oxDbDebug SQL parser
+    //  8 = OXID Templates
     $this->iDebug = 8;
 
     // Log all modifications performed in Admin
@@ -88,7 +89,7 @@ ini_set("display_errors", "on");
 
     // uncomment the following line if you want to leave euro sign unchanged in output
     // by default is set to convert euro sign symbol to html entity
-    // $this->blSkipEuroReplace = true;
+     $this->blSkipEuroReplace = false;
 
 
     // List of all Search-Engine Robots
@@ -161,7 +162,7 @@ ini_set("display_errors", "on");
      * should template blocks be highlighted in frontend ?
      * this is mainly intended for module writers in non productive environment
      */
-    $this->blDebugTemplateBlocks = true;
+    $this->blDebugTemplateBlocks = false;
 
     /**
      * should requests, coming via stdurl and not redirected to seo url be logged to seologs db table?
@@ -184,7 +185,7 @@ ini_set("display_errors", "on");
     /**
      * Default database conection character set
      */
-    $this->sDefaultDatabaseConnection = '';
+    $this->sDefaultDatabaseConnection = 'latin1';
 
     /**
      * Additional multi language tables

@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.26, created on 2014-03-31 21:05:32
+<?php /* Smarty version 2.6.26, created on 2014-04-09 09:13:54
          compiled from widget/sidebar/categoriestree.tpl */ ?>
 <div style='position: absolute; z-index:9999;color:white;background: #789;
                  padding:0 15 0 15'>widget/sidebar/categoriestree.tpl</div><!-- widget/sidebar/categoriestree.tpl template start --><?php if ($this->_tpl_vars['categories'] && $this->_tpl_vars['oView']->getClassName() != 'start'): ?>

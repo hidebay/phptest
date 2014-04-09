@@ -1741,7 +1741,7 @@ div.loginForm h4 {
 .logoutLink {
     /*padding-left: 20px;*/
     text-transform: uppercase;
-    background: url(../../img/logout.png) no-repeat 8px 3px;
+    /*background: url(../../img/logout.png) no-repeat 8px 3px;*/
 }
 
 .flyout h4 {
@@ -5762,7 +5762,7 @@ a.sliderHover {
 
 .accountDashboardView .col {
    float: left;
-   width: 374px;
+   width: 370px;
    height: 230px;
  /* padding-right: 20px; */
 }

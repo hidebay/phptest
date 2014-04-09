@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.26, created on 2014-03-31 21:05:32
+<?php /* Smarty version 2.6.26, created on 2014-04-09 09:13:54
          compiled from layout/sidebar.tpl */ ?>
 <div style='position: absolute; z-index:9999;color:white;background: #789;
                  padding:0 15 0 15'>layout/sidebar.tpl</div><!-- layout/sidebar.tpl template start --><div id="sidebar_content">

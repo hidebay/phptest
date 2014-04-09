@@ -1,1 +1,0 @@
-<span style="color:#AB1E00 ;">[{$content}]</span>

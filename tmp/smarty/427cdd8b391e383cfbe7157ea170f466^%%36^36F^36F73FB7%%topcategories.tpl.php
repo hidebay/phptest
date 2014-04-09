@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.26, created on 2014-03-31 21:05:32
+<?php /* Smarty version 2.6.26, created on 2014-04-09 09:13:54
          compiled from widget/header/topcategories.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
 smarty_core_load_plugins(array('plugins' => array(array('function', 'oxscript', 'widget/header/topcategories.tpl', 2, false),array('function', 'oxstyle', 'widget/header/topcategories.tpl', 4, false),array('function', 'counter', 'widget/header/topcategories.tpl', 56, false),array('modifier', 'count', 'widget/header/topcategories.tpl', 20, false),array('modifier', 'ceil', 'widget/header/topcategories.tpl', 76, false),)), $this); ?>
@@ -171,8 +171,7 @@ if ($this->_foreach['SubSubCat']['total'] > 0):
     foreach ($_from as $this->_tpl_vars['subsubcatkey'] => $this->_tpl_vars['osubsubcat']):
         $this->_foreach['SubSubCat']['iteration']++;
 ?> 
-                                          <?php if ($this->_tpl_vars['osubsubcat']->getIsVisible()): ?>
-                                            <?php $this->assign('col_counter', $this->_tpl_vars['col_counter']+1); ?>
+                                                                                      <?php $this->assign('col_counter', $this->_tpl_vars['col_counter']+1); ?>
                                             <li class="subsub">
                                               <a <?php if ($this->_tpl_vars['osubsubcat']->expanded): ?>class="current"<?php endif; ?> href="<?php echo $this->_tpl_vars['osubsubcat']->getLink(); ?>
 " title="<?php echo $this->_tpl_vars['osubsubcat']->oxcategories__oxtitle->value; ?>
@@ -180,7 +179,7 @@ if ($this->_foreach['SubSubCat']['total'] > 0):
  <?php if ($this->_tpl_vars['oView']->showCategoryArticlesCount() && ( $this->_tpl_vars['osubsubcat']->getNrOfArticles() > 0 )): ?> (<?php echo $this->_tpl_vars['osubsubcat']->getNrOfArticles(); ?>
 )<?php endif; ?></a>
                                             </li>
-                                          <?php endif; ?>                                          
+                                                                                    
                                         <?php endforeach; endif; unset($_from); ?>
                                         </ul>
                                       </div>
@@ -192,9 +191,9 @@ if ($this->_foreach['SubSubCat']['total'] > 0):
                             <?php if ($this->_tpl_vars['col_counter'] > $this->_tpl_vars['max_cols']): ?>
                               <?php $this->assign('col_counter', '0'); ?>
                               </ul><ul>
-                            <?php endif; ?>
-                        <?php endif; ?>
-                    <?php endforeach; endif; unset($_from); ?>
+                         <?php endif; ?>   
+                        <?php endif; ?> 
+                   <?php endforeach; endif; unset($_from); ?>
                     </ul></div></li></ul>
                 <?php endif; ?>              
             </li>

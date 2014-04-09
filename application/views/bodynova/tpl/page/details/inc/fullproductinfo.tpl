@@ -50,15 +50,19 @@
       [{/if }]
     [{/block}]
     
-    [{*include file="page/details/inc/related_products.tpl"*}]
+    [{include file="page/details/inc/related_products.tpl"}]
 </div>
 -->[{*}]
+[{*}]<!--[{debug}]-->[{*}]
 <div id="detailsMain">
     [{include file="page/details/inc/productmain.tpl"}]
 </div>
 <div id="detailsRelated" class="detailsRelated clear">
     <div class="relatedInfo[{if !$oView->getSimilarProducts() && !$oView->getCrossSelling() && !$oView->getAccessoires()}] relatedInfoFull[{/if}]">
         [{include file="page/details/inc/tabs.tpl"}]
+[{*}]<!-- Hier die Navileiste hin -->[{*}]
+
+[{*}]<!-- Ende Navileiste -->[{*}]        
         [{if $oView->getAlsoBoughtTheseProducts()}]
             [{include file="widget/product/list.tpl" type="grid" listId="alsoBought" header="light" head="CUSTOMERS_ALSO_BOUGHT"|oxmultilangassign|colon products=$oView->getAlsoBoughtTheseProducts()}]
         [{/if}]
@@ -73,5 +77,5 @@
         </div>
         [{/if}]
     </div>
-    [{ include file="page/details/inc/related_products.tpl" }]
+    [{*}]<!--[{ include file="page/details/inc/related_products.tpl" }]-->[{*}]
 </div>

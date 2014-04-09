@@ -1,5 +1,5 @@
 [{capture append="oxidBlock_pageBody"}]
-    [{* WELLEN IM HINTERGRUND *}]
+    [{*}]<!--[{ WELLEN IM HINTERGRUND }]-->[{*}]
     <div id="welle1"></div>
     <div id="welle2"></div>
     <div id="welle3"></div>
@@ -8,17 +8,17 @@
     <div id="page" class="[{if $sidebar}] sidebar[{$sidebar}][{/if}]">
         [{include file="layout/header.tpl"}]
         <div id="contentWrapper">            
-            [{*if $oView->getClassName() ne "start" && !$blHideBreadcrumb}]
+            [{*}]<!--[{if $oView->getClassName() ne "start" && !$blHideBreadcrumb}]
                [{ include file="widget/breadcrumb.tpl"}]
-            [{/if*}]
+            [{/if}]-->[{*}]
             [{if $sidebar}]
                 <div id="sidebar">
                     [{include file="layout/sidebar.tpl"}]
                 </div>
             [{/if}]            
             <div id="content">
-              [{*if ($oView->getClassName()=='start' || $oView->getClassName()=='alist') && $oView->getBanners()|@count > 0 *}]
-[{if ($oView->getClassName()=='start' || $oView->getClassName()=='alist') }]
+              [{*}]<!--[{if ($oView->getClassName()=='start' || $oView->getClassName()=='alist') && $oView->getBanners()|@count > 0 }]-->[{*}]
+			  [{if ($oView->getClassName()=='start' || $oView->getClassName()=='alist') }]
                 <div class="oxSlider">
                     [{include file="widget/promoslider.tpl" }]
                 </div>

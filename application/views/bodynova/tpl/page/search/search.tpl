@@ -3,7 +3,7 @@
 [{assign var="search_title" value="PAGE_SEARCH_SEARCH_TITLE"|oxmultilangassign}]
 [{assign var="searchparamforhtml" value=$oView->getSearchParamForHtml() }]
 [{assign var="template_title" value="$search_title - $searchparamforhtml"}]
-[{assign var="search_head" value="PAGE_SEARCH_SEARCH_HITSFOR"|oxmultilangassign}]
+[{assign var="search_head" value="HITS_FOR"|oxmultilangassign}]
 [{assign var="search_head" value=$oView->getArticleCount()|cat:" "|cat:$search_head|cat:" &quot;"|cat:$oView->getSearchParamForHtml()|cat:"&quot;"}]
 [{assign var='rsslinks' value=$oView->getRssLinks() }]
 [{if $rsslinks.searchArticles}]
@@ -19,27 +19,51 @@
           [{include file="widget/locator/listlocator.tpl"  locator=$oView->getPageNavigationLimitedTop() listDisplayType=true itemsPerPage=true sort=true }]
           [{/block}]
       </div>
-[{*** D3 Modul "extSearch" START ***}]
+
+[{*}]<!--[{ D3 Modul "extSearch" START }]-->[{*}]
+
+[{*}]<!--
     [{d3modcfgcheck modid="d3_extsearch"}][{/d3modcfgcheck}]
     [{if $mod_d3_extsearch}]
         [{include file="widget/d3extsearch/d3_inc_ext_search.tpl"}]
     [{/if}]
-[{*** D3 Modul "extSearch" END ***}]
+-->[{*}]
+
+[{*}]<!--[{ D3 Modul "extSearch" END }]-->[{*}]
+
+[{*}]<!--
   [{else}]
-[{*** D3 Modul "extSearch" START ***}]
+-->[{*}]
+  
+[{*}]<!--[{ D3 Modul "extSearch" START }]-->[{*}]
+
+[{*}]<!--
     [{d3modcfgcheck modid="d3_extsearch"}][{/d3modcfgcheck}]
     [{if $mod_d3_extsearch}]
         [{include file="widget/d3extsearch/d3_inc_ext_search.tpl"}]
     [{/if}]
-[{*** D3 Modul "extSearch" END ***}]
+-->[{*}]    
+    
+[{*}]<!--[{ D3 Modul "extSearch" END }]-->[{*}]
+
+
     <div>
-[{*** D3 Modul "extSearch" START ***
+
+[{*}]<!--[{ D3 Modul "extSearch" START }] -->[{*}]
+
+[{*}]<!--
         [{ oxmultilang ident="PAGE_SEARCH_SEARCH_NOITEMSFOUND" }]
-*** D3 Modul "extSearch" END ***}]
-[{*** D3 Modul "extSearch" START ***}]
+-->[{*}]
+        
+[{*}]<!--[{ D3 Modul "extSearch" END }]-->[{*}]
+[{*}]<!--[{D3 Modul "extSearch" START }]-->[{*}]
+[{*}]<!--
         <h3>[{oxcontent ident="d3extsearch_noarticlefound" field="oxtitle"}]</h3>
         [{oxcontent ident="d3extsearch_noarticlefound"}]
-[{*** D3 Modul "extSearch" END ***}]
+-->[{*}]
+
+[{*}]<!--[{ D3 Modul "extSearch" END }]-->[{*}]
+
     </div>
     [{/if}]
   </div>

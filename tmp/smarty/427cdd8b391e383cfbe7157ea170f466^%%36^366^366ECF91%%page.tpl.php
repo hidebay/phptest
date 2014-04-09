@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.26, created on 2014-03-31 21:05:31
+<?php /* Smarty version 2.6.26, created on 2014-04-09 09:13:53
          compiled from layout/page.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
 smarty_core_load_plugins(array('plugins' => array(array('block', 'oxifcontent', 'layout/page.tpl', 41, false),array('function', 'oxmultilang', 'layout/page.tpl', 49, false),)), $this); ?>
@@ -27,7 +27,7 @@ unset($_smarty_tpl_vars);
                 </div>
             <?php endif; ?>            
             <div id="content">
-              <?php if (( $this->_tpl_vars['oView']->getClassName() == 'start' || $this->_tpl_vars['oView']->getClassName() == 'alist' )): ?>
+              			  <?php if (( $this->_tpl_vars['oView']->getClassName() == 'start' || $this->_tpl_vars['oView']->getClassName() == 'alist' )): ?>
                 <div class="oxSlider">
                     <?php $_smarty_tpl_vars = $this->_tpl_vars;
 $this->_smarty_include(array('smarty_include_tpl_file' => "widget/promoslider.tpl", 'smarty_include_vars' => array()));

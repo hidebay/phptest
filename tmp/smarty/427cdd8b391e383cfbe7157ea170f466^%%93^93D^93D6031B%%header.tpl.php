@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.26, created on 2014-03-31 21:05:31
+<?php /* Smarty version 2.6.26, created on 2014-04-09 09:13:53
          compiled from layout/header.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
 smarty_core_load_plugins(array('plugins' => array(array('block', 'oxifcontent', 'layout/header.tpl', 8, false),array('function', 'oxmultilang', 'layout/header.tpl', 11, false),array('function', 'oxgetseourl', 'layout/header.tpl', 13, false),array('function', 'oxid_include_dynamic', 'layout/header.tpl', 31, false),array('modifier', 'cat', 'layout/header.tpl', 12, false),array('modifier', 'oxtruncate', 'layout/header.tpl', 17, false),)), $this); ?>
@@ -15,7 +15,7 @@ smarty_core_load_plugins(array('plugins' => array(array('block', 'oxifcontent', 
       <?php $this->_tag_stack[] = array('oxifcontent', array('ident' => 'troheadercenter','object' => '_cont')); $_block_repeat=true;smarty_block_oxifcontent($this->_tag_stack[count($this->_tag_stack)-1][1], null, $this, $_block_repeat);while ($_block_repeat) { ob_start(); ?>
           <div id="headercenter">
             <?php if ($this->_tpl_vars['oxcmp_user']->oxuser__oxpassword->value): ?>
-              <?php echo smarty_function_oxmultilang(array('ident' => 'WIDGET_LOGINBOX_GREETING'), $this);?>
+              <?php echo smarty_function_oxmultilang(array('ident' => 'GREETING'), $this);?>
 
               <?php $this->assign('fullname', ((is_array($_tmp=((is_array($_tmp=$this->_tpl_vars['oxcmp_user']->oxuser__oxfname->value)) ? $this->_run_mod_handler('cat', true, $_tmp, ' ') : smarty_modifier_cat($_tmp, ' ')))) ? $this->_run_mod_handler('cat', true, $_tmp, $this->_tpl_vars['oxcmp_user']->oxuser__oxlname->value) : smarty_modifier_cat($_tmp, $this->_tpl_vars['oxcmp_user']->oxuser__oxlname->value))); ?>
               <a href="<?php echo smarty_function_oxgetseourl(array('ident' => ((is_array($_tmp=$this->_tpl_vars['oViewConf']->getSelfLink())) ? $this->_run_mod_handler('cat', true, $_tmp, "cl=account") : smarty_modifier_cat($_tmp, "cl=account"))), $this);?>

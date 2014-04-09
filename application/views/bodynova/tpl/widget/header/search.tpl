@@ -11,17 +11,17 @@
             <input type="hidden" name="cl" value="search">
             [{block name="header_search_field"}]
             
-            [{* D3 Modul "extSearch" START REPLACEMENT}]
+            [{*}]<!--[{ D3 Modul "extSearch" START REPLACEMENT}]
                 [{d3modcfgcheck modid="d3_extsearch"}]
                     [{include file="widget/d3extsearch/d3_ext_search_form.tpl"}]
                 [{/d3modcfgcheck}]
-            [{D3 Modul "extSearch" END*}]
-            [{*** D3 Modul "extSearch" DISABLED ***}]
-                [{*if !$mod_d3_extsearch*}]
+            [{D3 Modul "extSearch" END}]-->[{*}]
+           [{*}]<!-- [{ D3 Modul "extSearch" DISABLED }] -->[{*}]
+                [{*}]<!--[{if !$mod_d3_extsearch}]-->[{*}]
                     <label for="searchParam" class="innerLabel">[{oxmultilang ident="SEARCH_TITLE" }]</label>
                     <input class="textbox" type="text" id="searchParam" name="searchparam" value="[{$oView->getSearchParamForHtml()}]">
-                [{*/if*}]
-            [{*** D3 Modul "extSearch" DISABLED ***}]
+                [{*}]<!--[{/if}]-->[{*}]
+            [{*}]<!--[{D3 Modul "extSearch" DISABLED}]-->[{*}]
             [{/block}]
             <input class="searchSubmit" type="submit" value="">
         </div>

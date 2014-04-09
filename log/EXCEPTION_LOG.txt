@@ -12175,3 +12175,693 @@ oxSystemComponentException-oxException (time: 2014-03-31 16:10:36): [0]: Functio
 
  Faulty component --> 
 ---------------------------------------------
+oxSystemComponentException-oxException (time: 2014-04-01 14:02:04): [0]: EXCEPTION_SYSTEMCOMPONENT_TEMPLATENOTFOUND 
+ Stack Trace: #0 /var/www/phptest/core/oxutilsobject.php(185): oxUtilsObject->_getObject('oxsystemcompone...', 0, Array)
+#1 [internal function]: oxUtilsObject->oxNew('oxSystemCompone...')
+#2 /var/www/phptest/core/oxfunctions.php(375): call_user_func_array(Array, Array)
+#3 /var/www/phptest/core/oxshopcontrol.php(490): oxNew('oxSystemCompone...')
+#4 /var/www/phptest/core/oxshopcontrol.php(388): oxShopControl->_render(Object(Details))
+#5 /var/www/phptest/core/oxshopcontrol.php(148): oxShopControl->_process('details', '', NULL, NULL)
+#6 /var/www/phptest/core/oxid.php(32): oxShopControl->start()
+#7 /var/www/phptest/index.php(19): Oxid::run()
+#8 {main}
+
+ Faulty component --> page/details/ajax/fullproductinfo.tpl
+---------------------------------------------
+oxSystemComponentException-oxException (time: 2014-04-01 14:11:01): [0]: EXCEPTION_SYSTEMCOMPONENT_TEMPLATENOTFOUND 
+ Stack Trace: #0 /var/www/phptest/core/oxutilsobject.php(185): oxUtilsObject->_getObject('oxsystemcompone...', 0, Array)
+#1 [internal function]: oxUtilsObject->oxNew('oxSystemCompone...')
+#2 /var/www/phptest/core/oxfunctions.php(375): call_user_func_array(Array, Array)
+#3 /var/www/phptest/core/oxshopcontrol.php(490): oxNew('oxSystemCompone...')
+#4 /var/www/phptest/core/oxshopcontrol.php(388): oxShopControl->_render(Object(Details))
+#5 /var/www/phptest/core/oxshopcontrol.php(148): oxShopControl->_process('details', '', NULL, NULL)
+#6 /var/www/phptest/core/oxid.php(32): oxShopControl->start()
+#7 /var/www/phptest/index.php(19): Oxid::run()
+#8 {main}
+
+ Faulty component --> page/details/ajax/fullproductinfo.tpl
+---------------------------------------------
+oxSystemComponentException-oxException (time: 2014-04-01 16:19:57): [0]: EXCEPTION_SYSTEMCOMPONENT_TEMPLATENOTFOUND 
+ Stack Trace: #0 /var/www/phptest/core/oxutilsobject.php(185): oxUtilsObject->_getObject('oxsystemcompone...', 0, Array)
+#1 [internal function]: oxUtilsObject->oxNew('oxSystemCompone...')
+#2 /var/www/phptest/core/oxfunctions.php(375): call_user_func_array(Array, Array)
+#3 /var/www/phptest/core/oxshopcontrol.php(490): oxNew('oxSystemCompone...')
+#4 /var/www/phptest/core/oxshopcontrol.php(388): oxShopControl->_render(Object(Details))
+#5 /var/www/phptest/core/oxshopcontrol.php(148): oxShopControl->_process('details', '', NULL, NULL)
+#6 /var/www/phptest/core/oxid.php(32): oxShopControl->start()
+#7 /var/www/phptest/index.php(19): Oxid::run()
+#8 {main}
+
+ Faulty component --> page/details/ajax/fullproductinfo.tpl
+---------------------------------------------
+oxSystemComponentException-oxException (time: 2014-04-01 16:45:28): [0]: EXCEPTION_SYSTEMCOMPONENT_TEMPLATENOTFOUND 
+ Stack Trace: #0 /var/www/phptest/core/oxutilsobject.php(185): oxUtilsObject->_getObject('oxsystemcompone...', 0, Array)
+#1 [internal function]: oxUtilsObject->oxNew('oxSystemCompone...')
+#2 /var/www/phptest/core/oxfunctions.php(375): call_user_func_array(Array, Array)
+#3 /var/www/phptest/core/oxshopcontrol.php(490): oxNew('oxSystemCompone...')
+#4 /var/www/phptest/core/oxshopcontrol.php(388): oxShopControl->_render(Object(Details))
+#5 /var/www/phptest/core/oxshopcontrol.php(148): oxShopControl->_process('details', '', NULL, NULL)
+#6 /var/www/phptest/core/oxid.php(32): oxShopControl->start()
+#7 /var/www/phptest/index.php(19): Oxid::run()
+#8 {main}
+
+ Faulty component --> page/details/ajax/productmain.tpl
+---------------------------------------------
+oxSystemComponentException-oxException (time: 2014-04-01 16:47:42): [0]: EXCEPTION_SYSTEMCOMPONENT_TEMPLATENOTFOUND 
+ Stack Trace: #0 /var/www/phptest/core/oxutilsobject.php(185): oxUtilsObject->_getObject('oxsystemcompone...', 0, Array)
+#1 [internal function]: oxUtilsObject->oxNew('oxSystemCompone...')
+#2 /var/www/phptest/core/oxfunctions.php(375): call_user_func_array(Array, Array)
+#3 /var/www/phptest/core/oxshopcontrol.php(490): oxNew('oxSystemCompone...')
+#4 /var/www/phptest/core/oxshopcontrol.php(388): oxShopControl->_render(Object(Details))
+#5 /var/www/phptest/core/oxshopcontrol.php(148): oxShopControl->_process('details', '', NULL, NULL)
+#6 /var/www/phptest/core/oxid.php(32): oxShopControl->start()
+#7 /var/www/phptest/index.php(19): Oxid::run()
+#8 {main}
+
+ Faulty component --> page/details/ajax/fullproductinfo.tpl
+---------------------------------------------
+oxSystemComponentException-oxException (time: 2014-04-01 16:59:21): [0]: EXCEPTION_SYSTEMCOMPONENT_TEMPLATENOTFOUND 
+ Stack Trace: #0 /var/www/phptest/core/oxutilsobject.php(185): oxUtilsObject->_getObject('oxsystemcompone...', 0, Array)
+#1 [internal function]: oxUtilsObject->oxNew('oxSystemCompone...')
+#2 /var/www/phptest/core/oxfunctions.php(375): call_user_func_array(Array, Array)
+#3 /var/www/phptest/core/oxshopcontrol.php(490): oxNew('oxSystemCompone...')
+#4 /var/www/phptest/core/oxshopcontrol.php(388): oxShopControl->_render(Object(Details))
+#5 /var/www/phptest/core/oxshopcontrol.php(148): oxShopControl->_process('details', '', NULL, NULL)
+#6 /var/www/phptest/core/oxid.php(32): oxShopControl->start()
+#7 /var/www/phptest/index.php(19): Oxid::run()
+#8 {main}
+
+ Faulty component --> page/details/ajax/productmain.tpl
+---------------------------------------------
+oxSystemComponentException-oxException (time: 2014-04-01 22:36:57): [0]: EXCEPTION_SYSTEMCOMPONENT_CLASSNOTFOUND 
+ Stack Trace: #0 /var/www/phptest/core/oxutilsobject.php(185): oxUtilsObject->_getObject('oxsystemcompone...', 0, Array)
+#1 [internal function]: oxUtilsObject->oxNew('oxSystemCompone...')
+#2 /var/www/phptest/core/oxfunctions.php(375): call_user_func_array(Array, Array)
+#3 /var/www/phptest/core/oxutilsobject.php(175): oxNew('oxSystemCompone...')
+#4 [internal function]: oxUtilsObject->oxNew('sit_config_scal...')
+#5 /var/www/phptest/core/oxfunctions.php(375): call_user_func_array(Array, Array)
+#6 /var/www/phptest/core/oxshopcontrol.php(432): oxNew('sit_config_scal...')
+#7 /var/www/phptest/core/oxshopcontrol.php(379): oxShopControl->_initializeViewObject('sit_config_scal...', NULL, NULL, NULL)
+#8 /var/www/phptest/core/oxshopcontrol.php(148): oxShopControl->_process('sit_config_scal...', NULL, NULL, NULL)
+#9 /var/www/phptest/modules/itratos/itratos_oxSecurity/ids.php(121): oxShopControl->start()
+#10 /var/www/phptest/core/oxid.php(32): ids->start()
+#11 /var/www/phptest/index.php(19): Oxid::run()
+#12 /var/www/phptest/admin/index.php(20): require_once('/var/www/phptes...')
+#13 {main}
+
+ Faulty component --> sit_config_scaleprice_manager_settings
+---------------------------------------------
+oxSystemComponentException-oxException (time: 2014-04-01 22:36:57): [0]: EXCEPTION_SYSTEMCOMPONENT_CLASSNOTFOUND 
+ Stack Trace: #0 /var/www/phptest/core/oxutilsobject.php(185): oxUtilsObject->_getObject('oxsystemcompone...', 0, Array)
+#1 [internal function]: oxUtilsObject->oxNew('oxSystemCompone...')
+#2 /var/www/phptest/core/oxfunctions.php(375): call_user_func_array(Array, Array)
+#3 /var/www/phptest/core/oxutilsobject.php(175): oxNew('oxSystemCompone...')
+#4 [internal function]: oxUtilsObject->oxNew('sit_config_scal...')
+#5 /var/www/phptest/core/oxfunctions.php(375): call_user_func_array(Array, Array)
+#6 /var/www/phptest/core/oxshopcontrol.php(432): oxNew('sit_config_scal...')
+#7 /var/www/phptest/core/oxshopcontrol.php(379): oxShopControl->_initializeViewObject('sit_config_scal...', NULL, NULL, NULL)
+#8 /var/www/phptest/core/oxshopcontrol.php(148): oxShopControl->_process('sit_config_scal...', NULL, NULL, NULL)
+#9 /var/www/phptest/modules/itratos/itratos_oxSecurity/ids.php(121): oxShopControl->start()
+#10 /var/www/phptest/core/oxid.php(32): ids->start()
+#11 /var/www/phptest/index.php(19): Oxid::run()
+#12 /var/www/phptest/admin/index.php(20): require_once('/var/www/phptes...')
+#13 {main}
+
+ Faulty component --> sit_config_scaleprice_manager_settings
+---------------------------------------------
+oxSystemComponentException-oxException (time: 2014-04-01 22:37:07): [0]: EXCEPTION_SYSTEMCOMPONENT_CLASSNOTFOUND 
+ Stack Trace: #0 /var/www/phptest/core/oxutilsobject.php(185): oxUtilsObject->_getObject('oxsystemcompone...', 0, Array)
+#1 [internal function]: oxUtilsObject->oxNew('oxSystemCompone...')
+#2 /var/www/phptest/core/oxfunctions.php(375): call_user_func_array(Array, Array)
+#3 /var/www/phptest/core/oxutilsobject.php(175): oxNew('oxSystemCompone...')
+#4 [internal function]: oxUtilsObject->oxNew('sit_config_scal...')
+#5 /var/www/phptest/core/oxfunctions.php(375): call_user_func_array(Array, Array)
+#6 /var/www/phptest/core/oxshopcontrol.php(432): oxNew('sit_config_scal...')
+#7 /var/www/phptest/core/oxshopcontrol.php(379): oxShopControl->_initializeViewObject('sit_config_scal...', NULL, NULL, NULL)
+#8 /var/www/phptest/core/oxshopcontrol.php(148): oxShopControl->_process('sit_config_scal...', NULL, NULL, NULL)
+#9 /var/www/phptest/modules/itratos/itratos_oxSecurity/ids.php(121): oxShopControl->start()
+#10 /var/www/phptest/core/oxid.php(32): ids->start()
+#11 /var/www/phptest/index.php(19): Oxid::run()
+#12 /var/www/phptest/admin/index.php(20): require_once('/var/www/phptes...')
+#13 {main}
+
+ Faulty component --> sit_config_scaleprice_manager_settings
+---------------------------------------------
+oxSystemComponentException-oxException (time: 2014-04-01 22:37:07): [0]: EXCEPTION_SYSTEMCOMPONENT_CLASSNOTFOUND 
+ Stack Trace: #0 /var/www/phptest/core/oxutilsobject.php(185): oxUtilsObject->_getObject('oxsystemcompone...', 0, Array)
+#1 [internal function]: oxUtilsObject->oxNew('oxSystemCompone...')
+#2 /var/www/phptest/core/oxfunctions.php(375): call_user_func_array(Array, Array)
+#3 /var/www/phptest/core/oxutilsobject.php(175): oxNew('oxSystemCompone...')
+#4 [internal function]: oxUtilsObject->oxNew('sit_config_scal...')
+#5 /var/www/phptest/core/oxfunctions.php(375): call_user_func_array(Array, Array)
+#6 /var/www/phptest/core/oxshopcontrol.php(432): oxNew('sit_config_scal...')
+#7 /var/www/phptest/core/oxshopcontrol.php(379): oxShopControl->_initializeViewObject('sit_config_scal...', NULL, NULL, NULL)
+#8 /var/www/phptest/core/oxshopcontrol.php(148): oxShopControl->_process('sit_config_scal...', NULL, NULL, NULL)
+#9 /var/www/phptest/modules/itratos/itratos_oxSecurity/ids.php(121): oxShopControl->start()
+#10 /var/www/phptest/core/oxid.php(32): ids->start()
+#11 /var/www/phptest/index.php(19): Oxid::run()
+#12 /var/www/phptest/admin/index.php(20): require_once('/var/www/phptes...')
+#13 {main}
+
+ Faulty component --> sit_config_scaleprice_manager_settings
+---------------------------------------------
+oxSystemComponentException-oxException (time: 2014-04-01 22:47:44): [0]: EXCEPTION_SYSTEMCOMPONENT_TEMPLATENOTFOUND 
+ Stack Trace: #0 /var/www/phptest/core/oxutilsobject.php(185): oxUtilsObject->_getObject('oxsystemcompone...', 0, Array)
+#1 [internal function]: oxUtilsObject->oxNew('oxSystemCompone...')
+#2 /var/www/phptest/core/oxfunctions.php(375): call_user_func_array(Array, Array)
+#3 /var/www/phptest/core/oxshopcontrol.php(490): oxNew('oxSystemCompone...')
+#4 /var/www/phptest/core/oxshopcontrol.php(388): oxShopControl->_render(Object(oeThemeSwitcherDetails))
+#5 /var/www/phptest/core/oxshopcontrol.php(148): oxShopControl->_process('details', '', NULL, NULL)
+#6 /var/www/phptest/core/oxid.php(32): oxShopControl->start()
+#7 /var/www/phptest/index.php(19): Oxid::run()
+#8 {main}
+
+ Faulty component --> page/details/ajax/fullproductinfo.tpl
+---------------------------------------------
+2014-04-03 15:25:40exception 'ADODB_Exception' with message 'mysql error: [1146: Table 'test_copy.oxv_oxshops_de' doesn't exist] in EXECUTE("select `oxv_oxshops_de`.`oxid`, `oxv_oxshops_de`.`oxactive`, `oxv_oxshops_de`.`oxproductive`, `oxv_oxshops_de`.`oxdefcurrency`, `oxv_oxshops_de`.`oxdeflanguage`, `oxv_oxshops_de`.`oxname`, `oxv_oxshops_de`.`oxtitleprefix`, `oxv_oxshops_de`.`oxtitlesuffix`, `oxv_oxshops_de`.`oxstarttitle`, `oxv_oxshops_de`.`oxinfoemail`, `oxv_oxshops_de`.`oxorderemail`, `oxv_oxshops_de`.`oxowneremail`, `oxv_oxshops_de`.`oxordersubject`, `oxv_oxshops_de`.`oxregistersubject`, `oxv_oxshops_de`.`oxforgotpwdsubject`, `oxv_oxshops_de`.`oxsendednowsubject`, `oxv_oxshops_de`.`oxsmtp`, `oxv_oxshops_de`.`oxsmtpuser`, `oxv_oxshops_de`.`oxsmtppwd`, `oxv_oxshops_de`.`oxserial`, `oxv_oxshops_de`.`oxcompany`, `oxv_oxshops_de`.`oxstreet`, `oxv_oxshops_de`.`oxzip`, `oxv_oxshops_de`.`oxcity`, `oxv_oxshops_de`.`oxcountry`, `oxv_oxshops_de`.`oxbankname`, `oxv_oxshops_de`.`oxbanknumber`, `oxv_oxshops_de`.`oxbankcode`, `oxv_oxshops_de`.`oxvatnumber`, `oxv_oxshops_de`.`oxbiccode`, `oxv_oxshops_de`.`oxibannumber`, `oxv_oxshops_de`.`oxfname`, `oxv_oxshops_de`.`oxlname`, `oxv_oxshops_de`.`oxtelefon`, `oxv_oxshops_de`.`oxtelefax`, `oxv_oxshops_de`.`oxurl`, `oxv_oxshops_de`.`oxdefcat`, `oxv_oxshops_de`.`oxhrbnr`, `oxv_oxshops_de`.`oxcourt`, `oxv_oxshops_de`.`oxadbutlerid`, `oxv_oxshops_de`.`oxaffilinetid`, `oxv_oxshops_de`.`oxsuperclicksid`, `oxv_oxshops_de`.`oxaffiliweltid`, `oxv_oxshops_de`.`oxaffili24id`, `oxv_oxshops_de`.`oxedition`, `oxv_oxshops_de`.`oxversion`, `oxv_oxshops_de`.`oxseoactive`, `oxv_oxshops_de`.`oxtimestamp` from oxv_oxshops_de where 1  and oxv_oxshops_de.oxid = 'oxbaseshop'")
+' in /var/www/phptest/core/adodblite/adodb-exceptions.inc.php:84
+Stack trace:
+#0 /var/www/phptest/core/adodblite/adodbSQL_drivers/mysql/mysql_driver.inc(369): adodb_throw('mysql', 'EXECUTE', 1146, 'Table 'test_cop...', 'select `oxv_oxs...', false, Object(object_ADOConnection))
+#1 /var/www/phptest/core/adodblite/adodb.inc.php(316): mysql_driver_ADOConnection->do_query('select `oxv_oxs...', -1, -1, false)
+#2 /var/www/phptest/core/oxlegacydb.php(138): ADOConnection->Execute('select `oxv_oxs...', false)
+#3 /var/www/phptest/core/oxbase.php(670): oxLegacyDb->select('select `oxv_oxs...')
+#4 /var/www/phptest/core/oxbase.php(616): oxBase->assignRecord('select `oxv_oxs...')
+#5 /var/www/phptest/core/oxconfig.php(2066): oxBase->load('oxbaseshop')
+#6 /var/www/phptest/core/oxutils.php(1031): oxConfig->getActiveShop()
+#7 /var/www/phptest/application/controllers/oxubase.php(548): oxUtils->seoIsActive()
+#8 /var/www/phptest/application/controllers/oxubase.php(579): oxUBase->_processRequest()
+#9 /var/www/phptest/core/oxshopcontrol.php(443): oxUBase->init()
+#10 /var/www/phptest/core/oxshopcontrol.php(379): oxShopControl->_initializeViewObject('start', NULL, NULL, NULL)
+#11 /var/www/phptest/core/oxshopcontrol.php(148): oxShopControl->_process('start', NULL, NULL, NULL)
+#12 /var/www/phptest/core/oxid.php(32): oxShopControl->start()
+#13 /var/www/phptest/index.php(19): Oxid::run()
+#14 {main}
+---------------------------------------------
+2014-04-03 15:38:23exception 'ADODB_Exception' with message 'mysql error: [1146: Table 'test_copy.oxv_oxshops_de' doesn't exist] in EXECUTE("select `oxv_oxshops_de`.`oxid`, `oxv_oxshops_de`.`oxactive`, `oxv_oxshops_de`.`oxproductive`, `oxv_oxshops_de`.`oxdefcurrency`, `oxv_oxshops_de`.`oxdeflanguage`, `oxv_oxshops_de`.`oxname`, `oxv_oxshops_de`.`oxtitleprefix`, `oxv_oxshops_de`.`oxtitlesuffix`, `oxv_oxshops_de`.`oxstarttitle`, `oxv_oxshops_de`.`oxinfoemail`, `oxv_oxshops_de`.`oxorderemail`, `oxv_oxshops_de`.`oxowneremail`, `oxv_oxshops_de`.`oxordersubject`, `oxv_oxshops_de`.`oxregistersubject`, `oxv_oxshops_de`.`oxforgotpwdsubject`, `oxv_oxshops_de`.`oxsendednowsubject`, `oxv_oxshops_de`.`oxsmtp`, `oxv_oxshops_de`.`oxsmtpuser`, `oxv_oxshops_de`.`oxsmtppwd`, `oxv_oxshops_de`.`oxserial`, `oxv_oxshops_de`.`oxcompany`, `oxv_oxshops_de`.`oxstreet`, `oxv_oxshops_de`.`oxzip`, `oxv_oxshops_de`.`oxcity`, `oxv_oxshops_de`.`oxcountry`, `oxv_oxshops_de`.`oxbankname`, `oxv_oxshops_de`.`oxbanknumber`, `oxv_oxshops_de`.`oxbankcode`, `oxv_oxshops_de`.`oxvatnumber`, `oxv_oxshops_de`.`oxbiccode`, `oxv_oxshops_de`.`oxibannumber`, `oxv_oxshops_de`.`oxfname`, `oxv_oxshops_de`.`oxlname`, `oxv_oxshops_de`.`oxtelefon`, `oxv_oxshops_de`.`oxtelefax`, `oxv_oxshops_de`.`oxurl`, `oxv_oxshops_de`.`oxdefcat`, `oxv_oxshops_de`.`oxhrbnr`, `oxv_oxshops_de`.`oxcourt`, `oxv_oxshops_de`.`oxadbutlerid`, `oxv_oxshops_de`.`oxaffilinetid`, `oxv_oxshops_de`.`oxsuperclicksid`, `oxv_oxshops_de`.`oxaffiliweltid`, `oxv_oxshops_de`.`oxaffili24id`, `oxv_oxshops_de`.`oxedition`, `oxv_oxshops_de`.`oxversion`, `oxv_oxshops_de`.`oxseoactive`, `oxv_oxshops_de`.`oxtimestamp` from oxv_oxshops_de where 1  and oxv_oxshops_de.oxid = 'oxbaseshop'")
+' in /var/www/phptest/core/adodblite/adodb-exceptions.inc.php:84
+Stack trace:
+#0 /var/www/phptest/core/adodblite/adodbSQL_drivers/mysql/mysql_driver.inc(369): adodb_throw('mysql', 'EXECUTE', 1146, 'Table 'test_cop...', 'select `oxv_oxs...', false, Object(object_ADOConnection))
+#1 /var/www/phptest/core/adodblite/adodb.inc.php(316): mysql_driver_ADOConnection->do_query('select `oxv_oxs...', -1, -1, false)
+#2 /var/www/phptest/core/oxlegacydb.php(138): ADOConnection->Execute('select `oxv_oxs...', false)
+#3 /var/www/phptest/core/oxbase.php(670): oxLegacyDb->select('select `oxv_oxs...')
+#4 /var/www/phptest/core/oxbase.php(616): oxBase->assignRecord('select `oxv_oxs...')
+#5 /var/www/phptest/core/oxconfig.php(2066): oxBase->load('oxbaseshop')
+#6 /var/www/phptest/core/oxutils.php(1031): oxConfig->getActiveShop()
+#7 /var/www/phptest/application/controllers/oxubase.php(548): oxUtils->seoIsActive()
+#8 /var/www/phptest/application/controllers/oxubase.php(579): oxUBase->_processRequest()
+#9 /var/www/phptest/core/oxshopcontrol.php(443): oxUBase->init()
+#10 /var/www/phptest/core/oxshopcontrol.php(379): oxShopControl->_initializeViewObject('start', NULL, NULL, NULL)
+#11 /var/www/phptest/core/oxshopcontrol.php(148): oxShopControl->_process('start', NULL, NULL, NULL)
+#12 /var/www/phptest/core/oxid.php(32): oxShopControl->start()
+#13 /var/www/phptest/index.php(19): Oxid::run()
+#14 {main}
+---------------------------------------------
+2014-04-03 15:42:46exception 'ADODB_Exception' with message 'mysql error: [1146: Table 'test_copy.oxv_oxshops_de' doesn't exist] in EXECUTE("select `oxv_oxshops_de`.`oxid`, `oxv_oxshops_de`.`oxactive`, `oxv_oxshops_de`.`oxproductive`, `oxv_oxshops_de`.`oxdefcurrency`, `oxv_oxshops_de`.`oxdeflanguage`, `oxv_oxshops_de`.`oxname`, `oxv_oxshops_de`.`oxtitleprefix`, `oxv_oxshops_de`.`oxtitlesuffix`, `oxv_oxshops_de`.`oxstarttitle`, `oxv_oxshops_de`.`oxinfoemail`, `oxv_oxshops_de`.`oxorderemail`, `oxv_oxshops_de`.`oxowneremail`, `oxv_oxshops_de`.`oxordersubject`, `oxv_oxshops_de`.`oxregistersubject`, `oxv_oxshops_de`.`oxforgotpwdsubject`, `oxv_oxshops_de`.`oxsendednowsubject`, `oxv_oxshops_de`.`oxsmtp`, `oxv_oxshops_de`.`oxsmtpuser`, `oxv_oxshops_de`.`oxsmtppwd`, `oxv_oxshops_de`.`oxserial`, `oxv_oxshops_de`.`oxcompany`, `oxv_oxshops_de`.`oxstreet`, `oxv_oxshops_de`.`oxzip`, `oxv_oxshops_de`.`oxcity`, `oxv_oxshops_de`.`oxcountry`, `oxv_oxshops_de`.`oxbankname`, `oxv_oxshops_de`.`oxbanknumber`, `oxv_oxshops_de`.`oxbankcode`, `oxv_oxshops_de`.`oxvatnumber`, `oxv_oxshops_de`.`oxbiccode`, `oxv_oxshops_de`.`oxibannumber`, `oxv_oxshops_de`.`oxfname`, `oxv_oxshops_de`.`oxlname`, `oxv_oxshops_de`.`oxtelefon`, `oxv_oxshops_de`.`oxtelefax`, `oxv_oxshops_de`.`oxurl`, `oxv_oxshops_de`.`oxdefcat`, `oxv_oxshops_de`.`oxhrbnr`, `oxv_oxshops_de`.`oxcourt`, `oxv_oxshops_de`.`oxadbutlerid`, `oxv_oxshops_de`.`oxaffilinetid`, `oxv_oxshops_de`.`oxsuperclicksid`, `oxv_oxshops_de`.`oxaffiliweltid`, `oxv_oxshops_de`.`oxaffili24id`, `oxv_oxshops_de`.`oxedition`, `oxv_oxshops_de`.`oxversion`, `oxv_oxshops_de`.`oxseoactive`, `oxv_oxshops_de`.`oxtimestamp` from oxv_oxshops_de where 1  and oxv_oxshops_de.oxid = 'oxbaseshop'")
+' in /var/www/phptest/core/adodblite/adodb-exceptions.inc.php:84
+Stack trace:
+#0 /var/www/phptest/core/adodblite/adodbSQL_drivers/mysql/mysql_driver.inc(369): adodb_throw('mysql', 'EXECUTE', 1146, 'Table 'test_cop...', 'select `oxv_oxs...', false, Object(object_ADOConnection))
+#1 /var/www/phptest/core/adodblite/adodb.inc.php(316): mysql_driver_ADOConnection->do_query('select `oxv_oxs...', -1, -1, false)
+#2 /var/www/phptest/core/oxlegacydb.php(138): ADOConnection->Execute('select `oxv_oxs...', false)
+#3 /var/www/phptest/core/oxbase.php(670): oxLegacyDb->select('select `oxv_oxs...')
+#4 /var/www/phptest/core/oxbase.php(616): oxBase->assignRecord('select `oxv_oxs...')
+#5 /var/www/phptest/core/oxconfig.php(2066): oxBase->load('oxbaseshop')
+#6 /var/www/phptest/core/oxutils.php(1031): oxConfig->getActiveShop()
+#7 /var/www/phptest/application/controllers/oxubase.php(548): oxUtils->seoIsActive()
+#8 /var/www/phptest/application/controllers/oxubase.php(579): oxUBase->_processRequest()
+#9 /var/www/phptest/core/oxshopcontrol.php(443): oxUBase->init()
+#10 /var/www/phptest/core/oxshopcontrol.php(379): oxShopControl->_initializeViewObject('start', NULL, NULL, NULL)
+#11 /var/www/phptest/core/oxshopcontrol.php(148): oxShopControl->_process('start', NULL, NULL, NULL)
+#12 /var/www/phptest/core/oxid.php(32): oxShopControl->start()
+#13 /var/www/phptest/index.php(19): Oxid::run()
+#14 {main}
+---------------------------------------------
+2014-04-03 15:43:12exception 'ADODB_Exception' with message 'mysql error: [1146: Table 'test_copy.oxv_oxshops_de' doesn't exist] in EXECUTE("select `oxv_oxshops_de`.`oxid`, `oxv_oxshops_de`.`oxactive`, `oxv_oxshops_de`.`oxproductive`, `oxv_oxshops_de`.`oxdefcurrency`, `oxv_oxshops_de`.`oxdeflanguage`, `oxv_oxshops_de`.`oxname`, `oxv_oxshops_de`.`oxtitleprefix`, `oxv_oxshops_de`.`oxtitlesuffix`, `oxv_oxshops_de`.`oxstarttitle`, `oxv_oxshops_de`.`oxinfoemail`, `oxv_oxshops_de`.`oxorderemail`, `oxv_oxshops_de`.`oxowneremail`, `oxv_oxshops_de`.`oxordersubject`, `oxv_oxshops_de`.`oxregistersubject`, `oxv_oxshops_de`.`oxforgotpwdsubject`, `oxv_oxshops_de`.`oxsendednowsubject`, `oxv_oxshops_de`.`oxsmtp`, `oxv_oxshops_de`.`oxsmtpuser`, `oxv_oxshops_de`.`oxsmtppwd`, `oxv_oxshops_de`.`oxserial`, `oxv_oxshops_de`.`oxcompany`, `oxv_oxshops_de`.`oxstreet`, `oxv_oxshops_de`.`oxzip`, `oxv_oxshops_de`.`oxcity`, `oxv_oxshops_de`.`oxcountry`, `oxv_oxshops_de`.`oxbankname`, `oxv_oxshops_de`.`oxbanknumber`, `oxv_oxshops_de`.`oxbankcode`, `oxv_oxshops_de`.`oxvatnumber`, `oxv_oxshops_de`.`oxbiccode`, `oxv_oxshops_de`.`oxibannumber`, `oxv_oxshops_de`.`oxfname`, `oxv_oxshops_de`.`oxlname`, `oxv_oxshops_de`.`oxtelefon`, `oxv_oxshops_de`.`oxtelefax`, `oxv_oxshops_de`.`oxurl`, `oxv_oxshops_de`.`oxdefcat`, `oxv_oxshops_de`.`oxhrbnr`, `oxv_oxshops_de`.`oxcourt`, `oxv_oxshops_de`.`oxadbutlerid`, `oxv_oxshops_de`.`oxaffilinetid`, `oxv_oxshops_de`.`oxsuperclicksid`, `oxv_oxshops_de`.`oxaffiliweltid`, `oxv_oxshops_de`.`oxaffili24id`, `oxv_oxshops_de`.`oxedition`, `oxv_oxshops_de`.`oxversion`, `oxv_oxshops_de`.`oxseoactive`, `oxv_oxshops_de`.`oxtimestamp` from oxv_oxshops_de where 1  and oxv_oxshops_de.oxid = 'oxbaseshop'")
+' in /var/www/phptest/core/adodblite/adodb-exceptions.inc.php:84
+Stack trace:
+#0 /var/www/phptest/core/adodblite/adodbSQL_drivers/mysql/mysql_driver.inc(369): adodb_throw('mysql', 'EXECUTE', 1146, 'Table 'test_cop...', 'select `oxv_oxs...', false, Object(object_ADOConnection))
+#1 /var/www/phptest/core/adodblite/adodb.inc.php(316): mysql_driver_ADOConnection->do_query('select `oxv_oxs...', -1, -1, false)
+#2 /var/www/phptest/core/oxlegacydb.php(138): ADOConnection->Execute('select `oxv_oxs...', false)
+#3 /var/www/phptest/core/oxbase.php(670): oxLegacyDb->select('select `oxv_oxs...')
+#4 /var/www/phptest/core/oxbase.php(616): oxBase->assignRecord('select `oxv_oxs...')
+#5 /var/www/phptest/core/oxconfig.php(2066): oxBase->load('oxbaseshop')
+#6 /var/www/phptest/application/controllers/admin/oxadminview.php(132): oxConfig->getActiveShop()
+#7 /var/www/phptest/application/controllers/admin/oxadminview.php(114): oxAdminView->_getEditShop('oxbaseshop')
+#8 /var/www/phptest/core/oxutilsobject.php(210): oxAdminView->__construct()
+#9 /var/www/phptest/core/oxutilsobject.php(185): oxUtilsObject->_getObject('admin_start', 0, Array)
+#10 [internal function]: oxUtilsObject->oxNew('admin_start')
+#11 /var/www/phptest/core/oxfunctions.php(375): call_user_func_array(Array, Array)
+#12 /var/www/phptest/core/oxshopcontrol.php(432): oxNew('admin_start')
+#13 /var/www/phptest/core/oxshopcontrol.php(379): oxShopControl->_initializeViewObject('admin_start', NULL, NULL, NULL)
+#14 /var/www/phptest/core/oxshopcontrol.php(148): oxShopControl->_process('admin_start', NULL, NULL, NULL)
+#15 /var/www/phptest/core/oxid.php(32): oxShopControl->start()
+#16 /var/www/phptest/index.php(19): Oxid::run()
+#17 /var/www/phptest/admin/index.php(20): require_once('/var/www/phptes...')
+#18 {main}
+---------------------------------------------
+oxSystemComponentException-oxException (time: 2014-04-04 15:13:50): [0]: EXCEPTION_SYSTEMCOMPONENT_TEMPLATENOTFOUND 
+ Stack Trace: #0 /var/www/phptest/core/oxutilsobject.php(185): oxUtilsObject->_getObject('oxsystemcompone...', 0, Array)
+#1 [internal function]: oxUtilsObject->oxNew('oxSystemCompone...')
+#2 /var/www/phptest/core/oxfunctions.php(375): call_user_func_array(Array, Array)
+#3 /var/www/phptest/core/oxshopcontrol.php(490): oxNew('oxSystemCompone...')
+#4 /var/www/phptest/core/oxshopcontrol.php(388): oxShopControl->_render(Object(oeThemeSwitcherDetails))
+#5 /var/www/phptest/core/oxshopcontrol.php(148): oxShopControl->_process('details', '', NULL, NULL)
+#6 /var/www/phptest/core/oxid.php(32): oxShopControl->start()
+#7 /var/www/phptest/index.php(19): Oxid::run()
+#8 {main}
+
+ Faulty component --> page/details/ajax/productmain.tpl
+---------------------------------------------
+oxSystemComponentException-oxException (time: 2014-04-07 10:06:34): [0]: EXCEPTION_SYSTEMCOMPONENT_TEMPLATENOTFOUND 
+ Stack Trace: #0 /var/www/phptest/core/oxutilsobject.php(185): oxUtilsObject->_getObject('oxsystemcompone...', 0, Array)
+#1 [internal function]: oxUtilsObject->oxNew('oxSystemCompone...')
+#2 /var/www/phptest/core/oxfunctions.php(375): call_user_func_array(Array, Array)
+#3 /var/www/phptest/core/oxshopcontrol.php(490): oxNew('oxSystemCompone...')
+#4 /var/www/phptest/core/oxshopcontrol.php(388): oxShopControl->_render(Object(oeThemeSwitcherDetails))
+#5 /var/www/phptest/core/oxshopcontrol.php(148): oxShopControl->_process('details', '', NULL, NULL)
+#6 /var/www/phptest/core/oxid.php(32): oxShopControl->start()
+#7 /var/www/phptest/index.php(19): Oxid::run()
+#8 {main}
+
+ Faulty component --> page/details/ajax/productmain.tpl
+---------------------------------------------
+oxSystemComponentException-oxException (time: 2014-04-07 10:15:48): [0]: EXCEPTION_SYSTEMCOMPONENT_TEMPLATENOTFOUND 
+ Stack Trace: #0 /var/www/phptest/core/oxutilsobject.php(185): oxUtilsObject->_getObject('oxsystemcompone...', 0, Array)
+#1 [internal function]: oxUtilsObject->oxNew('oxSystemCompone...')
+#2 /var/www/phptest/core/oxfunctions.php(375): call_user_func_array(Array, Array)
+#3 /var/www/phptest/core/oxshopcontrol.php(490): oxNew('oxSystemCompone...')
+#4 /var/www/phptest/core/oxshopcontrol.php(388): oxShopControl->_render(Object(oeThemeSwitcherDetails))
+#5 /var/www/phptest/core/oxshopcontrol.php(148): oxShopControl->_process('details', '', NULL, NULL)
+#6 /var/www/phptest/core/oxid.php(32): oxShopControl->start()
+#7 /var/www/phptest/index.php(19): Oxid::run()
+#8 {main}
+
+ Faulty component --> page/details/ajax/productmain.tpl
+---------------------------------------------
+oxSystemComponentException-oxException (time: 2014-04-07 10:25:37): [0]: EXCEPTION_SYSTEMCOMPONENT_TEMPLATENOTFOUND 
+ Stack Trace: #0 /var/www/phptest/core/oxutilsobject.php(185): oxUtilsObject->_getObject('oxsystemcompone...', 0, Array)
+#1 [internal function]: oxUtilsObject->oxNew('oxSystemCompone...')
+#2 /var/www/phptest/core/oxfunctions.php(375): call_user_func_array(Array, Array)
+#3 /var/www/phptest/core/oxshopcontrol.php(490): oxNew('oxSystemCompone...')
+#4 /var/www/phptest/core/oxshopcontrol.php(388): oxShopControl->_render(Object(oeThemeSwitcherDetails))
+#5 /var/www/phptest/core/oxshopcontrol.php(148): oxShopControl->_process('details', '', NULL, NULL)
+#6 /var/www/phptest/core/oxid.php(32): oxShopControl->start()
+#7 /var/www/phptest/index.php(19): Oxid::run()
+#8 {main}
+
+ Faulty component --> page/details/ajax/fullproductinfo.tpl
+---------------------------------------------
+oxSystemComponentException-oxException (time: 2014-04-07 10:26:34): [0]: EXCEPTION_SYSTEMCOMPONENT_TEMPLATENOTFOUND 
+ Stack Trace: #0 /var/www/phptest/core/oxutilsobject.php(185): oxUtilsObject->_getObject('oxsystemcompone...', 0, Array)
+#1 [internal function]: oxUtilsObject->oxNew('oxSystemCompone...')
+#2 /var/www/phptest/core/oxfunctions.php(375): call_user_func_array(Array, Array)
+#3 /var/www/phptest/core/oxshopcontrol.php(490): oxNew('oxSystemCompone...')
+#4 /var/www/phptest/core/oxshopcontrol.php(388): oxShopControl->_render(Object(Details))
+#5 /var/www/phptest/core/oxshopcontrol.php(148): oxShopControl->_process('details', '', NULL, NULL)
+#6 /var/www/phptest/core/oxid.php(32): oxShopControl->start()
+#7 /var/www/phptest/index.php(19): Oxid::run()
+#8 {main}
+
+ Faulty component --> page/details/ajax/fullproductinfo.tpl
+---------------------------------------------
+oxSystemComponentException-oxException (time: 2014-04-07 10:38:29): [0]: EXCEPTION_SYSTEMCOMPONENT_TEMPLATENOTFOUND 
+ Stack Trace: #0 /var/www/phptest/core/oxutilsobject.php(185): oxUtilsObject->_getObject('oxsystemcompone...', 0, Array)
+#1 [internal function]: oxUtilsObject->oxNew('oxSystemCompone...')
+#2 /var/www/phptest/core/oxfunctions.php(375): call_user_func_array(Array, Array)
+#3 /var/www/phptest/core/oxshopcontrol.php(490): oxNew('oxSystemCompone...')
+#4 /var/www/phptest/core/oxshopcontrol.php(388): oxShopControl->_render(Object(Details))
+#5 /var/www/phptest/core/oxshopcontrol.php(148): oxShopControl->_process('details', '', NULL, NULL)
+#6 /var/www/phptest/core/oxid.php(32): oxShopControl->start()
+#7 /var/www/phptest/index.php(19): Oxid::run()
+#8 {main}
+
+ Faulty component --> page/details/ajax/fullproductinfo.tpl
+---------------------------------------------
+oxSystemComponentException-oxException (time: 2014-04-07 10:51:58): [0]: Function 'morePics' does not exist or is not accessible! (Details)
+ 
+ Stack Trace: #0 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%DA^DA8^DA80D1BB%%morepics.tpl.php(6): oxSuperCfg->__call('morePics', Array)
+#1 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%DA^DA8^DA80D1BB%%morepics.tpl.php(6): Details->morePics()
+#2 /var/www/phptest/core/smarty/Smarty.class.php(1869): include('/var/www/phptes...')
+#3 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%5E^5E9^5E9B9D5B%%productmain.tpl.php(368): Smarty->_smarty_include(Array)
+#4 /var/www/phptest/core/smarty/Smarty.class.php(1869): include('/var/www/phptes...')
+#5 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%A5^A59^A595DDB8%%fullproductinfo.tpl.php(8): Smarty->_smarty_include(Array)
+#6 /var/www/phptest/core/smarty/Smarty.class.php(1869): include('/var/www/phptes...')
+#7 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%08^08A^08ABD53A%%details.tpl.php(85): Smarty->_smarty_include(Array)
+#8 /var/www/phptest/core/smarty/Smarty.class.php(1263): include('/var/www/phptes...')
+#9 /var/www/phptest/core/oxshopcontrol.php(521): Smarty->fetch('page/details/de...', 'ox|0|0|0|0|3981...')
+#10 /var/www/phptest/core/oxshopcontrol.php(388): oxShopControl->_render(Object(Details))
+#11 /var/www/phptest/core/oxshopcontrol.php(148): oxShopControl->_process('details', NULL, NULL, NULL)
+#12 /var/www/phptest/core/oxid.php(32): oxShopControl->start()
+#13 /var/www/phptest/index.php(19): Oxid::run()
+#14 /var/www/phptest/oxseo.php(37): require('/var/www/phptes...')
+#15 {main}
+
+ Faulty component --> 
+---------------------------------------------
+oxSystemComponentException-oxException (time: 2014-04-07 10:52:23): [0]: Function 'morePics' does not exist or is not accessible! (Details)
+ 
+ Stack Trace: #0 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%DA^DA8^DA80D1BB%%morepics.tpl.php(6): oxSuperCfg->__call('morePics', Array)
+#1 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%DA^DA8^DA80D1BB%%morepics.tpl.php(6): Details->morePics()
+#2 /var/www/phptest/core/smarty/Smarty.class.php(1869): include('/var/www/phptes...')
+#3 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%5E^5E9^5E9B9D5B%%productmain.tpl.php(368): Smarty->_smarty_include(Array)
+#4 /var/www/phptest/core/smarty/Smarty.class.php(1869): include('/var/www/phptes...')
+#5 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%A5^A59^A595DDB8%%fullproductinfo.tpl.php(8): Smarty->_smarty_include(Array)
+#6 /var/www/phptest/core/smarty/Smarty.class.php(1869): include('/var/www/phptes...')
+#7 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%08^08A^08ABD53A%%details.tpl.php(85): Smarty->_smarty_include(Array)
+#8 /var/www/phptest/core/smarty/Smarty.class.php(1263): include('/var/www/phptes...')
+#9 /var/www/phptest/core/oxshopcontrol.php(521): Smarty->fetch('page/details/de...', 'ox|0|0|0|0|3981...')
+#10 /var/www/phptest/core/oxshopcontrol.php(388): oxShopControl->_render(Object(Details))
+#11 /var/www/phptest/core/oxshopcontrol.php(148): oxShopControl->_process('details', NULL, NULL, NULL)
+#12 /var/www/phptest/core/oxid.php(32): oxShopControl->start()
+#13 /var/www/phptest/index.php(19): Oxid::run()
+#14 /var/www/phptest/oxseo.php(37): require('/var/www/phptes...')
+#15 {main}
+
+ Faulty component --> 
+---------------------------------------------
+oxSystemComponentException-oxException (time: 2014-04-08 12:50:18): [0]: EXCEPTION_SYSTEMCOMPONENT_TEMPLATENOTFOUND 
+ Stack Trace: #0 /var/www/phptest/core/oxutilsobject.php(185): oxUtilsObject->_getObject('oxsystemcompone...', 0, Array)
+#1 [internal function]: oxUtilsObject->oxNew('oxSystemCompone...')
+#2 /var/www/phptest/core/oxfunctions.php(375): call_user_func_array(Array, Array)
+#3 /var/www/phptest/core/oxshopcontrol.php(490): oxNew('oxSystemCompone...')
+#4 /var/www/phptest/core/oxshopcontrol.php(388): oxShopControl->_render(Object(Details))
+#5 /var/www/phptest/core/oxshopcontrol.php(148): oxShopControl->_process('details', '', NULL, NULL)
+#6 /var/www/phptest/core/oxid.php(32): oxShopControl->start()
+#7 /var/www/phptest/index.php(19): Oxid::run()
+#8 {main}
+
+ Faulty component --> page/details/ajax/fullproductinfo.tpl
+---------------------------------------------
+oxSystemComponentException-oxException (time: 2014-04-08 12:51:52): [0]: EXCEPTION_SYSTEMCOMPONENT_TEMPLATENOTFOUND 
+ Stack Trace: #0 /var/www/phptest/core/oxutilsobject.php(185): oxUtilsObject->_getObject('oxsystemcompone...', 0, Array)
+#1 [internal function]: oxUtilsObject->oxNew('oxSystemCompone...')
+#2 /var/www/phptest/core/oxfunctions.php(375): call_user_func_array(Array, Array)
+#3 /var/www/phptest/core/oxshopcontrol.php(490): oxNew('oxSystemCompone...')
+#4 /var/www/phptest/core/oxshopcontrol.php(388): oxShopControl->_render(Object(Details))
+#5 /var/www/phptest/core/oxshopcontrol.php(148): oxShopControl->_process('details', '', NULL, NULL)
+#6 /var/www/phptest/core/oxid.php(32): oxShopControl->start()
+#7 /var/www/phptest/index.php(19): Oxid::run()
+#8 {main}
+
+ Faulty component --> page/details/ajax/fullproductinfo.tpl
+---------------------------------------------
+oxSystemComponentException-oxException (time: 2014-04-08 12:53:48): [0]: EXCEPTION_SYSTEMCOMPONENT_TEMPLATENOTFOUND 
+ Stack Trace: #0 /var/www/phptest/core/oxutilsobject.php(185): oxUtilsObject->_getObject('oxsystemcompone...', 0, Array)
+#1 [internal function]: oxUtilsObject->oxNew('oxSystemCompone...')
+#2 /var/www/phptest/core/oxfunctions.php(375): call_user_func_array(Array, Array)
+#3 /var/www/phptest/core/oxshopcontrol.php(490): oxNew('oxSystemCompone...')
+#4 /var/www/phptest/core/oxshopcontrol.php(388): oxShopControl->_render(Object(Details))
+#5 /var/www/phptest/core/oxshopcontrol.php(148): oxShopControl->_process('details', '', NULL, NULL)
+#6 /var/www/phptest/core/oxid.php(32): oxShopControl->start()
+#7 /var/www/phptest/index.php(19): Oxid::run()
+#8 {main}
+
+ Faulty component --> page/details/ajax/fullproductinfo.tpl
+---------------------------------------------
+oxSystemComponentException-oxException (time: 2014-04-08 12:58:12): [0]: EXCEPTION_SYSTEMCOMPONENT_TEMPLATENOTFOUND 
+ Stack Trace: #0 /var/www/phptest/core/oxutilsobject.php(185): oxUtilsObject->_getObject('oxsystemcompone...', 0, Array)
+#1 [internal function]: oxUtilsObject->oxNew('oxSystemCompone...')
+#2 /var/www/phptest/core/oxfunctions.php(375): call_user_func_array(Array, Array)
+#3 /var/www/phptest/core/oxshopcontrol.php(490): oxNew('oxSystemCompone...')
+#4 /var/www/phptest/core/oxshopcontrol.php(388): oxShopControl->_render(Object(Details))
+#5 /var/www/phptest/core/oxshopcontrol.php(148): oxShopControl->_process('details', '', NULL, NULL)
+#6 /var/www/phptest/core/oxid.php(32): oxShopControl->start()
+#7 /var/www/phptest/index.php(19): Oxid::run()
+#8 {main}
+
+ Faulty component --> page/details/ajax/fullproductinfo.tpl
+---------------------------------------------
+oxSystemComponentException-oxException (time: 2014-04-08 13:00:07): [0]: EXCEPTION_SYSTEMCOMPONENT_TEMPLATENOTFOUND 
+ Stack Trace: #0 /var/www/phptest/core/oxutilsobject.php(185): oxUtilsObject->_getObject('oxsystemcompone...', 0, Array)
+#1 [internal function]: oxUtilsObject->oxNew('oxSystemCompone...')
+#2 /var/www/phptest/core/oxfunctions.php(375): call_user_func_array(Array, Array)
+#3 /var/www/phptest/core/oxshopcontrol.php(490): oxNew('oxSystemCompone...')
+#4 /var/www/phptest/core/oxshopcontrol.php(388): oxShopControl->_render(Object(Details))
+#5 /var/www/phptest/core/oxshopcontrol.php(148): oxShopControl->_process('details', '', NULL, NULL)
+#6 /var/www/phptest/core/oxid.php(32): oxShopControl->start()
+#7 /var/www/phptest/index.php(19): Oxid::run()
+#8 {main}
+
+ Faulty component --> page/details/ajax/fullproductinfo.tpl
+---------------------------------------------
+oxSystemComponentException-oxException (time: 2014-04-08 13:02:56): [0]: EXCEPTION_SYSTEMCOMPONENT_TEMPLATENOTFOUND 
+ Stack Trace: #0 /var/www/phptest/core/oxutilsobject.php(185): oxUtilsObject->_getObject('oxsystemcompone...', 0, Array)
+#1 [internal function]: oxUtilsObject->oxNew('oxSystemCompone...')
+#2 /var/www/phptest/core/oxfunctions.php(375): call_user_func_array(Array, Array)
+#3 /var/www/phptest/core/oxshopcontrol.php(490): oxNew('oxSystemCompone...')
+#4 /var/www/phptest/core/oxshopcontrol.php(388): oxShopControl->_render(Object(Details))
+#5 /var/www/phptest/core/oxshopcontrol.php(148): oxShopControl->_process('details', '', NULL, NULL)
+#6 /var/www/phptest/core/oxid.php(32): oxShopControl->start()
+#7 /var/www/phptest/index.php(19): Oxid::run()
+#8 {main}
+
+ Faulty component --> page/details/ajax/fullproductinfo.tpl
+---------------------------------------------
+oxSystemComponentException-oxException (time: 2014-04-08 13:08:11): [0]: EXCEPTION_SYSTEMCOMPONENT_TEMPLATENOTFOUND 
+ Stack Trace: #0 /var/www/phptest/core/oxutilsobject.php(185): oxUtilsObject->_getObject('oxsystemcompone...', 0, Array)
+#1 [internal function]: oxUtilsObject->oxNew('oxSystemCompone...')
+#2 /var/www/phptest/core/oxfunctions.php(375): call_user_func_array(Array, Array)
+#3 /var/www/phptest/core/oxshopcontrol.php(490): oxNew('oxSystemCompone...')
+#4 /var/www/phptest/core/oxshopcontrol.php(388): oxShopControl->_render(Object(Details))
+#5 /var/www/phptest/core/oxshopcontrol.php(148): oxShopControl->_process('details', '', NULL, NULL)
+#6 /var/www/phptest/core/oxid.php(32): oxShopControl->start()
+#7 /var/www/phptest/index.php(19): Oxid::run()
+#8 {main}
+
+ Faulty component --> page/details/ajax/fullproductinfo.tpl
+---------------------------------------------
+oxSystemComponentException-oxException (time: 2014-04-08 13:46:22): [0]: EXCEPTION_SYSTEMCOMPONENT_TEMPLATENOTFOUND 
+ Stack Trace: #0 /var/www/phptest/core/oxutilsobject.php(185): oxUtilsObject->_getObject('oxsystemcompone...', 0, Array)
+#1 [internal function]: oxUtilsObject->oxNew('oxSystemCompone...')
+#2 /var/www/phptest/core/oxfunctions.php(375): call_user_func_array(Array, Array)
+#3 /var/www/phptest/core/oxshopcontrol.php(490): oxNew('oxSystemCompone...')
+#4 /var/www/phptest/core/oxshopcontrol.php(388): oxShopControl->_render(Object(Details))
+#5 /var/www/phptest/core/oxshopcontrol.php(148): oxShopControl->_process('details', '', NULL, NULL)
+#6 /var/www/phptest/core/oxid.php(32): oxShopControl->start()
+#7 /var/www/phptest/index.php(19): Oxid::run()
+#8 {main}
+
+ Faulty component --> page/details/ajax/fullproductinfo.tpl
+---------------------------------------------
+oxSystemComponentException-oxException (time: 2014-04-08 13:54:22): [0]: EXCEPTION_SYSTEMCOMPONENT_TEMPLATENOTFOUND 
+ Stack Trace: #0 /var/www/phptest/core/oxutilsobject.php(185): oxUtilsObject->_getObject('oxsystemcompone...', 0, Array)
+#1 [internal function]: oxUtilsObject->oxNew('oxSystemCompone...')
+#2 /var/www/phptest/core/oxfunctions.php(375): call_user_func_array(Array, Array)
+#3 /var/www/phptest/core/oxshopcontrol.php(490): oxNew('oxSystemCompone...')
+#4 /var/www/phptest/core/oxshopcontrol.php(388): oxShopControl->_render(Object(Details))
+#5 /var/www/phptest/core/oxshopcontrol.php(148): oxShopControl->_process('details', '', NULL, NULL)
+#6 /var/www/phptest/core/oxid.php(32): oxShopControl->start()
+#7 /var/www/phptest/index.php(19): Oxid::run()
+#8 {main}
+
+ Faulty component --> page/details/ajax/productmain.tpl
+---------------------------------------------
+oxSystemComponentException-oxException (time: 2014-04-08 13:57:50): [0]: EXCEPTION_SYSTEMCOMPONENT_TEMPLATENOTFOUND 
+ Stack Trace: #0 /var/www/phptest/core/oxutilsobject.php(185): oxUtilsObject->_getObject('oxsystemcompone...', 0, Array)
+#1 [internal function]: oxUtilsObject->oxNew('oxSystemCompone...')
+#2 /var/www/phptest/core/oxfunctions.php(375): call_user_func_array(Array, Array)
+#3 /var/www/phptest/core/oxshopcontrol.php(490): oxNew('oxSystemCompone...')
+#4 /var/www/phptest/core/oxshopcontrol.php(388): oxShopControl->_render(Object(Details))
+#5 /var/www/phptest/core/oxshopcontrol.php(148): oxShopControl->_process('details', '', NULL, NULL)
+#6 /var/www/phptest/core/oxid.php(32): oxShopControl->start()
+#7 /var/www/phptest/index.php(19): Oxid::run()
+#8 {main}
+
+ Faulty component --> page/details/ajax/productmain.tpl
+---------------------------------------------
+oxSystemComponentException-oxException (time: 2014-04-08 16:03:15): [0]: EXCEPTION_SYSTEMCOMPONENT_TEMPLATENOTFOUND 
+ Stack Trace: #0 /var/www/phptest/core/oxutilsobject.php(185): oxUtilsObject->_getObject('oxsystemcompone...', 0, Array)
+#1 [internal function]: oxUtilsObject->oxNew('oxSystemCompone...')
+#2 /var/www/phptest/core/oxfunctions.php(375): call_user_func_array(Array, Array)
+#3 /var/www/phptest/core/oxshopcontrol.php(490): oxNew('oxSystemCompone...')
+#4 /var/www/phptest/core/oxshopcontrol.php(388): oxShopControl->_render(Object(Details))
+#5 /var/www/phptest/core/oxshopcontrol.php(148): oxShopControl->_process('details', '', NULL, NULL)
+#6 /var/www/phptest/core/oxid.php(32): oxShopControl->start()
+#7 /var/www/phptest/index.php(19): Oxid::run()
+#8 {main}
+
+ Faulty component --> page/details/ajax/productmain.tpl
+---------------------------------------------
+oxSystemComponentException-oxException (time: 2014-04-08 16:22:47): [0]: Function 'getManufacturer' does not exist or is not accessible! (Details)
+ 
+ Stack Trace: #0 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%5E^5E9^5E9B9D5B%%productmain.tpl.php(113): oxSuperCfg->__call('getManufacturer', Array)
+#1 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%5E^5E9^5E9B9D5B%%productmain.tpl.php(113): Details->getManufacturer()
+#2 /var/www/phptest/core/smarty/Smarty.class.php(1869): include('/var/www/phptes...')
+#3 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%A5^A59^A595DDB8%%fullproductinfo.tpl.php(8): Smarty->_smarty_include(Array)
+#4 /var/www/phptest/core/smarty/Smarty.class.php(1869): include('/var/www/phptes...')
+#5 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%08^08A^08ABD53A%%details.tpl.php(86): Smarty->_smarty_include(Array)
+#6 /var/www/phptest/core/smarty/Smarty.class.php(1263): include('/var/www/phptes...')
+#7 /var/www/phptest/core/oxshopcontrol.php(521): Smarty->fetch('page/details/de...', 'ox|0|0|0|0|3981...')
+#8 /var/www/phptest/core/oxshopcontrol.php(388): oxShopControl->_render(Object(Details))
+#9 /var/www/phptest/core/oxshopcontrol.php(148): oxShopControl->_process('details', NULL, NULL, NULL)
+#10 /var/www/phptest/core/oxid.php(32): oxShopControl->start()
+#11 /var/www/phptest/index.php(19): Oxid::run()
+#12 /var/www/phptest/oxseo.php(37): require('/var/www/phptes...')
+#13 {main}
+
+ Faulty component --> 
+---------------------------------------------
+oxSystemComponentException-oxException (time: 2014-04-08 16:24:18): [0]: Function 'morePics' does not exist or is not accessible! (Details)
+ 
+ Stack Trace: #0 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%DA^DA8^DA80D1BB%%morepics.tpl.php(6): oxSuperCfg->__call('morePics', Array)
+#1 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%DA^DA8^DA80D1BB%%morepics.tpl.php(6): Details->morePics()
+#2 /var/www/phptest/core/smarty/Smarty.class.php(1869): include('/var/www/phptes...')
+#3 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%5E^5E9^5E9B9D5B%%productmain.tpl.php(396): Smarty->_smarty_include(Array)
+#4 /var/www/phptest/core/smarty/Smarty.class.php(1869): include('/var/www/phptes...')
+#5 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%A5^A59^A595DDB8%%fullproductinfo.tpl.php(8): Smarty->_smarty_include(Array)
+#6 /var/www/phptest/core/smarty/Smarty.class.php(1869): include('/var/www/phptes...')
+#7 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%08^08A^08ABD53A%%details.tpl.php(86): Smarty->_smarty_include(Array)
+#8 /var/www/phptest/core/smarty/Smarty.class.php(1263): include('/var/www/phptes...')
+#9 /var/www/phptest/core/oxshopcontrol.php(521): Smarty->fetch('page/details/de...', 'ox|0|0|0|0|3981...')
+#10 /var/www/phptest/core/oxshopcontrol.php(388): oxShopControl->_render(Object(Details))
+#11 /var/www/phptest/core/oxshopcontrol.php(148): oxShopControl->_process('details', NULL, NULL, NULL)
+#12 /var/www/phptest/core/oxid.php(32): oxShopControl->start()
+#13 /var/www/phptest/index.php(19): Oxid::run()
+#14 /var/www/phptest/oxseo.php(37): require('/var/www/phptes...')
+#15 {main}
+
+ Faulty component --> 
+---------------------------------------------
+oxSystemComponentException-oxException (time: 2014-04-08 16:27:17): [0]: Function 'morePics' does not exist or is not accessible! (Details)
+ 
+ Stack Trace: #0 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%DA^DA8^DA80D1BB%%morepics.tpl.php(8): oxSuperCfg->__call('morePics', Array)
+#1 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%DA^DA8^DA80D1BB%%morepics.tpl.php(8): Details->morePics()
+#2 /var/www/phptest/core/smarty/Smarty.class.php(1869): include('/var/www/phptes...')
+#3 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%5E^5E9^5E9B9D5B%%productmain.tpl.php(396): Smarty->_smarty_include(Array)
+#4 /var/www/phptest/core/smarty/Smarty.class.php(1869): include('/var/www/phptes...')
+#5 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%A5^A59^A595DDB8%%fullproductinfo.tpl.php(8): Smarty->_smarty_include(Array)
+#6 /var/www/phptest/core/smarty/Smarty.class.php(1869): include('/var/www/phptes...')
+#7 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%08^08A^08ABD53A%%details.tpl.php(86): Smarty->_smarty_include(Array)
+#8 /var/www/phptest/core/smarty/Smarty.class.php(1263): include('/var/www/phptes...')
+#9 /var/www/phptest/core/oxshopcontrol.php(521): Smarty->fetch('page/details/de...', 'ox|0|0|0|0|3981...')
+#10 /var/www/phptest/core/oxshopcontrol.php(388): oxShopControl->_render(Object(Details))
+#11 /var/www/phptest/core/oxshopcontrol.php(148): oxShopControl->_process('details', NULL, NULL, NULL)
+#12 /var/www/phptest/core/oxid.php(32): oxShopControl->start()
+#13 /var/www/phptest/index.php(19): Oxid::run()
+#14 /var/www/phptest/oxseo.php(37): require('/var/www/phptes...')
+#15 {main}
+
+ Faulty component --> 
+---------------------------------------------
+oxSystemComponentException-oxException (time: 2014-04-08 16:27:27): [0]: Function 'morePics' does not exist or is not accessible! (Details)
+ 
+ Stack Trace: #0 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%DA^DA8^DA80D1BB%%morepics.tpl.php(8): oxSuperCfg->__call('morePics', Array)
+#1 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%DA^DA8^DA80D1BB%%morepics.tpl.php(8): Details->morePics()
+#2 /var/www/phptest/core/smarty/Smarty.class.php(1869): include('/var/www/phptes...')
+#3 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%5E^5E9^5E9B9D5B%%productmain.tpl.php(396): Smarty->_smarty_include(Array)
+#4 /var/www/phptest/core/smarty/Smarty.class.php(1869): include('/var/www/phptes...')
+#5 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%A5^A59^A595DDB8%%fullproductinfo.tpl.php(8): Smarty->_smarty_include(Array)
+#6 /var/www/phptest/core/smarty/Smarty.class.php(1869): include('/var/www/phptes...')
+#7 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%08^08A^08ABD53A%%details.tpl.php(86): Smarty->_smarty_include(Array)
+#8 /var/www/phptest/core/smarty/Smarty.class.php(1263): include('/var/www/phptes...')
+#9 /var/www/phptest/core/oxshopcontrol.php(521): Smarty->fetch('page/details/de...', 'ox|0|0|0|0|3981...')
+#10 /var/www/phptest/core/oxshopcontrol.php(388): oxShopControl->_render(Object(Details))
+#11 /var/www/phptest/core/oxshopcontrol.php(148): oxShopControl->_process('details', NULL, NULL, NULL)
+#12 /var/www/phptest/core/oxid.php(32): oxShopControl->start()
+#13 /var/www/phptest/index.php(19): Oxid::run()
+#14 /var/www/phptest/oxseo.php(37): require('/var/www/phptes...')
+#15 {main}
+
+ Faulty component --> 
+---------------------------------------------
+oxSystemComponentException-oxException (time: 2014-04-08 16:29:07): [0]: Function 'getZoomPics' does not exist or is not accessible! (Details)
+ 
+ Stack Trace: #0 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%F1^F14^F14346B5%%zoompopup.tpl.php(7): oxSuperCfg->__call('getZoomPics', Array)
+#1 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%F1^F14^F14346B5%%zoompopup.tpl.php(7): Details->getZoomPics()
+#2 /var/www/phptest/core/smarty/Smarty.class.php(1869): include('/var/www/phptes...')
+#3 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%5E^5E9^5E9B9D5B%%productmain.tpl.php(403): Smarty->_smarty_include(Array)
+#4 /var/www/phptest/core/smarty/Smarty.class.php(1869): include('/var/www/phptes...')
+#5 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%A5^A59^A595DDB8%%fullproductinfo.tpl.php(8): Smarty->_smarty_include(Array)
+#6 /var/www/phptest/core/smarty/Smarty.class.php(1869): include('/var/www/phptes...')
+#7 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%08^08A^08ABD53A%%details.tpl.php(86): Smarty->_smarty_include(Array)
+#8 /var/www/phptest/core/smarty/Smarty.class.php(1263): include('/var/www/phptes...')
+#9 /var/www/phptest/core/oxshopcontrol.php(521): Smarty->fetch('page/details/de...', 'ox|0|0|0|0|3981...')
+#10 /var/www/phptest/core/oxshopcontrol.php(388): oxShopControl->_render(Object(Details))
+#11 /var/www/phptest/core/oxshopcontrol.php(148): oxShopControl->_process('details', NULL, NULL, NULL)
+#12 /var/www/phptest/core/oxid.php(32): oxShopControl->start()
+#13 /var/www/phptest/index.php(19): Oxid::run()
+#14 /var/www/phptest/oxseo.php(37): require('/var/www/phptes...')
+#15 {main}
+
+ Faulty component --> 
+---------------------------------------------
+oxSystemComponentException-oxException (time: 2014-04-08 16:30:35): [0]: Function 'morePics' does not exist or is not accessible! (Details)
+ 
+ Stack Trace: #0 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%DA^DA8^DA80D1BB%%morepics.tpl.php(6): oxSuperCfg->__call('morePics', Array)
+#1 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%DA^DA8^DA80D1BB%%morepics.tpl.php(6): Details->morePics()
+#2 /var/www/phptest/core/smarty/Smarty.class.php(1869): include('/var/www/phptes...')
+#3 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%5E^5E9^5E9B9D5B%%productmain.tpl.php(396): Smarty->_smarty_include(Array)
+#4 /var/www/phptest/core/smarty/Smarty.class.php(1869): include('/var/www/phptes...')
+#5 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%A5^A59^A595DDB8%%fullproductinfo.tpl.php(8): Smarty->_smarty_include(Array)
+#6 /var/www/phptest/core/smarty/Smarty.class.php(1869): include('/var/www/phptes...')
+#7 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%08^08A^08ABD53A%%details.tpl.php(86): Smarty->_smarty_include(Array)
+#8 /var/www/phptest/core/smarty/Smarty.class.php(1263): include('/var/www/phptes...')
+#9 /var/www/phptest/core/oxshopcontrol.php(521): Smarty->fetch('page/details/de...', 'ox|0|0|0|0|3981...')
+#10 /var/www/phptest/core/oxshopcontrol.php(388): oxShopControl->_render(Object(Details))
+#11 /var/www/phptest/core/oxshopcontrol.php(148): oxShopControl->_process('details', NULL, NULL, NULL)
+#12 /var/www/phptest/core/oxid.php(32): oxShopControl->start()
+#13 /var/www/phptest/index.php(19): Oxid::run()
+#14 /var/www/phptest/oxseo.php(37): require('/var/www/phptes...')
+#15 {main}
+
+ Faulty component --> 
+---------------------------------------------
+oxSystemComponentException-oxException (time: 2014-04-08 16:38:11): [0]: Function 'morePics' does not exist or is not accessible! (Details)
+ 
+ Stack Trace: #0 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%DA^DA8^DA80D1BB%%morepics.tpl.php(6): oxSuperCfg->__call('morePics', Array)
+#1 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%DA^DA8^DA80D1BB%%morepics.tpl.php(6): Details->morePics()
+#2 /var/www/phptest/core/smarty/Smarty.class.php(1869): include('/var/www/phptes...')
+#3 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%5E^5E9^5E9B9D5B%%productmain.tpl.php(396): Smarty->_smarty_include(Array)
+#4 /var/www/phptest/core/smarty/Smarty.class.php(1869): include('/var/www/phptes...')
+#5 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%A5^A59^A595DDB8%%fullproductinfo.tpl.php(8): Smarty->_smarty_include(Array)
+#6 /var/www/phptest/core/smarty/Smarty.class.php(1869): include('/var/www/phptes...')
+#7 /var/www/phptest/tmp/smarty/427cdd8b391e383cfbe7157ea170f466^%%08^08A^08ABD53A%%details.tpl.php(85): Smarty->_smarty_include(Array)
+#8 /var/www/phptest/core/smarty/Smarty.class.php(1263): include('/var/www/phptes...')
+#9 /var/www/phptest/core/oxshopcontrol.php(521): Smarty->fetch('page/details/de...', 'ox|0|0|0|0|3981...')
+#10 /var/www/phptest/core/oxshopcontrol.php(388): oxShopControl->_render(Object(Details))
+#11 /var/www/phptest/core/oxshopcontrol.php(148): oxShopControl->_process('details', NULL, NULL, NULL)
+#12 /var/www/phptest/core/oxid.php(32): oxShopControl->start()
+#13 /var/www/phptest/index.php(19): Oxid::run()
+#14 /var/www/phptest/oxseo.php(37): require('/var/www/phptes...')
+#15 {main}
+
+ Faulty component --> 
+---------------------------------------------
+oxSystemComponentException-oxException (time: 2014-04-08 16:40:36): [0]: EXCEPTION_SYSTEMCOMPONENT_TEMPLATENOTFOUND 
+ Stack Trace: #0 /var/www/phptest/core/oxutilsobject.php(185): oxUtilsObject->_getObject('oxsystemcompone...', 0, Array)
+#1 [internal function]: oxUtilsObject->oxNew('oxSystemCompone...')
+#2 /var/www/phptest/core/oxfunctions.php(375): call_user_func_array(Array, Array)
+#3 /var/www/phptest/core/oxshopcontrol.php(490): oxNew('oxSystemCompone...')
+#4 /var/www/phptest/core/oxshopcontrol.php(388): oxShopControl->_render(Object(Details))
+#5 /var/www/phptest/core/oxshopcontrol.php(148): oxShopControl->_process('details', '', NULL, NULL)
+#6 /var/www/phptest/core/oxid.php(32): oxShopControl->start()
+#7 /var/www/phptest/index.php(19): Oxid::run()
+#8 {main}
+
+ Faulty component --> page/details/ajax/productmain.tpl
+---------------------------------------------
+oxSystemComponentException-oxException (time: 2014-04-08 16:51:38): [0]: EXCEPTION_SYSTEMCOMPONENT_TEMPLATENOTFOUND 
+ Stack Trace: #0 /var/www/phptest/core/oxutilsobject.php(185): oxUtilsObject->_getObject('oxsystemcompone...', 0, Array)
+#1 [internal function]: oxUtilsObject->oxNew('oxSystemCompone...')
+#2 /var/www/phptest/core/oxfunctions.php(375): call_user_func_array(Array, Array)
+#3 /var/www/phptest/core/oxshopcontrol.php(490): oxNew('oxSystemCompone...')
+#4 /var/www/phptest/core/oxshopcontrol.php(388): oxShopControl->_render(Object(Details))
+#5 /var/www/phptest/core/oxshopcontrol.php(148): oxShopControl->_process('details', '', NULL, NULL)
+#6 /var/www/phptest/core/oxid.php(32): oxShopControl->start()
+#7 /var/www/phptest/index.php(19): Oxid::run()
+#8 {main}
+
+ Faulty component --> page/details/ajax/productmain.tpl
+---------------------------------------------
+oxSystemComponentException-oxException (time: 2014-04-08 16:56:38): [0]: EXCEPTION_SYSTEMCOMPONENT_TEMPLATENOTFOUND 
+ Stack Trace: #0 /var/www/phptest/core/oxutilsobject.php(185): oxUtilsObject->_getObject('oxsystemcompone...', 0, Array)
+#1 [internal function]: oxUtilsObject->oxNew('oxSystemCompone...')
+#2 /var/www/phptest/core/oxfunctions.php(375): call_user_func_array(Array, Array)
+#3 /var/www/phptest/core/oxshopcontrol.php(490): oxNew('oxSystemCompone...')
+#4 /var/www/phptest/core/oxshopcontrol.php(388): oxShopControl->_render(Object(Details))
+#5 /var/www/phptest/core/oxshopcontrol.php(148): oxShopControl->_process('details', '', NULL, NULL)
+#6 /var/www/phptest/core/oxid.php(32): oxShopControl->start()
+#7 /var/www/phptest/index.php(19): Oxid::run()
+#8 {main}
+
+ Faulty component --> page/details/ajax/productmain.tpl
+---------------------------------------------

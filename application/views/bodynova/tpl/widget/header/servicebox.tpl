@@ -7,13 +7,13 @@
         [{assign var="wishListCount" value="0"}]
     [{/if}]
     [{*math equation="a+b+c" a=$oView->getCompareItemsCnt() b=$noticeListCount c=$wishListCount assign=notificationsCounter*}]
-    [{*oxscript include="js/widgets/oxflyoutbox.js" priority=10 }]
-    [{oxscript add="$( '#servicesTrigger' ).oxFlyOutBox();"*}]
+    [{oxscript include="js/widgets/oxflyoutbox.js" priority=10 }]
+    [{*}]<!--[{oxscript add="$( '#servicesTrigger' ).oxFlyOutBox();"}]-->[{*}]
     [{block name="widget_header_servicebox_flyoutbox"}]
         <p id="servicesTrigger" class="[{if $notificationsCounter > 0}]hasNotifications[{/if}]">
             <a href="[{ oxgetseourl ident=$oViewConf->getSslSelfLink()|cat:"cl=account" }]" rel="nofollow"><span>[{oxmultilang ident="ACCOUNT"}]</span></a>[{if $notificationsCounter > 0}]<span class="counter FXgradOrange">[{$notificationsCounter}]</span>[{/if}]
         </p>
-        [{*<div class="flyoutBox">
+        [{*}]<!--<div class="flyoutBox">
             <ul id="services" class="corners flyoutMenu">
                 [{block name="widget_header_servicebox_items"}]
                     <li class="active"><a href="[{ oxgetseourl ident=$oViewConf->getSelfLink()|cat:"cl=account" }]"><span>[{oxmultilang ident="WIDGET_SERVICES_ACCOUNT"}]</span></a></li>
@@ -30,6 +30,6 @@
                     [{/if}]
                 [{/block}]
             </ul>
-        </div>*}]
+        </div>-->[{*}]
     [{/block}]
  </div>

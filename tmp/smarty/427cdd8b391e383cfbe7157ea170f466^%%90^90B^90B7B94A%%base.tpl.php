@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.26, created on 2014-03-31 21:05:32
+<?php /* Smarty version 2.6.26, created on 2014-04-09 09:13:54
          compiled from layout/base.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
 smarty_core_load_plugins(array('plugins' => array(array('modifier', 'strip_tags', 'layout/base.tpl', 14, false),array('function', 'oxstyle', 'layout/base.tpl', 53, false),array('function', 'oxscript', 'layout/base.tpl', 92, false),array('function', 'oxid_include_dynamic', 'layout/base.tpl', 106, false),)), $this); ?>
