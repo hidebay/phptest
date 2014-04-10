@@ -4,20 +4,20 @@
     [{include file="page/checkout/inc/steps.tpl" active=3 }]
 
     [{block name="checkout_payment_main"}]
-      
-      <div class="checkoutCollumns clear">
         [{assign var="currency" value=$oView->getActCurrency() }]
         [{block name="change_shipping"}]
             [{ if $oView->getAllSets() }]
-                <h3 id="deliveryHeader" class="blockHead">[{ if $oView->getAllSetsCnt() > 1 }][{ oxmultilang ident="PAGE_CHECKOUT_PAYMENT_SELECTSHIPPING" }][{else}][{ oxmultilang ident="PAGE_CHECKOUT_PAYMENT_SELECTEDSHIPPING" }][{/if}]</h3>
                 [{assign var="aErrors" value=$oView->getFieldValidationErrors()}]
-                <form action="[{ $oViewConf->getSslSelfLink() }]" name="shipping" id="shipping" method="post">
+[{*** D3 MOD NEXT_LINE  * GoogleAnalytics ***}]
+    [{assign var="sAddClassParams" value="cl="|cat:$oViewConf->getActiveClassName()}]
+                <form action="[{ $oViewConf->getSslSelfLink()|oxaddparams:$sAddClassParams  }]" name="shipping" id="shipping" method="post">
                     <div>
                         [{ $oViewConf->getHiddenSid() }]
                         [{ $oViewConf->getNavFormParams() }]
                         <input type="hidden" name="cl" value="[{ $oViewConf->getActiveClassName() }]">
                         <input type="hidden" name="fnc" value="changeshipping">
                     </div>
+                    <h3 id="deliveryHeader" class="blockHead">[{ if $oView->getAllSetsCnt() > 1 }][{ oxmultilang ident="PAGE_CHECKOUT_PAYMENT_SELECTSHIPPING" }][{else}][{ oxmultilang ident="PAGE_CHECKOUT_PAYMENT_SELECTEDSHIPPING" }][{/if}]</h3>
                     <ul>
                         <li>
                             [{block name="act_shipping"}]
@@ -33,11 +33,22 @@
                         </li>
                     </ul>
                     [{if $oxcmp_basket->getDeliveryCosts() }]
+                        [{if $oxcmp_basket->getDelCostNet()}]
+                        <div id="shipSetCost">
+                            <b>[{ oxmultilang ident="PAGE_CHECKOUT_PAYMENT_CHARGE" }] [{ $oxcmp_basket->getDelCostNet() }] [{ $currency->sign }]
+                            [{if $oxcmp_basket->getDelCostVat() }]
+                                    ([{ oxmultilang ident="PAGE_CHECKOUT_BASKETCONTENTS_PLUSTAX1" }]
+                                    [{ $oxcmp_basket->getDelCostVat() }] [{ $currency->sign }])
+                            [{/if }]
+                            </b>
+                        </div>
+                        [{ else }]
                         <div id="shipSetCost">
                             <b>[{ oxmultilang ident="PAGE_CHECKOUT_PAYMENT_CHARGE" }] [{ $oxcmp_basket->getFDeliveryCosts() }] [{ $currency->sign}]</b>
                         </div>
+                        [{/if}]
                     [{/if}]
-                    [{*<div class="lineBlock"></div>*}]
+                    <div class="lineBlock"></div>
                 </form>
             [{/if}]
         [{/block}]
@@ -71,7 +82,10 @@
             [{oxscript add="$( '#payment' ).oxPayment();"}]
             [{oxscript include="js/widgets/oxinputvalidator.js" priority=10 }]
             [{oxscript add="$('form.js-oxValidate').oxInputValidator();"}]
-            <form action="[{ $oViewConf->getSslSelfLink() }]" class="js-oxValidate payment" id="payment" name="order" method="post">
+
+[{*** D3 MOD NEXT_LINE  * GoogleAnalytics ***}]
+    [{assign var="sAddClassParams" value="cl="|cat:$oViewConf->getActiveClassName()}]
+            <form action="[{ $oViewConf->getSslSelfLink()|oxaddparams:$sAddClassParams }]" class="js-oxValidate payment" id="payment" name="order" method="post">
                 <div>
                     [{ $oViewConf->getHiddenSid() }]
                     [{ $oViewConf->getNavFormParams() }]
@@ -80,7 +94,7 @@
                 </div>
 
                 [{if $oView->getPaymentList()}]
-                    <h4 id="paymentHeader" class="blockHead">[{ oxmultilang ident="PAGE_CHECKOUT_PAYMENT_PAYMENT" }]</h4>
+                    <h3 id="paymentHeader" class="blockHead">[{ oxmultilang ident="PAGE_CHECKOUT_PAYMENT_PAYMENT" }]</h3>
                     [{ assign var="inptcounter" value="-1"}]
                     [{foreach key=sPaymentID from=$oView->getPaymentList() item=paymentmethod name=PaymentSelect}]
                         [{ assign var="inptcounter" value="`$inptcounter+1`"}]
@@ -97,39 +111,39 @@
                         [{/block}]
                     [{/foreach}]
 
-                    
+                    [{* TRUSTED SHOPS BEGIN *}]
                     [{include file="page/checkout/inc/trustedshops.tpl"}]
-                    
+                    [{* TRUSTED SHOPS END *}]
 
-                    
+                    [{block name="checkout_payment_nextstep"}]
+                        [{if $oView->isLowOrderPrice()}]
+                            <div class="lineBox clear">
+                            <div><b>[{ oxmultilang ident="PAGE_CHECKOUT_PAYMENT_MINORDERPRICE" }] [{ $oView->getMinOrderPrice() }] [{ $currency->sign }]</b></div>
+                            </div>
+                        [{else}]
+                            <div class="lineBox clear">
+                                <a href="[{ oxgetseourl ident=$oViewConf->getOrderLink() }]" class="prevStep submitButton largeButton" id="paymentBackStepBottom">[{ oxmultilang ident="PAGE_CHECKOUT_PAYMENT_BACKSTEP" }]</a>
+                                <button type="submit" name="userform" class="submitButton nextStep largeButton" id="paymentNextStepBottom">[{ oxmultilang ident="PAGE_CHECKOUT_PAYMENT_NEXTSTEP" }]</button>
+                            </div>
+                        [{/if}]
+                    [{/block}]
 
                 [{elseif $oView->getEmptyPayment()}]
                     [{block name="checkout_payment_nopaymentsfound"}]
                         <div class="lineBlock"></div>
-                        <h4 id="paymentHeader" class="blockHead">[{ oxmultilang ident="PAGE_CHECKOUT_PAYMENT_INFO" }]</h4>
+                        <h3 id="paymentHeader" class="blockHead">[{ oxmultilang ident="PAGE_CHECKOUT_PAYMENT_INFO" }]</h3>
                         [{ oxmultilang ident="PAGE_CHECKOUT_PAYMENT_EMPTY_TEXT" }]
                         <input type="hidden" name="paymentid" value="oxempty">
-                          
+                        <div class="lineBox clear">
+                            <a href="[{ oxgetseourl ident=$oViewConf->getSelfLink()|cat:"cl=user" }]" class="prevStep submitButton largeButton">[{ oxmultilang ident="PAGE_CHECKOUT_PAYMENT_BACKSTEP" }]</a>
+                            <button type="submit" name="userform" class="submitButton nextStep largeButton" id="paymentNextStepBottom">[{ oxmultilang ident="PAGE_CHECKOUT_PAYMENT_NEXTSTEP" }]</button>
+                        </div>
                     [{/block}]
                 [{/if}]
-            </div>
-            [{block name="checkout_payment_nextstep"}]
-                [{if $oView->isLowOrderPrice()}]
-                    <div class="lineBox clear">
-                    <div><b>[{ oxmultilang ident="PAGE_CHECKOUT_PAYMENT_MINORDERPRICE" }] [{ $oView->getMinOrderPrice() }] [{ $currency->sign }]</b></div>
-                    </div>
-                [{else}]
-                    <div class="lineBox clear">
-                        <a href="[{ oxgetseourl ident=$oViewConf->getOrderLink() }]" class="prevStep submitButton" id="paymentBackStepBottom">[{ oxmultilang ident="PAGE_CHECKOUT_PAYMENT_BACKSTEP" }]</a>
-                        <button type="submit" name="userform" class="submitButton nextStep largeButton" id="paymentNextStepBottom">[{ oxmultilang ident="PAGE_CHECKOUT_PAYMENT_NEXTSTEP" }]</button>
-                    </div>
-                [{/if}]
-            [{/block}]
-          </form>
+            </form>
         [{/block}]
-      
     [{/block}]
     [{insert name="oxid_tracker" title=$template_title }]
 [{/capture}]
 
-[{include file="layout/page.tpl" sidebar="Left"}]
+[{include file="layout/page.tpl"}]
