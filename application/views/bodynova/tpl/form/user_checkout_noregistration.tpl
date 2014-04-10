@@ -1,7 +1,12 @@
 [{oxscript include="js/widgets/oxinputvalidator.js" priority=10 }]
 [{oxscript add="$('form.js-oxValidate').oxInputValidator();"}]
 [{block name="user_checkout_noregistration"}]
-    <form class="js-oxValidate" action="[{ $oViewConf->getSslSelfLink() }]" name="order" method="post">
+
+[{*}]<!-- old bevore Google Analytics
+    <form class="js-oxValidate" action="[{ $oViewConf->getSslSelfLink() }]" name="order" method="post">-->[{*}]
+    
+    [{*** D3 MOD NEXT_LINE  * GoogleAnalytics ***}]
+    <form class="js-oxValidate" action="[{ $oViewConf->getSslSelfLink()|oxaddparams:"cl=user" }]" name="order" method="post">
     [{block name="user_checkout_noregistration_form"}]
         [{assign var="aErrors" value=$oView->getFieldValidationErrors()}]
         [{ $oViewConf->getHiddenSid() }]
