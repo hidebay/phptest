@@ -2,7 +2,8 @@
 [{oxscript add="$('form.js-oxValidate').oxInputValidator();"}]
 [{block name="user_checkout_change"}]
 [{*** D3 MOD NEXT_LINE  * GoogleAnalytics ***}]
-    <form class="js-oxValidate" action="[{ $oViewConf->getSslSelfLink()|oxaddparams:"cl=user" }]" name="order" method="post">    [{block name="user_checkout_change_form"}]
+    <form class="js-oxValidate" action="[{ $oViewConf->getSslSelfLink()|oxaddparams:"cl=user" }]" name="order" method="post">
+    [{block name="user_checkout_change_form"}]
         [{assign var="aErrors" value=$oView->getFieldValidationErrors()}]
         [{ $oViewConf->getHiddenSid() }]
         [{ $oViewConf->getNavFormParams() }]
@@ -13,7 +14,7 @@
         <input type="hidden" name="blshowshipaddress" value="1">
 
         <div class="lineBox clear">
-            <a href="[{ oxgetseourl ident=$oViewConf->getBasketLink() }]" class="prevStep submitButton" id="userBackStepTop">[{ oxmultilang ident="TRO_FORM_USER_CHECKOUT_REGISTRATION_BACKSTEP" }]</a>
+            <a href="[{ oxgetseourl ident=$oViewConf->getBasketLink() }]" class="prevStep submitButton largeButton" id="userBackStepTop">[{ oxmultilang ident="FORM_USER_CHECKOUT_CHANGE_BACKSTEP" }]</a>
             <button id="userNextStepTop" class="submitButton largeButton nextStep" name="userform" type="submit">[{ oxmultilang ident="FORM_USER_CHECKOUT_CHANGE_NEXTSTEP" }]</button>
         </div>
 
