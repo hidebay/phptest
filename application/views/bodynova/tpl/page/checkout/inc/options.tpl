@@ -1,9 +1,11 @@
 [{block name="checkout_user_options"}]
-    [{*oxscript include="js/widgets/oxequalizer.js" priority=10 }]
-    [{oxscript add="$(function(){oxEqualizer.equalHeight($( '.checkoutOptions .option' ));});"*}]
+    [{*}]<!--[{oxscript include="js/widgets/oxequalizer.js" priority=10 }]
+    [{oxscript add="$(function(){oxEqualizer.equalHeight($( '.checkoutOptions .option' ));});"}]-->[{*}]
     <div class="checkoutOptions clear">
       <div class="lineBox clear">
-        <a href="[{ oxgetseourl ident=$oViewConf->getBasketLink() }]" class="prevStep submitButton" id="userBackStepTop">[{ oxmultilang ident="TRO_FORM_USER_CHECKOUT_REGISTRATION_BACKSTEP" }]</a>
+        <a href="[{ oxgetseourl ident=$oViewConf->getBasketLink() }]" class="prevStep submitButton" id="userBackStepTop">
+        	[{ oxmultilang ident="TRO_FORM_USER_CHECKOUT_REGISTRATION_BACKSTEP" }]
+        </a>
       </div>
         [{block name="checkout_options_login"}]
             <div class="lineBox option" id="optionLogin">
@@ -22,8 +24,13 @@
                 [{block name="checkout_options_reg_text"}]
                     <p>[{ oxmultilang ident="PAGE_CHECKOUT_USER_OPTION_REGISTRATION_DESCRIPTION" }]</p>
                 [{/block}]
+                
+                [{*}]<!-- old bevore GoogleAnalytics
                 <form action="[{ $oViewConf->getSslSelfLink() }]" method="post">
-                   
+                -->[{*}]
+                
+                [{*** D3 MOD NEXT_LINE  * GoogleAnalytics ***}]
+                <form action="[{ $oViewConf->getSslSelfLink()|oxaddparams:"cl=user" }]" method="post">   
                         [{ $oViewConf->getHiddenSid() }]
                         [{ $oViewConf->getNavFormParams() }]
                         <input type="hidden" name="cl" value="user">
@@ -42,8 +49,13 @@
                 [{block name="checkout_options_noreg_text"}]
                     <p>[{ oxmultilang ident="PAGE_CHECKOUT_USER_OPTION_NOREGISTRATION_DESCRIPTION" }]</p>
                 [{/block}]
-                <form action="[{ $oViewConf->getSslSelfLink() }]" method="post">
-                    
+                
+                [{*}]<!-- old bevore GoogleAnalytics
+                <form action="[{ $oViewConf->getSslSelfLink() }]" method="post">-->[{*}]
+                
+                [{*** D3 MOD NEXT_LINE  * GoogleAnalytics ***}]
+                <form action="[{ $oViewConf->getSslSelfLink()|oxaddparams:"cl=user" }]" method="post">
+    
                         [{ $oViewConf->getHiddenSid() }]
                         [{ $oViewConf->getNavFormParams() }]
                         <input type="hidden" name="cl" value="user">
