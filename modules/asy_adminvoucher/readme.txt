@@ -2,10 +2,10 @@
 asy_adminvoucher
 
 ### Version ###
-1.3
+1.7
 
 ### Oxid-Version ###
-4.6.0 - 4.6.x
+4.5.0 - 4.8.x
 
 ### Author ###
 Alpha-Sys
