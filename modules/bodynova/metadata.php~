@@ -12,7 +12,7 @@ $sMetadataVersion = '0.1';
  */
 $aModule = array(
     'id'           => 'bodynova',
-    'title'        => 'Bodynova Modul',
+    'title'        => '<img src="../modules/img/favicon.ico" title="Bodynova Modul">Bodynova Modul',
     'description'  => array(
         'de' => 'Bodynovas eigenes Modul zur erweiterung der verschiedenen Klassen die im Design Bodynova verwendet werden.',
         'en' => 'Bodynovas own modul for extending used classes in the theme bodynova.',
@@ -23,15 +23,17 @@ $aModule = array(
     'url'          => 'www.bodynova.de',
     'email'        => 'a.bender@bodynova.de',
     'extend'       => array(
-	'oxorder'		=>	'tronet/core/trooxorder',
-	'oxarticle'		=>	'tronet/core/trooxarticle',
-	'actions_main'		=>	'tronet/admin/troactions_main',
-	'alist'			=>	'tronet/views/troalist',
-	'oxactionlist'		=>	'tronet/core/trooxactionlist',
-	'oxactions'		=>	'tronet/core/trooxactions',
-	'oxcmp_shop'		=>	'tronet/views/trooxcmp_shop',
-	'oxbasket'		=>	'tronet/core/trooxbasket',
-	'content'		=>	'tronet/views/trocontent'
+    
+	'oxorder'		=>	'bodynova/core/bodyoxorder',
+	'oxarticle'		=>	'bodynova/core/bodyoxarticle',
+	//'actions_main'	=>	'bodynova/admin/bodyactions_main',
+	'alist'			=>	'bodynova/views/bodyalist',
+	'oxactionlist'	=>	'bodynova/core/bodyoxactionlist',
+	'oxactions'		=>	'bodynova/core/bodyoxactions',
+	'oxcmp_shop'	=>	'bodynova/views/bodyoxcmp_shop',
+	'oxbasket'		=>	'bodynova/core/bodyoxbasket',
+	'content'		=>	'bodynova/views/bodycontent'
+	
     ),
     
 );

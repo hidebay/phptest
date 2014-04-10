@@ -12,7 +12,7 @@ $sMetadataVersion = '0.1';
  */
 $aModule = array(
     'id'           => 'bodynova',
-    'title'        => 'Bodynova Modul',
+    'title'        => '<img src="../modules/bodynova/img/favicon.ico" title="Bodynova Modul">Bodynova Modul',
     'description'  => array(
         'de' => 'Bodynovas eigenes Modul zur erweiterung der verschiedenen Klassen die im Design Bodynova verwendet werden.',
         'en' => 'Bodynovas own modul for extending used classes in the theme bodynova.',

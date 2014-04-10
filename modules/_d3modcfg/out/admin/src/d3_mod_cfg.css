@@ -1,0 +1,790 @@
+.d3modcfg_btn {
+    display:       block;
+    border:        0 none;
+    float:         left;
+    height:        22px;
+    line-height:   1;
+    margin:        0 auto;
+    padding:       0 3px 0 0;
+    width:         auto;
+    max-width:     300px;
+    position:      relative;
+    background:    url(bg/d3modcfg_buttons.png) no-repeat right 0 transparent;
+    white-space:   normal;
+}
+
+.d3modcfg_btn.fixed {
+    margin: 0;
+}
+
+.d3modcfg_btn input {
+    border:      0 none;
+    color:       white;
+    cursor:      pointer;
+    font-weight: bold;
+    height:      22px;
+    line-height: 1;
+    padding:     0 3px;
+    width:       100%;
+    background:  url(bg/d3modcfg_buttons.png) no-repeat 0 0 transparent;
+    margin:      0;
+}
+
+.d3modcfg_btn, .d3modcfg_btn input {
+    background: #028fe8;
+}
+
+/* blue */
+.d3modcfg_btn[disabled], .d3modcfg_btn input[disabled], .d3modcfg_btn input.disabled {
+    background-color: #C2C2C2 !important;
+}
+
+/* grey */
+
+.d3modcfg_btn:hover, .d3modcfg_btn:hover input {
+    background: #36b1ff;
+}
+
+/* lightblue */
+.d3modcfg_btn.icon input {
+    padding-left: 23px;
+}
+
+.d3modcfg_btn.icon div, .d3modcfg_btn.icon span {
+    float:      left;
+    height:     20px;
+    position:   absolute;
+    top:        0;
+    width:      20px;
+    margin:     1px 0 1px 3px;
+    background: url("bg/d3modcfg_icons.png") no-repeat scroll 0 0 transparent;
+    left:       0;
+}
+
+.d3modcfg_btn.btn_blue, .d3modcfg_btn.btn_blue input {
+    background-url:   none;
+    background-color: #028fe8;
+}
+
+.d3modcfg_btn.btn_blue:hover, .d3modcfg_btn.btn_blue:hover input {
+    background-url:   none;
+    background-color: #36B1FF;
+}
+
+.d3modcfg_btn.btn_orange, .d3modcfg_btn.btn_orange input {
+    background-url:   none;
+    background-color: #ff9703;
+}
+
+.d3modcfg_btn.btn_orange:hover, .d3modcfg_btn.btn_orange:hover input {
+    background-url:   none;
+    background-color: #ffc16a;
+}
+
+.d3modcfg_btn.btn_green, .d3modcfg_btn.btn_green input {
+    background-url:   none;
+    background-color: #1db11a;
+}
+
+.d3modcfg_btn.btn_green:hover, .d3modcfg_btn.btn_green:hover input {
+    background-url:   none;
+    background-color: #2ae527;
+}
+
+.d3modcfg_btn.btn_yellow, .d3modcfg_btn.btn_yellow input {
+    background-url:   none;
+    background-color: #dbc457;
+}
+
+.d3modcfg_btn.btn_yellow:hover, .d3modcfg_btn.btn_yellow:hover input {
+    background-url:   none;
+    background-color: #ffe465;
+}
+
+.d3modcfg_btn.btn_red, .d3modcfg_btn.btn_red input {
+    background-url:   none;
+    background-color: #ff1212;
+}
+
+.d3modcfg_btn.btn_red:hover, .d3modcfg_btn.btn_red:hover input {
+    background-url:   none;
+    background-color: #ff6262;
+}
+
+.d3modcfg_btn.btn_blueframe {
+    background-position: right -120px;
+    padding-right:       5px;
+}
+
+.d3modcfg_btn.btn_blueframe input {
+    background-position: 0 -120px;
+}
+
+.d3modcfg_btn.btn_orangeframe {
+    background-position: right -150px;
+    padding-right:       5px;
+}
+
+.d3modcfg_btn.btn_orangeframe input {
+    background-position: 0 -150px;
+}
+
+.d3modcfg_btn.btn_greenframe {
+    background-position: right -180px;
+    padding-right:       5px;
+}
+
+.d3modcfg_btn.btn_greenframe input {
+    background-position: 0 -180px;
+    color:               black;
+}
+
+.d3modcfg_btn.btn_redframe {
+    background-position: right -210px;
+    padding-right:       5px;
+}
+
+.d3modcfg_btn.btn_redframe input {
+    background-position: 0 -210px;
+    color:               white;
+}
+
+.d3modcfg_btn.disabled {
+    background-position: right -240px;
+}
+
+.d3modcfg_btn.disabled input {
+    background-position: 0 -240px;
+}
+
+.d3modcfg_icon {
+    background:   url("bg/d3modcfg_icons.png") no-repeat scroll 0 0 transparent;
+    display:      block;
+    height:       20px;
+    width:        20px;
+    margin-left:  auto;
+    margin-right: auto;
+}
+
+.d3modcfg_btn input[disabled], .d3modcfg_btn input[disabled="disabled"]
+{
+    cursor: auto;
+}
+
+.d3modcfg_icon.status_ok, .d3modcfg_btn.icon.status_ok div, .d3modcfg_btn.icon.status_ok span {
+    background-color:    transparent;
+    background-position: 0 0;
+}
+
+.d3modcfg_icon.status_ok_inactive, .d3modcfg_btn.icon.status_ok_inactive div, .d3modcfg_btn.icon.status_ok_inactive span,
+.d3modcfg_btn.icon.status_ok input[disabled] + span, .d3modcfg_btn.icon.status_ok input[disabled="disabled"] + span,
+.d3modcfg_btn.icon.status_ok input[disabled] + div, .d3modcfg_btn.icon.status_ok input[disabled="disabled"] + div
+{
+    background-color:    transparent;
+    background-position: -30px 0;
+}
+
+.d3modcfg_btn.icon.status_ok, .d3modcfg_btn.icon.status_ok input {
+    background: #1db11a;
+}
+
+/* green */
+.d3modcfg_btn.icon.status_ok:hover, .d3modcfg_btn.icon.status_ok:hover input {
+    background: #2ae527;
+}
+
+/* lightgreen */
+.d3modcfg_btn.icon.status_ok_inactive, .d3modcfg_btn.icon.status_ok_inactive input {
+    background: #bababa;
+}
+
+/* grey from green */
+.d3modcfg_icon.status_failed, .d3modcfg_btn.icon.status_failed div, .d3modcfg_btn.icon.status_failed span
+{
+    background-color:    transparent;
+    background-position: -60px 0;
+}
+
+.d3modcfg_icon.status_failed_inactive, .d3modcfg_btn.icon.status_failed_inactive div, .d3modcfg_btn.icon.status_failed_inactive span,
+.d3modcfg_btn.icon.status_failed input[disabled] + span, .d3modcfg_btn.icon.status_failed input[disabled="disabled"] + span,
+.d3modcfg_btn.icon.status_failed input[disabled] + div, .d3modcfg_btn.icon.status_failed input[disabled="disabled"] + div
+{
+    background-color:    transparent;
+    background-position: -90px 0;
+}
+
+.d3modcfg_btn.icon.status_failed, .d3modcfg_btn.icon.status_failed input {
+    background: #ff1212;
+}
+
+/* red */
+.d3modcfg_btn.icon.status_failed:hover, .d3modcfg_btn.icon.status_failed:hover input {
+    background: #ff6262;
+}
+
+/* rose */
+.d3modcfg_btn.icon.status_failed_inactive, .d3modcfg_btn.icon.status_failed_inactive input {
+    background: #c9c9c9;
+}
+
+/* grey from red */
+.d3modcfg_icon.status_question, .d3modcfg_btn.icon.status_question div, .d3modcfg_btn.icon.status_question span {
+    background-color:    transparent;
+    background-position: -120px 0;
+}
+
+.d3modcfg_icon.status_question_inactive, .d3modcfg_btn.icon.status_question_inactive div, .d3modcfg_btn.icon.status_question_inactive span,
+.d3modcfg_btn.icon.status_question input[disabled] + span, .d3modcfg_btn.icon.status_question input[disabled="disabled"] + span,
+.d3modcfg_btn.icon.status_question input[disabled] + div, .d3modcfg_btn.icon.status_question input[disabled="disabled"] + div
+{
+    background-color:    transparent;
+    background-position: -150px 0;
+}
+
+.d3modcfg_btn.icon.status_question, .d3modcfg_btn.icon.status_question input {
+    background: #028fe8;
+}
+
+/* blue */
+.d3modcfg_btn.icon.status_question:hover, .d3modcfg_btn.icon.status_question:hover input {
+    background: #36b1ff;
+}
+
+/* lightblue */
+.d3modcfg_btn.icon.status_question_inactive, .d3modcfg_btn.icon.status_question_inactive input {
+    background: #c1c1c1;
+}
+
+/* grey from blue */
+.d3modcfg_icon.status_info, .d3modcfg_btn.icon.status_info div, .d3modcfg_btn.icon.status_info span {
+    background-color:    transparent;
+    background-position: -180px 0;
+}
+
+.d3modcfg_icon.status_info_inactive, .d3modcfg_btn.icon.status_info_inactive div, .d3modcfg_btn.icon.status_info_inactive span,
+.d3modcfg_btn.icon.status_info input[disabled] + span, .d3modcfg_btn.icon.status_info input[disabled="disabled"] + span,
+.d3modcfg_btn.icon.status_info input[disabled] + div, .d3modcfg_btn.icon.status_info input[disabled="disabled"] + div
+{
+    background-color:    transparent;
+    background-position: -210px 0;
+}
+
+.d3modcfg_btn.icon.status_info, .d3modcfg_btn.icon.status_info input {
+    background: #028fe8;
+}
+
+/* blue */
+.d3modcfg_btn.icon.status_info:hover, .d3modcfg_btn.icon.status_info:hover input {
+    background: #36b1ff;
+}
+
+/* lightblue */
+.d3modcfg_btn.icon.status_info_inactive, .d3modcfg_btn.icon.status_info_inactive input {
+    background: #c1c1c1;
+}
+
+/* grey from blue */
+
+.d3modcfg_icon.status_plus, .d3modcfg_btn.icon.status_plus div, .d3modcfg_btn.icon.status_plus span {
+    background-color:    transparent;
+    background-position: 0 -30px;
+}
+
+.d3modcfg_icon.status_plus_inactive, .d3modcfg_btn.icon.status_plus_inactive div, .d3modcfg_btn.icon.status_plus_inactive span,
+.d3modcfg_btn.icon.status_plus input[disabled] + span, .d3modcfg_btn.icon.status_plus input[disabled="disabled"] + span,
+.d3modcfg_btn.icon.status_plus input[disabled] + div, .d3modcfg_btn.icon.status_plus input[disabled="disabled"] + div
+{
+    background-color:    transparent;
+    background-position: -30px -30px;
+}
+
+.d3modcfg_btn.icon.status_plus, .d3modcfg_btn.icon.status_plus input {
+    background: #1db11a;
+}
+
+/* green */
+.d3modcfg_btn.icon.status_plus:hover, .d3modcfg_btn.icon.status_plus:hover input {
+    background: #2ae527;
+}
+
+/* lightgreen */
+.d3modcfg_btn.icon.status_plus_inactive, .d3modcfg_btn.icon.status_plus_inactive input {
+    background: #bababa;
+}
+
+/* grey from green */
+.d3modcfg_icon.status_minus, .d3modcfg_btn.icon.status_minus div, .d3modcfg_btn.icon.status_minus span {
+    background-color:    transparent;
+    background-position: -60px -30px;
+}
+
+.d3modcfg_icon.status_minus_inactive, .d3modcfg_btn.icon.status_minus_inactive div, .d3modcfg_btn.icon.status_minus_inactive span,
+.d3modcfg_btn.icon.status_minus input[disabled] + span, .d3modcfg_btn.icon.status_minus input[disabled="disabled"] + span,
+.d3modcfg_btn.icon.status_minus input[disabled] + div, .d3modcfg_btn.icon.status_minus input[disabled="disabled"] + div
+{
+    background-color:    transparent;
+    background-position: -90px -30px;
+}
+
+.d3modcfg_btn.icon.status_minus, .d3modcfg_btn.icon.status_minus input {
+    background: #ff1212;
+}
+
+/* red */
+.d3modcfg_btn.icon.status_minus:hover, .d3modcfg_btn.icon.status_minus:hover input {
+    background: #ff6262;
+}
+
+/* rose */
+.d3modcfg_btn.icon.status_minus_inactive, .d3modcfg_btn.icon.status_minus_inactive input {
+    background: #c9c9c9;
+}
+
+/* grey from red */
+.d3modcfg_icon.status_attention, .d3modcfg_btn.icon.status_attention div, .d3modcfg_btn.icon.status_attention span {
+    background-color:    transparent;
+    background-position: -120px -30px;
+}
+
+.d3modcfg_icon.status_attention_inactive, .d3modcfg_btn.icon.status_attention_inactive div, .d3modcfg_btn.icon.status_attention_inactive span,
+.d3modcfg_btn.icon.status_attention input[disabled] + span, .d3modcfg_btn.icon.status_attention input[disabled="disabled"] + span,
+.d3modcfg_btn.icon.status_attention input[disabled] + div, .d3modcfg_btn.icon.status_attention input[disabled="disabled"] + div
+{
+    background-color:    transparent;
+    background-position: -150px -30px;
+}
+
+.d3modcfg_btn.icon.status_attention, .d3modcfg_btn.icon.status_attention input {
+    background: #ff9703;
+}
+
+/* orange */
+.d3modcfg_btn.icon.status_attention:hover, .d3modcfg_btn.icon.status_attention:hover input {
+    background: #ffc16a;
+}
+
+/* lightorange */
+.d3modcfg_btn.icon.status_attention_inactive, .d3modcfg_btn.icon.status_attention_inactive input {
+    background: #c6c6c6;
+}
+
+/* grey from orange */
+.d3modcfg_icon.status_danger, .d3modcfg_btn.icon.status_danger div, .d3modcfg_btn.icon.status_danger span {
+    background-color:    transparent;
+    background-position: -180px -30px;
+}
+
+.d3modcfg_icon.status_danger_inactive, .d3modcfg_btn.icon.status_danger_inactive div, .d3modcfg_btn.icon.status_danger_inactive span,
+.d3modcfg_btn.icon.status_danger input[disabled] + span, .d3modcfg_btn.icon.status_danger input[disabled="disabled"] + span,
+.d3modcfg_btn.icon.status_danger input[disabled] + div, .d3modcfg_btn.icon.status_danger input[disabled="disabled"] + div
+{
+    background-color:    transparent;
+    background-position: -210px -30px;
+}
+
+.d3modcfg_btn.icon.status_danger, .d3modcfg_btn.icon.status_danger input {
+    background: #ff1212;
+}
+
+/* red */
+.d3modcfg_btn.icon.status_danger:hover, .d3modcfg_btn.icon.status_danger:hover input {
+    background: #ff6262;
+}
+
+/* rose */
+.d3modcfg_btn.icon.status_danger_inactive, .d3modcfg_btn.icon.status_danger_inactive input {
+    background: #c9c9c9;
+}
+
+/* grey from red */
+
+.d3modcfg_icon.action_plus, .d3modcfg_btn.icon.action_plus div, .d3modcfg_btn.icon.action_plus span {
+    background-color:    transparent;
+    background-position: 0 -60px;
+}
+
+.d3modcfg_icon.action_plus_inactive, .d3modcfg_btn.icon.action_plus_inactive div, .d3modcfg_btn.icon.action_plus_inactive span,
+.d3modcfg_btn.icon.action_plus input[disabled] + span, .d3modcfg_btn.icon.action_plus input[disabled="disabled"] + span,
+.d3modcfg_btn.icon.action_plus input[disabled] + div, .d3modcfg_btn.icon.action_plus input[disabled="disabled"] + div
+{
+
+    background-color:    transparent;
+    background-position: -30px -60px;
+}
+
+.d3modcfg_btn.icon.action_plus, .d3modcfg_btn.icon.action_plus input {
+    background: #028fe8;
+}
+
+/* blue */
+.d3modcfg_btn.icon.action_plus:hover, .d3modcfg_btn.icon.action_plus:hover input {
+    background: #36b1ff;
+}
+
+/* lightblue */
+.d3modcfg_btn.icon.action_plus_inactive, .d3modcfg_btn.icon.action_plus_inactive input {
+    background: #c1c1c1;
+}
+
+/* grey from blue */
+.d3modcfg_icon.action_minus, .d3modcfg_btn.icon.action_minus div, .d3modcfg_btn.icon.action_minus span {
+    background-color:    transparent;
+    background-position: -60px -60px;
+}
+
+.d3modcfg_icon.action_minus_inactive, .d3modcfg_btn.icon.action_minus_inactive div, .d3modcfg_btn.icon.action_minus_inactive span,
+.d3modcfg_btn.icon.action_minus input[disabled] + span, .d3modcfg_btn.icon.action_minus input[disabled="disabled"] + span,
+.d3modcfg_btn.icon.action_minus input[disabled] + div, .d3modcfg_btn.icon.action_minus input[disabled="disabled"] + div
+{
+    background-color:    transparent;
+    background-position: -90px -60px;
+}
+
+.d3modcfg_btn.icon.action_minus, .d3modcfg_btn.icon.action_minus input {
+    background: #028fe8;
+}
+
+/* blue */
+.d3modcfg_btn.icon.action_minus:hover, .d3modcfg_btn.icon.action_minus:hover input {
+    background: #36b1ff;
+}
+
+/* lightblue */
+.d3modcfg_btn.icon.action_minus_inactive, .d3modcfg_btn.icon.action_minus_inactive input {
+    background: #c1c1c1;
+}
+
+/* grey from blue */
+.d3modcfg_icon.action_zoom1, .d3modcfg_btn.icon.action_zoom1 div, .d3modcfg_btn.icon.action_zoom1 span {
+    background-color:    transparent;
+    background-position: -120px -60px;
+}
+
+.d3modcfg_icon.action_zoom1_inactive, .d3modcfg_btn.icon.action_zoom1_inactive div, .d3modcfg_btn.icon.action_zoom1_inactive span,
+.d3modcfg_btn.icon.action_zoom1 input[disabled] + span, .d3modcfg_btn.icon.action_zoom1 input[disabled="disabled"] + span,
+.d3modcfg_btn.icon.action_zoom1 input[disabled] + div, .d3modcfg_btn.icon.action_zoom1 input[disabled="disabled"] + div
+{
+    background-color:    transparent;
+    background-position: -150px -60px;
+}
+
+.d3modcfg_btn.icon.action_zoom1, .d3modcfg_btn.icon.action_zoom1 input {
+    background: #028fe8;
+}
+
+/* blue */
+.d3modcfg_btn.icon.action_zoom1:hover, .d3modcfg_btn.icon.action_zoom1:hover input {
+    background: #36b1ff;
+}
+
+/* lightblue */
+.d3modcfg_btn.icon.action_zoom1_inactive, .d3modcfg_btn.icon.action_zoom1_inactive input {
+    background: #c1c1c1;
+}
+
+/* grey from blue */
+.d3modcfg_icon.action_zoom2, .d3modcfg_btn.icon.action_zoom2 div, .d3modcfg_btn.icon.action_zoom2 span {
+    background-color:    transparent;
+    background-position: -180px -60px;
+}
+
+.d3modcfg_icon.action_zoom2_inactive, .d3modcfg_btn.icon.action_zoom2_inactive div, .d3modcfg_btn.icon.action_zoom2_inactive span,
+.d3modcfg_btn.icon.action_zoom2 input[disabled] + span, .d3modcfg_btn.icon.action_zoom2 input[disabled="disabled"] + span,
+.d3modcfg_btn.icon.action_zoom2 input[disabled] + div, .d3modcfg_btn.icon.action_zoom2 input[disabled="disabled"] + div
+{
+    background-color:    transparent;
+    background-position: -210px -60px;
+}
+
+.d3modcfg_btn.icon.action_zoom2, .d3modcfg_btn.icon.action_zoom2 input {
+    background: #028fe8;
+}
+
+/* blue */
+.d3modcfg_btn.icon.action_zoom2:hover, .d3modcfg_btn.icon.action_zoom2:hover input {
+    background: #36b1ff;
+}
+
+/* lightblue */
+.d3modcfg_btn.icon.action_zoom2_inactive, .d3modcfg_btn.icon.action_zoom2_inactive input {
+    background: #c1c1c1;
+}
+
+/* grey from blue */
+
+.d3modcfg_icon.action_download, .d3modcfg_btn.icon.action_download div, .d3modcfg_btn.icon.action_download span {
+    background-color:    transparent;
+    background-position: 0 -120px;
+}
+
+.d3modcfg_icon.action_download_inactive, .d3modcfg_btn.icon.action_download_inactive div, .d3modcfg_btn.icon.action_download_inactive span,
+.d3modcfg_btn.icon.action_download input[disabled] + span, .d3modcfg_btn.icon.action_download input[disabled="disabled"] + span,
+.d3modcfg_btn.icon.action_download input[disabled] + div, .d3modcfg_btn.icon.action_download input[disabled="disabled"] + div
+{
+    background-color:    transparent;
+    background-position: -30px -120px;
+}
+
+.d3modcfg_btn.icon.action_download, .d3modcfg_btn.icon.action_download input {
+    background: #028fe8;
+}
+
+/* blue */
+.d3modcfg_btn.icon.action_download:hover, .d3modcfg_btn.icon.action_download:hover input {
+    background: #36b1ff;
+}
+
+/* lightblue */
+.d3modcfg_btn.icon.action_download_inactive, .d3modcfg_btn.icon.action_download_inactive input {
+    background: #c1c1c1;
+}
+
+/* grey from blue */
+.d3modcfg_icon.action_refresh, .d3modcfg_btn.icon.action_refresh div, .d3modcfg_btn.icon.action_refresh span {
+    background-color:    transparent;
+    background-position: -180px -180px;
+}
+
+.d3modcfg_icon.action_refresh_inactive, .d3modcfg_btn.icon.action_refresh_inactive div, .d3modcfg_btn.icon.action_refresh_inactive span,
+.d3modcfg_btn.icon.action_refresh input[disabled] + span, .d3modcfg_btn.icon.action_refresh input[disabled="disabled"] + span,
+.d3modcfg_btn.icon.action_refresh input[disabled] + div, .d3modcfg_btn.icon.action_refresh input[disabled="disabled"] + div
+{
+    background-color:    transparent;
+    background-position: -210px -180px;
+}
+
+.d3modcfg_btn.icon.action_refresh, .d3modcfg_btn.icon.action_refresh input {
+    background: #028fe8;
+}
+
+/* blue */
+.d3modcfg_btn.icon.action_refresh:hover, .d3modcfg_btn.icon.action_refresh:hover input {
+    background: #36b1ff;
+}
+
+/* lightblue */
+.d3modcfg_btn.icon.action_refresh_inactive, .d3modcfg_btn.icon.action_refresh_inactive input {
+    background: #c1c1c1;
+}
+
+/* grey from blue */
+.d3modcfg_icon.action_mail, .d3modcfg_btn.icon.action_mail div, .d3modcfg_btn.icon.action_mail span {
+    background-color:    transparent;
+    background-position: 0 -210px;
+}
+
+.d3modcfg_icon.action_mail_inactive, .d3modcfg_btn.icon.action_mail_inactive div, .d3modcfg_btn.icon.action_mail_inactive span,
+.d3modcfg_btn.icon.action_mail input[disabled] + span, .d3modcfg_btn.icon.action_mail input[disabled="disabled"] + span,
+.d3modcfg_btn.icon.action_mail input[disabled] + div, .d3modcfg_btn.icon.action_mail input[disabled="disabled"] + div
+{
+    background-color:    transparent;
+    background-position: -30px -210px;
+}
+
+.d3modcfg_btn.icon.action_mail, .d3modcfg_btn.icon.action_mail input {
+    background: #028fe8;
+}
+
+/* blue */
+.d3modcfg_btn.icon.action_mail:hover, .d3modcfg_btn.icon.action_mail:hover input {
+    background: #36b1ff;
+}
+
+/* lightblue */
+.d3modcfg_btn.icon.action_mail_inactive, .d3modcfg_btn.icon.action_mail_inactive input {
+    background: #c1c1c1;
+}
+
+/* grey from blue */
+
+.d3modcfg_icon.home, .d3modcfg_btn.icon.home div, .d3modcfg_btn.icon.home span {
+    background-color:    transparent;
+    background-position: -180px -120px;
+}
+
+.d3modcfg_icon.home_inactive, .d3modcfg_btn.icon.home_inactive div, .d3modcfg_btn.icon.home_inactive span,
+.d3modcfg_btn.icon.home input[disabled] + span, .d3modcfg_btn.icon.home input[disabled="disabled"] + span,
+.d3modcfg_btn.icon.home input[disabled] + div, .d3modcfg_btn.icon.home input[disabled="disabled"] + div
+{
+    background-color:    transparent;
+    background-position: -210px -120px;
+}
+
+.d3modcfg_btn.icon.home, .d3modcfg_btn.icon.home input {
+    background: #1db11a;
+}
+
+/* green */
+.d3modcfg_btn.icon.home:hover, .d3modcfg_btn.icon.home:hover input {
+    background: #2ae527;
+}
+
+/* lightgreen */
+.d3modcfg_btn.icon.home_inactive, .d3modcfg_btn.icon.home_inactive input {
+    background: #bababa;
+}
+
+/* grey from green */
+.d3modcfg_icon.pen, .d3modcfg_btn.icon.pen div, .d3modcfg_btn.icon.pen span {
+    background-color:    transparent;
+    background-position: -180px -150px;
+}
+
+.d3modcfg_icon.pen_inactive, .d3modcfg_btn.icon.pen_inactive div, .d3modcfg_btn.icon.pen_inactive span,
+.d3modcfg_btn.icon.pen input[disabled] + span, .d3modcfg_btn.icon.pen input[disabled="disabled"] + span,
+.d3modcfg_btn.icon.pen input[disabled] + div, .d3modcfg_btn.icon.pen input[disabled="disabled"] + div
+{
+    background-color:    transparent;
+    background-position: -210px -150px;
+}
+
+.d3modcfg_btn.icon.pen, .d3modcfg_btn.icon.pen input {
+    background: #ff9703;
+}
+
+/* orange */
+.d3modcfg_btn.icon.pen:hover, .d3modcfg_btn.icon.pen:hover input {
+    background: #ffc16a;
+}
+
+/* lightorange */
+.d3modcfg_btn.icon.pen_inactive, .d3modcfg_btn.icon.pen_inactive input {
+    background: #c6c6c6;
+}
+
+/* grey from orange */
+.d3modcfg_icon.key, .d3modcfg_btn.icon.key div, .d3modcfg_btn.icon.key span {
+    background-color:    transparent;
+    background-position: -60px -420px;
+}
+
+.d3modcfg_icon.key_inactive, .d3modcfg_btn.icon.key_inactive div, .d3modcfg_btn.icon.key_inactive span,
+.d3modcfg_btn.icon.key input[disabled] + span, .d3modcfg_btn.icon.key input[disabled="disabled"] + span,
+.d3modcfg_btn.icon.key input[disabled] + div, .d3modcfg_btn.icon.key input[disabled="disabled"] + div
+{
+    background-color:    transparent;
+    background-position: -90px -420px;
+}
+
+.d3modcfg_btn.icon.key, .d3modcfg_btn.icon.key input {
+    background: #028fe8;
+}
+
+/* blue */
+.d3modcfg_btn.icon.key:hover, .d3modcfg_btn.icon.key:hover input {
+    background: #36b1ff;
+}
+
+/* lightblue */
+.d3modcfg_btn.icon.key_inactive, .d3modcfg_btn.icon.key_inactive input {
+    background: #c1c1c1;
+}
+
+/* grey from blue */
+.d3modcfg_icon.folder, .d3modcfg_btn.icon.folder div, .d3modcfg_btn.icon.folder span {
+    background-color:    transparent;
+    background-position: -120px -420px;
+}
+
+.d3modcfg_icon.folder_inactive, .d3modcfg_btn.icon.folder_inactive div, .d3modcfg_btn.icon.folder_inactive span,
+.d3modcfg_btn.icon.folder input[disabled] + span, .d3modcfg_btn.icon.folder input[disabled="disabled"] + span,
+.d3modcfg_btn.icon.folder input[disabled] + div, .d3modcfg_btn.icon.folder input[disabled="disabled"] + div
+{
+    background-color:    transparent;
+    background-position: -150px -420px;
+}
+
+.d3modcfg_btn.icon.folder, .d3modcfg_btn.icon.folder input {
+    background: #028fe8;
+}
+
+/* blue */
+.d3modcfg_btn.icon.folder:hover, .d3modcfg_btn.icon.folder:hover input {
+    background: #36b1ff;
+}
+
+/* lightblue */
+.d3modcfg_btn.icon.folder_inactive, .d3modcfg_btn.icon.folder_inactive input {
+    background: #c1c1c1;
+}
+
+/* grey from blue */
+
+#mask, #popup {
+    display:    none;
+    visibility: hidden;
+}
+
+#mask.on {
+    z-index:          1500;
+    width:            100%;
+    visibility:       visible;
+    top:              0;
+    position:         fixed;
+    opacity:          0.7;
+    left:             0;
+    height:           100%;
+    display:          block;
+    background-color: white;
+}
+
+#popup.on {
+    z-index:     2000;
+    width:       270px;
+    visibility:  visible;
+    top:         50%;
+    position:    fixed;
+    padding:     10px;
+    margin-top:  -75px;
+    margin-left: -135px;
+    left:        50%;
+    height:      150px;
+    display:     block;
+    border:      2px solid #35F;
+    background:  url("bg/d3_loader_width.gif") no-repeat scroll center center #FFFFFF;
+}
+
+.extension_error, .extension_warning, .extension_info, .extension_notice {
+    border:           2px solid darkred;
+    background-color: lightPink;
+    text-align:       center;
+    padding:          3px 10px;
+    font-weight:      bold;
+    white-space:      normal;
+    margin-top:       7px;
+    margin-bottom:    7px;
+}
+
+.extension_warning {
+    border-color:     BurlyWood;
+    background-color: lightyellow;
+}
+
+.extension_info {
+    border-color:     darkgreen;
+    background-color: lightgreen;
+}
+
+.extension_notice {
+    border-color:     black;
+    background-color: #EEE;
+}
+
+.groupExp dd.spacer {
+    clear: both;
+    height: 1px;
+    overflow: hidden;
+}
+
+.groupExp div a.rc span {
+    background: url("../../../../../out/admin/src/bg/grouping.gif") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    color: #535353;
+    padding-left: 15px;
+}
+
+.zero_placeholder {
+    clear:       both;
+    float:       none;
+    height:      0;
+    line-height: 0.1pt;
+}

@@ -1,0 +1,13 @@
+# disabling file access
+
+Options -Indexes
+
+<FilesMatch ".*">
+  order deny,allow
+  deny from all
+</FilesMatch>
+
+<FilesMatch "\.(png|jpe?g|gif)$">
+  order allow,deny
+  allow from all
+</FilesMatch>

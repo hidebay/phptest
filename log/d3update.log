@@ -1,0 +1,459 @@
+Array
+(
+    [0] => Array
+        (
+            [date] => 2014-04-10 15:00:23
+            [modid] => d3_cfg_mod
+            [fnc] => d3_cfg_mod_update::updateModCfgTableExist
+            [type] => SQL
+            [log] => CREATE TABLE IF NOT EXISTS `d3_cfg_mod` (
+        `OXID` char(32)  CHARACTER SET latin1 COLLATE latin1_general_ci  NOT NULL  DEFAULT '',
+            `OXSHOPID` varchar(32)  CHARACTER SET latin1 COLLATE latin1_general_ci  NOT NULL  DEFAULT '' COMMENT 'module shopassignment',
+            `OXMODID` varchar(32)  CHARACTER SET utf8 COLLATE utf8_general_ci  NOT NULL  DEFAULT '' COMMENT 'module ident',
+            `OXNAME` varchar(255)  CHARACTER SET utf8 COLLATE utf8_general_ci  NOT NULL  DEFAULT '' COMMENT 'module longname',
+            `OXACTIVE` TINYINT(1)   NOT NULL  DEFAULT '0' COMMENT 'active status',
+            `OXBASECONFIG` TEXT  CHARACTER SET utf8 COLLATE utf8_general_ci  NOT NULL  COMMENT 'module base configuration settings',
+            `OXSERIAL` TEXT  CHARACTER SET utf8 COLLATE utf8_general_ci  NOT NULL  COMMENT 'module serial',
+            `OXINSTALLDATE` DATETIME   NOT NULL  DEFAULT '0000-00-00 00:00:00' COMMENT 'install date',
+            `OXVERSION` VARCHAR(10)  CHARACTER SET utf8 COLLATE utf8_general_ci  NOT NULL  DEFAULT '' COMMENT 'module version number',
+            `OXVERSIONNUM` INT(10) UNSIGNED   NOT NULL  DEFAULT '0' COMMENT 'numeric module version number',
+            `OXSHOPVERSION` VARCHAR(10)  CHARACTER SET utf8 COLLATE utf8_general_ci  NOT NULL  DEFAULT '' COMMENT 'shop edition and major version',
+            `OXISMODULELOG` BIGINT(20)   NOT NULL  DEFAULT '15' COMMENT 'module log setting',
+            `OXREQUIREMENTS` LONGTEXT  CHARACTER SET utf8 COLLATE utf8_general_ci  NOT NULL  COMMENT 'module requirements',
+            `OXVALUE` LONGTEXT  CHARACTER SET utf8 COLLATE utf8_general_ci  NULL  COMMENT 'module settings',
+            `OXVALUE_1` LONGTEXT  CHARACTER SET utf8 COLLATE utf8_general_ci  NULL  COMMENT 'module settings',
+            `OXREVISION` INT(5)   NOT NULL  DEFAULT '0' COMMENT 'installed revision',
+            `OXNEWREVISION` INT(5)   NOT NULL  DEFAULT '0' COMMENT 'revision after successful update',
+            `OXTIMESTAMP` TIMESTAMP   NOT NULL  DEFAULT CURRENT_TIMESTAMP COMMENT 'last change',
+             PRIMARY KEY (`OXID`) ,
+             UNIQUE KEY  `OXSHOPID` (`OXSHOPID`,`OXMODID`) )
+             ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci COMMENT='module configuration';
+        )
+
+    [1] => Array
+        (
+            [date] => 2014-04-10 15:00:24
+            [modid] => d3_cfg_mod
+            [fnc] => updateModCfgTableExist
+            [type] => BREAK
+            [log] => 
+        )
+
+)
+Array
+(
+    [0] => Array
+        (
+            [date] => 2014-04-10 15:02:05
+            [modid] => d3_cfg_mod
+            [fnc] => d3_cfg_mod_update::updateModProfileTableExist
+            [type] => SQL
+            [log] => CREATE TABLE IF NOT EXISTS `d3modprofile` (
+        `OXID` char(32)  CHARACTER SET latin1 COLLATE latin1_general_ci  NOT NULL  DEFAULT '',
+            `OXSHOPID` varchar(32)  CHARACTER SET latin1 COLLATE latin1_general_ci  NOT NULL  DEFAULT '' COMMENT 'profile shop assignment',
+            `OXSHOPINCL` BIGINT(32) UNSIGNED   NOT NULL  COMMENT 'profile shop inclusion',
+            `OXSHOPEXCL` BIGINT(32) UNSIGNED   NOT NULL  COMMENT 'profile shop exclusion',
+            `OXACTIVE` TINYINT(1)   NOT NULL  DEFAULT '0' COMMENT 'active status',
+            `OXACTIVE_1` TINYINT(1)   NOT NULL  DEFAULT '0' COMMENT 'active status',
+            `OXACTIVEFROM` TINYINT(1)   NOT NULL  DEFAULT '0' COMMENT 'active from date',
+            `OXACTIVEFROM_1` TINYINT(1)   NOT NULL  DEFAULT '0' COMMENT 'active from date',
+            `OXACTIVETO` TINYINT(1)   NOT NULL  DEFAULT '0' COMMENT 'active to date',
+            `OXACTIVETO_1` TINYINT(1)   NOT NULL  DEFAULT '0' COMMENT 'active to date',
+            `OXMODID` varchar(32)  CHARACTER SET utf8 COLLATE utf8_general_ci  NOT NULL  DEFAULT '' COMMENT 'profile module assignment',
+            `OXTITLE` varchar(255)  CHARACTER SET utf8 COLLATE utf8_general_ci  NOT NULL  DEFAULT '' COMMENT 'profile name',
+            `OXTITLE_1` varchar(255)  CHARACTER SET utf8 COLLATE utf8_general_ci  NOT NULL  DEFAULT '' COMMENT 'profile name',
+            `OXCREATE` DATETIME   NOT NULL  DEFAULT '0000-00-00 00:00:00' COMMENT 'create date',
+            `OXUPDATE` DATETIME   NULL  DEFAULT NULL COMMENT 'update date',
+            `OXUPDATE_1` DATETIME   NULL  DEFAULT NULL COMMENT 'update date',
+            `OXMODVERSION` VARCHAR(10)  CHARACTER SET utf8 COLLATE utf8_general_ci  NOT NULL  DEFAULT '' COMMENT 'module version number',
+            `OXLOG` BIGINT(20)   NULL  DEFAULT NULL COMMENT 'profile log setting',
+            `OXLOG_1` BIGINT(20)   NULL  DEFAULT NULL COMMENT 'profile log setting',
+            `OXVALUE` LONGTEXT  CHARACTER SET utf8 COLLATE utf8_general_ci  NULL  COMMENT 'profile settings',
+            `OXVALUE_1` LONGTEXT  CHARACTER SET utf8 COLLATE utf8_general_ci  NULL  COMMENT 'profile settings',
+            `OXFOLDER` VARCHAR(70)  CHARACTER SET utf8 COLLATE utf8_general_ci  NOT NULL  DEFAULT '' COMMENT 'folder name',
+            `OXSORT` INT(5)   NOT NULL  DEFAULT '0' COMMENT 'sort ident',
+            `OXWRITEPROTECTION` INT(1)   NOT NULL  DEFAULT '0' COMMENT 'write protection',
+             PRIMARY KEY (`OXID`) ,
+              KEY  `OXMODSHOPID` (`OXSHOPID`,`OXMODID`) )
+             ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci COMMENT='module profiles';
+        )
+
+    [1] => Array
+        (
+            [date] => 2014-04-10 15:02:05
+            [modid] => d3_cfg_mod
+            [fnc] => updateModProfileTableExist
+            [type] => BREAK
+            [log] => 
+        )
+
+)
+Array
+(
+    [0] => Array
+        (
+            [date] => 2014-04-10 15:02:33
+            [modid] => d3_cfg_mod
+            [fnc] => d3_cfg_mod_update::updateModCfgItem
+            [type] => SQL
+            [log] => INSERT INTO `d3_cfg_mod` (`d3_cfg_mod`.`OXID`, `d3_cfg_mod`.`OXSHOPID`, `d3_cfg_mod`.`OXMODID`, `d3_cfg_mod`.`OXNAME`, `d3_cfg_mod`.`OXACTIVE`, `d3_cfg_mod`.`OXBASECONFIG`, `d3_cfg_mod`.`OXSERIAL`, `d3_cfg_mod`.`OXINSTALLDATE`, `d3_cfg_mod`.`OXVERSION`, `d3_cfg_mod`.`OXSHOPVERSION`, `d3_cfg_mod`.`OXREQUIREMENTS`, `d3_cfg_mod`.`OXVALUE`) VALUES (md5('d3modcfg_lib oxbaseshop de'), 'oxbaseshop', 'd3modcfg_lib', 'Modul-Konfiguration', 1, 'q7iZTBINFpySTQ0NURzT1BUUXQwSEdjRDR3bXZjdVZJOHFHN0l3M0hSUFRBNUsrYWlBMlpDZzRVYlNlb\nnRRbnhtcEFlZHpNbENZVk5LeXA4RDc2Qmx6RWI5cW04VWxZSWhyMWpNY0dtM2M3UHpoZ2tzRnJabmN4U\nC9Ic0wyajZRT1ZxMFBlcUdER0JzNGdGQ3ZvYzUxREl5dWVicUpLYVp5NkMzTGFDNTJtem1wcnpORUdqM\nC8zc1FpUjlnNG4zUFFFNXNhYnpWNVZRUlZMTmc0SzRvaDVvSzAxeVpaeGZiWCtZN0FYczhYUHhZM3p0Q\n0FUSlhnUy9qdERPM0dlVjVBYkNTQnYxYkwrOGEwdEZmU1hjSkg2Sy8xYUtETk92T0c1M00vc0hBYUUxd\nTg9', '', NOW(), '3.10.0.1', 'PE', '', '');
+        )
+
+    [1] => Array
+        (
+            [date] => 2014-04-10 15:02:33
+            [modid] => d3_cfg_mod
+            [fnc] => updateModCfgItem
+            [type] => BREAK
+            [log] => 
+        )
+
+)
+Array
+(
+    [0] => Array
+        (
+            [date] => 2014-04-10 15:02:59
+            [modid] => d3_cfg_mod
+            [fnc] => d3install_updatebase::updateModCfgSameRevision
+            [type] => SQL
+            [log] => UPDATE `d3_cfg_mod`
+                            SET `OXVERSIONNUM` = INET_ATON(`OXVERSION`) WHERE oxmodid = 'd3modcfg_lib';
+        )
+
+    [1] => Array
+        (
+            [date] => 2014-04-10 15:02:59
+            [modid] => d3_cfg_mod
+            [fnc] => updateModCfgSameRevision
+            [type] => BREAK
+            [log] => 
+        )
+
+)
+Array
+(
+)
+Array
+(
+    [0] => Array
+        (
+            [date] => 2014-04-10 15:03:24
+            [modid] => d3log
+            [fnc] => d3log_update::updateModCfgItem
+            [type] => SQL
+            [log] => INSERT INTO `d3_cfg_mod` (`d3_cfg_mod`.`OXID`, `d3_cfg_mod`.`OXSHOPID`, `d3_cfg_mod`.`OXMODID`, `d3_cfg_mod`.`OXNAME`, `d3_cfg_mod`.`OXACTIVE`, `d3_cfg_mod`.`OXBASECONFIG`, `d3_cfg_mod`.`OXSERIAL`, `d3_cfg_mod`.`OXINSTALLDATE`, `d3_cfg_mod`.`OXVERSION`, `d3_cfg_mod`.`OXSHOPVERSION`, `d3_cfg_mod`.`OXREQUIREMENTS`, `d3_cfg_mod`.`OXVALUE`) VALUES (md5('d3log_lib oxbaseshop de'), 'oxbaseshop', 'd3log_lib', 'Logging', 1, '18rTTdqN1hCZmxQS0NMeEVhMjdjZWlGa3Vob0k1cW4rQUhiMEtoMHo2cHFjeWxpeS9LWnBlR3dxc2w1Q\nmlNRnBWVC81Y0dQcU5hNnVGYm5MaUNxL0Zsdk92aHNsZlh4djdvZlZ1Tm1KQ0wrWFR3b1BlQ2RDdmg1V\nTRYbWp2Wm5wNit0WUdCUTFlU2JHZ3RUaW5TeDIxN1VhRHdxbVVrcHNZOVFsQkxXNThiVGI1ZTdkOHBxW\nWJabGlHaTZwdnd6bjZTa3dGYjltcG81RFdmZ1E3WEt2RHB0a0JrelRMckZEZVNLbjcyWlMwaStKdXRqR\nitHdGdCdlZ1N25ITHA0MnBoTDVpZGNpSjRoMDgyUkt5dkdyV0V1UlE9PQ==', '', NOW(), '2.4.0.0', 'PE', '', '');
+        )
+
+    [1] => Array
+        (
+            [date] => 2014-04-10 15:03:24
+            [modid] => d3log
+            [fnc] => updateModCfgItem
+            [type] => BREAK
+            [log] => 
+        )
+
+)
+Array
+(
+)
+Array
+(
+    [0] => Array
+        (
+            [date] => 2014-04-10 15:03:52
+            [modid] => d3log
+            [fnc] => d3log_update::updateLogTableExist
+            [type] => SQL
+            [log] => CREATE TABLE IF NOT EXISTS `d3log` (
+        `OXID` CHAR(32)  CHARACTER SET latin1 COLLATE latin1_general_ci  NOT NULL  DEFAULT '',
+            `OXSHOPID` VARCHAR(32)  CHARACTER SET latin1 COLLATE latin1_general_ci  NOT NULL  DEFAULT '',
+            `OXSESSID` VARCHAR(32)  CHARACTER SET latin1 COLLATE latin1_general_ci  NOT NULL  DEFAULT '',
+            `OXLOGTYPE` VARCHAR(15)  CHARACTER SET utf8 COLLATE utf8_general_ci  NOT NULL  DEFAULT '',
+            `OXCOUNTER` INT(15)   NOT NULL  AUTO_INCREMENT UNIQUE ,
+            `OXTIME` TIMESTAMP   NOT NULL  DEFAULT '0000-00-00 00:00:00' COMMENT 'log time',
+            `OXMODID` VARCHAR(100)  CHARACTER SET utf8 COLLATE utf8_general_ci  NOT NULL  DEFAULT '',
+            `OXPROFILEID` CHAR(32)  CHARACTER SET utf8 COLLATE utf8_general_ci  NOT NULL  DEFAULT '',
+            `OXCLASS` VARCHAR(255)  CHARACTER SET utf8 COLLATE utf8_general_ci  NOT NULL  DEFAULT '',
+            `OXFNC` VARCHAR(100)  CHARACTER SET utf8 COLLATE utf8_general_ci  NOT NULL  DEFAULT '',
+            `OXLINE` INT(5)   NOT NULL ,
+            `OXACTION` VARCHAR(100)  CHARACTER SET utf8 COLLATE utf8_general_ci  NOT NULL  DEFAULT '',
+            `OXTEXT` VARCHAR(4000)  CHARACTER SET utf8 COLLATE utf8_general_ci  NOT NULL ,
+            `OXTIMESTAMP` TIMESTAMP   NOT NULL  DEFAULT CURRENT_TIMESTAMP COMMENT 'insert time',
+             PRIMARY KEY (`OXID`) ,
+              KEY  `OXACTION` (`OXACTION`) ,
+              KEY  `OXCLASS` (`OXCLASS`) ,
+              KEY  `OXMODID` (`OXMODID`) ,
+              KEY  `OXLOGTYPE` (`OXLOGTYPE`) )
+             ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci COMMENT='extended logging';
+        )
+
+    [1] => Array
+        (
+            [date] => 2014-04-10 15:03:52
+            [modid] => d3log
+            [fnc] => updateLogTableExist
+            [type] => BREAK
+            [log] => 
+        )
+
+)
+Array
+(
+)
+Array
+(
+    [0] => Array
+        (
+            [date] => 2014-04-10 15:04:06
+            [modid] => d3log
+            [fnc] => d3log_update::updateTALogTableExist
+            [type] => SQL
+            [log] => CREATE TABLE IF NOT EXISTS `d3transactionlog` (
+        `OXID` CHAR(32)  CHARACTER SET latin1 COLLATE latin1_general_ci  NOT NULL  DEFAULT '',
+            `OXSHOPID` VARCHAR(32)  CHARACTER SET latin1 COLLATE latin1_general_ci  NOT NULL  DEFAULT '',
+            `OXSESSID` VARCHAR(32)  CHARACTER SET latin1 COLLATE latin1_general_ci  NOT NULL  DEFAULT '' COMMENT 'session identification',
+            `D3MODID` CHAR(32)  CHARACTER SET utf8 COLLATE utf8_general_ci  NOT NULL  DEFAULT '' COMMENT 'module id',
+            `D3PROFILEID` CHAR(32)  CHARACTER SET utf8 COLLATE utf8_general_ci  NOT NULL  DEFAULT '' COMMENT 'profile id',
+            `D3GROUP` CHAR(32)  CHARACTER SET utf8 COLLATE utf8_general_ci  NOT NULL  DEFAULT '' COMMENT 'internal reference identification',
+            `D3REFERENCE` VARCHAR(255)  CHARACTER SET utf8 COLLATE utf8_general_ci  NOT NULL  DEFAULT '' COMMENT 'external transaction identifier',
+            `D3LOGNR` INT(15)   NOT NULL  COMMENT 'internal counter' AUTO_INCREMENT ,
+            `OXTIMESTAMP` TIMESTAMP   NOT NULL  DEFAULT CURRENT_TIMESTAMP COMMENT 'insert time',
+            `D3TRANSACTIONTIME` TIMESTAMP   NOT NULL  DEFAULT '0000-00-00 00:00:00' COMMENT 'transaction time',
+            `D3TRANSACTIONSTATUS` VARCHAR(255)  CHARACTER SET utf8 COLLATE utf8_general_ci  NOT NULL  DEFAULT '' COMMENT 'transaction status',
+            `D3ACTION` VARCHAR(8)  CHARACTER SET utf8 COLLATE utf8_general_ci  NOT NULL  DEFAULT '' COMMENT 'request or response',
+            `D3TRANSACTIONDATA` LONGTEXT  CHARACTER SET utf8 COLLATE utf8_general_ci  NULL  COMMENT 'transaction values',
+             PRIMARY KEY (`OXID`) ,
+             UNIQUE KEY  `D3LOGNR` (`D3LOGNR`) ,
+              KEY  `D3ACTION` (`D3ACTION`) ,
+              KEY  `D3TRANSACTIONTIME` (`D3TRANSACTIONTIME`) ,
+              KEY  `D3MODID` (`D3MODID`) ,
+              KEY  `D3TRANSACTIONSTATUS` (`D3TRANSACTIONSTATUS`) )
+             ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci COMMENT='transaction logging';
+        )
+
+    [1] => Array
+        (
+            [date] => 2014-04-10 15:04:06
+            [modid] => d3log
+            [fnc] => updateTALogTableExist
+            [type] => BREAK
+            [log] => 
+        )
+
+)
+Array
+(
+)
+Array
+(
+    [0] => Array
+        (
+            [date] => 2014-04-10 15:04:22
+            [modid] => d3log
+            [fnc] => d3log_update::updateO2DLogTableExist
+            [type] => SQL
+            [log] => CREATE TABLE IF NOT EXISTS `d3_d3log_oxobject2d3transactionlog` (
+        `OXID` CHAR(32)  CHARACTER SET latin1 COLLATE latin1_general_ci  NOT NULL  DEFAULT '',
+            `OXOBJECTID` CHAR(32)  CHARACTER SET latin1 COLLATE latin1_general_ci  NOT NULL ,
+            `D3GROUP` CHAR(32)  CHARACTER SET utf8 COLLATE utf8_general_ci  NOT NULL ,
+            `OXTYPE` VARCHAR(255)  CHARACTER SET utf8 COLLATE utf8_general_ci  NOT NULL ,
+             PRIMARY KEY (`OXID`) ,
+              KEY (`OXTYPE`) )
+             ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci COMMENT='';
+        )
+
+    [1] => Array
+        (
+            [date] => 2014-04-10 15:04:22
+            [modid] => d3log
+            [fnc] => updateO2DLogTableExist
+            [type] => BREAK
+            [log] => 
+        )
+
+)
+Array
+(
+)
+Array
+(
+    [0] => Array
+        (
+            [date] => 2014-04-10 15:05:00
+            [modid] => d3log
+            [fnc] => d3install_updatebase::_addTableIndex2
+            [type] => SQL
+            [log] => ALTER TABLE `oxlogs` ADD INDEX  `OXPARAMETER`  (`OXPARAMETER`);
+        )
+
+    [1] => Array
+        (
+            [date] => 2014-04-10 15:05:00
+            [modid] => d3log
+            [fnc] => d3install_updatebase::_addTableIndex2
+            [type] => SQL
+            [log] => ALTER TABLE `oxlogs` ADD INDEX  `OXCLASS`  (`OXCLASS`);
+        )
+
+    [2] => Array
+        (
+            [date] => 2014-04-10 15:05:00
+            [modid] => d3log
+            [fnc] => d3install_updatebase::_addTableIndex2
+            [type] => SQL
+            [log] => ALTER TABLE `oxlogs` ADD INDEX  `OXCLASSTIME`  (`OXCLASS`,`OXTIME`);
+        )
+
+    [3] => Array
+        (
+            [date] => 2014-04-10 15:05:00
+            [modid] => d3log
+            [fnc] => updateLogIndizes
+            [type] => BREAK
+            [log] => 
+        )
+
+)
+Array
+(
+)
+Array
+(
+    [0] => Array
+        (
+            [date] => 2014-04-10 15:05:10
+            [modid] => d3log
+            [fnc] => d3install_updatebase::updateModCfgSameRevision
+            [type] => SQL
+            [log] => UPDATE `d3_cfg_mod`
+                            SET `OXVERSIONNUM` = INET_ATON(`OXVERSION`) WHERE oxmodid = 'd3log_lib';
+        )
+
+    [1] => Array
+        (
+            [date] => 2014-04-10 15:05:10
+            [modid] => d3log
+            [fnc] => updateModCfgSameRevision
+            [type] => BREAK
+            [log] => 
+        )
+
+)
+Array
+(
+)
+Array
+(
+)
+Array
+(
+    [0] => Array
+        (
+            [date] => 2014-04-10 15:05:38
+            [modid] => 
+            [fnc] => d3install_update::updateModCfgItem
+            [type] => SQL
+            [log] => INSERT INTO `d3_cfg_mod` (`d3_cfg_mod`.`OXID`, `d3_cfg_mod`.`OXSHOPID`, `d3_cfg_mod`.`OXMODID`, `d3_cfg_mod`.`OXNAME`, `d3_cfg_mod`.`OXACTIVE`, `d3_cfg_mod`.`OXBASECONFIG`, `d3_cfg_mod`.`OXSERIAL`, `d3_cfg_mod`.`OXINSTALLDATE`, `d3_cfg_mod`.`OXVERSION`, `d3_cfg_mod`.`OXSHOPVERSION`, `d3_cfg_mod`.`OXREQUIREMENTS`, `d3_cfg_mod`.`OXVALUE`) VALUES (md5('d3install_lib oxbaseshop de'), 'oxbaseshop', 'd3install_lib', 'Modul-Installation', 1, 'V64OEVJeWRCTWdXYXJCaDV3dFdxS3IwRmY3TVhnMjFHc09jZHEzVGI3aExhRnhlR2lHczBadW15Y09Oe\nE82RHBpVnZIVVhiMndLOElqRElYQysxd24wbmh3czRXU0VyWG9hVm8wRG1hcFZCQzNNMCtFV1hMUG1tc\njNmdVU4czZiSVhmMC81c1hiVEFZMGJFdFNteXJjQSsxV1EvRDNoakhPR2UzS2NGVWl0eStMTmlubGJ6a\nmcrTWxURlVVc0wvRzFrazlCTEZpSkZ1Sk4walkrbTlIcUc0eG1IV0oyRnU2YVdmRkZreHJQTlM2R1pOS\nXdnVHlsU1VwU1JOekE2T0NPUDFWZS9nWktDYlZETjBsZHc2V0Z5RDEwMUtFQkM0ZEludTJxWE1IanpST\n009', '', NOW(), '2.6.0.0', 'PE', '', '');
+        )
+
+    [1] => Array
+        (
+            [date] => 2014-04-10 15:05:38
+            [modid] => 
+            [fnc] => updateModCfgItem
+            [type] => BREAK
+            [log] => 
+        )
+
+)
+Array
+(
+)
+Array
+(
+)
+Array
+(
+    [0] => Array
+        (
+            [date] => 2014-04-10 15:06:31
+            [modid] => 
+            [fnc] => d3install_updatebase::updateModCfgSameRevision
+            [type] => SQL
+            [log] => UPDATE `d3_cfg_mod`
+                            SET `OXVERSIONNUM` = INET_ATON(`OXVERSION`) WHERE oxmodid = 'd3install_lib';
+        )
+
+    [1] => Array
+        (
+            [date] => 2014-04-10 15:06:31
+            [modid] => 
+            [fnc] => updateModCfgSameRevision
+            [type] => BREAK
+            [log] => 
+        )
+
+)
+Array
+(
+)
+Array
+(
+)
+Array
+(
+)
+Array
+(
+    [0] => Array
+        (
+            [date] => 2014-04-10 15:06:45
+            [modid] => 
+            [fnc] => d3clrtmp_update::updateModCfgItem
+            [type] => SQL
+            [log] => INSERT INTO `d3_cfg_mod` (`d3_cfg_mod`.`OXID`, `d3_cfg_mod`.`OXSHOPID`, `d3_cfg_mod`.`OXMODID`, `d3_cfg_mod`.`OXNAME`, `d3_cfg_mod`.`OXACTIVE`, `d3_cfg_mod`.`OXBASECONFIG`, `d3_cfg_mod`.`OXSERIAL`, `d3_cfg_mod`.`OXINSTALLDATE`, `d3_cfg_mod`.`OXVERSION`, `d3_cfg_mod`.`OXSHOPVERSION`, `d3_cfg_mod`.`OXREQUIREMENTS`, `d3_cfg_mod`.`OXVALUE`) VALUES (md5('d3clrtmp_lib oxbaseshop de'), 'oxbaseshop', 'd3clrtmp_lib', 'TMP leeren', 1, 'paNdjJrYTJZTmhkRmt2UjhZZ1RSc1A2aFJnQXZnSE51dDMxSVJMUFE2VndCVXFHd2IrRWFSbWp5dWhYN\nGZrZzBPd052d1R5V0xsMk1KZkt5eGRVb25sK1VNVENDUHVEcmVNSGNITzZuQXJUVkNjcGFpNGxTN2tIT\nnJZR3Q2ZTFDdlZKL3VUUG9iaWVaaFN5aUpvVlptSCtyeENhUFVZaFYxdVY5ZHZxNmVhem5Hc05tOEZ5c\nTRiSkY4YWphRTJpcktZdWxSN2dnWGxXSVRyMHh5Mkk5TTZJcDVDVk84a3R6NStWTUl2RDlORld3UGFUe\njJHUHJJVzNrQW4ydjZ5TG5mQjJRK01sdjNiN05QbTMwWFFXdFNUbk9KM3FLeXhLOHVGa0RVV0NENU1rS\n289', '', NOW(), '2.1.0.0', 'PE', '', '');
+        )
+
+    [1] => Array
+        (
+            [date] => 2014-04-10 15:06:45
+            [modid] => 
+            [fnc] => updateModCfgItem
+            [type] => BREAK
+            [log] => 
+        )
+
+)
+Array
+(
+)
+Array
+(
+)
+Array
+(
+)
+Array
+(
+    [0] => Array
+        (
+            [date] => 2014-04-10 15:06:56
+            [modid] => 
+            [fnc] => d3install_updatebase::updateModCfgSameRevision
+            [type] => SQL
+            [log] => UPDATE `d3_cfg_mod`
+                            SET `OXVERSIONNUM` = INET_ATON(`OXVERSION`) WHERE oxmodid = 'd3clrtmp_lib';
+        )
+
+    [1] => Array
+        (
+            [date] => 2014-04-10 15:06:56
+            [modid] => 
+            [fnc] => updateModCfgSameRevision
+            [type] => BREAK
+            [log] => 
+        )
+
+)

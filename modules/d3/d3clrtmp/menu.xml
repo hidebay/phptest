@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="ISO-8859-15"?>
+<OX>
+    <OXMENU id="d3mxd3modules">
+        <MAINMENU id="d3mxcfg">
+            <SUBMENU id="d3mxd3cleartmp" cl="d3ClearTmp" />
+        </MAINMENU>
+    </OXMENU>
+</OX>

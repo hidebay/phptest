@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="ISO-8859-15"?>
+<OX>
+    <OXMENU id="d3mxd3modules">
+        <MAINMENU id="d3mxcfg">
+            <SUBMENU id="d3mxextensions" cl="d3modext" list="d3modext_list">
+                <TAB id="d3tbclext_status" cl="d3modext_status" disableForDemoShop="1" />
+                <TAB id="d3tbclext_new" cl="d3modext_new" disableForDemoShop="1" />
+                <TAB id="d3tbclext_installation" cl="d3_mod_update" disableForDemoShop="1" />
+                <TAB id="d3tbcllib_support" cl="d3modlib_support" />
+            </SUBMENU>
+            <SUBMENU id="d3mxlibs" cl="d3modlib" list="d3modlib_list">
+                <TAB id="d3tbcllib_status" cl="d3modlib_status" disableForDemoShop="1" />
+                <TAB id="d3tbcllib_support" cl="d3modlib_support" />
+            </SUBMENU>
+            <SUBMENU id="d3mxsysitems" cl="d3sysitems" list="d3sysitems_list" disableForDemoShop="1">
+                <TAB id="d3tbclmoditems" cl="d3moditems" disableForDemoShop="1" />
+                <TAB id="d3tbclcfgitems" cl="d3cfgitems" disableForDemoShop="1" />
+                <TAB_DISABLED id="d3tbclmaintenance" cl="d3maintenance" disableForDemoShop="1" />
+            </SUBMENU>
+        </MAINMENU>
+    </OXMENU>
+</OX>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="ISO-8859-15"?>
+<OX>
+    <OXMENU id="d3mxd3modules">
+        <MAINMENU id="d3mxcfg">
+            <SUBMENU id="d3mxlog" cl="d3_cfg_log" list="d3_cfg_log_list">
+                <TAB id="d3tbcllog_main" cl="d3_cfg_log_main" />
+                <TAB id="d3tbcllog_cleanup" cl="d3_cfg_log_cleanup" />
+                <TAB id="d3tbcllog_export" cl="d3_cfg_log_export" />
+            </SUBMENU>
+        </MAINMENU>
+    </OXMENU>
+</OX>
