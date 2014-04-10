@@ -2,7 +2,8 @@
 [{oxscript add="$('form.js-oxValidate').oxInputValidator();"}]
 [{block name="user_checkout_registration"}]
 [{*** D3 MOD NEXT_LINE  * GoogleAnalytics ***}]
-    <form class="js-oxValidate" action="[{ $oViewConf->getSslSelfLink()|oxaddparams:"cl=user" }]" name="order" method="post">    [{block name="user_checkout_registration_form"}]
+    <form class="js-oxValidate" action="[{ $oViewConf->getSslSelfLink()|oxaddparams:"cl=user" }]" name="order" method="post">    
+    [{block name="user_checkout_registration_form"}]
         [{assign var="aErrors" value=$oView->getFieldValidationErrors()}]
         [{ $oViewConf->getHiddenSid() }]
         [{ $oViewConf->getNavFormParams() }]
@@ -18,7 +19,7 @@
         <input type="hidden" name="blshowshipaddress" value="1">
 
         <div class="lineBox clear">
-            <a href="[{ oxgetseourl ident=$oViewConf->getBasketLink() }]" class="prevStep submitButton" id="userBackStepTop">[{ oxmultilang ident="TRO_FORM_USER_CHECKOUT_REGISTRATION_BACKSTEP" }]</a>
+            <a href="[{ oxgetseourl ident=$oViewConf->getBasketLink() }]" class="prevStep submitButton largeButton" id="userBackStepTop">[{ oxmultilang ident="TRO_FORM_USER_CHECKOUT_REGISTRATION_BACKSTEP" }]</a>
             <button id="userNextStepTop" class="submitButton largeButton nextStep" name="userform" type="submit">[{ oxmultilang ident="FORM_USER_CHECKOUT_REGISTRATION_NEXTSTEP" }]</button>
         </div>
 
@@ -30,13 +31,13 @@
                 </ul>
             </div>
             <div class="collumn">
-                <h4 class="blockHead">[{ oxmultilang ident="FORM_REGISTER_BILLINGADDRESS" }]</h4>
+                <h3 class="blockHead">[{ oxmultilang ident="FORM_REGISTER_BILLINGADDRESS" }]</h3>
                 <ul class="form">
                 [{ include file="form/fieldset/user_billing.tpl" noFormSubmit=true blSubscribeNews=false blOrderRemark=true}]
                 </ul>
             </div>
             <div class="collumn">
-                <h4 class="blockHead">[{ oxmultilang ident="FORM_REGISTER_SHIPPINGADDRESS" }]</h4>
+                <h3 class="blockHead">[{ oxmultilang ident="FORM_REGISTER_SHIPPINGADDRESS" }]</h3>
                 <p><input type="checkbox" name="blshowshipaddress" id="showShipAddress" [{if !$oView->showShipAddress()}]checked[{/if}] value="0"><label for="showShipAddress">[{ oxmultilang ident="FORM_REGISTER_USE_BILLINGADDRESS_FOR_SHIPPINGADDRESS" }]</label></p>
                 <ul id="shippingAddress" class="form" [{if !$oView->showShipAddress()}]style="display: none;"[{/if}]>
                 [{ include file="form/fieldset/user_shipping.tpl" noFormSubmit=true}]
