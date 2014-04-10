@@ -1,6 +1,13 @@
 [{oxscript include="js/widgets/oxinputvalidator.js" priority=10 }]
 [{oxscript add="$('form.js-oxValidate').oxInputValidator();"}]
-<form class="js-oxValidate" name="login" action="[{ $oViewConf->getSslSelfLink() }]" method="post">
+
+[{*}]<!-- old bevore Google Analytics
+<form class="js-oxValidate" name="login" action="[{ $oViewConf->getSslSelfLink() }]" method="post">-->[{*}]
+
+[{*}]<!--[{ D3 MOD NEXT_LINE  * GoogleAnalytics }]-->[{*}]
+[{assign var="sAddClassParams" value="cl="|cat:$oViewConf->getActiveClassName()}]
+<form class="js-oxValidate" name="login" action="[{ $oViewConf->getSslSelfLink()|oxaddparams:$sAddClassParams }]" method="post">
+
 [{assign var="aErrors" value=$oView->getFieldValidationErrors()}]
     <ul class="form">
         <li>
