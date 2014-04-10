@@ -1,9 +1,8 @@
-<?php /* Smarty version 2.6.26, created on 2014-04-09 09:13:53
+<?php /* Smarty version 2.6.26, created on 2014-04-10 12:32:07
          compiled from form/pricealarm.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
-smarty_core_load_plugins(array('plugins' => array(array('function', 'oxmultilang', 'form/pricealarm.tpl', 3, false),array('function', 'oxscript', 'form/pricealarm.tpl', 4, false),array('block', 'oxhasrights', 'form/pricealarm.tpl', 21, false),)), $this); ?>
-<div style='position: absolute; z-index:9999;color:white;background: #789;
-                 padding:0 15 0 15'>form/pricealarm.tpl</div><!-- form/pricealarm.tpl template start --><?php $this->assign('currency', $this->_tpl_vars['oView']->getActCurrency()); ?>
+smarty_core_load_plugins(array('plugins' => array(array('function', 'oxmultilang', 'form/pricealarm.tpl', 2, false),array('function', 'oxscript', 'form/pricealarm.tpl', 3, false),array('block', 'oxhasrights', 'form/pricealarm.tpl', 20, false),)), $this); ?>
+<?php $this->assign('currency', $this->_tpl_vars['oView']->getActCurrency()); ?>
 <p><?php echo smarty_function_oxmultilang(array('ident' => 'MESSAGE_PRICE_ALARM_PRICE_CHANGE'), $this);?>
 </p>
 <?php echo smarty_function_oxscript(array('include' => "js/widgets/oxinputvalidator.js",'priority' => 10), $this);?>
@@ -63,6 +62,9 @@ smarty_core_load_plugins(array('plugins' => array(array('function', 'oxmultilang
                 <span class="verificationCode" id="verifyTextCode"><?php echo $this->_tpl_vars['oCaptcha']->getText(); ?>
 </span>
             <?php endif; ?>
+    	</li>
+        <li>   
+            <label>&nbsp;</label>
             <input class="js-oxValidate js-oxValidate_notEmpty" type="text" data-fieldsize="verify" name="c_mac" value="">
             <p class="oxValidateError">
                 <span class="js-oxError_notEmpty"><?php echo smarty_function_oxmultilang(array('ident' => 'ERROR_MESSAGE_INPUT_NOTALLFIELDS'), $this);?>
@@ -74,4 +76,4 @@ smarty_core_load_plugins(array('plugins' => array(array('function', 'oxmultilang
 </button>
         </li>
     </ul>
-</form><!-- form/pricealarm.tpl template end -->
+</form>

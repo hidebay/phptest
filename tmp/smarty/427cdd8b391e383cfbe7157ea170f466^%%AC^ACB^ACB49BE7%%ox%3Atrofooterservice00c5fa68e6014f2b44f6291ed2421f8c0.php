@@ -1,9 +1,8 @@
-<?php /* Smarty version 2.6.26, created on 2014-04-09 09:13:54
+<?php /* Smarty version 2.6.26, created on 2014-04-10 12:32:07
          compiled from ox:trofooterservice00c5fa68e6014f2b44f6291ed2421f8c0 */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
-smarty_core_load_plugins(array('plugins' => array(array('function', 'oxgetseourl', 'ox:trofooterservice00c5fa68e6014f2b44f6291ed2421f8c0', 3, false),array('function', 'oxmultilang', 'ox:trofooterservice00c5fa68e6014f2b44f6291ed2421f8c0', 3, false),array('modifier', 'cat', 'ox:trofooterservice00c5fa68e6014f2b44f6291ed2421f8c0', 3, false),array('block', 'oxhasrights', 'ox:trofooterservice00c5fa68e6014f2b44f6291ed2421f8c0', 7, false),array('block', 'oxifcontent', 'ox:trofooterservice00c5fa68e6014f2b44f6291ed2421f8c0', 21, false),)), $this); ?>
-<div style='position: absolute; z-index:9999;color:white;background: #789;
-                 padding:0 15 0 15'>ox:trofooterservice00c5fa68e6014f2b44f6291ed2421f8c0</div><!-- ox:trofooterservice00c5fa68e6014f2b44f6291ed2421f8c0 template start -->                          <ul class="list services">
+smarty_core_load_plugins(array('plugins' => array(array('function', 'oxgetseourl', 'ox:trofooterservice00c5fa68e6014f2b44f6291ed2421f8c0', 2, false),array('function', 'oxmultilang', 'ox:trofooterservice00c5fa68e6014f2b44f6291ed2421f8c0', 2, false),array('modifier', 'cat', 'ox:trofooterservice00c5fa68e6014f2b44f6291ed2421f8c0', 2, false),array('block', 'oxhasrights', 'ox:trofooterservice00c5fa68e6014f2b44f6291ed2421f8c0', 6, false),array('block', 'oxifcontent', 'ox:trofooterservice00c5fa68e6014f2b44f6291ed2421f8c0', 20, false),)), $this); ?>
+                          <ul class="list services">
 <li>- <a href="<?php echo smarty_function_oxgetseourl(array('ident' => ((is_array($_tmp=$this->_tpl_vars['oViewConf']->getSelfLink())) ? $this->_run_mod_handler('cat', true, $_tmp, "cl=contact") : smarty_modifier_cat($_tmp, "cl=contact"))), $this);?>
 "><?php echo smarty_function_oxmultilang(array('ident' => 'CONTACT'), $this);?>
 </a></li>
@@ -40,4 +39,4 @@ smarty_core_load_plugins(array('plugins' => array(array('function', 'oxgetseourl
 "><?php echo $this->_tpl_vars['oCont']->oxcontents__oxtitle->value; ?>
 </a></li>
 <?php $_block_content = ob_get_contents(); ob_end_clean(); $_block_repeat=false;echo smarty_block_oxifcontent($this->_tag_stack[count($this->_tag_stack)-1][1], $_block_content, $this, $_block_repeat); }  array_pop($this->_tag_stack); ?></ul>
-                        <!-- ox:trofooterservice00c5fa68e6014f2b44f6291ed2421f8c0 template end -->
+                        

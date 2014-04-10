@@ -1,9 +1,8 @@
-<?php /* Smarty version 2.6.26, created on 2014-04-09 09:13:53
+<?php /* Smarty version 2.6.26, created on 2014-04-10 12:32:07
          compiled from page/details/inc/tabs.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
-smarty_core_load_plugins(array('plugins' => array(array('function', 'oxscript', 'page/details/inc/tabs.tpl', 2, false),array('function', 'oxmultilang', 'page/details/inc/tabs.tpl', 9, false),array('function', 'oxeval', 'page/details/inc/tabs.tpl', 12, false),array('function', 'oxid_include_dynamic', 'page/details/inc/tabs.tpl', 45, false),array('block', 'oxhasrights', 'page/details/inc/tabs.tpl', 6, false),array('modifier', 'cat', 'page/details/inc/tabs.tpl', 59, false),)), $this); ?>
-<div style='position: absolute; z-index:9999;color:white;background: #789;
-                 padding:0 15 0 15'>page/details/inc/tabs.tpl</div><!-- page/details/inc/tabs.tpl template start --><?php echo smarty_function_oxscript(array('add' => "$('a.js-external').attr('target', '_blank');"), $this);?>
+smarty_core_load_plugins(array('plugins' => array(array('function', 'oxscript', 'page/details/inc/tabs.tpl', 1, false),array('function', 'oxmultilang', 'page/details/inc/tabs.tpl', 8, false),array('function', 'oxeval', 'page/details/inc/tabs.tpl', 11, false),array('function', 'oxid_include_dynamic', 'page/details/inc/tabs.tpl', 44, false),array('block', 'oxhasrights', 'page/details/inc/tabs.tpl', 5, false),array('modifier', 'cat', 'page/details/inc/tabs.tpl', 58, false),)), $this); ?>
+<?php echo smarty_function_oxscript(array('add' => "$('a.js-external').attr('target', '_blank');"), $this);?>
 
 <?php echo smarty_function_oxscript(array('add' => "$('div.tabbedWidgetBox').tabs();"), $this);?>
 
@@ -156,5 +155,3 @@ unset($_smarty_tpl_vars);
             </div>
         </div>
     <?php endif; ?>
-
-<!-- page/details/inc/tabs.tpl template end -->

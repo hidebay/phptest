@@ -1,9 +1,8 @@
-<?php /* Smarty version 2.6.26, created on 2014-04-09 09:13:53
+<?php /* Smarty version 2.6.26, created on 2014-04-10 12:32:07
          compiled from page/details/inc/priceinfo.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
-smarty_core_load_plugins(array('plugins' => array(array('function', 'oxscript', 'page/details/inc/priceinfo.tpl', 2, false),array('function', 'oxmultilang', 'page/details/inc/priceinfo.tpl', 6, false),)), $this); ?>
-<div style='position: absolute; z-index:9999;color:white;background: #789;
-                 padding:0 15 0 15'>page/details/inc/priceinfo.tpl</div><!-- page/details/inc/priceinfo.tpl template start --><?php echo smarty_function_oxscript(array('add' => "$( 'a.js-amountPriceSelector' ).oxAmountPriceSelect();"), $this);?>
+smarty_core_load_plugins(array('plugins' => array(array('function', 'oxscript', 'page/details/inc/priceinfo.tpl', 1, false),array('function', 'oxmultilang', 'page/details/inc/priceinfo.tpl', 5, false),)), $this); ?>
+<?php echo smarty_function_oxscript(array('add' => "$( 'a.js-amountPriceSelector' ).oxAmountPriceSelect();"), $this);?>
 
 <a class="selector corners FXgradBlueDark js-amountPriceSelector" href="#priceinfo" id="amountPrice" rel="nofollow"><img src="<?php echo $this->_tpl_vars['oViewConf']->getImageUrl('selectbutton.png'); ?>
 " alt="Select"></a>
@@ -36,4 +35,3 @@ if ($this->_foreach['amountPrice']['total'] > 0):
     </li>
 <?php endforeach; endif; unset($_from); ?>
 </ul>
-<!-- page/details/inc/priceinfo.tpl template end -->

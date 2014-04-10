@@ -81,8 +81,8 @@
 
             [{* Actions select list: to listmania and etc. *}]
             <div id="showLinksOnce"></div>
-
-            [{block name="details_productmain_productlinksselector"}]
+[{*}]<!-- Flyoutbox mit servicemöglichkeiten -->[{*}]
+            [{*}]<!--[{block name="details_productmain_productlinksselector"}]
                 <a class="selector corners FXgradBlueDark" href="#" id="productLinks"><img src="[{$oViewConf->getImageUrl('selectbutton.png')}]" alt="Select"></a>
                 <ul class="actionLinks corners shadow">
                     [{block name="details_productmain_productlinks"}]
@@ -126,7 +126,7 @@
                         </li>
                     [{/block}]
                 </ul>
-            [{/block}]
+            [{/block}]-->[{*}]
 
             [{* artickle number *}]
             [{block name="details_productmain_artnumber"}]
@@ -140,8 +140,8 @@
                     [{if $oxcmp_user}]
                         [{assign var="force_sid" value=$oView->getSidForWidget()}]
                     [{/if}]
-                    [{oxid_include_widget cl="oxwRating" blCanRate=$oView->canRate() _parent=$oViewConf->getTopActiveClassName() nocookie=1 force_sid=$force_sid sRateUrl=$oDetailsProduct->getLink() dRatingCount=$oView->getRatingCount() dRatingValue=$oView->getRatingValue() anid=$oDetailsProduct->oxarticles__oxnid->value skipESIforUser=1}]
-                </div>
+                    [{*}]<!--[{oxid_include_widget cl="oxwRating" blCanRate=$oView->canRate() _parent=$oViewConf->getTopActiveClassName() nocookie=1 force_sid=$force_sid sRateUrl=$oDetailsProduct->getLink() dRatingCount=$oView->getRatingCount() dRatingValue=$oView->getRatingValue() anid=$oDetailsProduct->oxarticles__oxnid->value skipESIforUser=1}]
+                -->[{*}]</div>
             [{/block}]
             [{/if}]
         </div>

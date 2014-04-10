@@ -116,12 +116,12 @@
                                       <div class="sub">
                                         <ul>
                                         [{foreach from=$osubcat->getSubCats() item=osubsubcat key=subsubcatkey name=SubSubCat}] 
-                                          [{*if $osubsubcat->getIsVisible() *}]
+                                          [{if $osubsubcat->getIsVisible() }]
                                             [{assign var="col_counter" value=$col_counter+1}]
                                             <li class="subsub">
                                               <a [{if $osubsubcat->expanded}]class="current"[{/if}] href="[{$osubsubcat->getLink()}]" title="[{$osubsubcat->oxcategories__oxtitle->value}]">[{$osubsubcat->oxcategories__oxtitle->value}] [{ if $oView->showCategoryArticlesCount() && ($osubsubcat->getNrOfArticles() > 0)}] ([{$osubsubcat->getNrOfArticles()}])[{/if}]</a>
                                             </li>
-                                          [{*/if*}]                                          
+                                          [{/if}]                                          
                                         [{/foreach}]
                                         </ul>
                                       </div>
@@ -134,9 +134,9 @@
                             [{if $col_counter > $max_cols}]
                               [{assign var="col_counter" value="0"}]
                               </ul><ul>
-                         [{/if}]   
-                        [{/if}] 
-                   [{/foreach}]
+                            [{/if}]
+                        [{/if}]
+                    [{/foreach}]
                     </ul></div></li></ul>
                 [{/if}]              
             </li>
@@ -154,18 +154,18 @@
     [{/foreach}]
     [{assign var="actCatregory" value=$oView->getActiveCategory()}]
     
-    [{*}]<!--<li class="last[{if $actCategory->oxcategories__oxtitle->value == 'ANGEBOTE'}]current[{/if}]">
+    [{*<li class="last[{if $actCategory->oxcategories__oxtitle->value == 'ANGEBOTE'}]current[{/if}]">
       [{assign var="offerlink" value=$oViewConf->getSelfLink()|cat:"/Angebote"}]
       [{assign var="tmplink" value=$oViewConf->getSelfLink()}]
       [{assign var="splitti" value="?"|explode:$tmplink}]
       [{assign var="link" value=$splitti[0]}]
       [{assign var="param" value=$splitti[1]}]
-          <a href="[{$offerlink|replace:'/index.php?':''}]">[{$oViewConf->getSelfLink()}]</a>
-          <a href="[{$link|replace:'/index.php':''}]/ANGEBOTE?[{$param}]">&nbsp;</a>
+      <!--<a href="[{$offerlink|replace:'/index.php?':''}]">[{$oViewConf->getSelfLink()}]</a>-->
+      <!--<a href="[{$link|replace:'/index.php':''}]/ANGEBOTE?[{$param}]">&nbsp;</a>-->
       <a href="[{oxgetseourl ident=$oViewConf->getSelfLink()|cat:'cl=alist'|cat:'&amp;cnid=fc70cac08dba4163848d70cbab85d2dc'}]"></a>
-    </li>-->[{*}]
+    </li>*}]
     
-    [{*}]<!--[{*if $iAllCatCount > $oView->getTopNavigationCatCnt()}]
+    [{*if $iAllCatCount > $oView->getTopNavigationCatCnt()}]
         <li>
             [{assign var="_catMoreUrl" value=$oView->getCatMoreUrl()}]
             <a href="[{ oxgetseourl ident="`$_catMoreUrl`&amp;cl=alist" }]">[{ oxmultilang ident="TOP_CATEGORIES_MORE" }]</a>
@@ -175,5 +175,5 @@
                 [{/foreach}]
             </ul>
         </li>
-    [{/if}]-->[{*}]
+    [{/if*}]
 </ul>

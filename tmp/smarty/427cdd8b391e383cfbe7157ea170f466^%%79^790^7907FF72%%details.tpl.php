@@ -1,9 +1,8 @@
-<?php /* Smarty version 2.6.26, created on 2014-04-09 09:13:53
+<?php /* Smarty version 2.6.26, created on 2014-04-10 12:32:07
          compiled from widget/product/details.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
-smarty_core_load_plugins(array('plugins' => array(array('modifier', 'cat', 'widget/product/details.tpl', 5, false),array('modifier', 'oxmultilangassign', 'widget/product/details.tpl', 17, false),array('modifier', 'truncate', 'widget/product/details.tpl', 45, false),array('function', 'assign_adv', 'widget/product/details.tpl', 11, false),array('function', 'oxmultilang', 'widget/product/details.tpl', 43, false),array('function', 'oxscript', 'widget/product/details.tpl', 62, false),array('insert', 'oxid_tracker', 'widget/product/details.tpl', 61, false),)), $this); ?>
-<div style='position: absolute; z-index:9999;color:white;background: #789;
-                 padding:0 15 0 15'>widget/product/details.tpl</div><!-- widget/product/details.tpl template start --><?php $this->assign('oDetailsProduct', $this->_tpl_vars['oView']->getProduct()); ?>
+smarty_core_load_plugins(array('plugins' => array(array('modifier', 'cat', 'widget/product/details.tpl', 4, false),array('modifier', 'oxmultilangassign', 'widget/product/details.tpl', 16, false),array('function', 'assign_adv', 'widget/product/details.tpl', 10, false),array('function', 'oxmultilang', 'widget/product/details.tpl', 46, false),array('function', 'oxscript', 'widget/product/details.tpl', 64, false),array('insert', 'oxid_tracker', 'widget/product/details.tpl', 63, false),)), $this); ?>
+<?php $this->assign('oDetailsProduct', $this->_tpl_vars['oView']->getProduct()); ?>
 <?php $this->assign('oPictureProduct', $this->_tpl_vars['oView']->getPicturesProduct()); ?>
 <?php $this->assign('currency', $this->_tpl_vars['oView']->getActCurrency()); ?>
 <?php $this->assign('sPageHeadTitle', ((is_array($_tmp=((is_array($_tmp=$this->_tpl_vars['oDetailsProduct']->oxarticles__oxtitle->value)) ? $this->_run_mod_handler('cat', true, $_tmp, ' ') : smarty_modifier_cat($_tmp, ' ')))) ? $this->_run_mod_handler('cat', true, $_tmp, $this->_tpl_vars['oDetailsProduct']->oxarticles__oxvarselect->value) : smarty_modifier_cat($_tmp, $this->_tpl_vars['oDetailsProduct']->oxarticles__oxvarselect->value))); ?>
@@ -59,15 +58,9 @@ if ($this->_foreach['detailslocation']['total'] > 0):
 
 
         <?php $this->assign('actCategory', $this->_tpl_vars['oView']->getActiveCategory()); ?>
-    <div id="overviewLink">
-        <a href="<?php echo $this->_tpl_vars['actCategory']->toListLink; ?>
-" class="overviewLink"><?php echo smarty_function_oxmultilang(array('ident' => 'BACK_TO_OVERVIEW'), $this);?>
-</a>
-    </div>
-    <h2 class="pageHead"><?php echo ((is_array($_tmp=$this->_tpl_vars['sPageHeadTitle'])) ? $this->_run_mod_handler('truncate', true, $_tmp, 80) : smarty_modifier_truncate($_tmp, 80)); ?>
-</h2>
-    <div class="detailsParams listRefine bottomRound">
-        <div class="pager refineParams clear" id="detailsItemsPager">
+    <div class="pageHead">
+    
+    <!--class="pageHead"-->    <!--class="detailsParams listRefine bottomRound"-->        <div class="pager refineParams clear" id="detailsItemsPager">
             <?php if ($this->_tpl_vars['actCategory']->prevProductLink): ?><a id="linkPrevArticle" class="prev" href="<?php echo $this->_tpl_vars['actCategory']->prevProductLink; ?>
 "><?php echo smarty_function_oxmultilang(array('ident' => 'PREVIOUS_PRODUCT'), $this);?>
 </a><?php endif; ?>
@@ -81,8 +74,11 @@ if ($this->_foreach['detailslocation']['total'] > 0):
             <?php if ($this->_tpl_vars['actCategory']->nextProductLink): ?><a id="linkNextArticle" href="<?php echo $this->_tpl_vars['actCategory']->nextProductLink; ?>
 " class="next"><?php echo smarty_function_oxmultilang(array('ident' => 'NEXT_PRODUCT'), $this);?>
 </a><?php endif; ?>
-        </div>
-    </div>
+        
+                <a href="<?php echo $this->_tpl_vars['actCategory']->toListLink; ?>
+" class="overviewLink">><?php echo smarty_function_oxmultilang(array('ident' => 'BACK_TO_OVERVIEW'), $this);?>
+</a>
+    </div>    </div>
 
         <div id="productinfo">
         <?php $_smarty_tpl_vars = $this->_tpl_vars;
@@ -96,5 +92,3 @@ unset($_smarty_tpl_vars);
 echo smarty_core_run_insert_handler(array('args' => array('name' => 'oxid_tracker', 'title' => ((is_array($_tmp='PRODUCT_DETAILS')) ? $this->_run_mod_handler('oxmultilangassign', true, $_tmp) : smarty_modifier_oxmultilangassign($_tmp)), 'product' => $this->_tpl_vars['oDetailsProduct'], 'cpath' => $this->_tpl_vars['oView']->getCatTreePath())), $this); ?>
 
 <?php echo smarty_function_oxscript(array('widget' => $this->_tpl_vars['oView']->getClassName()), $this);?>
-
-<!-- widget/product/details.tpl template end -->

@@ -65,7 +65,7 @@ ini_set("display_errors", "on");
     //  6 = SMTP Debug Messages
     //  7 = oxDbDebug SQL parser
     //  8 = OXID Templates
-    $this->iDebug = 8;
+    $this->iDebug = 0;
 
     // Log all modifications performed in Admin
     $this->blLogChangesInAdmin = false;

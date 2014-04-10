@@ -1,7 +1,6 @@
-<?php /* Smarty version 2.6.26, created on 2014-04-09 09:13:54
+<?php /* Smarty version 2.6.26, created on 2014-04-10 12:32:07
          compiled from widget/sidebar/categoriestree.tpl */ ?>
-<div style='position: absolute; z-index:9999;color:white;background: #789;
-                 padding:0 15 0 15'>widget/sidebar/categoriestree.tpl</div><!-- widget/sidebar/categoriestree.tpl template start --><?php if ($this->_tpl_vars['categories'] && $this->_tpl_vars['oView']->getClassName() != 'start'): ?>
+<?php if ($this->_tpl_vars['categories'] && $this->_tpl_vars['oView']->getClassName() != 'start'): ?>
 <div class="categoryBox">
     <ul class="tree" id="tree">
     <?php $this->assign('level1counter', '1'); ?>
@@ -44,4 +43,4 @@
     </ul>
  
 </div>
-<?php endif; ?><!-- widget/sidebar/categoriestree.tpl template end -->
+<?php endif; ?>

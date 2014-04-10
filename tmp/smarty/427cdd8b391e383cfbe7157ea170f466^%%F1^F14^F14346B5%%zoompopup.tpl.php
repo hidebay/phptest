@@ -1,9 +1,8 @@
-<?php /* Smarty version 2.6.26, created on 2014-04-09 09:13:53
+<?php /* Smarty version 2.6.26, created on 2014-04-10 12:32:07
          compiled from page/details/inc/zoompopup.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
-smarty_core_load_plugins(array('plugins' => array(array('function', 'oxmultilang', 'page/details/inc/zoompopup.tpl', 8, false),array('function', 'oxscript', 'page/details/inc/zoompopup.tpl', 27, false),array('modifier', 'strip_tags', 'page/details/inc/zoompopup.tpl', 12, false),array('modifier', 'default', 'page/details/inc/zoompopup.tpl', 12, false),array('modifier', 'count', 'page/details/inc/zoompopup.tpl', 14, false),)), $this); ?>
-<div style='position: absolute; z-index:9999;color:white;background: #789;
-                 padding:0 15 0 15'>page/details/inc/zoompopup.tpl</div><!-- page/details/inc/zoompopup.tpl template start --><?php if ($this->_tpl_vars['oView']->showZoomPics()): ?>
+smarty_core_load_plugins(array('plugins' => array(array('function', 'oxmultilang', 'page/details/inc/zoompopup.tpl', 7, false),array('function', 'oxscript', 'page/details/inc/zoompopup.tpl', 26, false),array('modifier', 'strip_tags', 'page/details/inc/zoompopup.tpl', 11, false),array('modifier', 'default', 'page/details/inc/zoompopup.tpl', 11, false),array('modifier', 'count', 'page/details/inc/zoompopup.tpl', 13, false),)), $this); ?>
+<?php if ($this->_tpl_vars['oView']->showZoomPics()): ?>
     <?php $this->assign('aZoomPics', $this->_tpl_vars['oView']->getZoomPics()); ?>
     <?php $this->assign('iZoomPic', $this->_tpl_vars['oView']->getActZoomPic()); ?>
     <div id="zoomModal" class="popupBox corners FXgradGreyLight glowShadow">
@@ -39,4 +38,4 @@ smarty_core_load_plugins(array('plugins' => array(array('function', 'oxmultilang
 
     <?php echo smarty_function_oxscript(array('add' => "$('#moreZoomPicsContainer').oxZoomPictures();"), $this);?>
 
-<?php endif; ?><!-- page/details/inc/zoompopup.tpl template end -->
+<?php endif; ?>

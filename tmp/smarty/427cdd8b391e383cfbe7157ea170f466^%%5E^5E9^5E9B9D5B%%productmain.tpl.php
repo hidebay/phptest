@@ -1,9 +1,8 @@
-<?php /* Smarty version 2.6.26, created on 2014-04-09 09:13:53
+<?php /* Smarty version 2.6.26, created on 2014-04-10 12:32:07
          compiled from page/details/inc/productmain.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
-smarty_core_load_plugins(array('plugins' => array(array('modifier', 'cat', 'page/details/inc/productmain.tpl', 9, false),array('modifier', 'strip_tags', 'page/details/inc/productmain.tpl', 60, false),array('modifier', 'default', 'page/details/inc/productmain.tpl', 126, false),array('modifier', 'oxmultilangassign', 'page/details/inc/productmain.tpl', 126, false),array('modifier', 'strip', 'page/details/inc/productmain.tpl', 344, false),array('modifier', 'escape', 'page/details/inc/productmain.tpl', 344, false),array('function', 'oxscript', 'page/details/inc/productmain.tpl', 16, false),array('function', 'oxmultilang', 'page/details/inc/productmain.tpl', 59, false),array('function', 'oxid_include_dynamic', 'page/details/inc/productmain.tpl', 91, false),array('function', 'oxgetseourl', 'page/details/inc/productmain.tpl', 94, false),array('function', 'mailto', 'page/details/inc/productmain.tpl', 126, false),array('function', 'oxid_include_widget', 'page/details/inc/productmain.tpl', 144, false),array('function', 'oxprice', 'page/details/inc/productmain.tpl', 242, false),array('block', 'oxhasrights', 'page/details/inc/productmain.tpl', 32, false),)), $this); ?>
-<div style='position: absolute; z-index:9999;color:white;background: #789;
-                 padding:0 15 0 15'>page/details/inc/productmain.tpl</div><!-- page/details/inc/productmain.tpl template start --><?php $this->assign('aVariantSelections', $this->_tpl_vars['oView']->getVariantSelections()); ?>
+smarty_core_load_plugins(array('plugins' => array(array('modifier', 'cat', 'page/details/inc/productmain.tpl', 8, false),array('modifier', 'strip_tags', 'page/details/inc/productmain.tpl', 59, false),array('modifier', 'oxmultilangassign', 'page/details/inc/productmain.tpl', 257, false),array('modifier', 'strip', 'page/details/inc/productmain.tpl', 343, false),array('modifier', 'escape', 'page/details/inc/productmain.tpl', 343, false),array('function', 'oxscript', 'page/details/inc/productmain.tpl', 15, false),array('function', 'oxmultilang', 'page/details/inc/productmain.tpl', 58, false),array('function', 'oxprice', 'page/details/inc/productmain.tpl', 241, false),array('block', 'oxhasrights', 'page/details/inc/productmain.tpl', 31, false),)), $this); ?>
+<?php $this->assign('aVariantSelections', $this->_tpl_vars['oView']->getVariantSelections()); ?>
 
 <?php if ($this->_tpl_vars['aVariantSelections'] && $this->_tpl_vars['aVariantSelections']['rawselections']): ?>
     <?php $this->assign('_sSelectionHashCollection', ""); ?>
@@ -123,72 +122,7 @@ smarty_core_load_plugins(array('plugins' => array(array('modifier', 'cat', 'page
             
 
                         <div id="showLinksOnce"></div>
-
             
-                <a class="selector corners FXgradBlueDark" href="#" id="productLinks"><img src="<?php echo $this->_tpl_vars['oViewConf']->getImageUrl('selectbutton.png'); ?>
-" alt="Select"></a>
-                <ul class="actionLinks corners shadow">
-                    
-                        <?php if ($this->_tpl_vars['oViewConf']->getShowCompareList()): ?>
-                            <li><span><?php echo smarty_function_oxid_include_dynamic(array('file' => "page/details/inc/compare_links.tpl",'testid' => "",'type' => 'compare','aid' => $this->_tpl_vars['oDetailsProduct']->oxarticles__oxid->value,'anid' => $this->_tpl_vars['oDetailsProduct']->oxarticles__oxnid->value,'in_list' => $this->_tpl_vars['oDetailsProduct']->isOnComparisonList(),'page' => $this->_tpl_vars['oView']->getActPage(),'text_to_id' => 'COMPARE','text_from_id' => 'REMOVE_FROM_COMPARE_LIST'), $this);?>
-</span></li>
-                        <?php endif; ?>
-                        <li>
-                            <span><a id="suggest" rel="nofollow" href="<?php echo smarty_function_oxgetseourl(array('ident' => ((is_array($_tmp=$this->_tpl_vars['oViewConf']->getSelfLink())) ? $this->_run_mod_handler('cat', true, $_tmp, "cl=suggest") : smarty_modifier_cat($_tmp, "cl=suggest")),'params' => ((is_array($_tmp="anid=".($this->_tpl_vars['oDetailsProduct']->oxarticles__oxnid->value))) ? $this->_run_mod_handler('cat', true, $_tmp, $this->_tpl_vars['oViewConf']->getNavUrlParams()) : smarty_modifier_cat($_tmp, $this->_tpl_vars['oViewConf']->getNavUrlParams()))), $this);?>
-"><?php echo smarty_function_oxmultilang(array('ident' => 'RECOMMEND'), $this);?>
-</a></span>
-                        </li>
-                        <?php if ($this->_tpl_vars['oViewConf']->getShowListmania()): ?>
-                            <li>
-                                <span>
-                                    <?php if ($this->_tpl_vars['oxcmp_user']): ?>
-                                        <a id="recommList" rel="nofollow" href="<?php echo smarty_function_oxgetseourl(array('ident' => ((is_array($_tmp=$this->_tpl_vars['oViewConf']->getSelfLink())) ? $this->_run_mod_handler('cat', true, $_tmp, "cl=recommadd") : smarty_modifier_cat($_tmp, "cl=recommadd")),'params' => ((is_array($_tmp="aid=".($this->_tpl_vars['oDetailsProduct']->oxarticles__oxnid->value)."&amp;anid=".($this->_tpl_vars['oDetailsProduct']->oxarticles__oxnid->value))) ? $this->_run_mod_handler('cat', true, $_tmp, $this->_tpl_vars['oViewConf']->getNavUrlParams()) : smarty_modifier_cat($_tmp, $this->_tpl_vars['oViewConf']->getNavUrlParams()))), $this);?>
-"><?php echo smarty_function_oxmultilang(array('ident' => 'ADD_TO_LISTMANIA_LIST'), $this);?>
-</a>
-                                    <?php else: ?>
-                                        <a id="loginToRecommlist" rel="nofollow" href="<?php echo smarty_function_oxgetseourl(array('ident' => ((is_array($_tmp=$this->_tpl_vars['oViewConf']->getSelfLink())) ? $this->_run_mod_handler('cat', true, $_tmp, "cl=account") : smarty_modifier_cat($_tmp, "cl=account")),'params' => ((is_array($_tmp=((is_array($_tmp=((is_array($_tmp="anid=".($this->_tpl_vars['oDetailsProduct']->oxarticles__oxnid->value))) ? $this->_run_mod_handler('cat', true, $_tmp, "&amp;sourcecl=") : smarty_modifier_cat($_tmp, "&amp;sourcecl=")))) ? $this->_run_mod_handler('cat', true, $_tmp, $this->_tpl_vars['oViewConf']->getTopActiveClassName()) : smarty_modifier_cat($_tmp, $this->_tpl_vars['oViewConf']->getTopActiveClassName())))) ? $this->_run_mod_handler('cat', true, $_tmp, $this->_tpl_vars['oViewConf']->getNavUrlParams()) : smarty_modifier_cat($_tmp, $this->_tpl_vars['oViewConf']->getNavUrlParams()))), $this);?>
-"><?php echo smarty_function_oxmultilang(array('ident' => 'LOGIN_TO_ACCESS_LISTMANIA'), $this);?>
-</a>
-                                    <?php endif; ?>
-                                </span>
-                            </li>
-                        <?php endif; ?>
-                        <?php if ($this->_tpl_vars['oxcmp_user']): ?>
-                            <li><span><a id="linkToNoticeList" href="<?php echo smarty_function_oxgetseourl(array('ident' => ((is_array($_tmp=((is_array($_tmp=$this->_tpl_vars['oViewConf']->getSelfLink())) ? $this->_run_mod_handler('cat', true, $_tmp, "cl=") : smarty_modifier_cat($_tmp, "cl=")))) ? $this->_run_mod_handler('cat', true, $_tmp, $this->_tpl_vars['oViewConf']->getTopActiveClassName()) : smarty_modifier_cat($_tmp, $this->_tpl_vars['oViewConf']->getTopActiveClassName())),'params' => ((is_array($_tmp="aid=".($this->_tpl_vars['oDetailsProduct']->oxarticles__oxnid->value)."&amp;anid=".($this->_tpl_vars['oDetailsProduct']->oxarticles__oxnid->value)."&amp;fnc=tonoticelist&amp;am=1")) ? $this->_run_mod_handler('cat', true, $_tmp, $this->_tpl_vars['oViewConf']->getNavUrlParams()) : smarty_modifier_cat($_tmp, $this->_tpl_vars['oViewConf']->getNavUrlParams()))), $this);?>
-" rel="nofollow"><?php echo smarty_function_oxmultilang(array('ident' => 'ADD_TO_WISH_LIST'), $this);?>
-</a></span></li>
-                        <?php else: ?>
-                            <li><span><a id="loginToNotice" href="<?php echo smarty_function_oxgetseourl(array('ident' => ((is_array($_tmp=$this->_tpl_vars['oViewConf']->getSelfLink())) ? $this->_run_mod_handler('cat', true, $_tmp, "cl=account") : smarty_modifier_cat($_tmp, "cl=account")),'params' => ((is_array($_tmp=((is_array($_tmp=((is_array($_tmp="anid=".($this->_tpl_vars['oDetailsProduct']->oxarticles__oxnid->value))) ? $this->_run_mod_handler('cat', true, $_tmp, "&amp;sourcecl=") : smarty_modifier_cat($_tmp, "&amp;sourcecl=")))) ? $this->_run_mod_handler('cat', true, $_tmp, $this->_tpl_vars['oViewConf']->getTopActiveClassName()) : smarty_modifier_cat($_tmp, $this->_tpl_vars['oViewConf']->getTopActiveClassName())))) ? $this->_run_mod_handler('cat', true, $_tmp, $this->_tpl_vars['oViewConf']->getNavUrlParams()) : smarty_modifier_cat($_tmp, $this->_tpl_vars['oViewConf']->getNavUrlParams()))), $this);?>
-" rel="nofollow"><?php echo smarty_function_oxmultilang(array('ident' => 'LOGIN_TO_ACCESS_WISH_LIST'), $this);?>
-</a></span></li>
-                        <?php endif; ?>
-                        <?php if ($this->_tpl_vars['oViewConf']->getShowWishlist()): ?>
-                            <?php if ($this->_tpl_vars['oxcmp_user']): ?>
-                                <li><span><a id="linkToWishList" href="<?php echo smarty_function_oxgetseourl(array('ident' => ((is_array($_tmp=((is_array($_tmp=$this->_tpl_vars['oViewConf']->getSelfLink())) ? $this->_run_mod_handler('cat', true, $_tmp, "cl=") : smarty_modifier_cat($_tmp, "cl=")))) ? $this->_run_mod_handler('cat', true, $_tmp, $this->_tpl_vars['oViewConf']->getTopActiveClassName()) : smarty_modifier_cat($_tmp, $this->_tpl_vars['oViewConf']->getTopActiveClassName())),'params' => ((is_array($_tmp="aid=".($this->_tpl_vars['oDetailsProduct']->oxarticles__oxnid->value)."&anid=".($this->_tpl_vars['oDetailsProduct']->oxarticles__oxnid->value)."&amp;fnc=towishlist&amp;am=1")) ? $this->_run_mod_handler('cat', true, $_tmp, $this->_tpl_vars['oViewConf']->getNavUrlParams()) : smarty_modifier_cat($_tmp, $this->_tpl_vars['oViewConf']->getNavUrlParams()))), $this);?>
-" rel="nofollow"><?php echo smarty_function_oxmultilang(array('ident' => 'ADD_TO_GIFT_REGISTRY'), $this);?>
-</a></span></li>
-                            <?php else: ?>
-                                <li><span><a id="loginToWish" href="<?php echo smarty_function_oxgetseourl(array('ident' => ((is_array($_tmp=$this->_tpl_vars['oViewConf']->getSelfLink())) ? $this->_run_mod_handler('cat', true, $_tmp, "cl=account") : smarty_modifier_cat($_tmp, "cl=account")),'params' => ((is_array($_tmp=((is_array($_tmp=((is_array($_tmp="anid=".($this->_tpl_vars['oDetailsProduct']->oxarticles__oxnid->value))) ? $this->_run_mod_handler('cat', true, $_tmp, "&amp;sourcecl=") : smarty_modifier_cat($_tmp, "&amp;sourcecl=")))) ? $this->_run_mod_handler('cat', true, $_tmp, $this->_tpl_vars['oViewConf']->getTopActiveClassName()) : smarty_modifier_cat($_tmp, $this->_tpl_vars['oViewConf']->getTopActiveClassName())))) ? $this->_run_mod_handler('cat', true, $_tmp, $this->_tpl_vars['oViewConf']->getNavUrlParams()) : smarty_modifier_cat($_tmp, $this->_tpl_vars['oViewConf']->getNavUrlParams()))), $this);?>
-" rel="nofollow"><?php echo smarty_function_oxmultilang(array('ident' => 'LOGIN_TO_ACCESS_GIFT_REGISTRY'), $this);?>
-</a></span></li>
-                            <?php endif; ?>
-                        <?php endif; ?>
-
-                        <?php $this->_tag_stack[] = array('oxhasrights', array('ident' => 'TOBASKET')); $_block_repeat=true;smarty_block_oxhasrights($this->_tag_stack[count($this->_tag_stack)-1][1], null, $this, $_block_repeat);while ($_block_repeat) { ob_start(); ?>
-                            <?php if ($this->_tpl_vars['oView']->isPriceAlarm() && $this->_tpl_vars['oDetailsProduct']->isBuyable()): ?>
-                                <li><a id="priceAlarmLink" rel="nofollow" href="<?php echo ((is_array($_tmp=$this->_tpl_vars['oDetailsProduct']->getLink())) ? $this->_run_mod_handler('cat', true, $_tmp, '#itemTabs') : smarty_modifier_cat($_tmp, '#itemTabs')); ?>
-"><?php echo smarty_function_oxmultilang(array('ident' => 'PRICE_ALERT'), $this);?>
-</a></li>
-                            <?php endif; ?>
-                        <?php $_block_content = ob_get_contents(); ob_end_clean(); $_block_repeat=false;echo smarty_block_oxhasrights($this->_tag_stack[count($this->_tag_stack)-1][1], $_block_content, $this, $_block_repeat); }  array_pop($this->_tag_stack); ?>
-                        <li>
-                           <span><?php echo smarty_function_mailto(array('extra' => 'id="questionMail"','address' => ((is_array($_tmp=@$this->_tpl_vars['oDetailsProduct']->oxarticles__oxquestionemail->value)) ? $this->_run_mod_handler('default', true, $_tmp, @$this->_tpl_vars['oxcmp_shop']->oxshops__oxinfoemail->value) : smarty_modifier_default($_tmp, @$this->_tpl_vars['oxcmp_shop']->oxshops__oxinfoemail->value)),'subject' => ((is_array($_tmp=((is_array($_tmp=((is_array($_tmp='QUESTIONS_ABOUT_THIS_PRODUCT')) ? $this->_run_mod_handler('oxmultilangassign', true, $_tmp) : smarty_modifier_oxmultilangassign($_tmp)))) ? $this->_run_mod_handler('cat', true, $_tmp, ' ') : smarty_modifier_cat($_tmp, ' ')))) ? $this->_run_mod_handler('cat', true, $_tmp, $this->_tpl_vars['oDetailsProduct']->oxarticles__oxartnum->value) : smarty_modifier_cat($_tmp, $this->_tpl_vars['oDetailsProduct']->oxarticles__oxartnum->value)),'text' => ((is_array($_tmp='QUESTIONS_ABOUT_THIS_PRODUCT_2')) ? $this->_run_mod_handler('oxmultilangassign', true, $_tmp) : smarty_modifier_oxmultilangassign($_tmp))), $this);?>
-</span>
-                        </li>
-                    
-                </ul>
-            
-
                         
                 <span id="productArtnum" class="itemCode"><?php echo smarty_function_oxmultilang(array('ident' => 'PRODUCT_NO','suffix' => 'COLON'), $this);?>
  <?php echo $this->_tpl_vars['oDetailsProduct']->oxarticles__oxartnum->value; ?>
@@ -201,9 +135,7 @@ smarty_core_load_plugins(array('plugins' => array(array('modifier', 'cat', 'page
                     <?php if ($this->_tpl_vars['oxcmp_user']): ?>
                         <?php $this->assign('force_sid', $this->_tpl_vars['oView']->getSidForWidget()); ?>
                     <?php endif; ?>
-                    <?php echo smarty_function_oxid_include_widget(array('cl' => 'oxwRating','blCanRate' => $this->_tpl_vars['oView']->canRate(),'_parent' => $this->_tpl_vars['oViewConf']->getTopActiveClassName(),'nocookie' => 1,'force_sid' => $this->_tpl_vars['force_sid'],'sRateUrl' => $this->_tpl_vars['oDetailsProduct']->getLink(),'dRatingCount' => $this->_tpl_vars['oView']->getRatingCount(),'dRatingValue' => $this->_tpl_vars['oView']->getRatingValue(),'anid' => $this->_tpl_vars['oDetailsProduct']->oxarticles__oxnid->value,'skipESIforUser' => 1), $this);?>
-
-                </div>
+                    </div>
             
             <?php endif; ?>
         </div>
@@ -502,4 +434,3 @@ $this->_tpl_vars = $_smarty_tpl_vars;
 unset($_smarty_tpl_vars);
  ?>
 </div>
-<!-- page/details/inc/productmain.tpl template end -->

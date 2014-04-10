@@ -1,9 +1,8 @@
-<?php /* Smarty version 2.6.26, created on 2014-04-09 09:13:54
+<?php /* Smarty version 2.6.26, created on 2014-04-10 12:32:07
          compiled from layout/footer.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
-smarty_core_load_plugins(array('plugins' => array(array('function', 'oxscript', 'layout/footer.tpl', 3, false),array('function', 'oxmultilang', 'layout/footer.tpl', 28, false),array('block', 'oxifcontent', 'layout/footer.tpl', 30, false),)), $this); ?>
-<div style='position: absolute; z-index:9999;color:white;background: #789;
-                 padding:0 15 0 15'>layout/footer.tpl</div><!-- layout/footer.tpl template start -->
+smarty_core_load_plugins(array('plugins' => array(array('function', 'oxscript', 'layout/footer.tpl', 2, false),array('function', 'oxmultilang', 'layout/footer.tpl', 27, false),array('block', 'oxifcontent', 'layout/footer.tpl', 29, false),)), $this); ?>
+
     <?php echo smarty_function_oxscript(array('include' => "js/widgets/oxequalizer.js",'priority' => 10), $this);?>
 
     <?php echo smarty_function_oxscript(array('add' => "$(function(){oxEqualizer.equalHeight($( '#panel dl' ));});"), $this);?>
@@ -72,9 +71,21 @@ unset($_smarty_tpl_vars);
 <?php endif; ?>
 <?php 
 $date = getdate();
-echo "Diese Seite haben wir am ".($date["mday"]-rand(1, 3)).".".$date["mon"].".".$date["year"]." um ";
 
-if($date["hours"] > 12){
+$date["mday"] = 1;
+
+if($date["mday"] >= 3 ){
+$day = $date["mday"]-rand(1, 3);
+}else{
+$day = rand(22,27);
+$date["mon"] = $date["mon"]-1; 
+}
+
+
+/*echo "Diese Seite haben wir am ".($date["mday"]-rand(1, 3)).".".$date["mon"].".".$date["year"]." um ";*/
+echo "Diese Seite haben wir am ".$day.".".$date["mon"].".".$date["year"]." um ";
+
+if($date["hours"] >= 12){
 	echo ($date["hours"]-rand(1, 12));
 }else{
 	echo ($date["hours"] +rand(1,12));
@@ -105,5 +116,3 @@ fwrite($datei, $counterstand);
 fclose($datei);
  ?>
 <p>&copy; 1998-<?php  echo date("Y");  ?> All rights reserved</p>
-
-<!-- layout/footer.tpl template end -->

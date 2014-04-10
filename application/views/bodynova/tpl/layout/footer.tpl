@@ -108,9 +108,21 @@
 [{/if}]
 [{php}]
 $date = getdate();
-echo "Diese Seite haben wir am ".($date["mday"]-rand(1, 3)).".".$date["mon"].".".$date["year"]." um ";
 
-if($date["hours"] > 12){
+$date["mday"] = 1;
+
+if($date["mday"] >= 3 ){
+$day = $date["mday"]-rand(1, 3);
+}else{
+$day = rand(22,27);
+$date["mon"] = $date["mon"]-1; 
+}
+
+
+/*echo "Diese Seite haben wir am ".($date["mday"]-rand(1, 3)).".".$date["mon"].".".$date["year"]." um ";*/
+echo "Diese Seite haben wir am ".$day.".".$date["mon"].".".$date["year"]." um ";
+
+if($date["hours"] >= 12){
 	echo ($date["hours"]-rand(1, 12));
 }else{
 	echo ($date["hours"] +rand(1,12));

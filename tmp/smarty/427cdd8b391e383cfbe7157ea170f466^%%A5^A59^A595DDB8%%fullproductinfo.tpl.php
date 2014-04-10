@@ -1,9 +1,8 @@
-<?php /* Smarty version 2.6.26, created on 2014-04-09 09:13:53
+<?php /* Smarty version 2.6.26, created on 2014-04-10 12:32:07
          compiled from page/details/inc/fullproductinfo.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
-smarty_core_load_plugins(array('plugins' => array(array('modifier', 'oxmultilangassign', 'page/details/inc/fullproductinfo.tpl', 68, false),array('modifier', 'colon', 'page/details/inc/fullproductinfo.tpl', 68, false),array('function', 'oxmultilang', 'page/details/inc/fullproductinfo.tpl', 72, false),array('function', 'oxid_include_widget', 'page/details/inc/fullproductinfo.tpl', 77, false),)), $this); ?>
-<div style='position: absolute; z-index:9999;color:white;background: #789;
-                 padding:0 15 0 15'>page/details/inc/fullproductinfo.tpl</div><!-- page/details/inc/fullproductinfo.tpl template start --><div id="detailsMain">
+smarty_core_load_plugins(array('plugins' => array(array('modifier', 'oxmultilangassign', 'page/details/inc/fullproductinfo.tpl', 67, false),array('modifier', 'colon', 'page/details/inc/fullproductinfo.tpl', 67, false),array('function', 'oxmultilang', 'page/details/inc/fullproductinfo.tpl', 71, false),array('function', 'oxid_include_widget', 'page/details/inc/fullproductinfo.tpl', 76, false),)), $this); ?>
+<div id="detailsMain">
     <?php $_smarty_tpl_vars = $this->_tpl_vars;
 $this->_smarty_include(array('smarty_include_tpl_file' => "page/details/inc/productmain.tpl", 'smarty_include_vars' => array()));
 $this->_tpl_vars = $_smarty_tpl_vars;
@@ -39,4 +38,4 @@ unset($_smarty_tpl_vars);
         </div>
         <?php endif; ?>
     </div>
-    </div><!-- page/details/inc/fullproductinfo.tpl template end -->
+    </div>

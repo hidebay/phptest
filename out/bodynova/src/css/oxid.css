@@ -2274,7 +2274,7 @@ div.loginForm h4 {
 
 #navigation .subCategories li > a:hover {
     color: #B62137;    
-    text-decoration: underline;
+    text-decoration: none;
     border-bottom: 1px solid #B62137;
 }
 
@@ -5057,7 +5057,7 @@ label.innerLabel{
   display:block;
   position:absolute;
   color:#B4B8B8;
-  margin: 3px 0 0 5px;
+  margin: 6px 0 0 5px;
   font-weight: normal;
 }
 
@@ -5540,7 +5540,7 @@ a.sliderHover {
     /* This is the zoom window. */
 .cloud-zoom-big {
     /*border:2px solid #51A8BC;*/
-    margin: 2px 0 0 6px;;
+    margin: -2px 0 0 0px;;
     overflow:hidden;
     background-repeat: no-repeat;
     background-color: #fff;

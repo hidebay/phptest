@@ -16,41 +16,9 @@
     [{oxscript add="oxVariantSelections  = [`$_sSelectionHashCollection`];"}]
 [{/if}]
 [{$oView->getWidgetLink()}]
-[{*}]<!--new-->[{*}]
-
-    <form class="js-oxWidgetReload" action="[{$oView->getWidgetLink()}]" method="get">
-        <div>
-            [{$oViewConf->getHiddenSid()}]
-            [{$oViewConf->getNavFormParams()}]
-            <input type="hidden" name="cl" value="[{$oView->getClassName()}]">
-            <input type="hidden" name="oxwparent" value="[{$oViewConf->getTopActiveClassName()}]">
-            <input type="hidden" name="listtype" value="[{$oView->getListType()}]">
-            <input type="hidden" name="nocookie" value="1">
-            <input type="hidden" name="cnid" value="[{$oView->getCategoryId()}]">
-            <input type="hidden" name="anid" value="[{if !$oDetailsProduct->oxarticles__oxparentid->value}][{$oDetailsProduct->oxarticles__oxid->value}][{else}][{$oDetailsProduct->oxarticles__oxparentid->value}][{/if}]">
-            <input type="hidden" name="actcontrol" value="[{$oViewConf->getTopActiveClassName()}]">
-        </div>
-    </form>
 [{oxhasrights ident="TOBASKET"}]
-    <form class="js-oxProductForm" action="[{$oViewConf->getSelfActionLink()}]" method="post">
-        <div>
-            [{$oViewConf->getHiddenSid()}]
-            [{$oViewConf->getNavFormParams()}]
-            <input type="hidden" name="cl" value="[{$oViewConf->getTopActiveClassName()}]">
-            <input type="hidden" name="aid" value="[{$oDetailsProduct->oxarticles__oxid->value}]">
-            <input type="hidden" name="anid" value="[{$oDetailsProduct->oxarticles__oxnid->value}]">
-            <input type="hidden" name="parentid" value="[{if !$oDetailsProduct->oxarticles__oxparentid->value}][{$oDetailsProduct->oxarticles__oxid->value}][{else}][{$oDetailsProduct->oxarticles__oxparentid->value}][{/if}]">
-            <input type="hidden" name="panid" value="">
-            [{if !$oDetailsProduct->isNotBuyable()}]
-                <input type="hidden" name="fnc" value="tobasket">
-            [{/if}]
-        </div>
-[{/oxhasrights}]
-
-[{*}]<!-- end new -->[{*}]
-[{*}]<!--[{oxhasrights ident="TOBASKET"}]-->[{*}]
     [{*}]<!--[{if !$oDetailsProduct->isNotBuyable()}]-->[{*}]
-        [{*}]<!--<form class="js-oxProductForm" action="[{$oViewConf->getSelfActionLink()}]" method="post">
+       <form class="js-oxProductForm" action="[{$oViewConf->getSelfActionLink()}]" method="post">
         <div>
             [{$oViewConf->getHiddenSid()}]
             [{$oViewConf->getNavFormParams()}]
@@ -60,9 +28,9 @@
             <input type="hidden" name="parentid" value="[{if !$oDetailsProduct->oxarticles__oxparentid->value}][{$oDetailsProduct->oxarticles__oxid->value}][{else}][{$oDetailsProduct->oxarticles__oxparentid->value}][{/if}]">
             <input type="hidden" name="panid" value="">
             <input type="hidden" name="fnc" value="tobasket">
-        </div>-->[{*}]
+        </div>
     [{*}]<!--[{/if}]-->[{*}]
-[{*}]<!--[{/oxhasrights}]-->[{*}]
+[{/oxhasrights}]
 <div class="detailsInfo clear">
     <meta itemprop='productID' content='sku:[{ $oDetailsProduct->oxarticles__oxartnum->value }]'>
     <meta itemprop="url"  content="[{$oDetailsProduct->getMainLink()}]">

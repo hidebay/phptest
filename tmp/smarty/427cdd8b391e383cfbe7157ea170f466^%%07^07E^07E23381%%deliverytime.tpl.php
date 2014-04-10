@@ -1,9 +1,8 @@
-<?php /* Smarty version 2.6.26, created on 2014-04-09 09:13:53
+<?php /* Smarty version 2.6.26, created on 2014-04-10 12:32:07
          compiled from page/details/inc/deliverytime.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
-smarty_core_load_plugins(array('plugins' => array(array('function', 'oxmultilang', 'page/details/inc/deliverytime.tpl', 4, false),array('modifier', 'cat', 'page/details/inc/deliverytime.tpl', 12, false),)), $this); ?>
-<div style='position: absolute; z-index:9999;color:white;background: #789;
-                 padding:0 15 0 15'>page/details/inc/deliverytime.tpl</div><!-- page/details/inc/deliverytime.tpl template start --><?php if ($this->_tpl_vars['oDetailsProduct']->oxarticles__oxmindeltime->value || $this->_tpl_vars['oDetailsProduct']->oxarticles__oxmaxdeltime->value): ?>
+smarty_core_load_plugins(array('plugins' => array(array('function', 'oxmultilang', 'page/details/inc/deliverytime.tpl', 3, false),array('modifier', 'cat', 'page/details/inc/deliverytime.tpl', 11, false),)), $this); ?>
+<?php if ($this->_tpl_vars['oDetailsProduct']->oxarticles__oxmindeltime->value || $this->_tpl_vars['oDetailsProduct']->oxarticles__oxmaxdeltime->value): ?>
 <span id="productDeliveryTime">
 <?php echo smarty_function_oxmultilang(array('ident' => 'DELIVERYTIME_DELIVERYTIME','suffix' => 'COLON'), $this);?>
 
@@ -21,4 +20,4 @@ smarty_core_load_plugins(array('plugins' => array(array('function', 'oxmultilang
 
 <?php endif; ?>
 </span>
-<?php endif; ?><!-- page/details/inc/deliverytime.tpl template end -->
+<?php endif; ?>

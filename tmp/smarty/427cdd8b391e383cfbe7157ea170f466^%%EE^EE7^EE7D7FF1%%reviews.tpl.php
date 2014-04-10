@@ -1,9 +1,8 @@
-<?php /* Smarty version 2.6.26, created on 2014-04-09 09:13:53
+<?php /* Smarty version 2.6.26, created on 2014-04-10 12:32:07
          compiled from widget/reviews/reviews.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
-smarty_core_load_plugins(array('plugins' => array(array('function', 'oxscript', 'widget/reviews/reviews.tpl', 2, false),array('function', 'oxmultilang', 'widget/reviews/reviews.tpl', 20, false),array('function', 'oxid_include_dynamic', 'widget/reviews/reviews.tpl', 27, false),array('function', 'oxgetseourl', 'widget/reviews/reviews.tpl', 49, false),array('function', 'math', 'widget/reviews/reviews.tpl', 64, false),array('modifier', 'cat', 'widget/reviews/reviews.tpl', 49, false),array('modifier', 'date_format', 'widget/reviews/reviews.tpl', 61, false),)), $this); ?>
-<div style='position: absolute; z-index:9999;color:white;background: #789;
-                 padding:0 15 0 15'>widget/reviews/reviews.tpl</div><!-- widget/reviews/reviews.tpl template start --><?php echo smarty_function_oxscript(array('include' => "js/widgets/oxrating.js",'priority' => 10), $this);?>
+smarty_core_load_plugins(array('plugins' => array(array('function', 'oxscript', 'widget/reviews/reviews.tpl', 1, false),array('function', 'oxmultilang', 'widget/reviews/reviews.tpl', 19, false),array('function', 'oxid_include_dynamic', 'widget/reviews/reviews.tpl', 26, false),array('function', 'oxgetseourl', 'widget/reviews/reviews.tpl', 48, false),array('function', 'math', 'widget/reviews/reviews.tpl', 63, false),array('modifier', 'cat', 'widget/reviews/reviews.tpl', 48, false),array('modifier', 'date_format', 'widget/reviews/reviews.tpl', 60, false),)), $this); ?>
+<?php echo smarty_function_oxscript(array('include' => "js/widgets/oxrating.js",'priority' => 10), $this);?>
 
 <?php echo smarty_function_oxscript(array('add' => "$( '#reviewRating' ).oxRating({openReviewForm: false, hideReviewButton: false});"), $this);?>
 
@@ -151,4 +150,3 @@ if ($this->_foreach['ReviewsCounter']['total'] > 0):
 
 </div>
 <?php echo smarty_function_oxscript(array('widget' => $this->_tpl_vars['oView']->getClassName()), $this);?>
-<!-- widget/reviews/reviews.tpl template end -->

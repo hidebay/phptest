@@ -1,9 +1,8 @@
-<?php /* Smarty version 2.6.26, created on 2014-04-09 09:13:53
+<?php /* Smarty version 2.6.26, created on 2014-04-10 12:32:07
          compiled from page/details/inc/morepics.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
-smarty_core_load_plugins(array('plugins' => array(array('function', 'oxscript', 'page/details/inc/morepics.tpl', 6, false),)), $this); ?>
-<div style='position: absolute; z-index:9999;color:white;background: #789;
-                 padding:0 15 0 15'>page/details/inc/morepics.tpl</div><!-- page/details/inc/morepics.tpl template start --><?php if ($this->_tpl_vars['oView']->morePics()): ?>
+smarty_core_load_plugins(array('plugins' => array(array('function', 'oxscript', 'page/details/inc/morepics.tpl', 5, false),)), $this); ?>
+<?php if ($this->_tpl_vars['oView']->morePics()): ?>
 <div class="otherPictures" id="morePicsContainer">
     <div class="shadowLine"></div>
     <ul class="clear">
@@ -31,4 +30,3 @@ if ($this->_foreach['sMorePics']['total'] > 0):
 <?php echo smarty_function_oxscript(array('include' => "js/widgets/oxmorepictures.js",'priority' => 10), $this);?>
 
 <?php echo smarty_function_oxscript(array('add' => "$('#morePicsContainer').oxMorePictures();"), $this);?>
-<!-- page/details/inc/morepics.tpl template end -->
