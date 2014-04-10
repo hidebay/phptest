@@ -1,0 +1,2 @@
+ALTER TABLE `oxuser` DROP `WNRESTRICT`;
+ALTER TABLE `oxarticles` DROP `WNUSERID`;
