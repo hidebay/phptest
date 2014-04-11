@@ -1,0 +1,74 @@
+2014-04-10 17:16:21	getArchive          	-	OK	-	
+2014-04-10 17:16:21	extractArchive      	-	OK	-	"zip-open" mode
+2014-04-10 17:16:25	CopyFile - 1607     	-	OK	-	/var/www/phptest/tmp/d3seccheck_lib/copy_this/modules/d3/d3securitycheck/models/d3seccheck_update.php => /var/www/phptest/modules/d3/d3securitycheck/models/d3seccheck_update.php
+2014-04-10 17:16:25	CopyFile - 481      	-	OK	-	/var/www/phptest/tmp/d3seccheck_lib/copy_this/modules/d3/d3securitycheck/models/d3seccheck_update.php => /var/www/phptest/modules/d3/d3securitycheck/models/d3seccheck_update.php
+2014-04-10 17:16:25	CopyFile - 1607     	-	OK	-	/var/www/phptest/tmp/d3seccheck_lib/copy_this/modules/d3/d3securitycheck/views/admin/en/d3seccheck_lang.php => /var/www/phptest/modules/d3/d3securitycheck/views/admin/en/d3seccheck_lang.php
+2014-04-10 17:16:25	CopyFile - 481      	-	OK	-	/var/www/phptest/tmp/d3seccheck_lib/copy_this/modules/d3/d3securitycheck/views/admin/en/d3seccheck_lang.php => /var/www/phptest/modules/d3/d3securitycheck/views/admin/en/d3seccheck_lang.php
+2014-04-10 17:16:25	CopyFile - 1607     	-	OK	-	/var/www/phptest/tmp/d3seccheck_lib/copy_this/modules/d3/d3securitycheck/views/admin/de/d3seccheck_lang.php => /var/www/phptest/modules/d3/d3securitycheck/views/admin/de/d3seccheck_lang.php
+2014-04-10 17:16:25	CopyFile - 481      	-	OK	-	/var/www/phptest/tmp/d3seccheck_lib/copy_this/modules/d3/d3securitycheck/views/admin/de/d3seccheck_lang.php => /var/www/phptest/modules/d3/d3securitycheck/views/admin/de/d3seccheck_lang.php
+2014-04-10 17:16:25	CopyFile - 1607     	-	OK	-	/var/www/phptest/tmp/d3seccheck_lib/copy_this/modules/d3/d3securitycheck/views/admin/tpl/d3seccheck.tpl => /var/www/phptest/modules/d3/d3securitycheck/views/admin/tpl/d3seccheck.tpl
+2014-04-10 17:16:25	CopyFile - 481      	-	OK	-	/var/www/phptest/tmp/d3seccheck_lib/copy_this/modules/d3/d3securitycheck/views/admin/tpl/d3seccheck.tpl => /var/www/phptest/modules/d3/d3securitycheck/views/admin/tpl/d3seccheck.tpl
+2014-04-10 17:16:25	CopyFile - 1607     	-	OK	-	/var/www/phptest/tmp/d3seccheck_lib/copy_this/modules/d3/d3securitycheck/views/admin/tpl/d3_syscheck_mysql.tpl => /var/www/phptest/modules/d3/d3securitycheck/views/admin/tpl/d3_syscheck_mysql.tpl
+2014-04-10 17:16:25	CopyFile - 481      	-	OK	-	/var/www/phptest/tmp/d3seccheck_lib/copy_this/modules/d3/d3securitycheck/views/admin/tpl/d3_syscheck_mysql.tpl => /var/www/phptest/modules/d3/d3securitycheck/views/admin/tpl/d3_syscheck_mysql.tpl
+2014-04-10 17:16:25	CopyFile - 1607     	-	OK	-	/var/www/phptest/tmp/d3seccheck_lib/copy_this/modules/d3/d3securitycheck/metadata.php => /var/www/phptest/modules/d3/d3securitycheck/metadata.php
+2014-04-10 17:16:25	CopyFile - 481      	-	OK	-	/var/www/phptest/tmp/d3seccheck_lib/copy_this/modules/d3/d3securitycheck/metadata.php => /var/www/phptest/modules/d3/d3securitycheck/metadata.php
+2014-04-10 17:16:25	CopyFile - 1607     	-	OK	-	/var/www/phptest/tmp/d3seccheck_lib/copy_this/modules/d3/d3securitycheck/picture.png => /var/www/phptest/modules/d3/d3securitycheck/picture.png
+2014-04-10 17:16:25	CopyFile - 481      	-	OK	-	/var/www/phptest/tmp/d3seccheck_lib/copy_this/modules/d3/d3securitycheck/picture.png => /var/www/phptest/modules/d3/d3securitycheck/picture.png
+2014-04-10 17:16:25	CopyFile - 1607     	-	OK	-	/var/www/phptest/tmp/d3seccheck_lib/copy_this/modules/d3/d3securitycheck/controllers/admin/d3_syscheck_mysql.php => /var/www/phptest/modules/d3/d3securitycheck/controllers/admin/d3_syscheck_mysql.php
+2014-04-10 17:16:25	CopyFile - 481      	-	OK	-	/var/www/phptest/tmp/d3seccheck_lib/copy_this/modules/d3/d3securitycheck/controllers/admin/d3_syscheck_mysql.php => /var/www/phptest/modules/d3/d3securitycheck/controllers/admin/d3_syscheck_mysql.php
+2014-04-10 17:16:25	CopyFile - 1607     	-	OK	-	/var/www/phptest/tmp/d3seccheck_lib/copy_this/modules/d3/d3securitycheck/controllers/admin/d3_syscheck.php => /var/www/phptest/modules/d3/d3securitycheck/controllers/admin/d3_syscheck.php
+2014-04-10 17:16:25	CopyFile - 481      	-	OK	-	/var/www/phptest/tmp/d3seccheck_lib/copy_this/modules/d3/d3securitycheck/controllers/admin/d3_syscheck.php => /var/www/phptest/modules/d3/d3securitycheck/controllers/admin/d3_syscheck.php
+2014-04-10 17:16:25	CopyFile - 1607     	-	OK	-	/var/www/phptest/tmp/d3seccheck_lib/copy_this/modules/d3/d3securitycheck/controllers/admin/d3seccheck.php => /var/www/phptest/modules/d3/d3securitycheck/controllers/admin/d3seccheck.php
+2014-04-10 17:16:25	CopyFile - 481      	-	OK	-	/var/www/phptest/tmp/d3seccheck_lib/copy_this/modules/d3/d3securitycheck/controllers/admin/d3seccheck.php => /var/www/phptest/modules/d3/d3securitycheck/controllers/admin/d3seccheck.php
+2014-04-10 17:16:25	CopyFile - 1607     	-	OK	-	/var/www/phptest/tmp/d3seccheck_lib/copy_this/modules/d3/d3securitycheck/controllers/admin/d3_syscheck_list.php => /var/www/phptest/modules/d3/d3securitycheck/controllers/admin/d3_syscheck_list.php
+2014-04-10 17:16:25	CopyFile - 481      	-	OK	-	/var/www/phptest/tmp/d3seccheck_lib/copy_this/modules/d3/d3securitycheck/controllers/admin/d3_syscheck_list.php => /var/www/phptest/modules/d3/d3securitycheck/controllers/admin/d3_syscheck_list.php
+2014-04-10 17:16:25	CopyFile - 1607     	-	OK	-	/var/www/phptest/tmp/d3seccheck_lib/copy_this/modules/d3/d3securitycheck/menu.xml => /var/www/phptest/modules/d3/d3securitycheck/menu.xml
+2014-04-10 17:16:25	CopyFile - 481      	-	OK	-	/var/www/phptest/tmp/d3seccheck_lib/copy_this/modules/d3/d3securitycheck/menu.xml => /var/www/phptest/modules/d3/d3securitycheck/menu.xml
+2014-04-10 17:16:25	copyFiles           	-	OK	-	
+2014-04-10 17:16:30	registerModule      	-	OK	-	d3seccheck_lib
+2014-04-10 17:16:30	registerModule      	-	OK	-	oldValue: oxorder => oe/invoicepdf/myorder&bodynova/core/bodyoxorder&oe/oepaypal/core/oepaypaloxorder&oe/invoicepdf/myorder&bodynova/core/bodyoxorder&oe/oepaypal/core/oepaypaloxorder
+oxconfig => oe/oethemeswitcher/core/oethemeswitcherconfig
+oxtheme => oe/oethemeswitcher/core/oethemeswitchertheme
+oxviewconfig => oe/oethemeswitcher/core/oethemeswitcherviewconfig&oe/oepaypal/views/oepaypaloxviewconfig&oe/oethemeswitcher/core/oethemeswitcherviewconfig&oe/oepaypal/views/oepaypaloxviewconfig
+manufacturerlist => oe/oethemeswitcher/controllers/oethemeswitchermanufacturerlist
+alist => oe/oethemeswitcher/controllers/oethemeswitcheralist&bodynova/views/bodyalist&oe/oethemeswitcher/controllers/oethemeswitcheralist&bodynova/views/bodyalist
+content => oe/oethemeswitcher/controllers/oethemeswitchercontent&bodynova/views/bodycontent&oe/oethemeswitcher/controllers/oethemeswitchercontent&bodynova/views/bodycontent
+details => oe/oethemeswitcher/controllers/oethemeswitcherdetails
+review => oe/oethemeswitcher/controllers/oethemeswitcherreview
+rss => oe/oethemeswitcher/controllers/oethemeswitcherrss
+start => oe/oethemeswitcher/controllers/oethemeswitcherstart
+tag => oe/oethemeswitcher/controllers/oethemeswitchertag
+vendorlist => oe/oethemeswitcher/controllers/oethemeswitchervendorlist
+oxlang => oe/oethemeswitcher/core/oethemeswitcherlang
+oxreverseproxybackend => oe/oethemeswitcher/core/cache/oethemeswitcherreverseproxybackend
+oxarticle => bodynova/core/bodyoxarticle&wendnet/wn_adminrights/models/wnar_oxarticle&oe/oepaypal/core/oepaypaloxarticle&bodynova/core/bodyoxarticle&wendnet/wn_adminrights/models/wnar_oxarticle&oe/oepaypal/core/oepaypaloxarticle
+oxactionlist => bodynova/core/bodyoxactionlist
+oxactions => bodynova/core/bodyoxactions
+oxcmp_shop => bodynova/views/bodyoxcmp_shop
+oxbasket => bodynova/core/bodyoxbasket&oe/oepaypal/core/oepaypaloxbasket&bodynova/core/bodyoxbasket&oe/oepaypal/core/oepaypaloxbasket
+oxshopcontrol => bender/dre_cleartmp/core/dre_cleartmp_oxshopcontrol&d3/d3log/modules/controllers/d3_oxshopcontrol_errorhandler&_d3modcfg/modules/controllers/d3_oxshopcontrol_modcfg_extension&d3/d3clrtmp/modules/controllers/d3_oxshopcontrol_clrtmp&bender/dre_cleartmp/core/dre_cleartmp_oxshopcontrol&d3/d3log/modules/controllers/d3_oxshopcontrol_errorhandler&_d3modcfg/modules/controllers/d3_oxshopcontrol_modcfg_extension&d3/d3clrtmp/modules/controllers/d3_oxshopcontrol_clrtmp
+oxmodule => ac_module_internals/core/ac_module&_d3modcfg/modules/models/d3_oxmodule_activecheck&ac_module_internals/core/ac_module&_d3modcfg/modules/models/d3_oxmodule_activecheck
+voucherserie_main => asy_adminvoucher/admin/asy_adminvoucher__voucherserie_main
+oxnavigationtree => wendnet/wn_adminrights/controllers/admin/wnar_oxnavigationtree
+article_list => wendnet/wn_adminrights/controllers/admin/wnar_article_list
+article_main => wendnet/wn_adminrights/controllers/admin/wnar_article_main
+list_user => wendnet/wn_adminrights/controllers/admin/wnar_list_user
+user_list => wendnet/wn_adminrights/controllers/admin/wnar_user_list
+user_main => wendnet/wn_adminrights/controllers/admin/wnar_user_main
+navigation => bender/dre_cleartmp/controllers/admin/dre_cleartmp_navigation&d3/d3install/modules/controllers/admin/d3_navigation_modcfgupdate&bender/dre_cleartmp/controllers/admin/dre_cleartmp_navigation&d3/d3install/modules/controllers/admin/d3_navigation_modcfgupdate
+actions_main => bender/dre_landingpage/controllers/admin/dre_landingpage_actions_main
+oxcategorylist => bender/dre_category/dre_oxcategorylist
+oxutilsview => _d3modcfg/modules/core/d3_oxutilsview_modcfg
+order => oe/oepaypal/views/oepaypalorder
+payment => oe/oepaypal/views/oepaypalpayment
+wrapping => oe/oepaypal/views/oepaypalwrapping
+oxaddress => oe/oepaypal/core/oepaypaloxaddress
+oxuser => oe/oepaypal/core/oepaypaloxuser
+oxbasketitem => oe/oepaypal/core/oepaypaloxbasketitem
+oxcountry => oe/oepaypal/core/oepaypaloxcountry
+oxstate => oe/oepaypal/core/oepaypaloxstate
+2014-04-10 17:16:30	registerModule      	-	OK	-	
+2014-04-10 17:16:31	CopyFile - 481      	-	OK	-	/var/www/phptest/tmp/Securitycheck_2.1.0.0_PE_php5.3.zip => /var/www/phptest/d3backup/2014-04-10_17-16-21_d3seccheck_lib/Securitycheck_2.1.0.0_PE_php5.3.zip
+2014-04-10 17:16:31	removeArchive       	-	OK	-	
+2014-04-10 17:16:34	clearTMP            	-	OK	-	
+

@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.26, created on 2014-04-10 12:32:08
+<?php /* Smarty version 2.6.26, created on 2014-04-11 14:46:55
          compiled from widget/dynscript.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
 smarty_core_load_plugins(array('plugins' => array(array('function', 'oxscript', 'widget/dynscript.tpl', 1, false),)), $this); ?>

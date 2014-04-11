@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.26, created on 2014-04-10 12:32:07
+<?php /* Smarty version 2.6.26, created on 2014-04-11 14:46:52
          compiled from page/details/inc/priceinfo.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
 smarty_core_load_plugins(array('plugins' => array(array('function', 'oxscript', 'page/details/inc/priceinfo.tpl', 1, false),array('function', 'oxmultilang', 'page/details/inc/priceinfo.tpl', 5, false),)), $this); ?>

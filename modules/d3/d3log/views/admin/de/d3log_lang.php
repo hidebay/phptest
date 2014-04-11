@@ -43,10 +43,13 @@ $aLang = array(
     'D3_CFG_LOG_FUNCTION'                   => 'Methode',
     'D3_CFG_LOG_LINE'                       => 'Zeile',
     'D3_CFG_LOG_WRAP'                       => 'kein Zeilenumbruch',
-    'D3_CFG_LOG_ACTITEMS_MODULES'           => '<b>Sie sehen derzeit nur die Logeinträge des Moduls "%s". Um alle Logeinträge zu sehen, diese zu exportieren oder zu löschen, nutzen Sie bitte die Ansicht unter "Modul-Connector => Logging"</b><br><br>',
+    'D3_CFG_LOG_ACTITEMS_MODULES'           => '<b>Sie sehen derzeit nur die Logeinträge des Moduls "%s". Um alle '.
+        'Logeinträge zu sehen, diese zu exportieren oder zu löschen, nutzen Sie bitte die Ansicht unter "Modul-'.
+        'Connector => Logging"</b><br><br>',
     'D3_CFG_LOG_ACTITEMS'                   => 'Derzeit sind ',
     'D3_CFG_LOG_ACTITEMS1'                  => ' Einträge im D3-Log gespeichert.',
-    'D3_CFG_LOG_ACTITEMS2'                  => ' Einträge im D3-Log gespeichert. Deaktivieren Sie unnötige Logeinstellungen bzw. bereinigen Sie die Einträge.',
+    'D3_CFG_LOG_ACTITEMS2'                  => ' Einträge im D3-Log gespeichert. Deaktivieren Sie unnötige '.
+        'Logeinstellungen bzw. bereinigen Sie die Einträge.',
     'D3_CFG_CLEAN_DEL1'                     => 'Lösche alle Einträge mit folgenden Bedingungen:',
     'D3_CFG_CLEAN_DEL_MODULE'               => 'Module',
     'D3_CFG_CLEAN_DEL_MODULE_ALL'           => 'Einträge aller Module',
@@ -83,15 +86,22 @@ $aLang = array(
     'D3_CFG_FIELDTITLE_OXTEXT'              => 'LogText',
 
     'D3_LOG_CFG_USEEXTLOG'                  => 'erweiterte Logging-Einstellungen verwenden',
-    'D3_LOG_CFG_EXTENDED_LOGGING_HELP'      => 'Der Shopbetreiber wählt im Regelfall aus zusammengefassten Loggruppen. Mit dieser Option kann jeder Logmodus einzeln eingestellt werden.',
+    'D3_LOG_CFG_EXTENDED_LOGGING_HELP'      => 'Der Shopbetreiber wählt im Regelfall aus zusammengefassten Loggruppen.'.
+        ' Mit dieser Option kann jeder Logmodus einzeln eingestellt werden.',
     'D3_LOG_CFG_ENABLE_ERR_REPORT'          => 'ErrorReporting in internes Logging schreiben',
-    'D3_LOG_CFG_ENABLE_ERR_REPORT_HELP'     => 'Im Normalbetrieb werden PHP-Meldungen aus Sicherheitsgründen nicht ausgegeben. Mit dieser Einstellung werden Meldungen in das interne Logging übernommen. Auf die Ausgabe dieser Daten am Bildschirm hat diese Einstellung keine Auswirkung.',
+    'D3_LOG_CFG_ENABLE_ERR_REPORT_HELP'     => 'Im Normalbetrieb werden PHP-Meldungen aus Sicherheitsgründen nicht '.
+        'ausgegeben. Mit dieser Einstellung werden Meldungen in das interne Logging übernommen. Auf die Ausgabe dieser'.
+        ' Daten am Bildschirm hat diese Einstellung keine Auswirkung.',
     'D3_LOG_CFG_ENABLE_EXC_REPORT'          => 'Exceptions in internes Logging schreiben',
-    'D3_LOG_CFG_ENABLE_EXC_REPORT_HELP'     => 'Ausnahmebehandlungen werden on EXCEPTION_LOG.txt hinterlegt. Zur einfacheren Auswertung können Sie diese zusätzlich auch im internen Logging mitprotokollieren.',
+    'D3_LOG_CFG_ENABLE_EXC_REPORT_HELP'     => 'Ausnahmebehandlungen werden on EXCEPTION_LOG.txt hinterlegt. Zur '.
+        'einfacheren Auswertung können Sie diese zusätzlich auch im internen Logging mitprotokollieren.',
     'D3_LOG_CFG_ENABLE_ADMINPROFILING'      => 'Profiling auch im Adminbereich zeigen',
-    'D3_LOG_CFG_ENABLE_ADMINPROFILING_HELP' => 'Der Adminereich stellt das Profiling, welches über die Datei "config.inc.php" aktiviert werden kann, normalerweise nicht dar.',
+    'D3_LOG_CFG_ENABLE_ADMINPROFILING_HELP' => 'Der Adminereich stellt das Profiling, welches über die Datei '.
+        '"config.inc.php" aktiviert werden kann, normalerweise nicht dar.',
     'D3_LOG_CFG_SHOWALLEXCEPTIONS'          => 'alle Ausnahmebehandlungen zeigen',
-    'D3_LOG_CFG_SHOWALLEXCEPTIONS_HELP'     => 'Im Normalbetrieb werden Fehler unterdrückt und nur im Hintergrund mitgeschrieben. Um eventuelle Fehler schnell zu erkennen, setzen Sie diesen Schalter. Deaktivieren Sie diesen im Anschluss unbedingt wieder!',
+    'D3_LOG_CFG_SHOWALLEXCEPTIONS_HELP'     => 'Im Normalbetrieb werden Fehler unterdrückt und nur im Hintergrund '.
+        'mitgeschrieben. Um eventuelle Fehler schnell zu erkennen, setzen Sie diesen Schalter. Deaktivieren Sie diesen'.
+        ' im Anschluss unbedingt wieder!',
     'D3_LOG_CFG_MODULELOGGING'              => 'Umfang des ErrorReportings',
     'D3_LOG_CFG_MAILMESSAGING'              => 'Mailbenachrichtigungen (optional)',
     'D3_LOG_CFG_MAILADDRESS'                => 'Mailadresse',
@@ -129,17 +139,33 @@ $aLang = array(
     'D3_LOGTYPE_INFO'                       => 'allgem. Informationen (Infos)',
     'D3_LOGTYPE_DEBUG'                      => 'Debug-Informationen (Debug)',
     'D3_LOGTYPE_TEST'                       => 'Test-Informationen (Test)',
-    'D3_LOGTYPE_DESC'                       => '<h4>Log-Level</h4><ul>
-                                                <li>Emergency (Fehler) - System ist unbenutzbar (Bsp: alle PHP-Abbrüche zwischen FATAL ERRORs und WARNINGs, keine Modulkonfiguration gefunden)</li>
-                                                <li>Alert (Fehler)    - es müssen sofort Massnahmen ergriffen werden (Bsp: Anforderungen nicht erfüllt, erforderliche Berechtigungen nicht vorhanden)</li>
-                                                <li>Critical (Fehler)  - kritische Bedingung (Bsp: Zugangsdaten fehlen, wichtige Konfigurationsfehler)</li>
-                                                <li>Error (Fehler)    - fehlerhafte Bedingung, sonstige Reaktion, die unerwartete ablaufrelevante Reaktionen auslösen können</li>
-                                                <li>Warning	  - Bsp: Falschkonfigurationen, Eingabefehler auf View-Ebene</li>
-                                                <li>Notice    - normale, jedoch bedeutsame Bedingung, essentielle Informationen zur Nachvollziehbarkeit von Aktionen (Protokollierung von Start / Ende / grobe Ablaufskizzierung)</li>
-                                                <li>Info      - erweiterte Infos zur Nachvollziehbarkeit von Aktionen, statistische Daten</li>
-                                                <li>Debug	  - Infos zur Nachvollziehbarkeit von Aktionen inkl. Daten der Aktion (Queries, Transaktionsdaten)</li>
-                                                <li>Test	  - eingeschränkte oder speziell für Modultests manipulierte Funktion</li></ul>
-                                                <li>Benutzerdefiniert  - über die erweiterten Loggingeinstellungen (aktivierbar in der Log-Bibliothek) wurde eine Log-Kombination eingestellt, die als Gruppe nicht verfügbar ist. Ändern Sie die Gruppe oder aktivieren Sie die erweiterten Loggingeinstellungen erneut.</li>',
+    'D3_LOGTYPE_DESC'                       => '<h4>Log-Level</h4><ul>'.
+        '<li>Emergency (Fehler) - System ist unbenutzbar (Bsp: alle PHP-Abbrüche zwischen FATAL ERRORs und WARNINGs, '.
+        'keine Modulkonfiguration gefunden) </li>'.
+        '<li>Alert (Fehler) - es müssen sofort Massnahmen ergriffen werden (Bsp: Anforderungen nicht erfüllt, '.
+        'erforderliche Berechtigungen nicht vorhanden)</li>'.
+        '<li>Critical (Fehler) - kritische Bedingung (Bsp: Zugangsdaten fehlen, wichtige Konfigurationsfehler)</li>'.
+        '<li>Error (Fehler) - fehlerhafte Bedingung, sonstige Reaktion, die unerwartete ablaufrelevante Reaktionen '.
+        'auslösen können</li>'.
+        '<li>Warning	- Bsp: Falschkonfigurationen, Eingabefehler auf View-Ebene</li>'.
+        '<li>Notice - normale, jedoch bedeutsame Bedingung, essentielle Informationen zur Nachvollziehbarkeit von '.
+        'Aktionen (Protokollierung von Start / Ende / grobe Ablaufskizzierung)</li>'.
+        '<li>Info - erweiterte Infos zur Nachvollziehbarkeit von Aktionen, statistische Daten</li>'.
+        '<li>Debug - Infos zur Nachvollziehbarkeit von Aktionen inkl. Daten der Aktion (Queries, Transaktionsdaten)'.
+        '</li>'.
+        '<li>Test - eingeschränkte oder speziell für Modultests manipulierte Funktion</li>'.
+        '<li>Benutzerdefiniert  - über die erweiterten Loggingeinstellungen (aktivierbar in der Log-Bibliothek) wurde '.
+        'eine Log-Kombination eingestellt, die als Gruppe nicht verfügbar ist. Ändern Sie die Gruppe oder aktivieren '.
+        'Sie die erweiterten Loggingeinstellungen erneut.</li></ul>',
+
+    'D3_LOGMAIL_SUBJECT'                    => 'LogInfo von %s (%s)',
+    'D3_LOGMAIL_HEADLINE'                   => 'Diese Log-Eintraege wurden seit der letzten Informationsmail im Shop '.
+        'gesetzt:',
+    'D3_LOGMAIL_INMODULE'                   => ' in Modul "%s"',
+    'D3_LOGMAIL_DESC'                       => 'Details und Ursachen dieser Protokolleinträge können Sie im '.
+        'Adminbereich Ihres Shops unter "D³ Module -> Modul-Connector -> Logging" einsehen. Dort können Sie '.
+        'unrelevante oder geklärte Logeinträge auch löschen.',
+    'D3_LOGMAIL_LEGENDE'                    => '<hr><h3>Legende:</h3>',
 
 );
 

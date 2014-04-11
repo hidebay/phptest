@@ -84,6 +84,7 @@ $aLang = array(
     'D3_CFG_LIB_DOWNLOADIT'                    => 'Downl.',
     'D3_CFG_LIB_UPDATE'                        => 'Update',
     'D3_CFG_LIB_MAINTENANCEMODE'               => 'Auf Grund von Wartungs- und Update-Arbeiten steht Ihnen die Aktualisierung leider kurzzeitig nicht zur Verfügung. Bitte versuchen Sie es zu einem späteren Zeitpunkt erneut. Vielen Dank für Ihr Verständnis.',
+    'D3_CFG_LIB_NOINSTALLNOTICE'               => 'Die eingesetzte Version des Modul-Connectors wurde speziell aufgearbeitet. Führen Sie über diese Oberfläche ein Update des Connectors durch, werden Ihre Dateien überschrieben. Daher raten wir dringend von einem automatischen Update ab. \n\nMöchten Sie den Connector aktualisieren, fragen Sie bitte bei Ihrem Anbieter nach einer neuen individuellen Version für Sie nach. \n\nIhr D³ Data Development Team.',
 
     'd3tbcl_licence'                           => 'Support',
     'D3_CFG_MOD_LIST_SETTLANG'                 => 'Einstellungen für Sprache',
@@ -125,6 +126,7 @@ $aLang = array(
     'D3_CFG_MOD_VERSION_STARTCHECK'            => 'Auf aktuelle Version prüfen',
     'D3_CFG_MOD_VERSION_NONEWVERSION'          => 'Es ist keine neue Version für Ihren Shop verfügbar.',
     'D3_CFG_MOD_VERSION_INSTALLSTATUS'         => 'Installationsfortschritt',
+    'D3_CFG_MOD_VERSION_AVAILLIST'             => 'Weitere Informationen zur Verf&uuml;gbarkeit unserer Module in den verschiedenen Shopversionen finden Sie auch in unserer <a href="http://www.oxidmodule.com/Modulverfuegbarkeiten/" target="modverf">&Uuml;bersicht</a>.',
 
     'D3_CFG_MOD_SUPPORT'                       => 'Unterstützung',
     'D3_CFG_MOD_SUPPORT_1'                     => 'Bei Fragen oder Anregungen stehen wir Ihnen mit folgenden Kontaktmöglichkeiten gern zur Verfügung:',
@@ -356,8 +358,10 @@ $aLang = array(
     'D3_MODPROFILE_MAIN_ACTIVEFROM'            => 'von',
     'D3_MODPROFILE_MAIN_ACTIVETO'              => 'bis',
     'D3_MODPROFILE_MAIN_TITLE'                 => 'Titel',
+    'D3_MODPROFILE_MAIN_SHORTDESC'             => 'Kurzbeschreibung',
     'D3_MODPROFILE_MAIN_NOFOLDER'              => 'kein Ordner gewählt',
     'D3_GENERAL_MODPROFILE_TITLE'              => 'Titel',
+    'D3_GENERAL_MODPROFILE_FOLDER'             => 'Ordner',
     'D3_GENERAL_MODPROFILE_SORT'               => 'Reihenfolge',
     'D3_GENERAL_MODPROFILE_SAVE'               => 'Speichern',
     'D3_GENERAL_MODPROFILE_COPY'               => 'identische Kopie anlegen',

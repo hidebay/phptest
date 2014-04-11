@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.26, created on 2014-04-10 12:32:07
+<?php /* Smarty version 2.6.26, created on 2014-04-11 14:46:54
          compiled from message/errors.tpl */ ?>
 <?php if (count ( $this->_tpl_vars['Errors'] ) > 0 && count ( $this->_tpl_vars['Errors']['default'] ) > 0): ?>
 <div class="status error corners">

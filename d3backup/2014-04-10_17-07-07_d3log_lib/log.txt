@@ -1,0 +1,91 @@
+2014-04-10 17:07:07	getArchive          	-	OK	-	
+2014-04-10 17:07:08	extractArchive      	-	OK	-	"zip-open" mode
+2014-04-10 17:07:13	overwriteFile       	-	OK	-	/var/www/phptest/modules/d3/vendormetadata.php
+2014-04-10 17:07:13	CopyFile - 481      	-	OK	-	/var/www/phptest/modules/d3/vendormetadata.php => /var/www/phptest/d3backup/2014-04-10_17-07-07_d3log_lib/backupFiles/modules/d3/vendormetadata.php
+2014-04-10 17:07:13	CopyFile - 481      	-	OK	-	/var/www/phptest/tmp/d3log_lib/copy_this/modules/d3/vendormetadata.php => /var/www/phptest/modules/d3/vendormetadata.php
+2014-04-10 17:07:13	overwriteFile       	-	OK	-	/var/www/phptest/modules/d3/d3log/models/transactionlog/reader/abstract.php
+2014-04-10 17:07:13	CopyFile - 481      	-	OK	-	/var/www/phptest/modules/d3/d3log/models/transactionlog/reader/abstract.php => /var/www/phptest/d3backup/2014-04-10_17-07-07_d3log_lib/backupFiles/modules/d3/d3log/models/transactionlog/reader/abstract.php
+2014-04-10 17:07:13	CopyFile - 481      	-	OK	-	/var/www/phptest/tmp/d3log_lib/copy_this/modules/d3/d3log/models/transactionlog/reader/abstract.php => /var/www/phptest/modules/d3/d3log/models/transactionlog/reader/abstract.php
+2014-04-10 17:07:13	overwriteFile       	-	OK	-	/var/www/phptest/modules/d3/d3log/models/d3log_cleanup.php
+2014-04-10 17:07:13	CopyFile - 481      	-	OK	-	/var/www/phptest/modules/d3/d3log/models/d3log_cleanup.php => /var/www/phptest/d3backup/2014-04-10_17-07-07_d3log_lib/backupFiles/modules/d3/d3log/models/d3log_cleanup.php
+2014-04-10 17:07:13	CopyFile - 481      	-	OK	-	/var/www/phptest/tmp/d3log_lib/copy_this/modules/d3/d3log/models/d3log_cleanup.php => /var/www/phptest/modules/d3/d3log/models/d3log_cleanup.php
+2014-04-10 17:07:13	overwriteFile       	-	OK	-	/var/www/phptest/modules/d3/d3log/models/d3transactionloglist.php
+2014-04-10 17:07:13	CopyFile - 481      	-	OK	-	/var/www/phptest/modules/d3/d3log/models/d3transactionloglist.php => /var/www/phptest/d3backup/2014-04-10_17-07-07_d3log_lib/backupFiles/modules/d3/d3log/models/d3transactionloglist.php
+2014-04-10 17:07:13	CopyFile - 481      	-	OK	-	/var/www/phptest/tmp/d3log_lib/copy_this/modules/d3/d3log/models/d3transactionloglist.php => /var/www/phptest/modules/d3/d3log/models/d3transactionloglist.php
+2014-04-10 17:07:13	overwriteFile       	-	OK	-	/var/www/phptest/modules/d3/d3log/models/oxobject2d3transactionlog.php
+2014-04-10 17:07:13	CopyFile - 481      	-	OK	-	/var/www/phptest/modules/d3/d3log/models/oxobject2d3transactionlog.php => /var/www/phptest/d3backup/2014-04-10_17-07-07_d3log_lib/backupFiles/modules/d3/d3log/models/oxobject2d3transactionlog.php
+2014-04-10 17:07:13	CopyFile - 481      	-	OK	-	/var/www/phptest/tmp/d3log_lib/copy_this/modules/d3/d3log/models/oxobject2d3transactionlog.php => /var/www/phptest/modules/d3/d3log/models/oxobject2d3transactionlog.php
+2014-04-10 17:07:13	overwriteFile       	-	OK	-	/var/www/phptest/modules/d3/d3log/models/d3log_update.php
+2014-04-10 17:07:13	CopyFile - 481      	-	OK	-	/var/www/phptest/modules/d3/d3log/models/d3log_update.php => /var/www/phptest/d3backup/2014-04-10_17-07-07_d3log_lib/backupFiles/modules/d3/d3log/models/d3log_update.php
+2014-04-10 17:07:13	CopyFile - 481      	-	OK	-	/var/www/phptest/tmp/d3log_lib/copy_this/modules/d3/d3log/models/d3log_update.php => /var/www/phptest/modules/d3/d3log/models/d3log_update.php
+2014-04-10 17:07:13	overwriteFile       	-	OK	-	/var/www/phptest/modules/d3/d3log/models/d3transactionlog.php
+2014-04-10 17:07:13	CopyFile - 481      	-	OK	-	/var/www/phptest/modules/d3/d3log/models/d3transactionlog.php => /var/www/phptest/d3backup/2014-04-10_17-07-07_d3log_lib/backupFiles/modules/d3/d3log/models/d3transactionlog.php
+2014-04-10 17:07:13	CopyFile - 481      	-	OK	-	/var/www/phptest/tmp/d3log_lib/copy_this/modules/d3/d3log/models/d3transactionlog.php => /var/www/phptest/modules/d3/d3log/models/d3transactionlog.php
+2014-04-10 17:07:13	overwriteFile       	-	OK	-	/var/www/phptest/modules/d3/d3log/models/d3log.php
+2014-04-10 17:07:13	CopyFile - 481      	-	OK	-	/var/www/phptest/modules/d3/d3log/models/d3log.php => /var/www/phptest/d3backup/2014-04-10_17-07-07_d3log_lib/backupFiles/modules/d3/d3log/models/d3log.php
+2014-04-10 17:07:13	CopyFile - 481      	-	OK	-	/var/www/phptest/tmp/d3log_lib/copy_this/modules/d3/d3log/models/d3log.php => /var/www/phptest/modules/d3/d3log/models/d3log.php
+2014-04-10 17:07:13	overwriteFile       	-	OK	-	/var/www/phptest/modules/d3/d3log/views/admin/en/d3log_lang.php
+2014-04-10 17:07:13	CopyFile - 481      	-	OK	-	/var/www/phptest/modules/d3/d3log/views/admin/en/d3log_lang.php => /var/www/phptest/d3backup/2014-04-10_17-07-07_d3log_lib/backupFiles/modules/d3/d3log/views/admin/en/d3log_lang.php
+2014-04-10 17:07:13	CopyFile - 481      	-	OK	-	/var/www/phptest/tmp/d3log_lib/copy_this/modules/d3/d3log/views/admin/en/d3log_lang.php => /var/www/phptest/modules/d3/d3log/views/admin/en/d3log_lang.php
+2014-04-10 17:07:13	overwriteFile       	-	OK	-	/var/www/phptest/modules/d3/d3log/views/admin/de/d3log_lang.php
+2014-04-10 17:07:13	CopyFile - 481      	-	OK	-	/var/www/phptest/modules/d3/d3log/views/admin/de/d3log_lang.php => /var/www/phptest/d3backup/2014-04-10_17-07-07_d3log_lib/backupFiles/modules/d3/d3log/views/admin/de/d3log_lang.php
+2014-04-10 17:07:13	CopyFile - 481      	-	OK	-	/var/www/phptest/tmp/d3log_lib/copy_this/modules/d3/d3log/views/admin/de/d3log_lang.php => /var/www/phptest/modules/d3/d3log/views/admin/de/d3log_lang.php
+2014-04-10 17:07:13	overwriteFile       	-	OK	-	/var/www/phptest/modules/d3/d3log/views/admin/tpl/d3_cfg_log_main.tpl
+2014-04-10 17:07:13	CopyFile - 481      	-	OK	-	/var/www/phptest/modules/d3/d3log/views/admin/tpl/d3_cfg_log_main.tpl => /var/www/phptest/d3backup/2014-04-10_17-07-07_d3log_lib/backupFiles/modules/d3/d3log/views/admin/tpl/d3_cfg_log_main.tpl
+2014-04-10 17:07:13	CopyFile - 481      	-	OK	-	/var/www/phptest/tmp/d3log_lib/copy_this/modules/d3/d3log/views/admin/tpl/d3_cfg_log_main.tpl => /var/www/phptest/modules/d3/d3log/views/admin/tpl/d3_cfg_log_main.tpl
+2014-04-10 17:07:13	overwriteFile       	-	OK	-	/var/www/phptest/modules/d3/d3log/views/admin/tpl/d3log_lib_cfg.tpl
+2014-04-10 17:07:13	CopyFile - 481      	-	OK	-	/var/www/phptest/modules/d3/d3log/views/admin/tpl/d3log_lib_cfg.tpl => /var/www/phptest/d3backup/2014-04-10_17-07-07_d3log_lib/backupFiles/modules/d3/d3log/views/admin/tpl/d3log_lib_cfg.tpl
+2014-04-10 17:07:13	CopyFile - 481      	-	OK	-	/var/www/phptest/tmp/d3log_lib/copy_this/modules/d3/d3log/views/admin/tpl/d3log_lib_cfg.tpl => /var/www/phptest/modules/d3/d3log/views/admin/tpl/d3log_lib_cfg.tpl
+2014-04-10 17:07:13	overwriteFile       	-	OK	-	/var/www/phptest/modules/d3/d3log/views/admin/tpl/d3_cfg_log_list.tpl
+2014-04-10 17:07:13	CopyFile - 481      	-	OK	-	/var/www/phptest/modules/d3/d3log/views/admin/tpl/d3_cfg_log_list.tpl => /var/www/phptest/d3backup/2014-04-10_17-07-07_d3log_lib/backupFiles/modules/d3/d3log/views/admin/tpl/d3_cfg_log_list.tpl
+2014-04-10 17:07:13	CopyFile - 481      	-	OK	-	/var/www/phptest/tmp/d3log_lib/copy_this/modules/d3/d3log/views/admin/tpl/d3_cfg_log_list.tpl => /var/www/phptest/modules/d3/d3log/views/admin/tpl/d3_cfg_log_list.tpl
+2014-04-10 17:07:13	overwriteFile       	-	OK	-	/var/www/phptest/modules/d3/d3log/views/admin/tpl/d3_cfg_log_export.tpl
+2014-04-10 17:07:13	CopyFile - 481      	-	OK	-	/var/www/phptest/modules/d3/d3log/views/admin/tpl/d3_cfg_log_export.tpl => /var/www/phptest/d3backup/2014-04-10_17-07-07_d3log_lib/backupFiles/modules/d3/d3log/views/admin/tpl/d3_cfg_log_export.tpl
+2014-04-10 17:07:13	CopyFile - 481      	-	OK	-	/var/www/phptest/tmp/d3log_lib/copy_this/modules/d3/d3log/views/admin/tpl/d3_cfg_log_export.tpl => /var/www/phptest/modules/d3/d3log/views/admin/tpl/d3_cfg_log_export.tpl
+2014-04-10 17:07:13	overwriteFile       	-	OK	-	/var/www/phptest/modules/d3/d3log/views/admin/tpl/d3_cfg_log_cleanup.tpl
+2014-04-10 17:07:13	CopyFile - 481      	-	OK	-	/var/www/phptest/modules/d3/d3log/views/admin/tpl/d3_cfg_log_cleanup.tpl => /var/www/phptest/d3backup/2014-04-10_17-07-07_d3log_lib/backupFiles/modules/d3/d3log/views/admin/tpl/d3_cfg_log_cleanup.tpl
+2014-04-10 17:07:13	CopyFile - 481      	-	OK	-	/var/www/phptest/tmp/d3log_lib/copy_this/modules/d3/d3log/views/admin/tpl/d3_cfg_log_cleanup.tpl => /var/www/phptest/modules/d3/d3log/views/admin/tpl/d3_cfg_log_cleanup.tpl
+2014-04-10 17:07:13	overwriteFile       	-	OK	-	/var/www/phptest/modules/d3/d3log/views/admin/tpl/inc/d3loglevel_form.tpl
+2014-04-10 17:07:13	CopyFile - 481      	-	OK	-	/var/www/phptest/modules/d3/d3log/views/admin/tpl/inc/d3loglevel_form.tpl => /var/www/phptest/d3backup/2014-04-10_17-07-07_d3log_lib/backupFiles/modules/d3/d3log/views/admin/tpl/inc/d3loglevel_form.tpl
+2014-04-10 17:07:13	CopyFile - 481      	-	OK	-	/var/www/phptest/tmp/d3log_lib/copy_this/modules/d3/d3log/views/admin/tpl/inc/d3loglevel_form.tpl => /var/www/phptest/modules/d3/d3log/views/admin/tpl/inc/d3loglevel_form.tpl
+2014-04-10 17:07:13	overwriteFile       	-	OK	-	/var/www/phptest/modules/d3/d3log/.htaccess
+2014-04-10 17:07:13	CopyFile - 481      	-	OK	-	/var/www/phptest/modules/d3/d3log/.htaccess => /var/www/phptest/d3backup/2014-04-10_17-07-07_d3log_lib/backupFiles/modules/d3/d3log/.htaccess
+2014-04-10 17:07:13	CopyFile - 481      	-	OK	-	/var/www/phptest/tmp/d3log_lib/copy_this/modules/d3/d3log/.htaccess => /var/www/phptest/modules/d3/d3log/.htaccess
+2014-04-10 17:07:13	overwriteFile       	-	OK	-	/var/www/phptest/modules/d3/d3log/metadata.php
+2014-04-10 17:07:13	CopyFile - 481      	-	OK	-	/var/www/phptest/modules/d3/d3log/metadata.php => /var/www/phptest/d3backup/2014-04-10_17-07-07_d3log_lib/backupFiles/modules/d3/d3log/metadata.php
+2014-04-10 17:07:13	CopyFile - 481      	-	OK	-	/var/www/phptest/tmp/d3log_lib/copy_this/modules/d3/d3log/metadata.php => /var/www/phptest/modules/d3/d3log/metadata.php
+2014-04-10 17:07:13	overwriteFile       	-	OK	-	/var/www/phptest/modules/d3/d3log/picture.png
+2014-04-10 17:07:13	CopyFile - 481      	-	OK	-	/var/www/phptest/modules/d3/d3log/picture.png => /var/www/phptest/d3backup/2014-04-10_17-07-07_d3log_lib/backupFiles/modules/d3/d3log/picture.png
+2014-04-10 17:07:13	CopyFile - 481      	-	OK	-	/var/www/phptest/tmp/d3log_lib/copy_this/modules/d3/d3log/picture.png => /var/www/phptest/modules/d3/d3log/picture.png
+2014-04-10 17:07:13	overwriteFile       	-	OK	-	/var/www/phptest/modules/d3/d3log/d3log_stub.php
+2014-04-10 17:07:13	CopyFile - 481      	-	OK	-	/var/www/phptest/modules/d3/d3log/d3log_stub.php => /var/www/phptest/d3backup/2014-04-10_17-07-07_d3log_lib/backupFiles/modules/d3/d3log/d3log_stub.php
+2014-04-10 17:07:13	CopyFile - 481      	-	OK	-	/var/www/phptest/tmp/d3log_lib/copy_this/modules/d3/d3log/d3log_stub.php => /var/www/phptest/modules/d3/d3log/d3log_stub.php
+2014-04-10 17:07:13	CopyFile - 1607     	-	OK	-	/var/www/phptest/tmp/d3log_lib/copy_this/modules/d3/d3log/modules/core/d3_oxemail_log.php => /var/www/phptest/modules/d3/d3log/modules/core/d3_oxemail_log.php
+2014-04-10 17:07:13	CopyFile - 481      	-	OK	-	/var/www/phptest/tmp/d3log_lib/copy_this/modules/d3/d3log/modules/core/d3_oxemail_log.php => /var/www/phptest/modules/d3/d3log/modules/core/d3_oxemail_log.php
+2014-04-10 17:07:13	overwriteFile       	-	OK	-	/var/www/phptest/modules/d3/d3log/modules/controllers/d3_oxshopcontrol_errorhandler.php
+2014-04-10 17:07:13	CopyFile - 481      	-	OK	-	/var/www/phptest/modules/d3/d3log/modules/controllers/d3_oxshopcontrol_errorhandler.php => /var/www/phptest/d3backup/2014-04-10_17-07-07_d3log_lib/backupFiles/modules/d3/d3log/modules/controllers/d3_oxshopcontrol_errorhandler.php
+2014-04-10 17:07:13	CopyFile - 481      	-	OK	-	/var/www/phptest/tmp/d3log_lib/copy_this/modules/d3/d3log/modules/controllers/d3_oxshopcontrol_errorhandler.php => /var/www/phptest/modules/d3/d3log/modules/controllers/d3_oxshopcontrol_errorhandler.php
+2014-04-10 17:07:13	overwriteFile       	-	OK	-	/var/www/phptest/modules/d3/d3log/controllers/admin/d3_cfg_log_list.php
+2014-04-10 17:07:13	CopyFile - 481      	-	OK	-	/var/www/phptest/modules/d3/d3log/controllers/admin/d3_cfg_log_list.php => /var/www/phptest/d3backup/2014-04-10_17-07-07_d3log_lib/backupFiles/modules/d3/d3log/controllers/admin/d3_cfg_log_list.php
+2014-04-10 17:07:13	CopyFile - 481      	-	OK	-	/var/www/phptest/tmp/d3log_lib/copy_this/modules/d3/d3log/controllers/admin/d3_cfg_log_list.php => /var/www/phptest/modules/d3/d3log/controllers/admin/d3_cfg_log_list.php
+2014-04-10 17:07:13	overwriteFile       	-	OK	-	/var/www/phptest/modules/d3/d3log/controllers/admin/d3_cfg_log_cleanup.php
+2014-04-10 17:07:13	CopyFile - 481      	-	OK	-	/var/www/phptest/modules/d3/d3log/controllers/admin/d3_cfg_log_cleanup.php => /var/www/phptest/d3backup/2014-04-10_17-07-07_d3log_lib/backupFiles/modules/d3/d3log/controllers/admin/d3_cfg_log_cleanup.php
+2014-04-10 17:07:13	CopyFile - 481      	-	OK	-	/var/www/phptest/tmp/d3log_lib/copy_this/modules/d3/d3log/controllers/admin/d3_cfg_log_cleanup.php => /var/www/phptest/modules/d3/d3log/controllers/admin/d3_cfg_log_cleanup.php
+2014-04-10 17:07:13	overwriteFile       	-	OK	-	/var/www/phptest/modules/d3/d3log/controllers/admin/d3_cfg_log_main.php
+2014-04-10 17:07:13	CopyFile - 481      	-	OK	-	/var/www/phptest/modules/d3/d3log/controllers/admin/d3_cfg_log_main.php => /var/www/phptest/d3backup/2014-04-10_17-07-07_d3log_lib/backupFiles/modules/d3/d3log/controllers/admin/d3_cfg_log_main.php
+2014-04-10 17:07:13	CopyFile - 481      	-	OK	-	/var/www/phptest/tmp/d3log_lib/copy_this/modules/d3/d3log/controllers/admin/d3_cfg_log_main.php => /var/www/phptest/modules/d3/d3log/controllers/admin/d3_cfg_log_main.php
+2014-04-10 17:07:13	overwriteFile       	-	OK	-	/var/www/phptest/modules/d3/d3log/controllers/admin/d3_cfg_log.php
+2014-04-10 17:07:13	CopyFile - 481      	-	OK	-	/var/www/phptest/modules/d3/d3log/controllers/admin/d3_cfg_log.php => /var/www/phptest/d3backup/2014-04-10_17-07-07_d3log_lib/backupFiles/modules/d3/d3log/controllers/admin/d3_cfg_log.php
+2014-04-10 17:07:13	CopyFile - 481      	-	OK	-	/var/www/phptest/tmp/d3log_lib/copy_this/modules/d3/d3log/controllers/admin/d3_cfg_log.php => /var/www/phptest/modules/d3/d3log/controllers/admin/d3_cfg_log.php
+2014-04-10 17:07:13	overwriteFile       	-	OK	-	/var/www/phptest/modules/d3/d3log/controllers/admin/d3_cfg_log_export.php
+2014-04-10 17:07:13	CopyFile - 481      	-	OK	-	/var/www/phptest/modules/d3/d3log/controllers/admin/d3_cfg_log_export.php => /var/www/phptest/d3backup/2014-04-10_17-07-07_d3log_lib/backupFiles/modules/d3/d3log/controllers/admin/d3_cfg_log_export.php
+2014-04-10 17:07:13	CopyFile - 481      	-	OK	-	/var/www/phptest/tmp/d3log_lib/copy_this/modules/d3/d3log/controllers/admin/d3_cfg_log_export.php => /var/www/phptest/modules/d3/d3log/controllers/admin/d3_cfg_log_export.php
+2014-04-10 17:07:13	overwriteFile       	-	OK	-	/var/www/phptest/modules/d3/d3log/menu.xml
+2014-04-10 17:07:13	CopyFile - 481      	-	OK	-	/var/www/phptest/modules/d3/d3log/menu.xml => /var/www/phptest/d3backup/2014-04-10_17-07-07_d3log_lib/backupFiles/modules/d3/d3log/menu.xml
+2014-04-10 17:07:13	CopyFile - 481      	-	OK	-	/var/www/phptest/tmp/d3log_lib/copy_this/modules/d3/d3log/menu.xml => /var/www/phptest/modules/d3/d3log/menu.xml
+2014-04-10 17:07:13	copyFiles           	-	OK	-	some files are replaced
+2014-04-10 17:07:13	copyFiles           	-	OK	-	
+2014-04-10 17:07:14	deleteFile          	-	OK	-	/var/www/phptest/modules/d3/d3log/models/d3log_cleanup.php
+2014-04-10 17:07:14	actualize           	-	NOK	-	d3log_cleanup::startCleanup
+2014-04-10 17:07:14	actualize           	-	OK	-	
+

@@ -245,6 +245,8 @@
                                     </div>
                                 [{/if}]
                             [{/if}]
+
+                            [{oxmultilang ident="D3_CFG_MOD_VERSION_AVAILLIST"}]
                         </dt>
                         <dd class="spacer"></dd>
                     </dl>

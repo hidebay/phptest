@@ -283,6 +283,7 @@
             </div>
 
             [{* additional info *}]
+            <span id="test">Flag = [{$oview->oxarticles_flag_geringer_Bestand}]</span>
             <div class="additionalInfo clear">
                 [{block name="details_productmain_priceperunit"}]
                     [{if $oDetailsProduct->getUnitPrice()}]
@@ -293,6 +294,7 @@
                 [{block name="details_productmain_stockstatus"}]
                     [{if $oDetailsProduct->getStockStatus() == -1}]
                         <span class="stockFlag notOnStock">
+                        
                             [{if $oDetailsProduct->oxarticles__oxnostocktext->value}]
                                 [{$oDetailsProduct->oxarticles__oxnostocktext->value}]
                             [{elseif $oViewConf->getStockOffDefaultMessage()}]

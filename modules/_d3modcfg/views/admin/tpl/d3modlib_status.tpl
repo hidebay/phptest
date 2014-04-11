@@ -642,6 +642,12 @@ dl dd.listitem2
             </td>
         <tr>
     </table>
+
+    [{if $oView->showNoUpdateMessage()}]
+        <script type="text/javascript">
+            alert('[{oxmultilang ident="D3_CFG_LIB_NOINSTALLNOTICE"}]');
+        </script>
+    [{/if}]
 [{/if}]
 
 [{include file="d3_cfg_mod_inc.tpl"}]

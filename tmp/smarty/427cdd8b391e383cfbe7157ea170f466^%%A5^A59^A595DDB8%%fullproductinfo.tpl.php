@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.26, created on 2014-04-10 12:32:07
+<?php /* Smarty version 2.6.26, created on 2014-04-11 14:46:52
          compiled from page/details/inc/fullproductinfo.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
 smarty_core_load_plugins(array('plugins' => array(array('modifier', 'oxmultilangassign', 'page/details/inc/fullproductinfo.tpl', 67, false),array('modifier', 'colon', 'page/details/inc/fullproductinfo.tpl', 67, false),array('function', 'oxmultilang', 'page/details/inc/fullproductinfo.tpl', 71, false),array('function', 'oxid_include_widget', 'page/details/inc/fullproductinfo.tpl', 76, false),)), $this); ?>

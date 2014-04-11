@@ -281,7 +281,9 @@
                     [{/oxhasrights}]
                 [{/block}]
             </div>
-
+           
+			[{*}]<!--<span id="test">Flag = [{$oDetailsProduct->oxarticles__bnflagbestand->value}]</span>-->[{*}]
+            
             [{* additional info *}]
             <div class="additionalInfo clear">
                 [{block name="details_productmain_priceperunit"}]
@@ -289,9 +291,11 @@
                         <span id="productPriceUnit">[{$oDetailsProduct->getUnitQuantity()}] [{$oDetailsProduct->getUnitName()}] | [{oxprice price=$oDetailsProduct->getUnitPrice() }] [{$currency->sign}]/[{$oDetailsProduct->getUnitName()}] </span>
                     [{/if}]
                 [{/block}]
-
+[{*}]<!---->[{*}]
                 [{block name="details_productmain_stockstatus"}]
-                    [{if $oDetailsProduct->getStockStatus() == -1}]
+                    [{*}]<!--[{if $oDetailsProduct->getStockStatus() == -1}]-->[{*}]
+                    [{if $oDetailsProduct->oxarticles__bnflagbestand->value == 2}]
+[{*}]<!-- Der Artikel ist nicht auf Lager und muss erst nachbestellt werden -->[{*}]
                         <span class="stockFlag notOnStock">
                             [{if $oDetailsProduct->oxarticles__oxnostocktext->value}]
                                 [{$oDetailsProduct->oxarticles__oxnostocktext->value}]
@@ -302,11 +306,15 @@
                                 [{oxmultilang ident="AVAILABLE_ON"}] [{$oDetailsProduct->getDeliveryDate()}]
                             [{/if}]
                         </span>
-                    [{elseif $oDetailsProduct->getStockStatus() == 1}]
+                    [{*}]<!--[{elseif $oDetailsProduct->getStockStatus() == 1}]-->[{*}]
+                    [{elseif $oDetailsProduct->oxarticles__bnflagbestand->value == 1}]
+[{*}]<!-- Wenige Exemplare auf Lager -schnell bestellen! -->[{*}]
                         <span class="stockFlag lowStock">
                             [{oxmultilang ident="LOW_STOCK"}]
                         </span>
-                    [{elseif $oDetailsProduct->getStockStatus() == 0}]
+                    [{*}]<!--[{elseif $oDetailsProduct->getStockStatus() == 0}]-->[{*}]
+                    [{elseif $oDetailsProduct->oxarticles__bnflagbestand->value == 0}]
+[{*}]<!-- Sofort lieferbar. -->[{*}]
                         <span class="stockFlag">
                             [{if $oDetailsProduct->oxarticles__oxstocktext->value}]
                                 [{$oDetailsProduct->oxarticles__oxstocktext->value}]
@@ -316,7 +324,7 @@
                         </span>
                     [{/if}]
                 [{/block}]
-
+[{*}]<!---->[{*}]
                 [{block name="details_productmain_deliverytime"}]
                     [{oxhasrights ident="TOBASKET"}]
                         [{if $oDetailsProduct->isBuyable() }]

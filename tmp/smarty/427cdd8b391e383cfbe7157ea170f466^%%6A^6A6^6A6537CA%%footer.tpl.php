@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.26, created on 2014-04-10 12:32:07
+<?php /* Smarty version 2.6.26, created on 2014-04-11 14:46:54
          compiled from layout/footer.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
 smarty_core_load_plugins(array('plugins' => array(array('function', 'oxscript', 'layout/footer.tpl', 2, false),array('function', 'oxmultilang', 'layout/footer.tpl', 27, false),array('block', 'oxifcontent', 'layout/footer.tpl', 29, false),)), $this); ?>
@@ -69,11 +69,21 @@ unset($_smarty_tpl_vars);
  ?>
     </div>
 <?php endif; ?>
+<div id="owncounter">
 <?php 
+// holt das aktuelle Datum und speichert es als Array 
+// mday = Tag 1-31
+// mon = Monat 1-12
+// year = Jahr yyyy
+// hours = Stunde 1-24
+// minutes = Minuten 1-60
+// seconds = Sekunden 1-60 
 $date = getdate();
 
-$date["mday"] = 1;
+// zum testen den Tag auf 1 gesetzt, da es am Anfang des Monats ein Berechnungsproblem gab.
+// $date["mday"] = 1;
 
+// Berechnet den Tag und setzt am Monatsanfang diesen einen zurück.
 if($date["mday"] >= 3 ){
 $day = $date["mday"]-rand(1, 3);
 }else{
@@ -81,38 +91,67 @@ $day = rand(22,27);
 $date["mon"] = $date["mon"]-1; 
 }
 
-
-/*echo "Diese Seite haben wir am ".($date["mday"]-rand(1, 3)).".".$date["mon"].".".$date["year"]." um ";*/
+// Gibt den ersten Teil des Satzes aus bis zum Datum.
 echo "Diese Seite haben wir am ".$day.".".$date["mon"].".".$date["year"]." um ";
 
+// Berechnung der Stunde.
 if($date["hours"] >= 12){
 	echo ($date["hours"]-rand(1, 12));
 }else{
 	echo ($date["hours"] +rand(1,12));
-}	
+}
+
+// Trenner	
 echo ":";
+
+// Berechnung der Minute.
 if($date["minutes"] > 29){
 	echo ($date["minutes"]-rand(1, 19));
 }else{
 	echo ($date["minutes"] +rand(1,29));
-}	
+}
+
+// Trenner	
 echo ":";
+
+// Berechnung der Sekunden
 if($date["seconds"] > 29){
 	echo ($date["seconds"]-rand(1, 19));
 }else{
 	echo ($date["seconds"] +rand(1,29));
-}	
+}
+
+// Zeitstempel ende.	
 echo " aktualisiert. ";
+
+// öffnet die Datei Counter.
 $datei = fopen("counter.txt","r+");
-$counterstand = fgets($datei, 6);
+
+// liest 7 Zeichen von rechts
+$counterstand = fgets($datei, 7);
+
+// falls die Datei, leer sein sollte oder nicht existiert, gibt er 0 anstatt einer Fehlermeldung zurück
 if($counterstand == "")
 {
   $counterstand = 0;
 }
+
+// die Anzahl der Besuche, erhöht sich jeweils um 1
 $counterstand++;
+
+// Die Anzahl der Besuche seit einem Festen Datum wird ausgegeben.
 echo "Seit dem 20.03.2013 hatten wir <div id='besucher'>".$counterstand." Besucher</div>";
+
+// setzt den Zeiger auf den Anfang des Datei inhaltes
 rewind($datei);
+
+// schreibt die aktuelle Zahl in die Datei.
 fwrite($datei, $counterstand);
+
+// schließt selbige wieder.
 fclose($datei);
+
  ?>
+
 <p>&copy; 1998-<?php  echo date("Y");  ?> All rights reserved</p>
+</div>

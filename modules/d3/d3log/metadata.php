@@ -31,12 +31,13 @@ $aModule = array(
         'en' => 'Makes extended logging accessible.',
     ),
     'thumbnail'   => 'picture.png',
-    'version'     => '2.4.0.0',
+    'version'     => '2.4.1.0',
     'author'      => 'D&sup3; Data Development (Inh. Thomas Dartsch)',
     'email'       => 'support@shopmodule.com',
     'url'         => 'http://www.oxidmodule.com/',
     'extend'      => array(
         'oxshopcontrol' => 'd3/d3log/modules/controllers/d3_oxshopcontrol_errorhandler',
+        //'oxemail' => 'd3/d3log/modules/core/d3_oxemail_log',
     ),
     'files'       => array(
         'd3_cfg_log'                                     => 'd3/d3log/controllers/admin/d3_cfg_log.php',

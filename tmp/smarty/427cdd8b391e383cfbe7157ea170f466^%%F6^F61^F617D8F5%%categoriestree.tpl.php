@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.26, created on 2014-04-10 12:32:07
+<?php /* Smarty version 2.6.26, created on 2014-04-11 14:46:54
          compiled from widget/sidebar/categoriestree.tpl */ ?>
 <?php if ($this->_tpl_vars['categories'] && $this->_tpl_vars['oView']->getClassName() != 'start'): ?>
 <div class="categoryBox">

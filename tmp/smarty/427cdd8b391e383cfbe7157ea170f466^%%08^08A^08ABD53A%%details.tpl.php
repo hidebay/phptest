@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.26, created on 2014-04-10 12:32:06
+<?php /* Smarty version 2.6.26, created on 2014-04-11 14:46:52
          compiled from page/details/details.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
 smarty_core_load_plugins(array('plugins' => array(array('function', 'oxid_include_widget', 'page/details/details.tpl', 6, false),)), $this); ?>

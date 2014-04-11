@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ISO-8859-15"?>
+<OX>
+    <OXMENU id="d3mxd3modules">
+        <MAINMENU id="d3mxcfg">
+            <SUBMENU id="d3mxsyscheck" cl="d3_syscheck" list="d3_syscheck_list">
+                <TAB id="d3mxseccheck" cl="d3seccheck" />
+                <__TAB id="d3mxsyscheck_mysql" cl="d3_syscheck_mysql" />
+            </SUBMENU>    
+        </MAINMENU>
+    </OXMENU>
+</OX>

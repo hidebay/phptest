@@ -1,7 +1,7 @@
-<?php /* Smarty version 2.6.26, created on 2014-04-10 12:32:07
+<?php /* Smarty version 2.6.26, created on 2014-04-11 14:46:52
          compiled from page/details/inc/productmain.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
-smarty_core_load_plugins(array('plugins' => array(array('modifier', 'cat', 'page/details/inc/productmain.tpl', 8, false),array('modifier', 'strip_tags', 'page/details/inc/productmain.tpl', 59, false),array('modifier', 'oxmultilangassign', 'page/details/inc/productmain.tpl', 257, false),array('modifier', 'strip', 'page/details/inc/productmain.tpl', 343, false),array('modifier', 'escape', 'page/details/inc/productmain.tpl', 343, false),array('function', 'oxscript', 'page/details/inc/productmain.tpl', 15, false),array('function', 'oxmultilang', 'page/details/inc/productmain.tpl', 58, false),array('function', 'oxprice', 'page/details/inc/productmain.tpl', 241, false),array('block', 'oxhasrights', 'page/details/inc/productmain.tpl', 31, false),)), $this); ?>
+smarty_core_load_plugins(array('plugins' => array(array('modifier', 'cat', 'page/details/inc/productmain.tpl', 8, false),array('modifier', 'strip_tags', 'page/details/inc/productmain.tpl', 59, false),array('modifier', 'oxmultilangassign', 'page/details/inc/productmain.tpl', 257, false),array('modifier', 'strip', 'page/details/inc/productmain.tpl', 351, false),array('modifier', 'escape', 'page/details/inc/productmain.tpl', 351, false),array('function', 'oxscript', 'page/details/inc/productmain.tpl', 15, false),array('function', 'oxmultilang', 'page/details/inc/productmain.tpl', 58, false),array('function', 'oxprice', 'page/details/inc/productmain.tpl', 241, false),array('block', 'oxhasrights', 'page/details/inc/productmain.tpl', 31, false),)), $this); ?>
 <?php $this->assign('aVariantSelections', $this->_tpl_vars['oView']->getVariantSelections()); ?>
 
 <?php if ($this->_tpl_vars['aVariantSelections'] && $this->_tpl_vars['aVariantSelections']['rawselections']): ?>
@@ -301,7 +301,8 @@ unset($_smarty_tpl_vars);
                     <?php $_block_content = ob_get_contents(); ob_end_clean(); $_block_repeat=false;echo smarty_block_oxhasrights($this->_tag_stack[count($this->_tag_stack)-1][1], $_block_content, $this, $_block_repeat); }  array_pop($this->_tag_stack); ?>
                 
             </div>
-
+           
+			            
                         <div class="additionalInfo clear">
                 
                     <?php if ($this->_tpl_vars['oDetailsProduct']->getUnitPrice()): ?>
@@ -313,9 +314,8 @@ unset($_smarty_tpl_vars);
  </span>
                     <?php endif; ?>
                 
-
                 
-                    <?php if ($this->_tpl_vars['oDetailsProduct']->getStockStatus() == -1): ?>
+                                        <?php if ($this->_tpl_vars['oDetailsProduct']->oxarticles__bnflagbestand->value == 2): ?>
                         <span class="stockFlag notOnStock">
                             <?php if ($this->_tpl_vars['oDetailsProduct']->oxarticles__oxnostocktext->value): ?>
                                 <?php echo $this->_tpl_vars['oDetailsProduct']->oxarticles__oxnostocktext->value; ?>
@@ -330,12 +330,12 @@ unset($_smarty_tpl_vars);
 
                             <?php endif; ?>
                         </span>
-                    <?php elseif ($this->_tpl_vars['oDetailsProduct']->getStockStatus() == 1): ?>
+                                        <?php elseif ($this->_tpl_vars['oDetailsProduct']->oxarticles__bnflagbestand->value == 1): ?>
                         <span class="stockFlag lowStock">
                             <?php echo smarty_function_oxmultilang(array('ident' => 'LOW_STOCK'), $this);?>
 
                         </span>
-                    <?php elseif ($this->_tpl_vars['oDetailsProduct']->getStockStatus() == 0): ?>
+                                        <?php elseif ($this->_tpl_vars['oDetailsProduct']->oxarticles__bnflagbestand->value == 0): ?>
                         <span class="stockFlag">
                             <?php if ($this->_tpl_vars['oDetailsProduct']->oxarticles__oxstocktext->value): ?>
                                 <?php echo $this->_tpl_vars['oDetailsProduct']->oxarticles__oxstocktext->value; ?>
@@ -347,7 +347,6 @@ unset($_smarty_tpl_vars);
                         </span>
                     <?php endif; ?>
                 
-
                 
                     <?php $this->_tag_stack[] = array('oxhasrights', array('ident' => 'TOBASKET')); $_block_repeat=true;smarty_block_oxhasrights($this->_tag_stack[count($this->_tag_stack)-1][1], null, $this, $_block_repeat);while ($_block_repeat) { ob_start(); ?>
                         <?php if ($this->_tpl_vars['oDetailsProduct']->isBuyable()): ?>

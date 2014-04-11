@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="ISO-8859-15"?>
+<OX>
+    <OXMENU id="d3mxd3modules">
+        <MAINMENU id="d3mxgoogleanalytics">
+            <SUBMENU id="d3mxgoogleanalytics_settings" cl="d3_cfg_googleanalytics" list="d3_cfg_googleanalytics_list">
+                <TAB id="d3tbclgoogleanalytics_main" cl="d3_cfg_googleanalytics_main" />
+                <TAB id="d3tbclgoogleanalytics_adwords" cl="d3_cfg_googleanalytics_campaigns" />
+                <TAB id="d3tbcl_licence" cl="d3_cfg_googleanalytics_licence" />
+            </SUBMENU>
+        </MAINMENU>
+    </OXMENU>
+</OX>

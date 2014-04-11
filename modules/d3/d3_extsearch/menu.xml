@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="ISO-8859-15"?>
+<OX>
+    <OXMENU id="d3mxd3modules">
+        <MAINMENU id="d3mxextsearch">
+            <SUBMENU id="d3mxextsearch_settings" cl="d3_cfg_extsearch" list="d3_cfg_extsearch_list">
+                <TAB id="d3tbclextsearch_settings_results" cl="d3_cfg_extsearch_main" />
+                <TAB id="d3tbclextsearch_settings_navigation" cl="d3_cfg_extsearch_navigation" />
+                <TAB id="d3tbclextsearch_settings_quick" cl="d3_cfg_extsearch_quicksearch" />
+                <TAB id="d3tbclextsearch_settings_browser" cl="d3_cfg_extsearch_plugins" />
+                <TAB id="d3tbcl_licence" cl="d3_cfg_extsearch_licence" />
+            </SUBMENU>
+            <SUBMENU id="d3mxextsearch_statistic" cl="d3_cfg_extsearchstat" list="d3_cfg_extsearchstat_list">
+                <TAB id="d3tbclextsearch_settings_statistik" cl="d3_cfg_extsearch_statistik" />
+            </SUBMENU>
+            <SUBMENU id="d3mxextsearch_syneditor" cl="d3_cfg_extsearchsyneditor" list="d3_cfg_extsearchsyneditor_list">
+                <TAB id="d3tbclextsearch_syneditor_main" cl="d3_cfg_extsearchsyneditor_main" />
+                <TAB id="d3tbclextsearch_syneditor_manage" cl="d3_cfg_extsearchsyneditor_manage" />
+                <TAB id="d3tbclextsearch_syneditor_family" cl="d3_cfg_extsearchsyneditor_family" />
+                <TAB id="d3tbclextsearch_syneditor_synset" cl="d3_cfg_extsearchsyneditor_synset" />
+            </SUBMENU>
+        </MAINMENU>
+    </OXMENU>
+</OX>

@@ -1,7 +1,7 @@
-<?php /* Smarty version 2.6.26, created on 2014-04-10 12:32:08
+<?php /* Smarty version 2.6.26, created on 2014-04-11 14:46:55
          compiled from layout/base.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
-smarty_core_load_plugins(array('plugins' => array(array('modifier', 'strip_tags', 'layout/base.tpl', 13, false),array('function', 'oxstyle', 'layout/base.tpl', 52, false),array('function', 'oxscript', 'layout/base.tpl', 91, false),array('function', 'oxid_include_dynamic', 'layout/base.tpl', 105, false),)), $this); ?>
+smarty_core_load_plugins(array('plugins' => array(array('modifier', 'strip_tags', 'layout/base.tpl', 13, false),array('function', 'oxstyle', 'layout/base.tpl', 52, false),array('function', 'oxscript', 'layout/base.tpl', 95, false),array('function', 'oxid_include_dynamic', 'layout/base.tpl', 109, false),array('block', 'd3modcfgcheck', 'layout/base.tpl', 72, false),)), $this); ?>
 <?php ob_start(); ?>
     <meta http-equiv="Content-Type" content="text/html; charset=<?php echo $this->_tpl_vars['oView']->getCharSet(); ?>
 ">
@@ -102,6 +102,14 @@ smarty_core_load_plugins(array('plugins' => array(array('modifier', 'strip_tags'
 
         <?php endforeach; endif; unset($_from); ?>
     
+
+<?php $this->_tag_stack[] = array('d3modcfgcheck', array('modid' => 'd3_googleanalytics')); $_block_repeat=true;smarty_block_d3modcfgcheck($this->_tag_stack[count($this->_tag_stack)-1][1], null, $this, $_block_repeat);while ($_block_repeat) { ob_start(); ?>
+    <?php $_smarty_tpl_vars = $this->_tpl_vars;
+$this->_smarty_include(array('smarty_include_tpl_file' => $this->_tpl_vars['oViewConf']->getModulePath('d3_googleanalytics','views/tpl/widget/d3_googleanalytics.tpl'), 'smarty_include_vars' => array()));
+$this->_tpl_vars = $_smarty_tpl_vars;
+unset($_smarty_tpl_vars);
+ ?>
+<?php $_block_content = ob_get_contents(); ob_end_clean(); $_block_repeat=false;echo smarty_block_d3modcfgcheck($this->_tag_stack[count($this->_tag_stack)-1][1], $_block_content, $this, $_block_repeat); }  array_pop($this->_tag_stack); ?>
 
 <?php $this->_smarty_vars['capture']['default'] = ob_get_contents();  $this->append('oxidBlock_pageHead', ob_get_contents());ob_end_clean(); ?>
 <!DOCTYPE HTML>

@@ -24,12 +24,13 @@ $aModule = array(
     'title'       => '<img src="../modules/_d3modcfg/public/d3logo.php?cl=' . $_REQUEST['cl'] .
         '" alt="D&sup3;" title="D&sup3; Data Development"> Connector - Modulkonfiguration / Module Configuration',
     'description' => array(
-        'de' => 'Speichert Moduleintr&auml;ge sicher und einfach editierbar und stellt verschiedene Assistenten zur Verf&uuml;gung.',
+        'de' => 'Speichert Moduleintr&auml;ge sicher und einfach editierbar und
+                 stellt verschiedene Assistenten zur Verf&uuml;gung.',
         'en' => 'Stores module configurations safe and easy editable and makes different wizzards accessible.',
     ),
     'lang'        => 'de',
     'thumbnail'   => 'picture.png',
-    'version'     => '3.10.0.1',
+    'version'     => '3.10.3.0',
     'author'      => 'D&sup3; Data Development (Inh. Thomas Dartsch)',
     'email'       => 'support@shopmodule.com',
     'url'         => 'http://www.oxidmodule.com',
@@ -70,6 +71,10 @@ $aModule = array(
         'd3sysitems_list'    => '_d3modcfg/controllers/admin/d3sysitems_list.php',
         'd3mod_activation'   => '_d3modcfg/controllers/admin/d3mod_activation.php',
         'd3maintenance'      => '_d3modcfg/controllers/admin/d3maintenance.php',
+
+        'd3ParameterContainer'          => '_d3modcfg/models/parameterContainer/d3parametercontainer.php',
+        'd3ParameterContainerInterface' => '_d3modcfg/models/parameterContainer/d3parametercontainerinterface.php',
+        'd3ParameterNotFoundException'  => '_d3modcfg/models/parameterContainer/d3parameternotfoundexception.php',
     ),
     'blocks'      => array(),
     'settings'    => array(),
@@ -96,7 +101,6 @@ $aModule = array(
     ),
 );
 
-if (class_exists('roles_bemain'))
-{
+if (class_exists('roles_bemain')) {
     $aModule['extend']['roles_bemain'] = '_d3modcfg/modules/controllers/admin/d3_roles_bemain_rolesrights';
 }

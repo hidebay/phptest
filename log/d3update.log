@@ -457,3 +457,436 @@ Array
         )
 
 )
+Array
+(
+)
+Array
+(
+)
+Array
+(
+    [0] => Array
+        (
+            [date] => 2014-04-10 17:06:46
+            [modid] => 
+            [fnc] => d3install_update::updateModCfgItem
+            [type] => SQL
+            [log] => UPDATE `d3_cfg_mod` 
+                SET `d3_cfg_mod`.`OXID` = md5('d3install_lib oxbaseshop de'),`d3_cfg_mod`.`OXSHOPID` = 'oxbaseshop',`d3_cfg_mod`.`OXMODID` = 'd3install_lib',`d3_cfg_mod`.`OXNAME` = 'Modul-Installation',`d3_cfg_mod`.`OXACTIVE` = 1,`d3_cfg_mod`.`OXBASECONFIG` = 'JiANmlJVmQ4cmRLZEp2TFFvb3V4WHlJZFI1VWlrbGV2WWlpUjRuTTZjVWRsdEF3QkJDakZXY1lYWUJBS\nmtsZnk3NGFuREtQNkthN3pvc3RzK0h1SHZ1b1dkWmdMYkkwNUVLMFFlTm1PRU5YSWpteHpFeEYwVUhPS\nldIVk9iVXRFV0M4VHpmTVM3dE9RTUVoVUQ3bUtXVFI4bko4Nm1tVytiRWttOXdSWDR2QjlhRHp5VzFDW\nFlWaFlYNDRCMmpBNjBFOGpvcnVLbXFKR25PQXMvZFFzcGhpamJ2dFV4OWVpNGdnZkluMDJRTTlaelFLa\n0QvVGRXSkRadGVuNGNBWVhDOW1FUkg3L1N1eERtTUNtNy9ORHlydEx4aE44WEpkUnVielQ5ZXpwUkFjS\nHc9',`d3_cfg_mod`.`OXSERIAL` = '',`d3_cfg_mod`.`OXINSTALLDATE` = NOW(),`d3_cfg_mod`.`OXVERSION` = '2.6.1.0',`d3_cfg_mod`.`OXSHOPVERSION` = 'PE',`d3_cfg_mod`.`OXREQUIREMENTS` = '',`d3_cfg_mod`.`OXVALUE` = ''
+                WHERE `d3_cfg_mod`.`oxmodid` = 'd3install_lib' AND `d3_cfg_mod`.`oxshopid` = 'oxbaseshop';
+        )
+
+    [1] => Array
+        (
+            [date] => 2014-04-10 17:06:46
+            [modid] => 
+            [fnc] => updateModCfgItem
+            [type] => BREAK
+            [log] => 
+        )
+
+)
+Array
+(
+)
+Array
+(
+)
+Array
+(
+    [0] => Array
+        (
+            [date] => 2014-04-10 17:06:59
+            [modid] => 
+            [fnc] => d3install_updatebase::updateModCfgSameRevision
+            [type] => SQL
+            [log] => UPDATE `d3_cfg_mod`
+                            SET `OXVERSIONNUM` = INET_ATON(`OXVERSION`) WHERE oxmodid = 'd3install_lib';
+        )
+
+    [1] => Array
+        (
+            [date] => 2014-04-10 17:06:59
+            [modid] => 
+            [fnc] => updateModCfgSameRevision
+            [type] => BREAK
+            [log] => 
+        )
+
+)
+Array
+(
+)
+Array
+(
+    [0] => Array
+        (
+            [date] => 2014-04-10 17:11:21
+            [modid] => d3log
+            [fnc] => d3log_update::updateModCfgItem
+            [type] => SQL
+            [log] => UPDATE `d3_cfg_mod` 
+                SET `d3_cfg_mod`.`OXID` = md5('d3log_lib oxbaseshop de'),`d3_cfg_mod`.`OXSHOPID` = 'oxbaseshop',`d3_cfg_mod`.`OXMODID` = 'd3log_lib',`d3_cfg_mod`.`OXNAME` = 'Logging',`d3_cfg_mod`.`OXACTIVE` = 1,`d3_cfg_mod`.`OXBASECONFIG` = 'eaSbjF2R05WZTMyMThlNVdxQThOU2lrTU1GbFdJcTRZSWJ4MmdFdHpHNktUNFdabVF3VGh0Y1FsZHhWZ\nDhYM2wwS1kveXMvSlZpY24wS2pSdk1ZWU1GTW1RUkYxOEhBeHV5NWpkNkFXSm9nbE5Za0JIeVpvYlN3V\nExOcFB1d3BzZkVxYzdqdU1hclpXcFVrSlE0RnFLMzU4cW9vQzBNZzNHbUlkMEYya3hJRGIzRU5Wczhid\nnREL2Fsa3R6VThlRWh5QlhwR2c4SjRKdTJ4cE4zVFEvT1BWN3daNnZxLy9lb3V4OURub2xRVFRQMnhpY\n3l5U2R2d3NyVVR1VkJ0WG8wb2krZWdEV0RRM1VRanZTYTdvdXdRanc9PQ==',`d3_cfg_mod`.`OXSERIAL` = '',`d3_cfg_mod`.`OXINSTALLDATE` = NOW(),`d3_cfg_mod`.`OXVERSION` = '2.4.1.0',`d3_cfg_mod`.`OXSHOPVERSION` = 'PE',`d3_cfg_mod`.`OXREQUIREMENTS` = '',`d3_cfg_mod`.`OXVALUE` = ''
+                WHERE `d3_cfg_mod`.`oxmodid` = 'd3log_lib' AND `d3_cfg_mod`.`oxshopid` = 'oxbaseshop';
+        )
+
+    [1] => Array
+        (
+            [date] => 2014-04-10 17:11:21
+            [modid] => d3log
+            [fnc] => updateModCfgItem
+            [type] => BREAK
+            [log] => 
+        )
+
+)
+Array
+(
+)
+Array
+(
+    [0] => Array
+        (
+            [date] => 2014-04-10 17:11:34
+            [modid] => d3log
+            [fnc] => d3install_updatebase::_changeTableField2
+            [type] => SQL
+            [log] => ALTER TABLE `d3log` CHANGE `OXTEXT` `OXTEXT` TEXT  CHARACTER SET utf8 COLLATE utf8_general_ci  NOT NULL ;
+        )
+
+    [1] => Array
+        (
+            [date] => 2014-04-10 17:11:34
+            [modid] => d3log
+            [fnc] => updateLogFields
+            [type] => BREAK
+            [log] => 
+        )
+
+)
+Array
+(
+)
+Array
+(
+    [0] => Array
+        (
+            [date] => 2014-04-10 17:11:39
+            [modid] => d3log
+            [fnc] => d3install_updatebase::updateModCfgSameRevision
+            [type] => SQL
+            [log] => UPDATE `d3_cfg_mod`
+                            SET `OXVERSIONNUM` = INET_ATON(`OXVERSION`) WHERE oxmodid = 'd3log_lib';
+        )
+
+    [1] => Array
+        (
+            [date] => 2014-04-10 17:11:39
+            [modid] => d3log
+            [fnc] => updateModCfgSameRevision
+            [type] => BREAK
+            [log] => 
+        )
+
+)
+Array
+(
+    [0] => Array
+        (
+            [date] => 2014-04-10 17:15:57
+            [modid] => d3_cfg_mod
+            [fnc] => d3install_updatebase::_addTableField2
+            [type] => SQL
+            [log] => ALTER TABLE `d3modprofile` ADD `OXSHORTDESC` varchar(255)  CHARACTER SET utf8 COLLATE utf8_general_ci  NOT NULL  DEFAULT '' COMMENT 'profile short description';
+        )
+
+    [1] => Array
+        (
+            [date] => 2014-04-10 17:15:57
+            [modid] => d3_cfg_mod
+            [fnc] => d3install_updatebase::_addTableField2
+            [type] => SQL
+            [log] => ALTER TABLE `d3modprofile` ADD `OXSHORTDESC_1` varchar(255)  CHARACTER SET utf8 COLLATE utf8_general_ci  NOT NULL  DEFAULT '' COMMENT 'profile short description';
+        )
+
+    [2] => Array
+        (
+            [date] => 2014-04-10 17:15:57
+            [modid] => d3_cfg_mod
+            [fnc] => fixFields
+            [type] => BREAK
+            [log] => 
+        )
+
+)
+Array
+(
+    [0] => Array
+        (
+            [date] => 2014-04-10 17:16:03
+            [modid] => d3_cfg_mod
+            [fnc] => d3_cfg_mod_update::updateModCfgItem
+            [type] => SQL
+            [log] => UPDATE `d3_cfg_mod` 
+                SET `d3_cfg_mod`.`OXID` = md5('d3modcfg_lib oxbaseshop de'),`d3_cfg_mod`.`OXSHOPID` = 'oxbaseshop',`d3_cfg_mod`.`OXMODID` = 'd3modcfg_lib',`d3_cfg_mod`.`OXNAME` = 'Modul-Konfiguration',`d3_cfg_mod`.`OXACTIVE` = 1,`d3_cfg_mod`.`OXBASECONFIG` = 'wN3RUtzVmx2OWlOcDhzY3RiOGVZUUxCTG5ZaElob0dGb2dMZ3RtRjFBd3NZcm1EdWYyTm9wdVJXV3Fkd\nFZ4M0plVHlWcmZ5R0NseHZFYUtpdFFneU40UWNhc3RuellROExxc2g4T0Q3aU1EMDBuc2ZLb013eDU1c\nE5Oa0NqcW9hNzIrRytXUE9JUGl6bGpteGVwK0tvUnBQSDY5L2pDdllqUmZsRkgyMGFSUFhaZDVVcDlZS\nVBwbjdRRWRnUkZLR0lOQ0prdHNpZXhVWndMS280WEVrSkQyOG9URWE2TmxGcSt1ZEJQbHpnWjRvRldvV\nDNzNUROa3JpaTM1L1daWU9VWEx4bnhyZW5Ed25KWFhyV1haZWVNWlE4aHg5NGJzUXkxVmpaM3ZrWlhac\nDA9',`d3_cfg_mod`.`OXSERIAL` = '',`d3_cfg_mod`.`OXINSTALLDATE` = NOW(),`d3_cfg_mod`.`OXVERSION` = '3.10.3.0',`d3_cfg_mod`.`OXSHOPVERSION` = 'PE',`d3_cfg_mod`.`OXREQUIREMENTS` = '',`d3_cfg_mod`.`OXVALUE` = ''
+                WHERE `d3_cfg_mod`.`oxmodid` = 'd3modcfg_lib' AND `d3_cfg_mod`.`oxshopid` = 'oxbaseshop';
+        )
+
+    [1] => Array
+        (
+            [date] => 2014-04-10 17:16:03
+            [modid] => d3_cfg_mod
+            [fnc] => updateModCfgItem
+            [type] => BREAK
+            [log] => 
+        )
+
+)
+Array
+(
+    [0] => Array
+        (
+            [date] => 2014-04-10 17:16:05
+            [modid] => d3_cfg_mod
+            [fnc] => d3install_updatebase::updateModCfgSameRevision
+            [type] => SQL
+            [log] => UPDATE `d3_cfg_mod`
+                            SET `OXVERSIONNUM` = INET_ATON(`OXVERSION`) WHERE oxmodid = 'd3modcfg_lib';
+        )
+
+    [1] => Array
+        (
+            [date] => 2014-04-10 17:16:05
+            [modid] => d3_cfg_mod
+            [fnc] => updateModCfgSameRevision
+            [type] => BREAK
+            [log] => 
+        )
+
+)
+Array
+(
+)
+Array
+(
+)
+Array
+(
+)
+Array
+(
+)
+Array
+(
+    [0] => Array
+        (
+            [date] => 2014-04-10 17:17:30
+            [modid] => 
+            [fnc] => d3seccheck_update::updateModCfgItemExist
+            [type] => SQL
+            [log] => INSERT INTO `d3_cfg_mod` (`d3_cfg_mod`.`OXID`, `d3_cfg_mod`.`OXSHOPID`, `d3_cfg_mod`.`OXMODID`, `d3_cfg_mod`.`OXNAME`, `d3_cfg_mod`.`OXACTIVE`, `d3_cfg_mod`.`OXBASECONFIG`, `d3_cfg_mod`.`OXSERIAL`, `d3_cfg_mod`.`OXINSTALLDATE`, `d3_cfg_mod`.`OXVERSION`, `d3_cfg_mod`.`OXSHOPVERSION`, `d3_cfg_mod`.`OXREQUIREMENTS`, `d3_cfg_mod`.`OXVALUE`, `d3_cfg_mod`.`OXNEWREVISION`) VALUES (md5('d3seccheck_lib oxbaseshop de'), 'oxbaseshop', 'd3seccheck_lib', 'Systempruefung', 1, '7FSSWd2RnFRT1ZSVFl1QTlZSGxaQWYzUFloUzJxL09WS2c0Sk1iV3pPSUZKTzJ2WXBlbkFNK1lLM0ZIQ\n1M2Yi85OFpNM0xJTWlpTitSYUcvYW8vRnA4QXUxYUo1YzNyMmJieEpLZ3RPTmJuekNlclhuaGRyRFRZS\nEc4QlFRd1B6RWhiQVVJZ2I5NmgvYzd4UGFnaHNDbFh3bFJ2VmVJYk4yV2ZuTXRETVVHblBqSjE1QVd1W\nWg3TGRoQThubjZVUk1kWU54RmVuTzFUYldXMVoyanhHVDNmU2NRaEdDdG50QVRQazAzVmJqWFJza3ZyV\nzcwNGZvTUc0MCtJd3F3YjNsb0FCeU5LejE4cG5hSnFiUk5DdnBpS0RkcGxDWElzTTFFZEZ4dzUxQWVSY\nm89', '', NOW(), '2.1.0.0', 'PE', '', '', '78');
+        )
+
+    [1] => Array
+        (
+            [date] => 2014-04-10 17:17:30
+            [modid] => 
+            [fnc] => updateModCfgItemExist
+            [type] => BREAK
+            [log] => 
+        )
+
+)
+Array
+(
+)
+Array
+(
+)
+Array
+(
+)
+Array
+(
+)
+Array
+(
+    [0] => Array
+        (
+            [date] => 2014-04-10 17:17:41
+            [modid] => 
+            [fnc] => d3install_updatebase::updateModCfgSameRevision
+            [type] => SQL
+            [log] => UPDATE `d3_cfg_mod`
+                            SET `OXVERSIONNUM` = INET_ATON(`OXVERSION`) WHERE oxmodid = 'd3seccheck_lib';
+        )
+
+    [1] => Array
+        (
+            [date] => 2014-04-10 17:17:41
+            [modid] => 
+            [fnc] => updateModCfgSameRevision
+            [type] => BREAK
+            [log] => 
+        )
+
+)
+Array
+(
+)
+Array
+(
+)
+Array
+(
+)
+Array
+(
+)
+Array
+(
+)
+Array
+(
+    [0] => Array
+        (
+            [date] => 2014-04-11 10:15:14
+            [modid] => 
+            [fnc] => d3_googleanalytics_update::updateModCfgItemExist
+            [type] => SQL
+            [log] => INSERT INTO `d3_cfg_mod` (`d3_cfg_mod`.`OXID`, `d3_cfg_mod`.`OXSHOPID`, `d3_cfg_mod`.`OXMODID`, `d3_cfg_mod`.`OXNAME`, `d3_cfg_mod`.`OXACTIVE`, `d3_cfg_mod`.`OXBASECONFIG`, `d3_cfg_mod`.`OXINSTALLDATE`, `d3_cfg_mod`.`OXVERSION`, `d3_cfg_mod`.`OXSHOPVERSION`, `d3_cfg_mod`.`OXREQUIREMENTS`, `d3_cfg_mod`.`OXVALUE`, `d3_cfg_mod`.`OXNEWREVISION`) VALUES (md5('d3_googleanalytics oxbaseshop'), 'oxbaseshop', 'd3_googleanalytics', 'Google Analytics Schnittstelle', 0, 'WxUSlVXQ0ZjeG44Z3RyZWN3TlhqTFdlNVdJcWFVaDgwOTYwcUdOdHVycnFCRnJDQjBpTDhRMHhqRCt0U
+jQrcldHdzArR0xMaGtNdTM2MFdRcTRNZ0tOQnFZWDJPckR1T3FTcmY5U0l6MjBrSmpMa0VkS2t0MXFGT
+lVPdFVIMGpNSTNpcjV5ejBLR1hpVktaTHNtbnVZVzNqT3diUEFNRXpJUjNZTDg0SmZHYjlYYW5ZaXZPY
+XJmQVVpcER0K1pXcUJRdjhOWFlFYi9jZUY1blN4cGhQdktNTTcrMTluRFF6MHZKWEVrUEw2czBuM1B0V
+0tmeFpBS2hpZVFjc29qdFRiSm9UZEVkTnFsUXB3M292anJyVG5wUkd6bG5MVzR4NThFRE9TYjJYaStuR
+3M9', NOW(), '3.0.0.2', 'PE', '', '', '99');
+        )
+
+    [1] => Array
+        (
+            [date] => 2014-04-11 10:15:14
+            [modid] => 
+            [fnc] => updateModCfgItemExist
+            [type] => BREAK
+            [log] => 
+        )
+
+)
+Array
+(
+)
+Array
+(
+)
+Array
+(
+)
+Array
+(
+)
+Array
+(
+)
+Array
+(
+    [0] => Array
+        (
+            [date] => 2014-04-11 10:15:31
+            [modid] => 
+            [fnc] => d3_googleanalytics_update::updateContentGANoticeItemExist
+            [type] => SQL
+            [log] => INSERT INTO `oxcontents` (`oxcontents`.`OXID`, `oxcontents`.`OXLOADID`, `oxcontents`.`OXSHOPID`, `oxcontents`.`OXSNIPPET`, `oxcontents`.`OXTYPE`, `oxcontents`.`OXACTIVE`, `oxcontents`.`OXACTIVE_1`, `oxcontents`.`OXPOSITION`, `oxcontents`.`OXTITLE`, `oxcontents`.`OXCONTENT`, `oxcontents`.`OXCATID`, `oxcontents`.`OXFOLDER`) VALUES (md5(RAND()), 'Analytics_Security_Informations', 'oxbaseshop', '1', '0', '1', '1', '', 'Analytics Datenschutz Information', '<p>Diese Website benutzt Google Analytics, einen Webanalysedienst der Google
+
+Inc. (&quot;Google&quot;). Google Analytics verwendet sog. &quot;Cookies&quot;, Textdateien, die auf
+
+Ihrem Computer gespeichert werden und die eine Analyse der Benutzung der Website
+
+durch Sie ermöglichen. Die durch den Cookie erzeugten Informationen über Ihre
+
+Benutzung dieser Website (einschließlich Ihrer IP-Adresse<span style="color: #800000">, die jedoch mit der Methode _anonymizeIp() anonymisiert wird, so dass Sie nicht mehr einem Anschluss
+
+zugeordnet werden kann</span>) wird an einen Server von Google in den USA
+
+übertragen und dort gespeichert. Google wird diese Informationen benutzen, um
+
+Ihre Nutzung der Website auszuwerten, um Reports über die Websiteaktivitäten für
+
+die Websitebetreiber zusammenzustellen und um weitere mit der Websitenutzung und
+
+der Internetnutzung verbundene Dienstleistungen zu erbringen. Auch wird Google
+
+diese Informationen gegebenenfalls an Dritte übertragen, sofern dies gesetzlich
+
+vorgeschrieben oder soweit Dritte diese Daten im Auftrag von Google verarbeiten.
+
+Google wird in keinem Fall Ihre IP-Adresse mit anderen Daten von Google in
+
+Verbindung bringen. Sie können die Installation der Cookies durch eine
+
+entsprechende Einstellung Ihrer Browser Software verhindern; wir weisen Sie
+
+jedoch darauf hin, dass Sie in diesem Fall gegebenenfalls nicht sämtliche
+
+Funktionen dieser Website vollumfänglich nutzen können. Durch die Nutzung dieser
+
+Website erklären Sie sich mit der Bearbeitung der über Sie erhobenen Daten durch
+
+Google in der zuvor beschriebenen Art und Weise und zu dem zuvor benannten Zweck
+
+einverstanden.</p>
+<p><span style="color: #800000">Sie können der Erhebung der
+
+Daten durch Google-Analytics mit Wirkung für die Zukunft widersprechen, indem
+
+sie ein Deaktivierungs-Add-on (<a href="http://tools.google.com/dlpage/gaoptout?hl=de" title="">http://tools.google.com/dlpage/gaoptout?hl=de</a>)
+
+für Ihren Browser installieren.</span></p>', '', 'CMSFOLDER_USERINFO');
+        )
+
+    [1] => Array
+        (
+            [date] => 2014-04-11 10:15:31
+            [modid] => 
+            [fnc] => updateContentGANoticeItemExist
+            [type] => BREAK
+            [log] => 
+        )
+
+)
+Array
+(
+)
+Array
+(
+)
+Array
+(
+)
+Array
+(
+)
+Array
+(
+)
+Array
+(
+    [0] => Array
+        (
+            [date] => 2014-04-11 10:15:44
+            [modid] => 
+            [fnc] => d3install_updatebase::_updateModCfgSameRevision
+            [type] => SQL
+            [log] => UPDATE `d3_cfg_mod`
+                            SET `OXVERSIONNUM` = INET_ATON(`OXVERSION`) WHERE oxmodid = 'd3_googleanalytics';
+        )
+
+    [1] => Array
+        (
+            [date] => 2014-04-11 10:15:44
+            [modid] => 
+            [fnc] => d3_googleanalytics_update::updateModCfgSameRevision
+            [type] => SQL
+            [log] => 
+        )
+
+)
